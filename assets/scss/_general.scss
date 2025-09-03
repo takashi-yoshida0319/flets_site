@@ -1,0 +1,766 @@
+// *** 見出し ***
+
+//レベル
+[class*="tle--"] {
+  font-weight: 700;
+}
+.tle {
+
+  //見出しレベル1
+  &--lv1 {
+    + {
+      * {
+        margin-top: sp_size(90);
+      }
+      section {
+        margin-top: 30px;
+      }
+      .grid {
+        margin-top: sp_size(60);
+      }
+    }
+    @include sp_font_size(70);
+    line-height: 1.1;
+    //margin-top: sp_size(70);
+    //todo from コンポーネント確認_171124b.pptx
+    margin-top: 30px;
+    span {
+      @include sp_font_size(36);
+    }
+
+    //PC
+    @include mq(){
+      + {
+        * {
+          margin-top: 60px;
+        }
+        section {
+          margin-top: 80px;
+        }
+        .grid {
+          margin-top: 60px;
+        }
+        .grid {
+          margin-top: sp_size(50);
+        }
+      }
+
+      //margin-top: 90px;
+      //todo from コンポーネント確認_171124b.pptx
+      margin-top: 80px;
+      @include font_size(50);
+      span {
+        @include font_size(30);
+      }
+    }
+  }
+
+  //見出しレベル2
+  &--lv2 {
+    + {
+      * {
+        margin-top: 20px;
+      }
+      .innerLink {
+        //todo from コンポーネント確認_171124b.pptx
+        //margin-top: sp_size(20);
+        margin-top: 20px;
+      }
+      .grid {
+        //todo from コンポーネント確認_171124b.pptx
+        margin-top: 20px;
+        //margin-top: sp_size(40);
+      }
+      ul,ol {
+        //margin-top: 1.5em;
+        //todo from コンポーネント確認_171124b.pptx
+        margin-top: 20px;
+      }
+      p {
+        margin-top: 10px;
+      }
+    }
+    //margin-top: sp_size(140);
+    //todo from コンポーネント確認_171124b.pptx
+    //margin-top: 40px;
+    //todo 会議
+    //margin-top: 0;
+    @include sp_font_size(50);
+    span {
+      @include sp_font_size(30);
+      &.round {
+        @include sp_font_size(50);
+        display: inline-block;
+        background: $cerulean;
+        color: white;
+        padding-right: sp_size(50);
+        padding-left: sp_size(50);
+        @include border_radius(100px);
+        margin-bottom: sp_size(20);
+      }
+    }
+
+    //PC
+    @include mq(){
+      + {
+        * {
+          //margin-top: 40px;
+          //todo from コンポーネント確認_171124b.pptx
+          margin-top: 60px;
+        }
+        .grid {
+          //margin-top: 50px;
+          //todo from コンポーネント確認_171124b.pptx
+          margin-top: 60px;
+        }
+
+        //todo 会議OK
+        .layeredNav {
+          margin-top: 45px;
+        }
+
+        //todo 会議OK
+        p {
+          margin-top: 20px;
+        }
+      }
+      //todo from コンポーネント確認_171124b.pptx
+      //margin-top: 120px;
+      //会議
+      //margin-top: 0;
+      @include font_size(40);
+      span {
+        @include font_size(24);
+        &.round {
+          @include font_size(40);
+          display: inline-block;
+          background: $pictonBlue;
+          color: white;
+          line-height: 1.5;
+          padding-right: 30px;
+          padding-left: 30px;
+          @include border_radius(100px);
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  //見出しレベル3
+  &--lv3 {
+    + {
+      *  {
+        //margin-top: sp_size(15);
+        //todo from コンポーネント確認_171124b.pptx
+        //margin-top: 30px;
+        //todo 会議
+        margin-top: sp_size(30);
+      }
+      .grid {
+        //margin-top:sp_size(20);
+        //todo from コンポーネント確認_171124b.pptx
+        //margin-top: 30px;
+        //会議
+        margin-top:sp_size(20);
+      }
+
+
+      //PC
+      @include mq(){
+        * {
+          margin-top: 20px;
+        }
+      }
+    }
+    //サイズ変更 https://8knot01.backlog.com/ViewAttachmentPdf.action?attachmentId=24494
+
+    //todo from コンポーネント確認_171124b.pptx
+    //margin-top: 30px;
+    //todo 会議 上けし
+    @include sp_font_size(40);
+    .txt--small,
+    span:not([class]) {
+      @include sp_font_size(18);
+    }
+
+    //PC
+    @include mq(){
+      + {
+        * {
+          //margin-top: 20px;
+          //todo from コンポーネント確認_171124b.pptx
+          //margin-top: 80px;
+          //会議
+          margin-top: 20px;
+        }
+        .grid {
+          //margin-top: 40px;
+          //todo from コンポーネント確認_171124b.pptx
+          //margin-top: 80px;
+          //todo 会議
+          margin-top: 20px;
+        }
+        ._pc_center700 {
+          margin-top: 30px;
+        }
+      }
+      //todo from コンポーネント確認_171124b.pptx
+      //margin-top: 80px;
+      //todo 会議
+      //margin-top: 0;
+      @include font_size(30);
+      .txt--small,
+      span:not([class]) {
+        @include font_size(18);
+      }
+    }
+
+    .super {
+      @include sp_font_size(26);
+      display: inline-block;
+      padding: 0 10px;
+      line-height: 2.15;
+      margin: 0 5px;
+      vertical-align: middle;
+
+      //PC
+      @include mq(){
+        @include font_size(14);
+        padding: 0 25px;
+      }
+      &.bg--blue {
+        background: $pictonBlueLight;
+        color: white;
+      }
+    }
+
+  }
+
+  //見出しレベル4
+  &--lv4 {
+    + {
+      *  {
+        //margin-top: sp_size(15);
+        //todo from コンポーネント確認_171124b.pptx
+        //margin-top: 30px;
+        //todo 会議
+        //margin-top: sp_size(30);
+        //cahier
+        margin-top:10px;
+
+        //PC
+        @include mq(){
+          margin-top: 30px;
+        }
+      }
+      .grid {
+        //margin-top:sp_size(20);
+        //todo from コンポーネント確認_171124b.pptx
+        //margin-top: 30px;
+        //会議
+        margin-top:sp_size(20);
+      }
+    }
+    margin-top: 30px;
+    @include sp_font_size(34);
+    span {
+      @include sp_font_size(22);
+    }
+
+    //PC
+    @include mq(){
+      @include font_size(24);
+      span {
+        @include font_size(16);
+      }
+    }
+  }
+
+  //見出しレベル5
+  &--lv5 {
+    + {
+      *  {
+        //margin-top: sp_size(15);
+        //todo from コンポーネント確認_171124b.pptx
+        //margin-top: 30px;
+        //todo 会議
+        margin-top: 7px;
+      }
+      .grid {
+        //margin-top:sp_size(20);
+        //todo from コンポーネント確認_171124b.pptx
+        //margin-top: 30px;
+        //会議
+        margin-top:sp_size(20);
+      }
+
+      //PC
+      @include mq(){
+        margin-top: 20px;
+      }
+    }
+    //@include sp_font_size(30);
+    //todo from コンポーネント確認_171124b.pptx
+    //margin-top: 30px;
+    span {
+      @include sp_font_size(20);
+    }
+
+    //PC
+    @include mq(){
+      //todo from コンポーネント確認_171124b.pptx
+      @include font_size(20);
+      span {
+        @include font_size(12);
+      }
+    }
+  }
+
+}
+
+// ***段落***
+p {
+  + {
+
+    * {
+      margin-top: 10px;
+    }
+    .tle--lv2 {
+      margin-top:1.5em;
+    }
+    .tle--lv3 {
+      margin-top:1.5em;
+    }
+    .tle--lv4 {
+      margin-top:1.5em;
+    }
+    .tle--lv5 {
+      margin-top:1.5em;
+    }
+    .tle--lv6 {
+      margin-top:1.5em;
+    }
+
+    .btn--panel {
+      margin-top:1.5em;
+    }
+
+    p {
+      margin-top: 1em;
+    }
+    .grid {
+      margin-top:sp_size(40);
+    }
+    table {
+      //margin-top: sp_size(50);
+    }
+
+    //PC
+    @include mq(){
+      * {
+        margin-top: 20px;
+      }
+      table {
+        margin-top: 20px;
+      }
+      //todo 会議
+      .grid {
+        margin-top: 40px;
+      }
+    }
+  }
+  @include sp_font_size(34);
+  line-height: 2;
+
+  //SP
+  @include mq(sp){
+    //margin-right: sp_size(20);
+  }
+
+  //PC
+  @include mq(){
+    @include font-size(20);
+  }
+
+  &.annotation {
+    @include sp_font_size(28);
+    padding-left: 1em;
+    position: relative;
+    line-height: 2;
+    &::before {
+      content: "※";
+      position: absolute;
+      left: 0;
+    }
+    .link_icn {
+      .blank {
+        font-size: inherit;
+      }
+    }
+
+    &.alignCenter,
+    &.alignRight {
+      padding-left: 0;
+      &::before {
+        position: static;
+      }
+    }
+
+    //PC
+    @include mq(){
+      @include font-size(14);
+      a.link_icn {
+          font-size: inherit;
+      }
+    }
+  }
+
+  &.annotation--noBullet {
+    @include sp_font_size(28);
+    position: relative;
+    line-height: 2;
+    .link_icn {
+      .blank {
+        font-size: inherit;
+      }
+    }
+
+    //PC
+    @include mq(){
+      @include font-size(14);
+      a.link_icn {
+        font-size: inherit;
+      }
+    }
+  }
+
+  &.annotation--diamond {
+    //margin-top: 15px;
+    padding-left: 1.5em;
+    position: relative;
+    @include sp_font_size(30);
+    line-height: 1.6;
+    &::before {
+      content: "◆";
+      position: absolute;
+      left: 0;
+    }
+
+    //PC
+    @include mq(){
+      @include font_size(14);
+      font-weight: 700;
+    }
+  }
+
+  &.annotation--star {
+    line-height: 1.6;
+    padding-left: 1.5em;
+    position: relative;
+    @include sp_font_size(30);
+    margin-top: 0 !important;
+    &::before {
+      content: "★";
+      position: absolute;
+      left: 0;
+    }
+
+    //PC
+    @include mq(){
+      @include font_size(14);
+      font-weight: 700;
+    }
+  }
+
+  &.annotation--free {
+    line-height: 1.6;
+    padding-left: 1.5em;
+    position: relative;
+    @include sp_font_size(30);
+    &::before {
+      content: attr(data-bullet)"";
+      position: absolute;
+      left: 0;
+    }
+
+    //PC
+    @include mq(){
+      @include font_size(14);
+      font-weight: 700;
+    }
+  }
+}
+
+// ***リスト***
+ul,ol {
+
+  // list-style-type
+  &[class*="type--"] {
+    + {
+    }
+    list-style: none;
+    @include sp_font_size(26);
+
+    //SP
+    @include mq(sp){
+      margin-right: sp_size(20);
+    }
+
+    //PC
+    @include mq(){
+      @include font-size(14);
+    }
+  }
+
+  //&.type {
+  //
+  //  //算用数字
+  //  &--decimal {
+  //    display: table;
+  //    $mt : 1.5em; //行マージン分ネガティブマージン
+  //    margin-bottom: -($mt);
+  //
+  //    li {
+  //      display: table-row;
+  //      counter-increment: table-ol;
+  //      &::before {
+  //        content: counter(table-ol) ".";
+  //        display: table-cell;
+  //        padding-right: 0.6em;
+  //        text-align: right;
+  //        white-space: nowrap;
+  //      }
+  //      &::after {
+  //        content: "";
+  //        display: block;
+  //        margin-bottom: $mt; //行マージン
+  //      }
+  //    }
+  //
+  //    //PC
+  //    @include mq(){
+  //      $mt : 1em;
+  //      margin-bottom: -($mt);
+  //      li::after {
+  //        margin-bottom: $mt; //行マージン
+  //      }
+  //    }
+  //  }
+  //
+  //  //annotation（※）
+  //  &--annotation {
+  //    li {
+  //      + li {
+  //        margin-top: 1em;
+  //      }
+  //      padding-left: 1.2em;
+  //      position: relative;
+  //      &::before {
+  //        content: "※";
+  //        position: absolute;
+  //        left: 0;
+  //      }
+  //    }
+  //  }
+  //}
+}
+
+sup {
+  font-size: 70%;
+  vertical-align: super;
+}
+
+// *** table ***
+table {
+  &.fixed {
+    table-layout: fixed;
+  }
+  &.tbl--cmn_01 {
+    + {
+      * {
+        margin-top: 20px;
+      }
+
+      ._pc_center700 {
+        margin-top: 20px;
+      }
+
+      table {
+        margin-top: sp_size(40);
+      }
+      .tle--lv4 {
+        margin-top:sp_size(75);
+      }
+      .btn--panel {
+        margin-top:sp_size(60);
+      }
+    }
+    border-collapse: separate;
+    width: 100%;
+    border-top: 1px solid $fontBlack;
+    border-left: 1px solid $fontBlack;
+    th,td {
+      border-right: 1px solid $fontBlack;
+      border-bottom: 1px solid $fontBlack;
+      padding: sp_size(30) sp_size(20);
+      @include sp_font_size(34);
+      strong {
+        font-weight: 700;
+      }
+      &.text_vertical {
+        width: 1px;
+        white-space: normal;
+        span {
+          white-space: normal;
+          line-height: 1;
+          display: inline-block;
+          width: 1em;
+          word-wrap: break-word;
+        }
+      }
+    }
+    th {
+      font-weight: 700;
+      text-align: center;
+      background: lighten($athensGray, 5%);
+      white-space: nowrap;
+    }
+    thead {
+      th {
+        background: $athensGray;
+      }
+    }
+
+    //PC
+    @include mq(){
+      + {
+        table {
+          margin-top: 40px;
+        }
+        p {
+          margin-top: 40px;
+        }
+        ._pc_center700 {
+          margin-top: 50px;
+        }
+      }
+      th,td {
+        @include font-size(20);
+      }
+    }
+  }
+}
+
+//水平線
+hr {
+  &.hr--cmn_01 {
+    display: block;
+    border: none;
+    border-bottom: 1px solid $athensGray;
+    margin: sp_size(75) 0;
+
+    //PC
+    @include mq(){
+      margin: 60px -80px;
+
+      &._pc_w100 {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+
+
+  }
+
+  &.hr--cmn_02 {
+    display: block;
+    border: none;
+    border-bottom: 2px solid $athensGray;
+    margin: sp_size(75) 0;
+
+    //PC
+    @include mq(){
+      border-bottom-width: 4px;
+      margin: 60px -80px;
+    }
+  }
+
+  &.hr--blue {
+    border-bottom-color: $pictonBlue;
+  }
+
+  &.arrow--bottom {
+    + {
+      .frame--tag,
+      .tle--lv3 {
+        margin-top: sp_size(60);
+      }
+    }
+    margin: sp_size(30) auto;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 14px 15px 0 15px;
+    border-color: #999999 transparent transparent transparent;
+
+    // *** color variation ***
+    &.pictonBlue {
+      border-color: $pictonBlue transparent transparent transparent;
+    }
+
+    //PC
+    @include mq(){
+      border-width: 20px 21px 0 21px;
+      margin: 20px auto 40px;
+    }
+  }
+
+}
+
+//画像
+img {
+  max-width: 100%;
+  vertical-align: top;
+
+  //PC
+  @include mq(){
+    max-width: initial;
+  }
+}
+
+
+// *** bullet 系　text-align 調整 ***
+
+.alignRight, .alignCenter {
+  p {
+    &.annotation,
+    &.annotation--star,
+    &.annotation--diamond,
+    &.annotation--free {
+      padding-left: 0;
+      &::before {
+        position: static;
+      }
+    }
+  }
+}
+
+
+
+// *** 関係性マージン ****
+article > .tle--lv1 {
+  + p {
+    margin-right: 7px;
+    margin-left: 7px;
+    + {
+      section {
+        margin-top: 27px;
+
+        //PC
+        @include mq(){
+          margin-top: 80px;
+        }
+      }
+    }
+  }
+}

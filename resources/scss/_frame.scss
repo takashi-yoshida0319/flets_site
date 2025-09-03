@@ -1,0 +1,24 @@
+.l-frame {
+
+  &.-border_round {
+    overflow: hidden;
+
+    @include mq(){
+      border-radius: 8px;
+      background: #fff;
+      border: 3px solid #e6e8ed;
+      min-height: auto;
+      display: block;
+      padding: 24px;
+    }
+
+    @include mq(sp){
+      border-radius: 8px;
+      background: #fff;
+      border: 3px solid #e6e8ed;
+      min-height: auto;
+      display: block;
+      padding: calc(20 / 375 * 100 * 1vw) calc(10 / 375 * 100 * 1vw);
+    }
+  }
+}

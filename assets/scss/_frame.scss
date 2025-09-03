@@ -1,0 +1,227 @@
+@import "../partials/variables", "../partials/mixin";
+
+.frame {
+
+  &--tag {
+    border: 1px solid;
+    margin-right: 5px;
+    margin-left: 5px;
+
+    .frame__heading {
+      * {
+        font-weight: inherit;
+      }
+      padding: sp_size(20);
+      background: #000;
+      color: white;
+      //todo 文字サイズ正しいが小さいとの指摘あり。若干大きく。
+      //@include sp_font_size(34);
+      @include sp_font_size(39);
+      font-weight: 700;
+      line-height: 2;
+      .super {}
+      .round {
+        @include sp_font_size(30);
+        background: white;
+        color: black;
+        padding: sp_size(15) sp_size(50);
+        @include border_radius(100px);
+        margin-right: sp_size(30);
+        position: relative;
+        top: -1px;
+      }
+    }
+
+    .frame__content {
+      padding: sp_size(40) sp_size(20);
+      p {
+        + p {
+          margin-top: sp_size(45);
+        }
+        &:not([class^="annotation"]){
+          @include sp_font_size(34);
+        }
+      }
+      .tle--lv1 {
+        @include sp_font_size(34);
+        margin-left:sp_size(15);
+        //会議
+        margin-top: 0;
+        + {
+          p,
+          .zoomUp {
+            margin-top: sp_size(17);
+          }
+        }
+      }
+    }
+
+    //  *** color valiation ***
+    &.shakespeare {
+      border-color: $shakespeare;
+      .frame__heading {
+        background: $shakespeare;
+        .round {
+          color: $shakespeare;
+        }
+      }
+    }
+
+    &.gigas {
+      border-color: $gigas;
+      .frame__heading {
+        background: $gigas;
+        .round {
+          color: $gigas;
+        }
+      }
+    }
+
+    //PC
+    @include mq(){
+      .frame__heading {
+        @include font_size(30);
+        padding: 10px 20px;
+        .round {
+          vertical-align: 3px;
+          @include font_size(20);
+          line-height: 2;
+          padding: 0 25px;
+          display: inline-block;
+          top: 0;
+        }
+      }
+
+      .frame__content {
+        padding: 30px;
+        p {
+          &:not([class^="annotation"]){
+            @include font_size(20);
+          }
+        }
+        .tle--lv1 {
+          @include font_size(20);
+          margin-left:sp_size(15);
+          line-height: 1.6;
+          //todo 会議
+          //数値を字下げ
+          &.ordered {
+            position: relative;
+            padding-left: 1.2em;
+            .num {
+              font: inherit;
+              position: absolute;
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &--bg--gray {
+    background: $concrete;
+    padding: sp_size(50) 0 sp_size(70);
+
+
+    //PC
+    @include mq(){
+      padding: 70px 0 100px;
+    }
+  }
+
+  &--caution {
+    display: inline-block;
+    border: 1px solid $fontRed;
+    @include sp_font_size(26);
+    padding: 7px 10px;
+    font-weight: 700;
+
+    //PC
+    @include mq() {
+      @include font_size(20);
+      border-width: 2px;
+      padding: 16px 25px;
+    }
+
+    &.c_red {
+      border-color: $fontRed;
+    }
+  }
+
+  &--red {
+    border: 1px solid $fontRed;
+    padding: 10px;
+
+    //PC
+    @include mq() {
+      border-width: 2px;
+      padding: 25px;
+    }
+  }
+
+
+  &--gray {
+    border: 1px solid $athensGray;
+    padding: sp_size(50) sp_size(30);
+    .tle--lv3 {
+      @include sp_font_size(36);
+    }
+
+    //PC
+    @include mq() {
+      padding: 35px 30px;
+      .tle--lv3 {
+        @include font_size(30);
+        + {
+          p {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  &--bk,
+  &--black {
+    border: 1px solid $mineShaft;
+    padding: sp_size(50) sp_size(30);
+    .tle--lv3 {
+      @include sp_font_size(36);
+    }
+
+    //PC
+    @include mq() {
+      padding: 35px 30px;
+      .tle--lv3 {
+        @include font_size(30);
+        + {
+          p {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  &--blue {
+    border: 1px solid $cerulean;
+    padding: sp_size(50) sp_size(30);
+    .tle--lv3 {
+      @include sp_font_size(36);
+    }
+
+    //PC
+    @include mq() {
+      padding: 35px 30px;
+      .tle--lv3 {
+        @include font_size(30);
+        + {
+          p {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}

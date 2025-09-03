@@ -1,0 +1,418 @@
+//---------------------------
+// 共通
+//---------------------------
+body.rn2020 {
+  .title {
+    //font-weight: 700;
+    font-weight: 700;
+    line-height: 1.5;
+
+    //関係性マージン
+    + * {
+      margin-top: 40px;
+    }
+
+    + .num_list {
+      margin-top: 24px;
+    }
+
+    span {
+      font-weight: 700;
+    }
+
+  }
+
+  .service_logo_area {
+    + .title {
+      @include mq(sp) {
+        margin-top: 8px;
+      }
+    }
+  }
+
+}
+
+//---------------------------
+// _lv1：大見出し 36px / 28px
+//---------------------------
+._lv1 {
+  line-height: 1.2 !important;
+  font-size: variableFontSize(24);
+  display: inline-block;
+  @include mq() {
+    font-size: variableFontSize(36);
+  }
+}
+
+.title_area {
+  background: $lightgray;
+  //padding: 0 0 0 35px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+
+  @include mq() {
+    height: 150px;
+
+    .l-inner {
+      width: 1200px;
+      margin: 0 auto;
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+  }
+  @include mq(sp) {
+    padding: 20px 15px;
+  }
+
+  ._lv1 {
+    @include mq(sp) {
+      padding: 0;
+    }
+
+    @include mq(){
+      display: flex;
+      align-items: baseline;
+    }
+
+    .logo {
+      margin-right: 20px;
+
+      br + small {
+        display: block;
+        font-size: variableFontSize(6);
+        font-weight: normal;
+        line-height: 1.6;
+      }
+    }
+  }
+
+  //logo_area
+  .logo_area {
+    span {
+      display: inline-block;
+      margin-right: 8px;
+
+      &._arrow {
+        position: relative;
+        top: 5px;
+        @include mq(sp) {
+          top: 4px;
+        }
+      }
+    }
+
+    + ._lv1 {
+      margin-top: 10px;
+    }
+  }
+
+  .horizontal_logo_area {
+    @include mq(){
+      position: relative;
+    }
+    @include mq(sp){
+      display: flex;
+      align-items: flex-end;
+    }
+
+    + .title {
+      margin-top: 0;
+    }
+
+    img {
+      //width: auto;
+      height: 47px;
+      margin-right: 26px;
+
+      @include mq(sp){
+        width: auto;
+        height: 32px;
+        margin-right: 8px;
+      }
+    }
+
+    small {
+      font-size: variableFontSize(12);
+      @include mq(sp){
+        display: inline-block;
+      }
+      @include mq(){
+        display: inline-block;
+        position: absolute;
+        bottom: -18px;
+        left: 0;
+      }
+    }
+
+  }
+
+}
+
+.kv_area {
+  position: relative;
+  overflow: hidden;
+
+  ._lv1 {
+    position: absolute;
+
+    //TODO:ポジションは要検討
+    top: 85px;
+    left: 22px;
+    //ここまで
+
+    margin-right: 16%;
+    padding: 32px 36px;
+    background-color: $lightblue;
+    text-align: justify;
+
+    font-size: variableFontSize(36);
+    @include mq(sp) {
+      top: 0;
+      left: 0;
+      max-width: 312px;
+      padding: 10px 12px;
+      font-size: variableFontSize(24);
+    }
+  }
+
+  &.logoStyle {
+    ._lv1 {
+      @include mq() {
+        padding: 10px;
+        position: relative;
+        top: 0;
+      }
+
+      @include mq(sp){
+        width: 48vw;
+      }
+    }
+  }
+}
+
+.kv_area {
+  &_logo {
+    position: relative;
+    overflow: hidden;
+
+    .logo_area {
+
+      position: absolute;
+
+      //TODO:ポジションは要検討
+      //top: 85px;
+      left: 22px;
+      //ここまで
+
+      width: auto;
+      //margin-right: 16%;
+      padding: 32px 36px;
+      background-color: $lightblue;
+      text-align: justify;
+
+      @include mq(sp) {
+        top: 0;
+        left: 0;
+        //max-width: 312px;
+        max-width: 343px;
+        padding: 10px 12px;
+      }
+
+      > div {
+
+        span {
+          display: inline-block;
+          margin-right: 8px;
+
+          &._logo {
+            @include mq(sp) {
+              img {
+                width: auto;
+                height: 20px;
+              }
+            }
+          }
+
+          &._arrow {
+            position: relative;
+            top: 3px;
+          }
+        }
+
+        + ._lv1 {
+          margin-top: 10px;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+//画像パターン：中央寄せ
+.kv_area,
+.kv_area_logo {
+  //&._center {
+  @include mq() {
+    picture {
+      position: relative;
+    }
+    .l-inner {
+      width: 1200px;
+      height: auto;
+      margin: 0 auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+    }
+  }
+  //}
+}
+
+
+//---------------------------
+// _lv2：中見出し1 32px / 24px
+//---------------------------
+._lv2 {
+  font-weight: 700;
+  text-align: center;
+  font-size: variableFontSize(24);
+  @include mq() {
+    font-size: variableFontSize(32);
+  }
+
+  + ._lv4 {
+    margin-top: 24px !important;
+  }
+}
+
+//---------------------------
+// _lv3：中見出し2 28px / 22px
+//---------------------------
+._lv3 {
+  font-size: variableFontSize(22);
+  @include mq() {
+    font-size: variableFontSize(28);
+  }
+
+  //関係性マージン
+  + .c-txt {
+    margin-top: 16px !important;
+  }
+}
+
+
+//---------------------------
+// _lv4：小見出し1 24px / 20px
+//---------------------------
+._lv4 {
+  font-weight: normal !important;
+  font-size: variableFontSize(20);
+  @include mq() {
+    font-size: variableFontSize(24);
+  }
+
+  + .prepare_area {
+    margin-top: 8px !important;
+  }
+
+  + .c-txt {
+    margin-top: 24px;
+  }
+}
+
+//---------------------------
+// _lv5：小見出し2 20px / 18px
+//---------------------------
+._lv5 {
+  font-weight: normal !important;
+  font-size: variableFontSize(18);
+  @include mq() {
+    font-size: variableFontSize(20);
+  }
+}
+
+//---------------------------
+// _circled：丸囲み文字 24px / 20px
+//---------------------------
+._circled {
+  display: flex;
+  align-items: baseline;
+  font-size: variableFontSize(24);
+
+  @include mq(sp){
+    font-size: variableFontSize(20);
+  }
+
+  .c-num {
+    background: #0072BC;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-shrink: 0;
+
+    @include mq(){
+      width: 40px;
+      height: 40px;
+      border-radius: 40px;
+      font-size: variableFontSize(20);
+      margin-right: 15px;
+    }
+
+    @include mq(sp){
+      width: 8.533333333vw;
+      height: 8.533333333vw;
+      border-radius: 8.533333333vw;
+      font-size: variableFontSize(18);
+      margin-right: 4vw;
+    }
+  }
+}
+
+//---------------------------
+// _step：ステップ 24px / 20px
+//---------------------------
+._step {
+  display: flex;
+  align-items: center;
+  font-size: variableFontSize(28);
+
+  @include mq(sp){
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .c-icn {
+    margin-right: 20px;
+    display: block;
+
+    @include mq(sp){
+      margin-bottom: 4vw;
+    }
+  }
+
+  .badge {
+    margin-right: 10px;
+    font-size: variableFontSize(16);
+
+    @include mq(sp){
+      font-size: variableFontSize(14);
+      padding: 3vw 5vw;
+      border-radius: 10vw;
+      margin-bottom: 4vw;
+    }
+  }
+
+  > b {
+    @include mq(sp){
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

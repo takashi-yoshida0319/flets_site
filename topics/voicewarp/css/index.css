@@ -1,0 +1,20 @@
+@charset "shift_jis";
+/* CSS Document */
+.mt3 {
+margin-top:3px;
+}
+.mt10 {
+margin-top:10px;
+}
+.mt15 {
+margin-top:15px;
+}
+.mt20 {
+margin-top:20px;
+}
+.txt_small {
+	font-size:84%;
+}
+.section2 {
+margin-top:40px !important;
+}

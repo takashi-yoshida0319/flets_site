@@ -1,0 +1,27 @@
+.alignCenter, .ta_c {
+    text-align: center!important;
+}
+
+@media screen and (min-width: 359px) and (max-width: 418px) {
+    .kzStep1Height {
+        height: 769px!important;
+    }
+}
+
+@media screen and (min-width: 419px) and (max-width: 462px) {
+    .kzStep1Height {
+        height: 745px!important;
+    }
+}
+
+@media screen and (min-width: 463px) and (max-width: 622px) {
+    .kzStep1Height {
+        height: 681px!important;
+    }
+}
+
+@media screen and (min-width: 623px) and (max-width: 767px) {
+    .kzStep1Height {
+        height: 645px!important;
+    }
+}

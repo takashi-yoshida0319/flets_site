@@ -1,0 +1,46 @@
+*>/**/sup { vertical-align: text-top; line-height: 4px; }
+/*------------------------------------------------
+	hikaribox/index.html
+--------------------------------------------------*/
+#contents #main .header {
+	height:55px;
+	margin:0;
+}
+#contents #main #about {
+	height:433px;
+	margin:0;
+}
+#contents #main #feature {
+	height:662px;
+	background: url(../img/idx_bg02.png) no-repeat 0 100%;
+}
+#contents #main #feature h2 {
+	text-align:center;
+	padding:35px 0 23px;
+}
+#contents #main #feature ol {
+	padding:0 0 0 45px;
+}
+#contents #main #feature li {
+	float:left;
+	margin:0 14px 6px 0;
+}
+#contents #main .campaign {
+	height:335px;
+	text-align:center;
+	background: url(../img/idx_bg03.png) no-repeat 0 0;
+}
+#contents #main .campaign h2 {
+	padding:72px 0 82px;
+}
+#contents #main .topCamp {
+	height:202px;
+	text-align:center;
+	background: url(../img/idx_bg01.png) no-repeat 0 100%;
+}
+#contents #main .topCamp h2 {
+	padding:0 0 62px;
+}
+#contents #main .monitor {
+	margin:0 0 40px;
+}

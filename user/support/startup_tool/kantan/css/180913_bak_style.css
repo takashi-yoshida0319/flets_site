@@ -1,0 +1,282 @@
+@charset "shift-jis";
+
+
+/* ------------------------------
+kantan
+------------------------------ */
+
+
+#contents #main .header_bnr{
+	margin-bottom: 20px;
+}
+
+#kantan #function_01 .conWrap{
+	padding: 12px 15px;
+}
+
+#kantan #function_01 dt{
+	float: left;
+	width:376px;
+}
+#kantan #function_01 dd{
+	float: right;
+	width: 295px;
+
+}
+#kantan #function_01 li{
+	position: relative;
+}
+#kantan #function_01 li a{
+display: block;
+	width: 100%;
+	height: 100%;
+}
+#kantan #function_01 .icon {
+	position: absolute;
+	left: -16px;
+	top: -10px;
+
+}
+#kantan #function_01 .icon02 {
+	position: absolute;
+	left: -35px;
+	top: -5px;
+
+}
+#kantan #function_01 .icon03 {
+	position: absolute;
+	left: -36px;
+	top: -14px;
+}
+
+#kantan #function_02 .conWrap,#kantan #function_03 .conWrap{
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #cdc8b4;
+
+}
+
+#kantan #function_02 .service{
+	background: url("../../img/bg_function_02_01.png") left top no-repeat;
+	width: 600px;
+	height: 278px;
+	margin: 0 auto;
+}
+#kantan #function_02 .service ul{
+	padding-top: 40px;
+	padding-left: 20px;
+}
+#kantan #function_02 .service li{
+	margin-bottom: 20px;
+}
+#kantan #function_02 .service li a{
+	background: url("../../img/icon_arrow.gif") no-repeat scroll 0 0.4em;
+	display: inline-block;
+	padding-left: 1.5em;
+	margin-left: 5px;
+
+}
+#kantan #function_02 .btn{
+	width: 600px;
+	margin: 0 auto;
+}
+#kantan #function_02 .btn li{
+	float: right;
+}
+#kantan #function_02 .btn li:first-child{
+	float: left;
+}
+
+
+#kantan #function_03 li{
+	width: 33.3%;
+	float: left;
+	position: relative;
+}
+#kantan #function_03 li:before{
+	content: "";
+	background: url("../img/bg_function_03.gif") left top no-repeat;
+	position: absolute;
+	right: -10px;
+	top: 0;
+	width: 20px;
+	height: 338px;
+}
+#kantan #function_03 li:last-child:before{
+	background:none;
+}
+#kantan #function_03 li:nth-of-type(1) dl {
+	padding: 0 20px 0 0;
+}
+#kantan #function_03 li:nth-of-type(1) .img {
+	padding-top: 10px;
+}
+#kantan #function_03 li:nth-of-type(2) dl {
+	padding: 0 20px;
+}
+#kantan #function_03 li:nth-of-type(2) .img {
+	padding-top: 30px;
+}
+#kantan #function_03 li:nth-of-type(3) dl {
+	padding: 0 0 0 20px;
+}
+#kantan #function_03 li:nth-of-type(3) .img {
+	padding-top: 70px;
+}
+
+#kantan #function_03 li dt{
+	margin-bottom: 10px;
+}
+
+
+
+/*----install---*/
+#install .conWrap {
+	background-image: url(../../img/bg_01_mdl.png);
+	background-repeat: repeat-y;
+}
+
+
+
+#install .conWrap .unit {
+	width: 593px;
+	margin: 0 auto;
+	border-right: 1px solid #a2a09b;
+	border-bottom: 1px solid #a2a09b;
+	background: #fff;
+	padding: 10px 18px 18px;
+}
+
+#install .conWrap .unit .left {
+	width: 300px;
+	float: left;
+}
+
+#install .conWrap .unit .left .txt01 {
+	padding-top: 10px;
+	line-height: 1.5;
+}
+
+#install .conWrap .unit .left .txt01 span {
+	font-weight: bold;
+}
+
+#install .conWrap .unit .left .txt02 {
+	padding-top: 10px;
+	font-size: 83%;
+	color: #ff0000;
+	line-height: 1.5;
+}
+
+#install .conWrap .unit .right {
+	width: 242px;
+	float: right;
+	margin-top: 16px;
+}
+
+
+/*------------------------------------------------------------
+kantan_help
+ ------------------------------------------------------------*/
+
+#kantan_help #function_01 li{
+	margin-bottom: 10px;
+
+}
+
+#kantan_help #function_01 li.in{
+	margin-left: 30px;
+}
+
+#kantan_help #function_01 li dt{
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #d8e0e4 94%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#d8e0e4 94%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ffffff 0%,#d8e0e4 94%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d8e0e4',GradientType=0 ); /* IE6-9 */
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	font-weight: bold;
+	position: relative;
+	padding-left:30px ;
+	border-radius: 5px;
+}
+#kantan_help #function_01 li dt.open{
+	border-radius: 5px 5px 0 0;
+
+}
+#kantan_help #function_01 li dt:after{
+	content: "";
+	width: 8px;
+	height: 8px;
+	background: #0bbcde;
+	position: absolute;
+	left: 10px;
+	top: 20px;
+}
+#kantan_help #function_01 li dt:before{
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: url("../../img/icon_plus.png") 0 0 no-repeat;
+	position: absolute;
+	right: 10px;
+	top: 15px;
+}
+#kantan_help #function_01 li dt.open:before{
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: url("../../img/icon_minus.png") 0 0 no-repeat;
+	position: absolute;
+	top: 15px;
+	right: 10px;
+
+}
+
+
+
+#kantan_help #function_01 li dd{
+	display: none;
+	border-bottom: 1px solid #c5d2db;
+	border-left: 1px solid #c5d2db;
+	border-right: 1px solid #c5d2db;
+	padding: 20px;
+
+}
+
+#kantan_help #function_02 .conWrap{
+	background: #f0f0f0;
+	border-radius: 0;
+	border: none;
+}
+#kantan_help #function_02 li a{
+background: url("../../img/icon_arrow.gif") no-repeat scroll 0 0.4em;
+display: inline-block;
+padding-left: 1.5em;
+margin-left: 5px;
+}
+
+
+#kantan_help table{
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 100%;
+}
+#kantan_help table th,#kantan_help table td{
+	padding: 10px;
+}
+#kantan_help table th{
+	background-color: #ebeff2;
+	padding: 5px 0 5px 10px;
+	text-align: center;
+	border: 1px solid #c5d3dd;
+}
+#kantan_help table td{
+	/*text-align: center !important;*/
+	border: 1px solid #c5d3dd;
+}
+
+	

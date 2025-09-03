@@ -1,0 +1,275 @@
+@import "../partials/variables", "../partials/mixin";
+
+// *** sandbox ***
+#main {
+
+  //component
+  .alignLeft,.ta_l { text-align: left !important; }
+  .alignRight,.ta_r { text-align: right !important; }
+  .alignCenter,.ta_c { text-align: center !important; }
+  .vaTop { vertical-align: top !important; }
+  .vaMiddle { vertical-align: middle !important; }
+  .vaBottom { vertical-align: bottom !important; }
+  .floatNone { float: none !important; }
+  .floatLeft { float: left !important; }
+  .floatNone { float: none !important; }
+  .clearLeft { clear: left !important; }
+  .clearRight { clear: right !important; }
+  .clearBoth { clear: both !important; }
+  .case { overflow: hidden; zoom: 1; }
+  .hide { display: none !important; }
+  .show { display: block !important; }
+  .db,.dB,.d_b { display: block; }
+  .dI,.di,.d_i { display: inline; }
+  .dib,.diB,.dIb,.d_ib { display: inline-block; }
+
+  // *** text style ***
+  .txt--small {
+    font-size: 0.7em !important;
+  }
+  .txt--x-small {
+    font-size: 0.5em !important;
+  }
+
+  .txt--large {
+    font-size: 1.6em !important;
+  }
+
+  .txt--x-large {
+    font-size: 1.8em !important;
+  }
+  .c_red {
+    color: $fontRed;
+  }
+
+  .td_N,
+  .tdn,
+  .td_n {
+    text-decoration: none;
+  }
+
+  .c_white,
+  .c_w,
+  .c_fff {
+    color: white;
+  }
+
+  .c_bk {
+    color: $fontBlack;
+  }
+
+  .c_blue {
+    color: $cerulean;
+  }
+
+  .fw_400,
+  .fw_normal {
+    font-weight: 400;
+  }
+
+  .fw_700,
+  .fw_bold {
+    font-weight: 700;
+  }
+
+  // *** ruby ***
+  /* manual
+  行間に影響しないルビを打ちたい場合、.riby を使用。
+  ただし、読み上げ時に無視されるため、使用シーンはアクセシビリティ的に問題のないテキストに限る。
+  例として、「0」に「ゼロ」と打つ場合、ルビがなくても読み上げられる（またはルビがない方が分かりやすい）
+  <span class="ruby" title="RUBY TEXT">TEXT</span>
+
+  */
+  .ruby {
+    position: relative;
+    display: inline-block;
+    padding-top: 10px;
+    margin-top: -10px;
+    &:after {
+      content: attr(title);
+      font-size: 0.3em;
+      position: absolute;
+      display: block;
+      width: 100vw;
+      top: 0;
+      right: -100vw;
+      left: -100vw;
+      margin: auto;
+      height: 0;
+      white-space: nowrap;
+      text-align: center;
+    }
+  }
+
+  // line-height
+  //sp
+  $i: 100;
+  @while $i <= 200 {
+    .lh_#{$i} { line-height: ($i / 100) !important; }
+    $i: $i + 10;
+  }
+
+
+  // *** bg ***
+  .bg_athensGray {
+    background-color: $athensGray !important;
+  }
+
+  .bg_gray {
+    background-color: $gray !important;
+
+    &.athensGray {
+      background-color: $athensGray !important;
+    }
+    &.athensGrayLight {
+      background-color: $athensGrayLight !important;
+    }
+  }
+
+
+  // *** margin ***
+
+  .m_auto,
+  .mAuto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+
+  //top
+  $i: 0;
+  @while $i <= 30 {
+    .mt#{$i} { margin-top: $i + px !important; }
+    $i: $i + 1;
+  }
+  $i: 35;
+  @while $i <= 100 {
+    .mt#{$i} { margin-top: $i + px !important; }
+    $i: $i + 5;
+  }
+
+  //right
+  $i: 0;
+  @while $i <= 30 {
+    .mr#{$i} { margin-right: $i + px !important; }
+    $i: $i + 1;
+  }
+  $i: 35;
+  @while $i <= 100 {
+    .mr#{$i} { margin-right: $i + px !important; }
+    $i: $i + 5;
+  }
+
+  //bottom
+  $i: 0;
+  @while $i <= 30 {
+    .mb#{$i} { margin-bottom: $i + px !important; }
+    $i: $i + 1;
+  }
+  $i: 35;
+  @while $i <= 100 {
+    .mb#{$i} { margin-bottom: $i + px !important; }
+    $i: $i + 5;
+  }
+
+  //left
+  $i: 0;
+  @while $i <= 30 {
+    .ml#{$i} { margin-left: $i + px !important; }
+    $i: $i + 1;
+  }
+  $i: 35;
+  @while $i <= 100 {
+    .ml#{$i} { margin-left: $i + px !important; }
+    $i: $i + 5;
+  }
+
+
+  //PC margin
+  @include mq(){
+    //top
+
+    $i: 0;
+    @while $i <= 30 {
+      ._pc_mt#{$i} { margin-top: $i + px !important; }
+      $i: $i + 1;
+    }
+    $i: 35;
+    @while $i <= 100 {
+      ._pc_mt#{$i} { margin-top: $i + px !important; }
+      $i: $i + 5;
+    }
+
+    //right
+    $i: 0;
+    @while $i <= 30 {
+      ._pc_mr#{$i} { margin-right: $i + px !important; }
+      $i: $i + 1;
+    }
+    $i: 35;
+    @while $i <= 100 {
+      ._pc_mr#{$i} { margin-right: $i + px !important; }
+      $i: $i + 5;
+    }
+
+    //bottom
+    $i: 0;
+    @while $i <= 30 {
+      ._pc_mb#{$i} { margin-bottom: $i + px !important; }
+      $i: $i + 1;
+    }
+    $i: 35;
+    @while $i <= 100 {
+      ._pc_mb#{$i} { margin-bottom: $i + px !important; }
+      $i: $i + 5;
+    }
+
+    //left
+    $i: 0;
+    @while $i <= 30 {
+      ._pc_ml#{$i} { margin-left: $i + px !important; }
+      $i: $i + 1;
+    }
+    $i: 35;
+    @while $i <= 100 {
+      ._pc_ml#{$i} { margin-left: $i + px !important; }
+      $i: $i + 5;
+    }
+  }
+
+
+
+  // *** font-size 直接指定 ***
+  //SP
+  $i: 6;
+  @while $i <= 100 {
+    .fs_#{$i} { font-size: $i + px !important; font-size:($i / 16) + rem !important; }
+    $i: $i + 1;
+  }
+
+  //PC
+  @include mq(){
+    $i: 8;
+    @while $i <= 100 {
+      ._pc_fs_#{$i} { font-size: $i + px !important; font-size:($i / 16) + rem !important; }
+      $i: $i + 1;
+    }
+  }
+
+
+}
+
+.fs_lager {
+  font-size: larger;
+}
+
+.fs_smaller {
+  font-size: smaller;
+}
+
+
+//media-query
+@include mq(){._sp{display: none!important;}}
+@include mq(sp){._pc{display: none!important;}}
+
+
+

@@ -1,0 +1,1001 @@
+// *** unit ***
+.unit {
+  &--agree {
+    margin-top: sp_size(100);
+    padding: 20px 0;
+    border-top:1px solid $athensGray;
+    border-bottom:1px solid $athensGray;
+    position: relative;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &.noBorder {
+      padding: 0;
+      border-top: none;
+      border-bottom: none;
+
+      //PC
+      @include mq(){
+        margin-top: 50px;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+
+    section + section {
+      //会議
+      //margin-top: 20px;
+      margin-top: 10px;
+    }
+
+    .tle--lv1 {
+      @include sp_font_size(26);
+      line-height: 2;
+      //todo from コンポーネント確認_171124b.pptx
+      margin-top: 0;
+      + {
+        ul.type--outer,
+        p {
+          //todo from コンポーネント確認_171124b.pptx //取り
+          //margin-top: 10px;
+        }
+      }
+    }
+    .tle--lv2 {
+      @include sp_font_size(26);
+      font-weight: 400;
+      margin-top: 10px;
+    }
+    .tle--lv3 {
+      margin-top: 0;
+      @include sp_font_size(26);
+      font-weight: 400;
+    }
+
+    .tle--lv4 {
+      @include sp_font_size(26);
+      font-weight:400;
+      margin-top: 0;
+      &.inner {
+        margin-left: 1em;
+      }
+    }
+
+    p {
+      + {
+        .tle--lv1,
+        .tle--lv2{
+          margin-top: 20px;
+        }
+      }
+      //margin-top: 0;
+      //todo from コンポーネント確認_171124b.pptx
+      //margin-top: 20px;
+      //会議 0に戻す
+      margin-top: 0;
+      margin-left: 1em;
+      @include sp_font_size(26);
+
+      &.type--outer {
+        margin-top: 0;
+        @include sp_font_size(26);
+        //todo 会議
+        //padding-left: 1em;
+        position: relative;
+        text-indent: -1em;
+        line-height: 2;
+      }
+    }
+
+    ul {
+      &.type--cmn,
+      &.annotation {
+        margin-top: 0;
+        li {
+          @include sp_font_size(26);
+        }
+        &.inner {
+          margin-left: 1em;
+          @include mq(){
+              margin-left: 15px;
+          }
+        }
+      }
+      &.type--outer {
+        + {
+        .tle {
+          &--lv3 {
+            //margin-top: 0;
+          }
+        }
+        p {
+          margin-top: 0;
+        }
+      }
+        margin-top: 0;
+        li {
+          + li {
+            margin-top: 0;
+          }
+          @include sp_font_size(26);
+          padding-left: 1em;
+          position: relative;
+          text-indent: -1em;
+          line-height: 2;
+        }
+      }
+    }
+
+    //PC
+    @include mq(){
+
+      section + section {
+        margin-top: 15px;
+      }
+      margin-top: 100px;
+      padding: 60px 15px;
+      &:first-child {
+        margin-top: 0;
+      }
+      .tle--lv1 {
+        + {
+          ul {
+            margin-top: 0;
+          }
+        }
+        @include font_size(14);
+
+        //todo from コンポーネント確認_171124b.pptx
+        //margin-top: 40px;
+        //todo会議
+        margin-top: 0;
+      }
+      .tle--lv2 {
+        @include font_size(14);
+      }
+      .tle--lv3 {
+        @include font_size(14);
+        //todo 会議 pだけ。
+        //margin-left: 15px;
+        margin-left: 0;
+      }
+      .tle--lv4 {
+        @include font_size(14);
+        &.inner {
+          margin-left: 15px;
+        }
+      }
+      p {
+        //+ {
+        //  * {
+        //    margin-top: 5px;
+        //  }
+        //}
+
+        //todo from コンポーネント確認_171124b.pptx
+        //margin-top: 40px;
+        // todo 会議
+        margin-top: 0;
+        @include font_size(14);
+        line-height: 2;
+        margin-left: 15px;
+
+        &.type--outer {
+          margin-left: 0;
+          @include font_size(14);
+        }
+      }
+
+      ul {
+        + {
+          * {
+            margin-top: 5px;
+          }
+          .tle--lv1 {
+            margin-top: 30px;
+          }
+        }
+        &.annotation,
+        &.type--cmn,
+        &.type--outer {
+          li {
+            @include font_size(14);
+          }
+        }
+      }
+    }
+  }
+
+  &--attention {
+    margin-top: sp_size(100);
+    padding: sp_size(60) sp_size(40);
+    border-top:1px solid $athensGray;
+    border-bottom:1px solid $athensGray;
+
+    .tle--lv1 {
+      @include sp_font_size(40);
+      + {
+        p {
+          margin-top: 0;
+        }
+      }
+    }
+
+    //PC
+    @include mq(){
+      padding: 49px;
+      .tle--lv1 {
+        @include font_size(30);
+        + {
+          p {
+            margin-top: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  // *** パネルリンク ***
+  &--panel {
+
+    + {
+      * {
+        margin-top:sp_size(40);
+      }
+    }
+    @include border_box;
+    color: $fontBlack;
+    text-decoration: none;
+    padding: sp_size(10);
+    border: 1px solid $athensGray;
+    display: flex;
+    width: 100%;
+    position: relative;
+    @include transition();
+    margin-bottom: 7px;
+
+    &.horizontal {
+
+      &--right {
+        figure {
+          flex-direction: row-reverse;
+          width: 100%;
+
+          > img {
+            max-width: sp_size(440);
+            align-self: flex-start;
+          }
+
+          figcaption {
+            flex: 1;
+          }
+        }
+      }
+
+      figure {
+        flex-direction: row;
+        width: 100%;
+
+        > img {
+          max-width: sp_size(440);
+          align-self: flex-start;
+        }
+
+        figcaption {
+          flex: 1;
+        }
+      }
+
+      &.verticalCenter {
+        figure {
+          align-items: center;
+          //position: relative;
+          figcaption {
+            //margin-bottom: sp_size(15);
+            //position: static;
+            padding-top: 0;
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+
+    &.highlight {
+      figcaption {
+        //padding: 20px 50px 20px 40px;
+        .panel__heading {
+          @include sp_font_size(50);
+        }
+        p {
+          //@include font_size(20);
+        }
+      }
+      &--cvarea {
+        figcaption {
+          //padding: 20px 50px 20px 40px;
+          .panel__heading {
+            @include sp_font_size(50);
+            .super {
+              @include sp_font_size(32);
+            }
+          }
+          p {
+            @include sp_font_size(32);
+          }
+        }
+      }
+    }
+
+
+    &.serif {
+      a {
+        figure {
+          .panel__pct {
+            margin: -3px;
+            width: calc(100% + 6px);
+            max-width: calc(100% + 6px);
+            background: white;
+            padding: 0 0 sp_size(21);
+          }
+        }
+      }
+    }
+
+    > a {
+      color: $fontBlack;
+      text-decoration: none;
+      display: flex;
+      width: 100%;
+    }
+
+    figure {
+      display: flex;
+      flex-direction: column;
+      width:100%;
+      align-items: stretch;
+      @include border_box;
+      .panel__pct {
+        min-height: 0%;
+        width: 100%;
+        max-width:100%;
+        @include border_box;
+        img {
+          display: block;
+          width: 100px;
+          min-width: 100%;
+        }
+      }
+    }
+
+    figcaption {
+      flex: 1;
+      width: 100%;
+      padding: sp_size(50) sp_size(60) sp_size(40) sp_size(40);
+      @include border_box;
+
+      p {
+        //todo https://8knot01.backlog.com/ViewAttachmentPdf.action?attachmentId=24380 指示により文字サイズ変更
+        @include sp_font_size(31);
+        //@include sp_font_size(28);
+        .txt--small {
+          @include sp_font_size(24);
+        }
+      }
+    }
+
+    .panel__heading {
+      + {
+        p {
+          margin-top: sp_size(30);
+        }
+      }
+      @include sp_font_size(40);
+      font-weight: 700;
+
+      &.txt--x-large {
+        @include font_size(17);
+      }
+
+      .super {
+        display: block;
+        //todo https://8knot01.backlog.com/view/FLETS_RN_WORKS-30#comment-379997
+        font-weight: 700;
+        @include sp_font_size(30);
+        //todo マージン調整
+        //margin: 10px 0;
+        &.singleLine {
+          display: inline-block;
+        }
+        &.round {
+          @include border_box;
+          text-align: center;
+          line-height: 2;
+          @include border_radius(100px);
+          display: inline-block;
+          position: relative;
+          @include sp_font_size(28);
+          min-width: 55%;
+          padding: 0 20px;
+          background: $cerulean;
+          color: white;
+          margin-bottom: sp_size(30);
+        }
+      }
+    }
+
+    .panel__footer {
+      flex: 1;
+      min-height: 0%;
+      height: 40px;
+      > span, > a {
+        position: absolute;
+        bottom: sp_size(40);
+      }
+
+      .btn--wide {
+        width: auto;
+        right: sp_size(30);
+        left: sp_size(30);
+      }
+
+      &.alignRight {
+        text-align: left;
+        .link_icn {
+          right: sp_size(30);
+        }
+      }
+    }
+
+    .panel__inner {
+      width: 100%;
+      position: relative;
+      padding: sp_size(50) sp_size(60) sp_size(40) sp_size(40);
+
+      p {
+        @include sp_font_size(28);
+      }
+    }
+
+    .panel__arrow {
+      position: relative;
+      &::after {
+        content: "";
+        width: sp_size(25);
+        height: sp_size(25);
+        position: absolute;
+        border-top: 1px solid $fontBlack;
+        border-right: 1px solid $fontBlack;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        top: 0;
+        right: 7px;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+
+    .panel__blank {
+      position: relative;
+      &::after {
+        content: "";
+        display: block;
+        width: sp_size(36);
+        height: sp_size(35);
+        position: absolute;
+        top: 0;
+        right: sp_size(20);;
+        bottom: 0;
+        margin: auto;
+        background: {
+          image: url(/assets/img/common/icn_blank.png);
+          size: sp_size(36);
+          repeat: no-repeat;
+        }
+      }
+    }
+
+    &.bg--blue {
+      background: $cerulean;
+      border: none;
+      color: white;
+      &:hover {
+        background: lighten($pictonBlue, 5%);
+      }
+
+      &.dodgerBlue {
+        background: $dodgerBlue;
+        &:hover {
+          background: lighten($dodgerBlue, 5%);
+        }
+      }
+
+      &.cerulean {
+        background: $cerulean;
+        &:hover {
+          background: lighten($cerulean, 5%);
+        }
+      }
+
+      &.bondiBlue {
+        background: $bondiBlue;
+        &:hover {
+          background: lighten($bondiBlue, 5%);
+        }
+      }
+
+      &.chambray {
+        background: $chambray;
+        &:hover {
+          background: lighten($chambray, 5%);
+        }
+      }
+
+      &.mariner {
+        background: $mariner;
+        &:hover {
+          background: lighten($mariner, 5%);
+        }
+      }
+
+      &.shakespeare {
+        background: $shakespeare;
+        &:hover {
+          background: lighten($shakespeare, 5%);
+        }
+      }
+
+      &.shakespeareDark {
+        background: $shakespeareDark;
+        &:hover {
+          background: lighten($shakespeareDark, 5%);
+        }
+      }
+
+      &.rightCerulean,
+      &.ceruleanLight {
+        background: $rightCerulean;
+        &:hover {
+          background: lighten($rightCerulean, 5%);
+        }
+      }
+
+      &.sanMarino {
+        background: $sanMarino;
+        //.panel__heading .super.round {color:###}
+        .panel__heading .super.round {color:$sanMarino}
+        &:hover {
+          background: lighten($sanMarino, 5%);
+        }
+      }
+
+      &.pictonBlue {
+        background: $pictonBlue;
+        //.panel__heading .super.round {color:###}
+        .panel__heading .super.round {color:$pictonBlue}
+        &:hover {
+          background: lighten($pictonBlue, 5%);
+        }
+      }
+
+      > a {
+        //background: $pictonBlue;
+        color: white;
+      }
+
+      .panel__arrow::after {
+        border-color: white;
+      }
+
+      .panel__blank::after {
+        background-image: url(/assets/img/common/icn_blank_w.png);
+      }
+
+      .super {
+        &.round {
+          background: white;
+          color: $cerulean;
+        }
+      }
+    }
+
+    &.shadow {
+      @include box_shadow(rgba(0, 0, 0, 0.3) 0 15px 15px -15px);
+    }
+
+
+    //PC
+    @include mq(){
+
+      + {
+        * {
+          margin-top: 60px;
+        }
+      }
+
+      padding: 10px;
+      margin-bottom: 10px;
+
+      &:not(.bg--blue) {
+        a:hover {
+          @include transition();
+          @include opacity(.7);
+        }
+      }
+      &.serif {
+        a {
+          figure {
+            .panel__pct {
+              margin: -10px;
+              width: calc(100% + 20px);
+              max-width: calc(100% + 20px);
+              background: white;
+              padding: 0 0 sp_size(21);
+            }
+          }
+        }
+      }
+
+      &.horizontal {
+
+        &--right {
+          figure {
+            > img {
+              max-width: 270px;
+            }
+          }
+        }
+
+        figure {
+          > img {
+            max-width: 270px;
+          }
+        }
+      }
+
+      figcaption {
+        flex: 1;
+        position: relative;
+        padding: 20px 50px 20px 20px;
+
+        p {
+          @include font_size(16);
+          //@include font_size(18);
+        }
+      }
+
+      &.highlight {
+        figcaption {
+          padding: 20px 50px 20px 40px;
+          .panel__heading {
+            @include font_size(32);
+            .super {
+              @include font_size(20);
+            }
+          }
+          p {
+            + {
+              .panel__heading {
+                margin-top: 0;
+              }
+            }
+            @include font_size(20);
+          }
+        }
+        &--cvarea {
+          figcaption {
+            padding: 20px 50px 20px 40px;
+            .panel__heading {
+              @include font_size(44);
+              .super {
+                @include font_size(24);
+                font-weight: 700;
+              }
+            }
+            p {
+              + {
+                .panel__heading {
+                  margin-top: 0;
+                }
+              }
+              @include font_size(24);
+            }
+          }
+        }
+      }
+
+      //タイトルテキスト
+      .panel__heading {
+        + {
+          p {
+            margin-top: 15px;
+          }
+        }
+        //@include font_size(30);
+        //todo会議
+        @include font_size(24);
+
+        &.txt--x-large {
+          @include font_size(40);
+        }
+        .txt--small {
+          @include font_size(16);
+        }
+
+        .super {
+          @include font-size(16);
+          line-height: 1.8;
+          //角丸背景
+          &.round {
+            @include font-size(16);
+            min-width: 0;
+            strong {
+            }
+          }
+        }
+        &.txt--small {
+          @include font_size(24);
+        }
+      }
+
+      //ボタンエリア
+      .panel__footer {
+        //display: none;
+        //padding-bottom: 60px;
+        //height: 50px;
+
+        .btn--wide {
+          width: auto;
+          right: 20px;
+          left: 20px;
+          bottom: 20px;
+        }
+
+        .link_icn {
+          @include font_size(16);
+          bottom: 20px;
+        }
+
+        &.alignRight {
+          text-align: left;
+        }
+      }
+
+      .panel__inner {
+        position: relative;
+        padding: 20px 50px 20px 20px;
+        width: 100%;
+
+        p {
+          + {
+            .panel__heading {
+              margin-top: 0;
+            }
+          }
+          @include font_size(16);
+        }
+      }
+
+      .panel__arrow::after {
+        //todo コンバージョンに合わせる
+        //border-width: 2px;
+        //width: 15px;
+        //height: 15px;
+        border-width: 3px;
+        width: 22px;
+        height: 22px;
+        right: 12px;
+      }
+
+      .panel__blank::after {
+        width:36px;
+        height:35px;
+        background-size: 36px;
+        right: 10px;
+      }
+    }
+
+  }
+}
+
+
+
+.alphabet--unit {
+  .alphabet__heading {
+
+    + {
+      * {
+        margin-top: 10px;
+        @include mq(){
+          margin-top: 20px;
+        }
+      }
+    }
+    color: $cerulean;
+    @include font_size(15);
+    padding-left: 50px;
+    position: relative;
+    font-weight: 700;
+    @include mq(){
+      padding-left: 100px;
+      @include font_size(50);
+    }
+    strong {
+      @include font_size(18);
+      vertical-align: baseline;
+      @include mq(){
+        @include font_size(60);
+      }
+    }
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: -6px;
+      content: attr(data-alphabet);
+      display: inline-block;
+      @include font_size(20);
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      background: $cerulean;
+      color: white;
+      @include border_radius(50%);
+      @include mq(){
+        width: 70px;
+        height: 70px;
+        @include font_size(55);
+        line-height: 65px;
+        top: 0.3em;
+      }
+    }
+  }
+
+  .tle--lv2 {
+    + {
+      .unit--tokuchou {
+        margin-top: 0;
+      }
+    }
+    padding-left: 50px;
+    @include mq(){
+      padding-left: 100px;
+    }
+  }
+
+  .annotation--noBullet {
+    padding-left: 50px;
+    @include mq(){
+      padding-left: 100px;
+    }
+  }
+  > p {
+    padding-left: 50px;
+    @include mq(){
+      padding-left: 100px;
+    }
+  }
+  .unit--tokuchou {
+    + {
+      .tle--lv2 {
+        margin-top: 10px;
+      }
+    }
+    padding-left: 50px;
+    @include mq(){
+      padding-left: 100px;
+    }
+
+    .tokuchou__item--type {
+      dt {
+        width: 35%;
+        @include mq(){
+          width: 30%;
+        }
+      }
+      dd {
+        line-height: 1.3;
+      }
+    }
+  }
+
+}
+
+.panel--blue {
+  background: $cerulean;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  @include border_radius(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    color: white;
+    @include font_size(14);
+    font-weight: bold;
+  }
+
+  //PC
+  @include mq(){
+    min-height: 170px;
+    @include border_radius(10px);
+    span {
+      @include font_size(24);
+    }
+  }
+}
+
+
+_:-ms-lang(x), .unit--panel {
+  a figure .panel__inner,
+  a figure figcaption {
+    flex: auto;
+  }
+
+}
+
+.siteSearch--error {
+
+  .siteSearch--error__inner {
+    position: relative;
+    height: 50px;
+    padding-right: 50px;
+    @include mq(){
+      height: 60px;
+      padding-right: 90px;
+    }
+  }
+  .siteSearch--error__input {
+    @include clear_appearance;
+    display: block;
+    width: 100%;
+    border: none;
+    background: $athensGray;
+    height: 50px;
+    padding: 0 20px 0 10px;
+    margin: auto;
+    @include border_box;
+    @include mq(){
+      padding: 0 20px;
+      height: 60px;
+      @include font_size(16);
+    }
+  }
+
+  .siteSearch--error__submit {
+    @include clear_appearance;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: none;
+    text-align: left;
+    text-indent: -999em;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: {
+      color: $fontBlack;
+      image: url(/assets/img/common/icn_search_error.png);
+      size: 25px;
+      repeat: no-repeat;
+      position: center center;
+    }
+    @include mq(){
+      height: 60px;
+      width: 90px;
+      @include transition();
+      cursor: pointer;
+      &:hover {
+        @include opacity(.7);
+      }
+    }
+  }
+}

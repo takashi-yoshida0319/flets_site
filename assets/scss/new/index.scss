@@ -1,0 +1,75 @@
+@import "../../partials/mixin", "../../partials/variables";
+
+
+
+//PC
+@include mq(sp){
+  ol#topicpath.topicpath {
+    //margin-bottom: 20px;
+  }
+}
+
+#main {
+
+  .mainVisual {
+    //margin-top: -10px;
+  }
+
+  //５つの特長
+  //.unit--panel._new_index__feature {
+  //  .panel__heading {
+  //    @include sp_font_size(50);
+  //    .super {
+  //      @include sp_font_size(32);
+  //    }
+  //  }
+  //  figure {
+  //    img {
+  //      width: 80px;
+  //      padding: 10px 0;
+  //    }
+  //  }
+  //}
+
+
+  //PC
+  @include mq(){
+
+
+      //５つの特長
+      //.unit--panel._new_index__feature {
+      //  .panel__heading {
+      //    @include font_size(44);
+      //    h2 {
+      //      display: flex;
+      //      line-height: 1;
+      //    }
+      //    .super {
+      //      @include font_size(24);
+      //      font-weight: 700;
+      //    }
+      //  }
+      //  figure {
+      //    img {
+      //      width: 200px;
+      //      padding: 0;
+      //    }
+      //  }
+      //}
+
+      //
+      //._pc_w200 {
+      //  width: 200px;
+      //}
+      //._pc_fs01 {
+      //  @include font_size(50);
+      //  span {
+      //    @include font_size(30);
+      //  }
+      //}
+
+    }
+
+
+  }
+

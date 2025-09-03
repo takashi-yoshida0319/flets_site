@@ -1,0 +1,382 @@
+//---------------------------
+// メモ
+// line-heightについて
+// デフォルト：1.5
+// オプション：1.2 → class="lh_120"
+//---------------------------
+
+
+//---------------------------
+// c-txt：本文 18px / 16px
+//---------------------------
+.c-txt {
+    color: $black;
+    line-height: 1.5;
+    //text-align: justify;
+    font-size: variableFontSize(16);
+    /*font-weight: 300;*/
+    @include mq(){
+        font-size: variableFontSize(18);
+    }
+
+    //関係性マージン
+    + * {
+        margin-top: 40px;
+    }
+    + .mfp-close {
+        margin-top: 0;
+    }
+
+    + .c-table {
+        margin-top: 40px !important;
+    }
+
+    + .txt-link {
+        margin-top: 20px;
+    }
+
+    + .c-list,
+    + .c-note_list_num,
+    + .c-note_list_disc,
+    + .c-note_list,
+    + .annotation {
+        margin-top: 16px !important;
+        @include mq(sp){
+            margin-top: 12px !important;
+        }
+    }
+
+
+    + .attention_time {
+        margin-top: 24px !important;
+        @include mq(sp){
+            margin-top: 16px !important;
+        }
+    }
+
+    //+ .c-list {
+    //    margin-top: 4px;
+    //}
+
+    //大：40px / 30px
+    &._l {
+        //color: $darkgray;
+        font-weight: 700;
+        font-size: variableFontSize(30);
+        @include mq(){
+            font-size: variableFontSize(40);
+        }
+    }
+    //小：16px / 14px
+    &._s {
+        //color: $darkgray;
+        font-size: variableFontSize(14);
+        @include mq(){
+            font-size: variableFontSize(16);
+        }
+    }
+    //最小：14px / 13px
+    &._ss {
+        //color: $darkgray;
+        //font-size: variableFontSize(13);
+        font-size: variableFontSize(12);
+        //@include mq(){
+        //    font-size: variableFontSize(14);
+        //}
+    }
+
+    &.flexBox {
+        span {
+            line-height: inherit;
+        }
+    }
+}
+
+.fs28,.fs155per {
+    font-size: 155.5555%;
+}
+.fs26,.fs144per {
+    font-size: 144.4444%;
+}
+.fs24,.fs133per {
+    font-size: 133.3333%;
+}
+.fs22,.fs122per {
+    font-size: 122.2222%;
+}
+.fs20,.fs111per {
+    font-size: 111.1111%;
+}
+.fs18,.fs100per {
+    font-size: 100%;
+}
+.fs16,.fs88per {
+    font-size: 88.88888%;
+}
+.fs15,.fs83per {
+    font-size: 83.33333%;
+}
+.fs14,.fs77per {
+    font-size: 77.77777%;
+}
+.fs12,.fs66per {
+    font-size: 66.66666%;
+}
+
+
+//---------------------------
+// c-note：注釈 12px
+//---------------------------
+.c-note {
+    line-height: 1.5;
+    //font-size: variableFontSize(12);
+    font-size: 83.33333%;
+    @include mq(){
+        font-size: 77.77777%;
+    }
+    
+    //関係性マージン
+    + * {
+        margin-top: 40px;
+    }
+    + .c-note_list {
+        margin-top: 0;
+    }
+
+    &_title {
+        font-weight: 700;
+    }
+}
+
+//---------------------------
+// txt-link ：テキストリンク マージン24px
+//---------------------------
+.txt-link {
+    //関係性マージン
+    + * {
+        margin-top: 24px !important;
+    }
+}
+
+
+//---------------------------
+// あしらい：アンダーライン / ボールド
+//---------------------------
+strong {
+    font-size: variableFontSize(16);
+    @include mq(){
+        font-size: variableFontSize(18);
+    }
+    &.underline {
+        font-weight: 700;
+        background: linear-gradient(transparent 70%, $yellow 0%);
+    }
+    &.underline_txt {
+        font-weight: 700;
+        text-decoration: underline;
+        font-size: 100%;
+    }
+    //&.bold {
+    //    font-weight: 700 !important;
+    //}
+}
+.underline {
+    background: linear-gradient(transparent 70%, $yellow 0%);
+}
+.underline_txt {
+    text-decoration: underline;
+    font-size: 100%;
+}
+.bold {
+    font-weight: 700 !important;
+}
+
+//---------------------------
+// あしらい：バッチ
+//---------------------------
+.badge {
+    padding: 5px 16px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    font-size: variableFontSize(16);
+    //line-height: 1 !important;
+    @include mq(){
+        //padding: 7px 16px 7px;
+        padding: 7px 19px 7px;
+        border-radius: 19px;
+        font-size: variableFontSize(18);
+    }
+    font-weight: 700;
+    color: $white;
+    text-align: center;
+    display: inline-block;
+
+    &._bg_yellow {
+        color: $black;
+        font-weight: 700;
+        //background: $yellow;
+    }
+    &._bg_orange {
+        //background: $orange;
+        //font-weight: normal;
+        font-weight: 700;
+        font-size: variableFontSize(16);
+        @include mq(){
+            font-size: variableFontSize(20);
+        }
+    }
+    &._bg_blue {
+        font-weight: 700;
+        //background: $blue;
+    }
+    &._bg_black {
+        color: $white;
+        font-weight: 700;
+        //background: $blue;
+    }
+}
+
+
+
+//---------------------------
+// その他
+//---------------------------
+.circle {
+    text-align: center;
+    color: $white;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: inherit;
+
+    &._q {
+        width: 28px;
+        height: 28px;
+        border-radius: 14px;
+        span {
+            //font-size: 116.66666% !important;
+            font-weight: 700;
+            margin-top: -2px;
+        }
+        font-size: variableFontSize(12);
+        @include mq(){
+            width: 32px;
+            height: 32px;
+            border-radius: 16px;
+            font-size: variableFontSize(14);
+        }
+
+    }
+    &._a {
+        width: 28px;
+        height: 28px;
+        border-radius: 14px;
+        border: 2px solid $blue;
+        span {
+            color: $blue;
+            font-weight: 700;
+            font-size: 128.571428% !important;
+    
+            //font-size: variableFontSize(16) !important;
+        }
+        @include mq(){
+            width: 32px;
+            height: 32px;
+            border-radius: 16px;
+            span {
+                //font-size: variableFontSize(18) !important;
+            }
+        }
+
+    }
+    &._num {
+        width: 32px;
+        height: 32px;
+        border-radius: 16px;
+        //font-size: variableFontSize(18);
+        span {
+            font-size: 142.857142% !important;
+        }
+        @include mq(){
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            //font-size: variableFontSize(20);
+        }
+    }
+
+    &._question_mark{
+        width: 28px;
+        height: 28px;
+        border-radius: 14px;
+        span {
+            font-size: 142.857142% !important;
+        }
+        //font-size: variableFontSize(18);
+        @include mq(){
+            width: 32px;
+            height: 32px;
+            border-radius: 16px;
+            //font-size: variableFontSize(20);
+        }
+    }
+
+    &._bg_blue {
+        background: $circleblue;
+    }
+    &._bg_yellow {
+        background: $yellow;
+    }
+    &._bg_emeraldgreen {
+        background: $subemeraldgreen;
+    }
+    &._bg_white {
+        &._a {
+            span {
+                color: $blue;
+            }
+        }
+    }
+}
+
+.square {
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &._a {
+        width: 24px;
+        height: 24px;
+    }
+
+    &._bg_darkblue {
+        color: $white;
+    }
+
+}
+
+//---------------------------
+// c-label
+//---------------------------
+.c-label {
+    display: inline-block;
+    background: $darkgray;
+    color: $white;
+    //font-size: variableFontSize(12);
+    //padding: 5px 8px;
+    padding: 4px 6px 5px;
+
+    &_white {
+        display: inline-block;
+        background: $white;
+        color: $black;
+        font-weight: 700;
+        border-radius: 13px;
+        width: 116px;
+        height: 26px;
+        line-height: 26px;
+        margin-bottom: 8px;
+    }
+}

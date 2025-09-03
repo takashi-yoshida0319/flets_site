@@ -1,0 +1,315 @@
+//---------------------------
+// c-table
+//---------------------------
+.c-table {
+
+	+ * {
+		margin-top: 40px;
+	}
+	+ .c-table {
+		margin-top: 30px;
+	}
+	+ .c-list,
+    + .c-note_list_num,
+    + .c-note_list_disc,
+    + .c-note_list {
+		//margin-top: 30px;
+		margin-top: 16px;
+		@include mq(sp){
+            margin-top: 12px;
+        }
+	}
+
+
+	width: 100%;
+
+	thead {
+		th,td {
+			border-top: 1px solid $white;
+			border-right: 1px solid $white;
+			padding: 18px 8px;
+		}
+		tr:first-child th, td {
+			border-top: none;
+		}
+		th {
+			background: $darkgray;
+			color: $white;
+			line-height: 1.5;
+			font-weight: 700;
+
+			&.c-table_title {
+				font-weight: 700;
+				font-size: variableFontSize(16);
+			}
+			&.c-table_sub_title {
+				font-size: variableFontSize(12);
+			}
+
+			&:first-child {
+				border-left: 1px solid $mapbtngray;
+			}
+			&:last-child {
+				border-right: 1px solid $mapbtngray;
+			}
+
+			&._border_top {
+				border-top: 1px solid $mapbtngray;
+			}
+		}
+	}
+
+	tbody {
+		border-top: 1px solid $mapbtngray;
+		th,td {
+			//padding: 18px 8px;
+			padding: 19px 24px;
+			font-size: variableFontSize(18);
+			line-height: 1.5;
+			text-align: left;
+			vertical-align: top;
+			border: 1px solid $mapbtngray;
+			@include mq(sp){
+				padding: 15px 10px;
+				font-size: variableFontSize(16);
+			}
+		}
+		th {
+			background: $lightgray;
+
+		}
+		td {
+			background: $white;
+		}
+	}
+
+	&_fs14 {
+		thead,tbody {
+			th,td {
+				font-size: variableFontSize(14);
+			}
+		}
+	}
+
+	&.col-data {
+		tbody {
+			th,td {
+				padding: 18px 8px;
+			}
+		}
+	}
+
+	
+	&.fixed_table {
+		thead {
+			th,td {
+				//TODO:relative 設定すると、追従theadのラインが出た
+				position: relative;
+				//z-index: 20;
+			}
+		}
+		tbody {
+			.link_icn.arrow {
+				position: unset !important;
+				z-index: 0;
+				&:after {
+					position: unset !important;
+					z-index: 0;
+					margin-left: 4px;
+					margin-bottom: -3px;
+				}
+			}
+		}
+		tr {
+			width: 100%;
+		}
+	}
+
+	&.smart_table {
+		tbody {
+			th,td {
+				padding: 18px 8px;
+			}
+		}
+	}
+
+
+}
+
+//索引
+.c-table {
+	#index_1,
+	#index_2,
+	#index_3,
+	#index_4,
+	#index_5,
+	#index_6,
+	#index_7,
+	#index_8,
+	#index_9,
+	#index_10 {
+		th {
+			padding-top: 8px;
+			padding-bottom: 8px;
+			background: $ultralightgray;
+		}
+	}
+}
+
+//.col-data
+.col-data {
+	tbody {
+		th {
+			strong {
+				font-size: 88.88888%;
+				margin-top: 4px;
+			}
+			.c-label {
+				//font-size: 66.66666%;
+				font-size: 88.8888%;
+			}
+		}
+		td {
+			text-align: center;
+			vertical-align: middle;
+		}
+	}
+}
+
+//---------------------------
+// scrollTableOuter
+//---------------------------
+.scrollTableOuter{
+	/* widthは適時上書き */
+	width:1000px;
+	//margin:0 auto;
+	overflow-x: scroll;
+
+	//関係性マージン
+	+ * {
+		margin-top: 40px;
+	}
+
+	&.swipeObj{
+		position:relative;
+		&:after{
+			content: "";
+			width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+			display: block;
+			position: absolute;
+			z-index: 2;
+			top: 0;
+			left: 0px;
+		}
+		&:before{
+			/* スワイプ用のアイコンはここで設定。現状は黒の四角 */
+			content: "";
+            width: 68px;
+            height: 69px;
+			display:block;
+			position:absolute;
+            //background-color:rgba(0,0,0,1);
+            background: url(../img/cmn/ic_swipe.svg) no-repeat 0 0;
+			//top:40%;
+			//top:10%;
+			top: 70px;
+			left:calc(50% - 34px);
+			transform:translate(-25%);
+			z-index:3;
+			animation: expansion linear 2s infinite;
+		}
+		.swipeObjText{
+			display: block;
+			position: absolute;
+			//top: 58%;
+			//top: 18%;
+			//top: 160px;
+			top: 180px;
+			left: 0;
+			z-index: 3;
+			color: #fff;
+			text-align: center;
+            width: 100%;
+            font-size: variableFontSize(18);
+		}
+		@keyframes expansion{
+			0%{
+				transform:translatex(0);
+			}
+			25%{
+				transform:translatex(10px);
+			}
+			50%{
+				transform:translatex(0);
+			}
+			75%{
+				transform:translatex(-10px);
+			}
+			100%{
+				transform:translatex(0);
+			}
+		}
+	}
+	.swipeObjText{
+		display: none;
+	}
+}
+table{
+	/* widthは適時上書き */
+	width:980px;
+	box-sizing:border-box;
+	th{
+		padding:15px;
+		background-color:#ddd;
+	}
+	td{
+		padding:15px;
+		border:1px #ddd solid;
+	}
+}
+@media screen and (min-width:769px) {
+	.scrollTableOuter{
+		&.spOnly{
+			overflow-x: auto;
+			width:auto;
+			&:after,
+			&:before{
+				display: none;
+			}
+			.swipeObjText{
+				display: none;
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width:768px) {
+	.scrollTableOuter{
+		/* widthは適時上書き */
+		width:100%;
+	}
+}
+
+.tableFixArea {
+	//関係性マージン
+	+ * {
+		margin-top: 40px;
+	}
+	+ .scrollTableOuter {
+		margin-top: 24px;
+	}
+
+}
+
+.sakuinArea {
+	//関係性マージン
+	+ * {
+		margin-top: 40px;
+	}
+	+ .scrollTableOuter {
+		margin-top: 24px;
+	}
+}

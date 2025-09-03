@@ -1,0 +1,438 @@
+@charset "shift-jis";
+/* CSS Document */
+
+#main .idx_map_bottom {
+    margin-top: 40px;
+}
+#main .btn_right {
+    float: right;
+    margin-right: 10px;
+    margin-top: -44px;
+}
+#main div.tab_box_top {
+    margin-top: 25px;
+}
+#main div.tab_box_second {
+    background: none repeat scroll 0 0 #00AFE2;
+    height: 35px;
+    padding-top: 13px;
+    text-align: center;
+}
+#main div.tab_box_third {
+    padding-bottom: 20px;
+    padding-top: 15px;
+    text-align: center;
+}
+#main div.family-getsugaku, div.family-shoki, div.mansion-shoki, div.mansion-getsugaku {
+    background: none repeat scroll 0 0 #F2EEE3;
+    border-left: 1px solid #C5D3DD;
+    border-right: 1px solid #C5D3DD;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.notes {
+    background: none repeat scroll 0 0 #E7E2D6;
+    margin: 0;
+    padding: 7px 8px 12px 10px;
+}
+
+#main .notes {
+    font-size: 100%;
+    margin: 20px auto auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    text-align: left;
+    /*width: 575px;*/
+}
+
+#main .notes ul li {
+    font-size: 83%;
+}
+#main .notes ul li dl {
+    margin-bottom: 9px;
+}
+#main .notes ul li dl.bold {
+    font-weight: bold;
+    font-size: 110%;
+}
+#main .notes ul li dl.bold dt span {
+    font-weight: bold;
+}
+#main .notes ul li dl dt {
+    font-size: 106%;
+    font-weight: bold;
+    padding-left: 0.7em;
+}
+#main .notes ul li dl dt {
+    margin-top: 5px;
+    text-indent: 0;
+}
+#main .notes ul li dl dt.first-child {
+    margin-top: 0;
+    padding-left: 0;
+}
+#main .notes ul li dl dt span {
+    font-weight: normal;
+}
+#main .notes ul li li {
+    font-size: 100%;
+    line-height: 1.5em;
+}
+#main .notes ul ul.disc-list {
+    padding-left: 0.8em;
+}
+#main .notes ul ul.disc-list li {
+    background-image: url(/cmn/img/circle_01.gif);
+    background-position: 1px 0.4em;
+    text-indent: 0;
+}
+#main .notes ul.disc-list li strong.cls01 {
+    font-weight: normal;
+}
+#main .notes ul.disc-list li em {
+    font-weight: normal;
+    text-decoration: underline;
+}
+#main .notes dd ul.disc-list li strong.line, #main .notes dd ul.disc-list li strong span {
+    font-weight: normal;
+    text-decoration: underline;
+}
+#main span.underline{
+    text-decoration: underline;
+}
+#main .red_txt {
+    color: #E40F3C;
+    font-weight: normal;
+}
+#main .btn_box01 {
+    position: relative;
+}
+#main .btn_box01 .btn01 {
+    left: 239px;
+    position: absolute;
+    top: 105px;
+}
+#main .tab_box_first img:hover {
+    cursor: pointer;
+}
+#main .tab_box_second img {
+    cursor: pointer;
+}
+
+#main .caution01 {
+    padding-left: 2em;
+    text-indent: -2em;
+}
+
+#main .bge7e2d6 { background-color: #e7e2d6; }
+
+#main .boxBlockA01 {
+    margin-top: 40px;
+    padding: 13px 0px 12px 166px;
+}
+
+#main .boxBlockA01 .btn {
+    margin-left:46px;
+}
+
+#main .clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0.1em;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+#main .clearfix {
+    display: inline-block;
+}
+* html .clearfix {
+    height: 1%;
+}
+#main .clearfix {
+    display: block;
+}
+
+#main .mt10{
+    margin-top:10px;
+}
+
+#main dl dt.center {
+    text-align: center;
+}
+
+#main dl.framelist dt,
+#main dl.framelist dd,
+#main dl.framelist2 dt,
+#main dl.framelist2 dd,
+#main dl.framelist3 dt,
+#main dl.framelist3 dd,
+#main dl.framelist4 dt,
+#main dl.framelist4 dd,
+#main dl.framelist5 dt,
+#main dl.framelist5 dd,
+#main dl.framelist6 dt,
+#main dl.framelist6 dd,
+#main dl.framelist7 dt,
+#main dl.framelist7 dd,
+#main dl.framelist8 dt,
+#main dl.framelist8 dd,
+#main dl.framelist9 dt,
+#main dl.framelist9 dd,
+#main dl.framelist10 dt,
+#main dl.framelist10 dd,
+#main dl.framelist11 dt,
+#main dl.framelist11 dd,
+#main dl.framelist12 dt,
+#main dl.framelist12 dd,
+#main dl.framelist13 dt,
+#main dl.framelist13 dd,
+#main dl.framelist14 dt,
+#main dl.framelist14 dd,
+#main dl.framelist15 dt,
+#main dl.framelist15 dd,
+#main dl.framelist16 dt,
+#main dl.framelist16 dd,
+#main dl.framelist17 dt,
+#main dl.framelist17 dd,
+#main dl.framelist18 dt,
+#main dl.framelist18 dd,
+#main dl.framelist19 dt,
+#main dl.framelist19 dd,
+#main dl.framelist20 dt,
+#main dl.framelist20 dd,
+#main dl.framelist21 dt,
+#main dl.framelist21 dd,
+#main dl.framelist22 dt,
+#main dl.framelist22 dd,
+#main dl.framelist23 dt,
+#main dl.framelist23 dd,
+#main dl.framelist24 dt,
+#main dl.framelist24 dd,
+#main dl.framelist25 dt,
+#main dl.framelist25 dd,
+#main dl.framelist26 dt,
+#main dl.framelist26 dd,
+#main dl.framelist27 dt,
+#main dl.framelist27 dd,
+#main dl.framelist28 dt,
+#main dl.framelist28 dd,
+#main dl.framelist29 dt,
+#main dl.framelist29 dd,
+#main dl.framelist30 dt,
+#main dl.framelist30 dd{
+    float: left;
+}
+#main dl.framelist dt {
+    width: 25px;
+}
+#main dl.framelist dd {
+    width: 590px;
+}
+
+#main dl.framelist2 dt {
+    width: 25px;
+}
+#main dl.framelist2 dd {
+    width: 595px;
+}
+#main dl.framelist3 dt {
+    width: 15px;
+}
+#main dl.framelist3 dd {
+    width: 620px;
+}
+
+#main dl.framelist4 dd {
+    width: 585px;
+}
+
+#main dl.framelist5 dt {
+    width: 20px;
+}
+#main dl.framelist5 dd {
+    width: 670px;
+}
+
+#main dl.framelist6 dt {
+    width: 20px;
+}
+#main dl.framelist6 dd {
+    width: 600px;
+}
+
+#main dl.framelist7 dt {
+    width: 13px;
+}
+#main dl.framelist7 dd {
+    width: 677px;
+}
+
+#main dl.framelist8 dt {
+    width: 13px;
+}
+#main dl.framelist8 dd {
+    width: 292px;
+}
+
+#main dl.framelist9 dt {
+    width: 20px;
+}
+#main dl.framelist9 dd {
+    width: 630px;
+}
+
+#main dl.framelist10 dt {
+    width: 20px;
+}
+#main dl.framelist10 dd {
+    width: 275px;
+}
+#main dl.framelist11 dt {
+    width: 3em;
+}
+#main dl.framelist11 dd {
+    width: 630px;
+}
+#main dl.framelist12 dt {
+    width: 15px;
+}
+#main dl.framelist12 dd {
+    width: 580px;
+}
+#main dl.framelist13 dt {
+    width: 30px;
+}
+#main dl.framelist13 dd {
+    width: 635px;
+}
+
+#main dl.framelist5 dd dl.framelist9 dt {
+    width: 15px;
+}
+#main dl.framelist5 dd dl.framelist9 dd {
+    width: 655px;
+}
+
+#main dl.framelist dd dl.framelist dt {
+    width: 15px;
+}
+#main dl.framelist dd dl.framelist dd {
+    width: 575px;
+}
+
+#main dl.framelist14 dt {
+    width: 25px;
+}
+#main dl.framelist14 dd {
+    width: 665px;
+}
+
+#main dl.framelist15 dt {
+    width: 15px;
+}
+#main dl.framelist15 dd {
+    width: 545px;
+}
+#main dl.framelist16 dt {
+    width: 15px;
+}
+#main dl.framelist16 dd {
+    width: 575px;
+}
+#main dl.framelist17 dt {
+    width: 20px;
+}
+#main dl.framelist17 dd {
+    width: 575px;
+}
+#main dl.framelist18 dt {
+    width: 15px;
+}
+#main dl.framelist18 dd {
+    width: 585px;
+}
+#main dl.framelist19 dt {
+    width: 15px;
+}
+#main dl.framelist19 dd {
+    width: 539px;
+}
+#main dl.framelist20 dt {
+    width: 15px;
+}
+#main dl.framelist20 dd {
+    width: 632px;
+}
+#main dl.framelist21 dt {
+    width: 15px;
+}
+#main dl.framelist21 dd {
+    width: 425px;
+}
+#main dl.framelist22 dt {
+    width: 20px;
+}
+#main dl.framelist22 dd {
+    width: 495px;
+}
+#main dl.framelist23 dt {
+    width: 15px;
+}
+#main dl.framelist23 dd {
+    width: 230px;
+}
+#main dl.framelist24 dt {
+    width: 15px;
+}
+#main dl.framelist24 dd {
+    width: 608px;
+}
+#main dl.framelist25 dt {
+    width: 15px;
+}
+#main dl.framelist25 dd {
+    width: 362px;
+}
+#main dl.framelist26 dt {
+    width: 15px;
+}
+#main dl.framelist26 dd {
+    width: 635px;
+}
+#main dl.framelist27 dt {
+    width: 15px;
+    padding-left: 20px;
+}
+#main dl.framelist27 dd {
+    width: 615px;
+}
+#main dl.framelist28 dt {
+    width: 25px;
+}
+#main dl.framelist28 dd.icon {
+    width: 12px;
+}
+#main dl.framelist28 dd {
+    width: 599px;
+}
+#main dl.framelist29 dt {
+    width: 13px;
+    padding-left: 13px;
+}
+#main dl.framelist29 dd {
+    width: 664px;
+}
+#main dl.framelist30 dt {
+    width: 15px;
+}
+#main dl.framelist30 dl {
+    width: auto;
+}
+
+#main dl.small{
+	font-size: 86%;
+}

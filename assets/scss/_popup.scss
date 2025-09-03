@@ -1,0 +1,20 @@
+body.popup-a {
+  #warp {
+    padding-top: 0;
+  }
+  #header.l-header {
+    border-bottom: 1px solid #e6e8ed;
+    .l-header-first {
+      border: none;
+    }
+    .l-header-inner {
+      @include mq(){
+        max-width: 1000px;
+        padding: {
+          right: 12px;
+          left: 12px;
+        }
+      }
+    }
+  }
+}

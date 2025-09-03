@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+/* common
+-------------------------------------------------- */
+h5.title._lv5 {
+	margin-bottom: 0px !important;
+}
+
+h5.title._lv5+.c-txt {
+	margin-top: 16px !important;
+}
+
+.c-grid.col2>.c-col:nth-child(1) {
+	width: 500px;
+}
+
+.c-grid.col2>.c-col:nth-child(2) {
+	width: 396px;
+}
+
+.c-grid.col2>.c-col img {
+	width: 500px;
+	max-width: 500px;
+	height: auto;
+}
+
+.change-text::before {
+    content: '左記';
+}
+
+.c-col dd {
+	margin-top:10px !important;
+}
+
+.title_area h1.title {
+	padding-left: 0px !important;
+}
+
+.annotation {
+	line-height:1.25em !important;
+}
+
+@media screen and (max-width:767px) {
+	.acHide {
+		padding-top: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.c-grid.col2>.c-col:nth-child(1) {
+		width: 100%;
+	}
+
+	.c-grid.col2>.c-col:nth-child(2) {
+		width: 100%;
+		padding: 0 16px;
+	}
+
+	.c-grid.col2>.c-col img {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		margin-bottom: 30px;
+	}
+	
+	.change-text::before {
+        content: '上記';
+    }
+}
+
+.hp_align-item_flex {
+	align-items: flex-start;
+}
+
+
+/* title_area
+-------------------------------------------------- */
+.title_area h1.title span.service{
+	display: inline-block;
+	margin-right: 20px;
+	vertical-align: middle;
+}
+
+.title_area h1.title span.service img{
+	vertical-align: top;
+    width: 290px;
+}
+
+.title_area h1.title span.service span.kind{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.title_area h1.title span.service span.kind small{
+	position: absolute;
+	bottom: -1.5em;
+	left: 0;
+	font-size: 33%;
+}
+
+@media screen and (max-width: 767px) {
+    .title_area ._lv1 {
+        padding: 0;
+    }
+	
+	.title_area h1.title span.service {
+		display: block;
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
+	
+	.title_area h1.title span.service span.kind {
+        width: 60%;
+    }
+}
+
+/* #localnavi
+-------------------------------------------------- */
+#localnavi .c-grid{
+	margin-bottom:-27px;
+	-webkit-box-pack:start;
+	-ms-flex-pack:start;
+	justify-content:flex-start;
+}
+#localnavi .c-grid .c-col{
+	width:313px;
+	margin-bottom:27px;
+	margin-left:30px;
+}
+#localnavi .c-grid .c-col a.btn{
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+#localnavi .c-grid .c-col:first-child,#localnavi .c-grid .c-col:nth-child(3n+1){
+	margin-left:0;
+}
+
+@media screen and (max-width:767px){
+	#localnavi .c-grid{
+		margin-bottom: 40px;
+	}
+	#localnavi .c-grid .c-col{
+		width:100%;
+		margin-left:0;
+	}
+	#localnavi .c-grid .c-col+.c-col{
+		margin:24px 0 0;
+	}
+	#localnavi .c-grid .c-col a.btn{
+		font-size: 16px;
+	}
+	#localnavi p.c-txt.txt-link.ta_c{
+		font-size: 16px;
+	}
+}
+
+/* .btn_area
+-------------------------------------------------- */
+.sec .btn_area a {
+	margin: 0 auto;
+}
+
+.sec .btn_area{
+	text-align: center;
+}
+
+.sec .btn_area .msg {
+ 	margin-bottom: 12px !important;
+}
+.sec .btn_area .__bold {
+	color: #0072bc;
+	font-weight: 700;
+}
+.sec .btn_area a.btn.btn--primary {
+	height: 100px;
+	border: none;
+	-webkit-box-shadow: 0px 5px 0px #a53724;
+		  box-shadow: 0px 5px 0px #a53724;
+	background-color: #db3d23;
+}
+
+.sec .btn_area a.btn.btn--primary span {
+	font-size: 120%;
+}
+
+
+.sec .btn_area a._area::before {
+    content: "";
+    display: inline-block;
+	vertical-align: middle;
+    background:url("/service/next/area/img/area-icon.svg")center top no-repeat;
+    width: 34px;
+    height: 31px;
+    margin-right: 8px;
+}
+
+.sec .btn_area a._service::before {
+    content: "";
+    display: inline-block;
+	vertical-align: middle;
+    background:url("/service/next/area/img/service-icon.svg")center top no-repeat;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+
+	.sec .btn_area a.btn.btn--primary {
+		-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+				flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+	}
+	
+	.sec .btn_area a.btn.btn--primary:before {
+		margin-right: 0;
+		margin-bottom: 5px;
+	}
+	
+	.sec .btn_area a.btn.btn--primary span {
+		font-size: 110%;
+	}
+
+	.sec.btn_area a{
+		width: auto;
+	}
+	
+	.sec .btn_area .msg {
+		font-size: 88.89%;
+		text-align: left;
+	}
+}

@@ -1,0 +1,529 @@
+body {
+	min-width: 1200px;
+}
+img{
+	max-width: 100%;
+}
+
+#main sup{
+	font-size: 70%;
+}
+
+.rn2020#l-footer {
+	padding-bottom: 120px;
+}
+
+.rn2020 .followElem {
+  bottom: 120px;
+}
+
+.rn2020 #tax_info p {
+  padding: 7px 14px;
+  font-size: 60%;
+}
+#tax_info {
+  min-width: 1200px;
+}
+
+/* title_area
+-------------------------------------------------- */
+
+.title_area h1.title span.service{
+	display: inline-block;
+	margin-right: 20px;
+	vertical-align: middle;
+}
+.title_area h1.title span.service span.pref{
+	display: inline-block;
+	font-size: 77%;
+	color: #fff;
+	background: #000000;
+	line-height: 1;
+	margin: 0 24px 0 0;
+	padding: 10px 29px;
+	vertical-align: top;
+	font-weight: 700;
+}
+
+.title_area h1.title span.service img{
+	vertical-align: top;
+    width: 290px;
+}
+
+.title_area h1.title span.service span.kind{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.title_area h1.title span.service span.kind small{
+	position: absolute;
+	bottom: -1.5em;
+	left: 0;
+	font-size: 33%;
+}
+
+/* .btn_area
+-------------------------------------------------- */
+.sec .btn_area{
+	text-align: center;
+}
+
+.sec .btn_area a{
+	width: 480px;
+	margin: 0 auto;
+}
+.sec .btn_area .msg {
+ 	margin-bottom: 12px !important;
+}
+.sec .btn_area .__bold {
+	color: #0072bc;
+	font-weight: 700;
+}
+.sec .btn_area a.btn.btn--primary {
+	height: 100px;
+	border: none;
+	-webkit-box-shadow: 0px 5px 0px #a53724;
+		  box-shadow: 0px 5px 0px #a53724;
+	background-color: #db3d23;
+}
+
+.sec .btn_area a.btn.btn--primary span {
+	font-size: 130%;
+}
+
+
+.sec .btn_area a._area::before {
+    content: "";
+    display: inline-block;
+	vertical-align: middle;
+    background:url("../img/area-icon.svg")center top no-repeat;
+    width: 34px;
+    height: 31px;
+    margin-right: 8px;
+}
+
+.sec .btn_area a._service::before {
+    content: "";
+    display: inline-block;
+	vertical-align: middle;
+    background:url("../img/service-icon.svg")center top no-repeat;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+
+	.sec .btn_area a.btn.btn--primary {
+		-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+				flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+	}
+	.sec .btn_area a.btn.btn--primary:before {
+		margin-right: 0;
+		margin-bottom: 5px;
+	}
+	
+	.sec .btn_area a.btn.btn--primary span {
+		font-size: 110%;
+	}
+}
+
+
+/* tab_area
+-------------------------------------------------- */
+.tab_area {
+	padding: 0;
+}
+
+.tab_area .tabContents {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #f2faff;
+}
+
+.tab_area .tabContents > div {
+	display: block;
+	padding: 40px;
+	padding-bottom: 53px;
+}
+
+.tab_area table{
+	width: 100%;
+}
+
+#main .tab_area ul + .btn_area{
+	margin-top: 33px;
+}
+#main .tab_area .btn_area + .btn_area{
+	margin-top: 25px;
+}
+
+.tab_area .image{
+	margin: 0 0 40px 0;
+}
+
+/* mapArea telArea
+-------------------------------------------------- */
+.tab_area .mapArea,
+.tab_area .telArea {
+	-webkit-box-shadow: 0px 8px 24px rgba(40,40,40,0.16);
+		  box-shadow: 0px 8px 24px rgba(40,40,40,0.16);
+	background-color: #fff;
+}
+@media screen and (max-width: 767px) {
+	#main .tab_area .mapArea,
+	#main .tab_area .telArea {
+		padding-top: 40px;
+	}
+}
+
+.tab_area .mapArea:before,
+.tab_area .telArea:before {
+  display: block;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 177.78%;
+  line-height: 1.5;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+	.tab_area .mapArea:before,
+	.tab_area .telArea:before {
+		font-size: 133.33%;
+	}
+	_:-ms-lang(x)::-ms-backdrop,
+	.tab_area .mapArea:before,
+	.tab_area .telArea:before {
+		font-size: 24px;
+	}
+}
+
+
+/* mapArea
+-------------------------------------------------- */
+.tab_area .mapArea{
+  margin-bottom: 60px;
+}
+
+.tab_area .mapArea:before {
+  content: '地図から確認';
+}
+
+.tab_area .mapArea .map{
+	text-align: center;
+	margin: 0 0 40px 0;
+}
+.tab_area .mapArea .c-txt{
+	margin-bottom: 10px;
+}
+
+.tab_area .mapArea ul.note-list{
+	margin-top: 12px;
+}
+
+.tab_area .mapArea ul.note-list li + li{
+	margin-top: 8px;
+}
+
+.tab_area .mapArea h2.title{
+	margin-bottom: 10px;
+    font-weight: 700!important;
+}
+
+
+/* telArea
+-------------------------------------------------- */
+.tab_area .telArea:before {
+  content: '電話番号から確認';
+}
+
+.tab_area .telArea p.c-txt._pc_mt0{
+	margin: 0;
+}
+
+.tab_area .telArea section{
+	margin: 0 0 40px 0;
+}
+.tab_area .telArea section:last-child{
+	margin: 0 0 0px 0;
+}
+
+.tab_area .telArea section h2.title{
+	margin-bottom: 10px;
+    font-weight: 700!important;
+}
+
+.tab_area .telArea table + .c-note{
+	margin: 17px 0 0px 0;
+}
+
+.tab_area .telArea .c-txt._sss{
+	font-size: 66.67%;
+}
+
+.tab_area .telArea .attention{
+	margin-top: 20px;
+}
+
+#main .tab_area .telArea table{
+	margin-top: 30px;
+}
+.tab_area .telArea table th,
+.tab_area .telArea table td{
+	line-height: 1.4;
+	vertical-align: middle;
+}
+.tab_area .telArea table .textcenter{
+	text-align: center;
+}
+.tab_area .telArea table th.areacode{
+	width: 30%;
+}
+
+
+/* telArea
+-------------------------------------------------- */
+#cta-wrap {
+  position: fixed;
+  bottom: 29px;
+  z-index: 1;
+  width: 100%;
+  min-width: 1200px;
+  padding: 8px 0 13px;
+}
+@media screen and (max-width: 767px) {
+  #cta-wrap {
+    bottom: 27px;
+    min-width: auto;
+    padding: 12px 12px 16px;
+  }
+}
+#cta-wrap div.cta_area {
+  margin: 0;
+}
+#cta-wrap div.cta_area .cta_list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  padding-right: 10px;
+  padding-left: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+}
+@media screen and (max-width: 767px) {
+  #cta-wrap div.cta_area .cta_list {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-right: 0;
+    padding-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+  }
+}
+#cta-wrap div.cta_area .cta_list li {
+  -webkit-flex-grow: 1;
+          flex-grow: 1;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+}
+#cta-wrap div.cta_area .cta_list li:first-child {
+  margin-left: 20px;
+}
+#cta-wrap div.cta_area .cta_list li a div{
+	color:#fff;
+}
+#cta-wrap div.cta_area .cta_list li:first-child a:before {
+	width: 32px;
+	height: 29px;
+	background: url("../img/area-icon.svg") no-repeat center top;
+	background-size:auto 100%;
+}
+@media screen and (max-width: 767px) {
+  #cta-wrap div.cta_area .cta_list li:first-child {
+    margin-top: 12px;
+    margin-left: 0;
+  }
+}
+#cta-wrap div.cta_area .cta_list li:first-child a {
+  -webkit-box-shadow: 0 5px 0 #a53724;
+          box-shadow: 0 5px 0 #a53724;
+}
+#cta-wrap div.cta_area .cta_list li:last-child {
+  -webkit-order: -1;
+          order: -1;
+  margin-left: 0;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+}
+#cta-wrap div.cta_area .cta_list li:last-child a:before {
+  width: 26px;
+  height: 29px;
+  background-size: contain;
+}
+@media screen and (max-width: 767px) {
+  #cta-wrap div.cta_area .cta_list li:last-child {
+    margin-top: 0;
+  }
+}
+#cta-wrap div.cta_area .cta_list li:last-child a {
+  -webkit-box-shadow: 0 5px 0 #0c5c8f;
+          box-shadow: 0 5px 0 #0c5c8f;
+}
+#cta-wrap div.cta_area .cta_list li a {
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: auto;
+  min-height: 52px;
+  padding: 10px 30px 9px;
+  font-size: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-filter: none;
+          filter: none;
+}
+#cta-wrap div.cta_area .cta_list li a div {
+  line-height: 1.5;
+}
+@media screen and (max-width: 767px) {
+  #cta-wrap div.cta_area .cta_list li a {
+    font-size: 88.89%;
+  }
+}
+#cta-wrap div.cta_area .cta_list li a:before {
+  margin: 0 8px 0 0;
+}
+
+
+
+@media screen and (max-width: 767px){
+body {
+	min-width: auto;
+}
+	
+.rn2020#l-footer {
+	padding-bottom: 170px;
+}
+.rn2020 .followElem {
+	bottom: 182px;
+}
+#tax_info {
+	min-width: auto;
+}
+	
+/* title_area
+-------------------------------------------------- */
+
+.title_area h1.title span.service{
+	display: block;
+	margin-right: 0;
+	margin-bottom: 15px;
+}
+
+.title_area h1.title span.service span.pref{
+	margin: 0 15px 0 0;
+	padding: 6px 6px;
+}
+
+
+.title_area h1.title span.service span.kind{
+	width: 60%;
+}
+
+.title_area h1.title span.service img{
+    width: 240px;
+}
+
+
+/* .btn_area
+-------------------------------------------------- */
+.sec .btn_area a{
+	width: auto;
+}
+
+.sec .btn_area .msg {
+	font-size: 88.89%;
+	text-align: left;
+}
+	
+/* tab_area
+-------------------------------------------------- */
+.tab_area .tabContents:first-child {
+    padding-top: 0;
+}	
+	
+.tab_area .tabContents > div {
+    padding: 0 4% 13%;
+}
+
+/* mapArea
+-------------------------------------------------- */
+.tab_area .mapArea .map{
+	margin: 0 -4% 35px;
+}
+
+/* telArea
+-------------------------------------------------- */
+
+.tab_area .telArea section h2.title{
+	padding-top: 30px;
+}
+	
+.tab_area .telArea section h2.title + p{
+	font-size: 77%;
+}
+	
+.tab_area .telArea table th{
+	font-size: 77%;
+} 
+	
+.tab_area .telArea table td{
+	font-size: 77%;
+}
+	
+}
+
+ul.legend{
+  display: flex;
+  flex-wrap: wrap;
+    margin:20px 0 5px 0;
+}
+ul.legend li{
+  width: auto;
+}
+ul.legend li::before {
+   content: "■";
+   padding-right: .2em;
+}
+/*ul.legend li:nth-of-type(2)::before {
+  color: #ed7d31;
+}*/
+ul.legend li:nth-of-type(2)::before {
+  color: #0072bc;
+    margin-left: 10px;
+}
+.c_orange02{
+  color: #ed7d31;
+}
+
+@media screen and (max-width: 767px){
+    ul.legend li:nth-of-type(2)::before {
+    margin-left: 0px;
+}
+    ul.legend{
+    margin-top: 10px;
+}
+    ul.legend li{
+    margin-bottom: 5px;
+}
+}

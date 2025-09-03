@@ -1,0 +1,1559 @@
+//---------------------------
+// sp wrap
+//---------------------------
+@include mq(sp){
+  .sec {
+    .l-inner {
+      > .link {
+          &_list,
+          &_text_list {
+                padding: 0 5px;
+          }
+      }
+      //> .c-txt,
+      > .btn {
+        //padding: 0 5px;
+      }
+    }
+  }
+}
+
+
+
+
+
+//---------------------------
+// attention_area
+//---------------------------
+.attention_area {
+  border: 3px solid $red;
+  padding: 20px 12px;
+  background: $white;
+  @include mq(){
+    //padding: 30px;
+    padding: 30px 30px 26px;
+  }
+  box-sizing: border-box;
+
+  //関係性マージン
+  + * {
+    margin-top: 40px;
+  }
+
+  ._header {
+    margin-bottom: -4px;
+
+    .title {
+      color: $red;
+      span {
+        font-weight: 700;
+      }
+    }
+    .title,
+    .c-txt {
+      span {
+        line-height: 1.5;
+        font-size: variableFontSize(18);
+        @include mq(){
+          //line-height: 1.8;
+          font-size: variableFontSize(20);
+        }
+      }
+    }
+  }
+  ._body {
+    //padding: 30px;
+
+    padding: 10px 0 0 40px;
+
+    @include mq(sp){
+      //padding: 20px 12px;
+
+      .c-txt {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+
+  .ic_attention {
+    display: flex;
+    //align-items: center;
+    span {
+      flex: 1;
+      //font-weight: 700;
+    }
+    &:before {
+      content: "";
+      display: inline-block;
+      background: url(/resources/img/cmn/ic_attention.svg) no-repeat left center;
+
+      position: relative;
+      //top: -2px;
+      top: -3px;
+
+      width: 32px;
+      height: 36px;
+
+      margin-right: 10px;
+    }
+
+    &.c-txt {
+      span {
+        @include mq(sp){
+          display: inline-block;
+          margin-top: 0.2em;
+        }
+      }
+    }
+  }
+
+  &._important {
+    padding: 0;
+
+    ._header {
+      padding: 18px 30px;
+      @include mq(sp){
+        padding: 18px 16px;
+      }
+      background: $red;
+      color: $white;
+      .title {
+        color: $white;
+        font-size: variableFontSize(18);
+        @include mq(){
+          font-size: variableFontSize(20);
+        }
+        span {
+          font-weight: 700;
+        }
+      }
+      .ic_attention {
+        &:before {
+          content: "";
+          display: inline-block;
+          background: url(/resources/img/cmn/ic_attention_w.svg) no-repeat left center;
+        }
+      }
+    }
+    ._body {
+      padding: 30px;
+      @include mq(sp){
+        padding: 20px 12px;
+      }
+      .c-txt {
+        color: $red;
+        font-size: variableFontSize(16);
+        font-weight: 700;
+        @include mq(){
+          font-size: variableFontSize(18);
+        }
+      }
+    }
+    .attention_time {
+      dt {
+        margin-top: 24px;
+        @include mq(){
+          margin-top: 30px;
+        }
+        color: $red;
+        font-weight: 700;
+      }
+      dd {
+        margin-top: 16px;
+        @include mq(sp){
+          margin-top: 8px;
+        }
+        color: $red;
+        font-weight: 700;
+        line-height: 1.5;
+      }
+      + .c-note_list {
+        margin-top: 16px;
+      }
+    }
+  }
+}
+
+
+//---------------------------
+// point_area
+//---------------------------
+.point {
+  &_area {
+    padding: 40px 10px;
+    background: $white;
+    @include mq(){
+      padding: 40px 30px 50px;
+    }
+    border: 2px solid $yellow;
+    box-sizing: border-box;
+
+    //関係性マージン
+    + * {
+      margin-top: 40px;
+    }
+    + .c-note_list {
+      margin-top: 12px;
+    }
+
+
+    .title {
+      text-align: center;
+      font-size: variableFontSize(24);
+      font-weight: 700;
+      @include mq(){
+        font-size: variableFontSize(32);
+      }
+    }
+
+    .ic_point {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:before {
+        content: "";
+        display: inline-block;
+        background: url(/resources/img/cmn/ic_point.svg) no-repeat left center;
+        background-size: contain;
+        margin-right: 10px;
+        width: 40px;
+        height: 40px;
+        @include mq(){
+          width: 48px;
+          height: 48px;
+        }
+      }
+    }
+
+
+  }
+}
+
+
+//---------------------------
+// note_area
+//---------------------------
+.note {
+  &_area {
+    border: 3px solid $subgray;
+    background: $white;
+    padding: 28px 13px 20px;
+    @include mq(){
+      padding: 30px 40px;
+    }
+
+    //関係性マージン
+    + * {
+      margin-top: 40px;
+    }
+
+    ._header {
+      border-bottom: 3px solid $subgray;
+      padding-bottom: 18px;
+      .title {
+        font-size: variableFontSize(18);
+        font-weight: 700;
+        @include mq(){
+          font-size: variableFontSize(20);
+        }
+      }
+    }
+
+    ._body {
+      padding-top: 22px;
+    }
+  }
+
+}
+
+
+//---------------------------
+// price_area
+//---------------------------
+.price {
+  &_area {
+    display: flex;
+    align-items: center;
+  }
+  &_badge {
+    &.badge {
+      margin-right: 8px;
+      padding: 5px 10px;
+      color: $white;
+      font-weight: 700;
+      font-size: variableFontSize(14);
+    }
+  }
+  &_num {
+    color: $orange;
+    strong {
+      font-weight: 700 !important;
+      font-size: variableFontSize(40);
+    }
+    span {
+      font-weight: 700 !important;
+      font-size: variableFontSize(24);
+      &.price_yen {
+        font-size: 88.888%;
+      }
+    }
+  }
+}
+
+//---------------------------
+// cta_area
+//---------------------------
+.cta {
+  &_area {
+
+    margin-top: -40px;
+    margin-bottom: -40px;
+
+    @include mq(sp){
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+
+    a {
+      //display: inline-block;
+      border-radius: 8px;
+      width: 100%;
+      @include mq(sp){
+        padding: 12px 0;
+      }
+      @include mq(){
+        width: 480px;
+        height: 110px;
+      }
+      color: $white !important;
+      text-align: center;
+      text-decoration: none !important;
+
+      position: relative;
+      * {
+        line-height: 1.2;
+        font-weight: 700 !important;
+      }
+
+      &:after {
+        position: absolute;
+        top: calc(50% - 8px);
+        right: 12px;
+        content: "";
+        display: block;
+        background: url(/resources/img/cmn/ic_arrow_w2.svg) no-repeat center top;
+        width: 16px;
+        height: 16px;
+      }
+
+      &[target="_blank"] {
+        &:after {
+          background: url(/resources/img/cmn/ic_blank_w.svg) no-repeat 97% 55%;
+        }
+      }
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+    }
+  }
+
+  &_list {
+    @include mq(){
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    li {
+      + li {
+        @include mq(sp){
+          margin-top: 20px;
+        }
+        @include mq(){
+          margin-left: 40px;
+        }
+      }
+    }
+  }
+}
+
+.btn_application {
+  //background: $orange;
+  filter: drop-shadow(0px 5px 0px #a53724);
+  //display: block;
+  //height: 100%;
+
+  &:before {
+    content: "";
+    display: block;
+    background: url(/resources/img/cmn/ic_application.svg) no-repeat center top;
+    width: 33.46px;
+    height: 32px;
+    margin: 0 auto 3px;
+  }
+
+  font-weight: 700;
+  //font-size: 83.333%;
+  font-size: variableFontSize(18);
+  @include mq(){
+    font-size: variableFontSize(20);
+  }
+  span {
+    font-size: 120%;
+    //font-size: variableFontSize(20);
+    @include mq(){
+      //font-size: variableFontSize(24);
+    }
+  }
+  small {
+    font-size: 80%;
+    //font-size: variableFontSize(14);
+    @include mq(){
+      //font-size: variableFontSize(16);
+    }
+  }
+
+  &:active,
+  &._active {
+      transform: translateY(5px);
+      color: $white;
+      filter: none;
+  }
+
+
+
+}
+.btn_simulation {
+  //background: $blue;
+  filter: drop-shadow(0px 5px 0px #0c5c8f);
+
+  &:before {
+    content: "";
+    display: block;
+    background: url(/resources/img/cmn/ic_simulation_w.svg) no-repeat center top;
+    //width: 23.75px;
+    //height: 32px;
+    width: 32px;
+    height: 32px;
+    background-size: 32px 32px;
+    margin: 0 auto 3px;
+  }
+
+  font-weight: 700;
+  font-size: variableFontSize(20);
+  @include mq(){
+    font-size: variableFontSize(24);
+  }
+
+  &:active,
+  &._active {
+      transform: translateY(5px);
+      color: $white;
+      filter: none;
+  }
+
+}
+
+//---------------------------
+// faq_area
+//---------------------------
+.faq {
+  &_area {
+    border: 1px solid $subgray;
+    background: $white;
+    padding: 50px 40px 40px;
+    @include mq(sp){
+      padding: 40px 10px;
+    }
+
+    ._header {
+      ._lv2 {
+        text-align: center;
+
+        font-weight: 700;
+        font-size: variableFontSize(24);
+        @include mq(){
+          font-size: variableFontSize(32);
+        }
+      }
+    }
+    ._body {
+        padding-top: 40px;
+    }
+  }
+  &_list {
+    a {
+      color: $blue;
+      flex: 1;
+      line-height: 1.5;
+    }
+
+    li {
+      display: flex;
+      align-items: flex-start;
+      //@include mq(){
+        //align-items: center;
+      //}
+      ._q {
+        margin-right: 10px;
+      }
+
+      + li {
+        @include mq(sp){
+          margin-top: 24px;
+        }
+        @include mq(){
+          margin-top: 16px;
+        }
+      }
+    }
+
+  }
+
+  &_btn {
+    &_list {
+      @include mq(){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      margin-top: 32px;
+
+      li {
+        .btn {
+          font-size: variableFontSize(18);
+        }
+        @include mq(){
+          width: 440px;
+          .btn {
+            width: 100%;
+            font-size: variableFontSize(20);
+          }
+        }
+        + li {
+          @include mq(sp){
+            margin-top: 16px;
+          }
+        }
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50px;
+
+        &._faq_list {
+          //span {
+            &:before {
+              content: "";
+              display: block;
+              background: url(/resources/img/cmn/ic_faq.svg) no-repeat center top;
+              width: 24.95px;
+              height: 28px;
+              margin-right: 8px;
+            }
+          //}
+        }
+        &._contact {
+          //span {
+            @include mq(){
+              height: 52px;
+              margin-bottom: 6px;
+            }
+            &:before {
+              content: "";
+              display: block;
+              background: url(/resources/img/cmn/ic_contact.svg) no-repeat center top;
+              width: 24.51px;
+              height: 17px;
+              margin-right: 8px;
+              @include mq(sp){
+                margin-top: 2px;
+              }
+            }
+          //}
+        }
+      }
+      
+    }
+  }
+}
+
+
+
+//---------------------------
+// footer_kit
+//---------------------------
+.footer_kit {
+  @include mq(){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .c-txt {
+    font-size: variableFontSize(14);
+    @include mq(){
+      font-size: variableFontSize(16);
+    }
+  }
+  .c-img {
+    text-align: left;
+    margin-top: 0;
+    @include mq(sp){
+      margin-top: 18px;
+    }
+  }
+}
+
+
+//---------------------------
+// tel_area
+//---------------------------
+.tel {
+  &_area {
+    padding: 22px 16px;
+    @include mq(){
+      padding: 32px 24px 28px;
+    }
+    .c-txt {
+      margin-top: 16px;
+      font-size: variableFontSize(14);
+      @include mq(){
+        margin-top: 18px;
+        font-size: variableFontSize(16);
+      }
+    }
+
+    //関係性マージン
+    + * {
+      margin-top: 40px;
+    }
+
+  }
+  &_num {
+    display: flex;
+    align-items: center;
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 41.95px;
+      height: 24px;
+      background: url(../img/cmn/ic_tel.svg) no-repeat 0 0;
+      background-size: 41.95px 24px;
+      @include mq(){
+        width: 59.42px;
+        height: 34px;
+        background-size: 59.42px 34px;
+        margin-right: 7px;
+      }
+    }
+    a {
+      font-weight: 700 !important;
+      font-size: variableFontSize(24);
+      @include mq(){
+        font-size: variableFontSize(32);
+        text-decoration: none !important;
+      }
+      @include mq(sp){
+        color: $blue !important;
+        text-decoration: underline;
+      }
+    }
+
+    //フリーアクセス
+    &._freeaccess {
+      margin-bottom: -3px;
+      &:before {
+        background: url(../img/cmn/logo_freetel.svg) no-repeat 0 -3px;
+        background-size: 48px auto;
+        width: 50px;
+        height: 48px;
+      }
+    }
+
+  }
+}
+
+//---------------------------
+// vote_area
+//---------------------------
+.vote {
+  &_area {
+    //border: 3px solid $blue;
+    border: 3px solid $lightgray;
+    background: $white;
+    border-radius: 8px;
+
+    padding: 38px 20px;
+    @include mq(){
+      padding: 48px 36px 32px;
+    }
+
+    .title {
+      color: $blue;
+      font-weight: 700;
+      font-size: variableFontSize(22);
+      text-align: center;
+      line-height: 1.5;
+      @include mq(){
+        font-size: variableFontSize(28);
+      }
+    }
+    .c-grid {
+      justify-content: space-between;
+      margin-top: 28px;
+      @include mq(){
+        margin-top: 38px;
+      }
+
+      li {
+        width: calc(50% - 12px);
+        @include mq(){
+          width: calc(50% - 20px);
+        }
+      }
+    }
+  }
+}
+
+//---------------------------
+// anchor_area
+//---------------------------
+.anchor_area {
+  .c-grid {
+    width: 100%;
+    background: $white;
+    @include mq(sp){
+      &._sp_col2 {
+          flex-wrap: wrap;
+          box-sizing: border-box;
+          > * {
+              width: calc((100% / 2) - 2px);
+          }
+      }
+  }
+  }
+  li {
+    @include mq(){
+      border-top: 2px solid $subgray;
+      border-bottom: 2px solid $subgray;
+      border-left: 2px solid $subgray;
+      &:last-child {
+        border-right: 2px solid $subgray;
+      }
+    }
+    @include mq(sp){
+      //border-left: 2px solid $subgray;
+      border-bottom: 2px solid $subgray;
+      &:first-child,
+      &:nth-child(2) {
+        border-top: 2px solid $subgray;
+      }
+
+      &:nth-child(2n) {
+        border-right: 2px solid $subgray;
+      }
+      &:nth-child(2n+1) {
+        border-right: 2px solid $subgray;
+        border-left: 2px solid $subgray;
+      }
+    }
+
+    text-align: center;
+    box-sizing: border-box;
+    a {
+      display: block;
+      width: 100%;
+      padding: 7px 0 7px;
+      box-sizing: border-box;
+
+      color: $blue;
+      text-decoration: none !important;
+
+      font-weight: 700;
+      font-size: variableFontSize(14);
+      text-align: center;
+      line-height: 1.5;
+      @include mq(){
+        font-size: variableFontSize(16);
+      }
+
+      &:hover {
+        text-decoration: underline !important;
+      }
+      &:after {
+        content: "";
+        display: block;
+        margin: 3px auto 0;
+        width: 12px;
+        height: 7px;
+        background: url(../img/cmn/ic_arrow_down.svg) no-repeat 0 0;
+        background-size: 12px 7px;
+        @include mq(){
+        }
+      }
+
+
+    }
+  }
+}
+
+
+//---------------------------
+// btn_area
+//---------------------------
+.btn_area {
+  //関係性マージン
+  + * {
+    margin-top: 40px;
+  }
+
+  + .c-note,
+  + .c-note_list,
+  + .c-note_list_num,
+  + .c-note_list_disc  {
+    margin-top: 24px;
+  }
+
+  @include mq(sp){
+    + .btn_area {
+      margin-top: 24px;
+    }
+  }
+
+  .c-panel {
+    padding: 40px 37px !important;
+    span {
+      color: inherit !important;
+      font-size: inherit !important;
+      small {
+        font-weight: 700;
+      }
+    }
+  }
+  .btn {
+    //width: 100% !important;
+    text-align: center;
+  }
+  .c-grid {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .c-col {
+    @include mq(){
+      width: calc(50% - 20px);
+    }
+    +.c-col {
+      @include mq(sp){
+        margin-top: 30px;
+      }
+    }
+  }
+
+  .btn_txt {
+    + .c-note {
+      text-align: left;
+      line-height: 1.5;
+
+      text-indent: -1em;
+      padding-left: 1em;
+    }
+  }
+}
+
+//---------------------------
+// c-box
+//---------------------------
+.c-box {
+
+  //関係性マージン
+  + * {
+    margin-top: 20px;
+  }
+
+  padding: 20px 16px;
+  .c-txt {
+    text-align: center;
+    font-size: variableFontSize(18);
+    @include mq(){
+      font-size: variableFontSize(20);
+    }
+  }
+
+}
+
+//---------------------------
+// c-boxarea
+//---------------------------
+.c-boxarea {
+  padding: 56px 40px;
+  @include mq(sp){
+    //padding: 32px 24px;
+    padding: 56px 16px;
+  }
+
+  //関係性マージン
+  + * {
+    margin-top: 40px;
+  }
+
+  &_area {
+    font-size: variableFontSize(20);
+    @include mq(){
+      font-size: variableFontSize(24);
+    }
+
+    + .c-note_list {
+      margin-top: 20px;
+    }
+  }
+}
+
+
+//---------------------------
+// prepare_area
+//---------------------------
+.prepare_area {
+
+  margin-top: 24px !important;
+
+  + .c-note_list_num {
+    margin-top: 16px;
+  }
+
+
+  ul {
+    @include mq(){
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    li {
+      margin-top: 8px;
+
+      @include mq(){
+        width: calc((100% / 2) - 8px);
+        margin-left: 8px;
+
+        &:first-child,
+        &:nth-child(2){
+          margin-top: 0;
+        }
+        &:first-child,
+        &:nth-child(2n+1){
+          margin-left: 0;
+        }
+
+      }
+      @include mq(sp){
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+
+      background: $lightblue;
+      padding: 8px;
+      box-sizing: border-box;
+
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      span {
+        font-size: variableFontSize(16);
+        line-height: 1.5;
+
+        + span {
+          flex: 1;
+        }
+
+        &.prepare_img {
+          width: 32px;
+          margin-right: 8px;
+          //flex: 1;
+          img {
+            width: 32px;
+            height: 32px;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+
+//---------------------------
+// border-box
+//---------------------------
+.border-box {
+  padding: 24px;
+  border: 1px solid $subgray;
+
+  + .btn_area {
+    margin-top: 40px;
+  }
+
+  + .c-txt {
+    margin-top: 16px;
+  }
+}
+
+
+//---------------------------
+// tab_link_area
+//---------------------------
+.tab_link_area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    @include mq(sp){
+      margin-left: 9px !important;
+      margin-right: 9px !important;
+      padding: 0;
+    }
+
+  .tab_link {
+    width: calc(50% - 24px);
+    @include mq(sp){
+      width: calc(50% - 4px);
+    }
+
+    a {
+      position: relative;
+      width: 100%;
+      @include mq(){
+        width: 465px;
+        height: 62px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+        
+      @include mq(sp){
+        display: inline-block;
+        padding: 20px 12px 16px;
+        text-align: center;
+      }
+
+      border: 2px solid $blue;
+      border-radius: 8px;
+      background: $white;
+      color: $blue;
+      text-decoration: none;
+
+      span {
+        font-weight: bold;
+        @include mq(sp){
+          display: block;
+          text-align: center;
+        }
+      }
+
+      .badge {
+        @include mq(sp){
+          display: inline;
+          border-radius: 17px;
+          + span {
+            margin-top: 20px;
+            line-height: 1.2;
+            font-size: variableFontSize(16);
+          }
+        }
+        @include mq(){
+          margin-right: 12px;
+        }
+      }
+
+      transition: background 0.3s ease;
+      &:hover {
+        background: $lightblue;
+      }
+
+      &.active {
+        background: $blue;
+        color: $white;
+
+        ._bg_blue {
+          background: $white !important;
+          color: $blue;
+        }
+
+        &:after {
+          display: inline-block;
+          content: "";
+          position: absolute;
+          left: calc(50% - 10px);
+          bottom: -12px;
+          width: 0;
+          height: 0;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-top: 12px solid $blue;
+          opacity: 1;
+          transition: background 0.3s ease;
+        }
+      }
+    }
+  }
+}
+
+//---------------------------
+// qsBox
+//---------------------------
+.qsBox {
+  //関係性マージン
+  + .btn_area {
+    margin-top: 80px;
+  }
+
+  .title {
+    + .c-note {
+      margin-top: 16px;
+      + .c-list {
+        margin-top: 8px;
+        > li {
+          font-size: variableFontSize(14);
+        }
+      }
+    }
+  }
+
+}
+
+
+//---------------------------
+// price_table
+//---------------------------
+.price_table {
+  border: 1px solid $darkgray;
+  background: $white;
+  display: flex;
+  align-items: center;
+  @include mq(sp){
+    flex-direction:column;
+  }
+
+  //関係性マージン
+  + .c-note_list_num,
+  + .c-txt {
+    margin-top: 16px;
+  }
+
+  &_waribiki {
+    @include mq(sp){
+      width: 100%;
+      justify-content: center;
+    }
+
+    @include mq(){
+      width: 639px;
+      justify-content: center;
+      //padding: 0 75px 35px;
+    }
+    background: $ultralightgray;
+    display: flex;
+
+    >div {
+      display: flex;
+      @include mq(){
+        //align-items: center;
+        justify-content: center;
+        padding: 24px 0 32px;
+      }
+    }
+
+    position: relative;
+
+    ._arrow {
+      position: absolute;
+      display: inline-block;
+      @include mq(sp){
+        transform: rotate(90deg);
+        bottom: -8px;
+        left: calc(50% - 8px);
+        img {
+          width: 16px;
+          height: 16px;
+        }
+      }
+      @include mq(){
+        margin-top: 57px;
+        right: -13px;
+      }
+    }
+
+    .price_waribiki01 {
+      @include mq(sp){
+        margin-top: 16px;
+
+        .c-txt._ss {
+          text-align: center;
+        }
+      }
+    }
+    .price_waribiki02 {
+      @include mq(sp){
+        margin-top: 54px;
+        padding-bottom: 16px;
+      }
+      @include mq(){
+        margin-top: 20px;
+      }
+    }
+
+    .price_title {
+      font-weight: 700;
+    }
+    .price_num {
+      font-weight: 700;
+      font-size: 222.22222%;
+      color: $black;
+      @include mq(sp){
+        //font-size: 171.4285%;
+        font-size: 150%;
+      }
+    }
+    .price_yen {
+      font-weight: 700;
+      font-size: 155.5555%;
+      @include mq(sp){
+        font-size: 114.285714%;
+      }
+    }
+    .price_symbol {
+      @include mq(sp){
+        margin-top: 63px;
+        padding: 0 10px;
+      }
+      @include mq(){
+        margin-top: 37px;
+        padding: 0 12px;
+      }
+      img {
+        vertical-align: middle !important;
+        @include mq(sp){
+          width: 10px;
+          height: auto;
+        }
+      }
+    }
+    .price_note {
+      position: absolute;
+      bottom: -1.5em;
+      right: 0;
+      font-size: 66.6666%;
+    }
+    .c-txt{
+      margin-top: 0;
+      position: relative;
+      text-align: right;
+    }
+    .c-note {
+      margin-top: 5px;
+    }
+
+  
+  }
+  &_result {
+    @include mq(sp){
+      padding: 23px 0 16px;
+    }
+    @include mq(){
+      width: 361px;
+    }
+    //text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    >div {
+      display: flex;
+      align-items: center;
+      flex-direction:column;
+    }
+    
+
+    .price_area {
+      display: flex;
+      justify-content: center;
+      @include mq(){
+        margin-bottom: 1.5em;
+      }
+    }
+
+    .price_num {
+      position: relative;
+      text-align: right;
+
+      strong {
+        @include mq(sp){
+          font-size: 133.3333%;
+        }
+      }
+    }
+
+    .price_note {
+      position: absolute;
+      bottom: -1.5em;
+      white-space: nowrap;
+      @include mq(){
+        right: 0;
+      }
+      font-size: 66.6666%;
+      color: $black !important;
+      //display: inline-block;
+      //margin-bottom: 1.5em;
+      @include mq(sp){
+        white-space: nowrap;
+      }
+    }
+
+    .c-note {
+      margin-top: 43px;
+    }
+
+
+    .badge._bg_orange {
+      font-size: 77.7777%;
+    }
+  }
+}
+
+.price_table2 {
+  border: 1px solid $darkgray;
+  background: $white;
+  display: flex;
+  align-items: center;
+  @include mq(sp){
+    flex-direction:column;
+  }
+
+  //関係性マージン
+  + .c-note_list_num,
+  + .c-txt {
+    margin-top: 16px;
+  }
+
+  &_waribiki {
+    @include mq(sp){
+      width: 100%;
+      padding: 12px 0 10px;
+    }
+    @include mq(){
+      width: 639px;
+      min-height: 130px;
+    }
+    background: $ultralightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //padding: 32px 75px 39px;
+
+    >div {
+      display: flex;
+      @include mq(){
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    position: relative;
+
+    ._arrow {
+      position: absolute;
+      display: inline-block;
+      @include mq(sp){
+        transform: rotate(90deg);
+        bottom: -8px;
+        left: calc(50% - 8px);
+        img {
+          width: 16px;
+          height: 16px;
+        }
+      }
+      @include mq(){
+        right: -13px;
+      }
+    }
+
+    .price_waribiki02 {
+      @include mq(){
+        margin-top: 48px;
+      }
+    }
+
+    .price_title {
+      font-weight: 700;
+    }
+    .price_num {
+      font-weight: 700;
+      font-size: 222.22222%;
+      color: $black;
+      @include mq(sp){
+        font-size: 133.3333%;
+      }
+    }
+    .price_yen {
+      font-weight: 700;
+      font-size: 155.5555%;
+      @include mq(sp){
+        font-size: 88.8888%;
+      }
+    }
+    .price_symbol {
+      padding: 0 12px;
+      @include mq(sp){
+        padding: 2px 10px 10px 10px;
+      }
+      img {
+        vertical-align: middle !important;
+        @include mq(sp){
+          width: 10px;
+          height: auto;
+        }
+      }
+    }
+    .price_note {
+      position: absolute;
+      bottom: -1.5em;
+      right: 0;
+      font-size: 66.6666%;
+    }
+    .c-txt{
+      margin-top: 0;
+    }
+    .c-note {
+      margin-top: 5px;
+    }
+
+  
+  }
+  &_result {
+    @include mq(sp){
+      padding: 30px 0 27px;
+    }
+    @include mq(){
+      width: 361px;
+    }
+    //text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    >div {
+      display: flex;
+      align-items: center;
+      flex-direction:column;
+    }
+    
+
+    .price_area {
+      display: flex;
+      justify-content: center;
+    }
+
+    .price_num {
+      position: relative;
+      text-align: right;
+
+      strong {
+        @include mq(sp){
+          font-size: 133.3333%;
+        }
+      }
+    }
+
+    .price_note {
+      position: absolute;
+      bottom: -1.5em;
+      @include mq(){
+        right: 0;
+      }
+      font-size: 66.6666%;
+      color: $black !important;
+      //display: inline-block;
+      //margin-bottom: 1.5em;
+      @include mq(sp){
+        white-space: nowrap;
+      }
+    }
+
+    .c-note {
+      margin-top: 43px;
+    }
+
+
+    .badge._bg_orange {
+      font-size: 77.7777%;
+    }
+  }
+}
+
+
+
+//---------------------------
+// blue_area
+//---------------------------
+.blue_area {
+  background: $cerulean;
+  padding: 40px 40px 45px;
+
+  @include mq(sp){
+    padding: 8.533333333vw 5.6vw;
+  }
+
+  ._header {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+
+    .horizontal_logo_area {
+      position: relative;
+      margin-right: 15px;
+
+      small {
+        top: calc(100% + 5px);
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+
+        @include mq(){
+          position: absolute;
+          right: 0;
+          left: 0;
+        }
+
+        @include mq(sp){
+          display: block;
+        }
+      }
+    }
+  }
+
+  ._body {
+    background: white;
+    padding: 24px;
+
+    ._area {
+      padding: 20px;
+      margin-top: 15px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}

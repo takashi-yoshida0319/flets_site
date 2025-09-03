@@ -1,0 +1,30 @@
+@charset "shift_jis";
+
+.bg_beige_box{
+  padding: 5px 10px 10px;
+}
+
+.explain_box{
+  line-height: 2.0em !important;
+  margin-bottom: 10px;
+  position: relative;
+}
+.explain_box img{
+  margin: 0 7px;
+  vertical-align: middle;
+}
+.explain_box span{
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 0.8em !important;
+}
+
+.section table {
+	width: auto;
+}
+
+.section table td {
+	padding: 0;
+	border: none;
+}

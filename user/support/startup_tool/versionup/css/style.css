@@ -1,0 +1,31 @@
+@charset "shift-jis";
+
+.ttl{
+background-color: #e6eef5;
+border-left: 4px solid #cacded;
+color: #13007c;
+font-size: 14px;
+font-weight: bold;
+line-height: 1.2;
+margin-bottom: 10px;
+padding: 4px 8px;
+}
+#versionup li{
+	margin-bottom: 30px;
+}
+#versionup dl{
+	overflow: hidden;
+}
+#versionup dt{
+	width: 300px;
+	float: left;
+	text-align: center;
+}
+#versionup dd{
+	width: 370px;
+	float: right;
+}
+
+.mb20{
+	margin-bottom: 20px;
+}

@@ -1,0 +1,296 @@
+#main {
+
+//---------------------------
+// panel
+//---------------------------
+.panel {
+  background: $white;
+}
+.c-panel {
+  border-radius: 8px;
+  background: $white;
+  border: 3px solid $lightgray;
+  min-height: auto;
+  display: block;
+  padding: 0;
+
+  //.title,
+  //.c-txt,
+  //.panel_btn,
+  //.item_list {
+  //  color: $panelgray;
+  //}
+
+  + * {
+    margin-top: 40px;
+  }
+
+  + .txt-link {
+    margin-top: 24px;
+  }
+
+  + .c-panel {
+    margin-top: 24px;
+    @include mq(sp){
+      margin-top: 18px;
+    }
+    
+  }
+
+  > .panel_header {
+    padding: 25px 5px;
+    border-bottom: 2px solid $subgray;
+    text-align: center;
+    box-sizing: border-box;
+    .title {
+      font-weight: normal;
+      font-size: variableFontSize(16);
+      @include mq(sp){
+        font-size: variableFontSize(14);
+      }
+    }
+
+    .shoulder {
+      display: block;
+      margin: -25px 45px 25px;
+      background: #1D2088;
+      color: white;
+      text-align: center;
+      border-radius: 0 0 8px 8px;
+      padding: 5px 3px 8px;
+      font-weight: bold;
+      font-size: variableFontSize(14);
+    }
+  }
+  > .panel_inner {
+    padding: 15px 23px;
+    .c-txt {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      //text-align: center;
+      font-size: variableFontSize(16);
+      @include mq(sp){
+        font-size: variableFontSize(14);
+      }
+    }
+    .item_list {
+      li {
+        padding: 10px 0;
+        text-align: center;
+        border-bottom: 2px dashed $subgray;
+        font-size: variableFontSize(16);
+        @include mq(sp){
+          font-size: variableFontSize(14);
+        }
+      }
+    }
+    .panel_btn {
+      text-align: center;
+      a {
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        text-decoration: none;
+        font-size: variableFontSize(16);
+        @include mq(sp){
+          font-size: variableFontSize(14);
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+
+//---------------------------
+// btn-panel
+//---------------------------
+
+.btn-panel {
+  //border-radius: 8px;
+  //background: #fff;
+  //border: 2px solid $blue;
+  //box-shadow: 0px 4px 0px $blue;
+
+  //関係性マージン
+  + .title {
+    margin-top: 36px;
+  }
+
+  &_link { //border: 1px solid #ff0000;
+    //position: relative;
+    
+    border-radius: 8px;
+    background: #fff;
+    border: 2px solid $blue;
+    box-shadow: 0px 4px 0px $blue;
+    outline: none;
+    cursor: pointer;
+
+    display: block;
+    padding: 15px 23px 10px;
+
+    text-decoration: none;
+
+    text-decoration: none !important;
+
+    &:active,
+    &._active {
+        transform: translateY(5px);
+        box-shadow: 0px 0px 0px $blue;
+        &::after { height: 0px; }
+    }
+
+    .link_icn {
+      //position: absolute;
+      //right: 0;
+      //bottom: 0;
+      //padding: 0 0 9px 0;
+      margin-top: 1em;
+      text-align: right;
+      width: 100%;
+      display: block !important;
+    }
+  }
+
+
+  //ロゴの場合
+
+
+  //見出し + 説明文の場合
+  &.l-panel {
+  }
+
+  //サムネイル + 見出し + 説明文の場合
+  &.l-panel,
+  &.l-panel_thumb {
+    ._image {
+      margin-right: 15px;
+      min-width: 135px;
+    }
+    ._icon {
+      margin-right: 15px;
+      img {
+        text-align: center;
+        margin: 0 auto;
+      }
+      + ._content {
+        width: 80%;
+        padding: 8px 0 0 0;
+
+        .title {
+          margin-top: -8px;
+          padding-bottom: 1.5em;
+          strong {
+            font-size: 122.222%;
+            small {
+              font-size: 66.666%;
+              @include mq(sp){
+                display: inline-block;
+                margin-bottom: 0.5em;
+                line-height: 1.5 !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.l-panel_thumb {
+      ._content {
+        width: 100%;
+        position: relative;
+
+        dl {
+          padding-bottom: 1.5em;
+        }
+        .link_icn {
+          position: absolute;
+          bottom: 0;
+        }
+      }
+    }
+
+
+    ._body {
+      //margin-bottom: -2.4em;
+    }
+    ._content {
+      padding: 14px 0 0 0;
+      @include mq(sp){
+        padding: 0;
+      }
+
+      //dl {
+        //margin-bottom: 2.4em;
+      //}
+      dt {
+        strong {
+          font-size: 111.111%;
+          @include mq(sp){
+            font-size: 100%;
+            line-height: 1.5;
+          }
+        }
+      }
+      dd {
+        line-height: 1.5;
+        @include mq(sp){
+          font-size: 88.89%;
+          //line-height: 1.2;
+        }
+      }
+    }
+    .btn-panel_link .link_icn {
+      margin-top: 0;
+    }
+  }
+
+  //ロゴ
+  ._logo {
+    width: 100%;
+    text-align: center;
+    @include mq(sp){
+      img {
+        //width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    small {
+      display: inline-block;
+      padding-top: 8px;
+      font-size: 66.666%;
+    }
+
+    + ._content {
+      padding-top: 8px;
+      .c-txt {
+        padding-top: 8px;
+        + .link_icn {
+          padding-top: 8px;
+        }
+      }
+    }
+  }
+
+  .btn-panel_link {
+    .link_icn {
+      &.arrow,
+      &.blank {
+        padding-right: 0;
+        @include mq(sp){
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+
+
+
+}
+
+
+}

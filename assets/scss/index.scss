@@ -1,0 +1,48 @@
+// *** Settings ***
+@import "../partials/variables", "../partials/mixin";
+
+#main {
+
+  //.mainVisual {
+  //  margin-top: -10px;
+  //}
+
+  //.unit--panel .panel__heading._index_txt--large {
+  //  @include sp_font_size(50);
+  //}
+
+  //PC
+  @include mq(){
+    //.unit--panel .panel__heading._index_txt--large {
+    //  @include font_size(32);
+    //}
+    //
+    //.unit--panel.horizontal figure figcaption {
+    //  padding-left: 40px;
+    //}
+
+    .mainVisual {
+      background: {
+        image: url(/assets/img/index/bg_mainVisual.png);
+      }
+    }
+
+    //.unit--panel figcaption p {
+    //  @include font_size(20);
+    //}
+  }
+  // *** どらえもん ネクストに切り替えの設定 ***
+
+
+
+  //.narrowDown__footer {
+  //  margin-top:sp_size(60);
+  //
+  //  //PC
+  //  @include mq(){
+  //    width: 840px;
+  //    margin: 60px auto 0;
+  //  }
+  //}
+
+}

@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <!--#include virtual="/resources/inc/cmn/viewport.html" -->
+  <title>フレッツ・スポット（公衆無線LANアクセスサービス）｜フレッツ光公式｜NTT西日本</title>
+  <meta name="description" content="フレッツ・スポットは、外出先の駅や空港など、街なかのアクセスポイントからインターネットに接続できる公衆無線LANアクセスサービスです。高速・大容量のモバイル通信を楽しめます。">
+  <meta name="apple-mobile-web-app-capable" content="no">
+  <meta name="format-detection" content="telephone=no">
+  <!--#include virtual="/resources/inc/cmn/json-ld.html" -->
+  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="フレッツ・スポット（公衆無線LANアクセスサービス）｜フレッツ光公式｜NTT西日本">
+  <meta property="og:description" content="フレッツ・スポットは、外出先の駅や空港など、街なかのアクセスポイントからインターネットに接続できる公衆無線LANアクセスサービスです。高速・大容量のモバイル通信を楽しめます。">
+  <meta property="og:image" content="https://flets-w.com/resources/img/cmn/og.png">
+  <meta property="og:url" content="https://flets-w.com/user/support/service/spot/setup_ipoe">
+  <meta property="og:site_name" content="NTT西日本公式｜フレッツ光｜光インターネット接続（光回線）">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="shortcut icon" href="https://flets-w.com/favicon.ico">
+  <link rel="apple-touch-icon" href="https://flets-w.com/apple-touch-icon.png">
+  <link rel="canonical" href="https://flets-w.com/user/support/service/spot/setup_ipoe">
+  <!-- CSS -->
+  <!--#include virtual="/resources/inc/cmn/css.html" -->
+  <!-- JS -->
+  <!--#include virtual="/resources/inc/cmn/js.html" -->
+  <!--#include virtual="/resources/inc/cmn/head.html" -->
+  <!--#include virtual="/resources/inc/cmn/analytics.html" -->
+
+  <!-- ===== ページ独自CSS/JSここから ===== -->
+  <link rel="stylesheet" type="text/css" href="/user/support/service/spot/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/user/support/service/spot/setup_ipoe/css/style.css">
+  <script type="text/javascript" src="/resources/js/anchor_ac_scroll.js"></script>
+  <!-- ===== ページ独自CSS/JSここまで ===== -->
+</head>
+<body class="rn2020">
+<!--#include virtual="/resources/inc/cmn/body_before.html" -->
+<!--#include virtual="/resources/inc/cmn/block_skip.html" -->
+<!--#include virtual="/resources/inc/cmn/header_ntt.html" -->
+<!--#include virtual="/resources/inc/cmn/header.html" -->
+
+<!-- ぱんくず -->
+<ol id="topicpath" class="topicpath">
+    <li><a href="/">総合TOP</a></li>
+    <li><a href="/user/">「フレッツ光」を現在ご利用中のお客さま</a></li>
+    <li><a href="/user/support/">設定・トラブル解決</a></li>
+    <li><a href="/user/support/service/">サービス別サポート情報</a></li>
+    <li><a href="/user/support/service/spot">フレッツ・スポット サポート情報</a></li>
+    <li>「フレッツ・スポット」ご利用方法 セットアップについて</li>
+</ol>
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement":
+    [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "item":
+            {
+                "@id": "https://flets-w.com/",
+                "name": "総合TOP"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "item":
+            {
+                "@id": "https://flets-w.com/user/",
+                "name": "「フレッツ光」を現在ご利用中のお客さま"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "item":
+            {
+                "@id": "https://flets-w.com/user/support/",
+                "name": "設定・トラブル解決"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 4,
+            "item":
+            {
+                "@id": "https://flets-w.com/user/support/service/",
+                "name": "サービス別サポート情報"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 5,
+            "item":
+            {
+                "@id": "https://flets-w.com/user/support/service/spot/setup_ipoe",
+                "name": "「フレッツ・スポット」ご利用方法 セットアップについて"
+            }
+        }
+
+    ]
+}
+</script>
+
+<!-- コンテンツここから -->
+<div id="l-content">
+
+  <main id="main">
+
+    <!-- title_area -->
+    <section class="title_area">
+      <div class="l-inner">
+        <h1 class="title _lv1">「フレッツ・スポット」（公衆無線LANアクセスサービス）<br>ご利用方法 セットアップについて</h1>
+      </div>
+    </section>
+
+    <!-- article -->
+    <article>
+      <section class="sec _bg_lightblue">
+        <div class="l-inner">
+          <!--#include virtual="/opt/spot/include/attention_area.html" -->
+        </div>
+      </section>
+
+      <section class="sec">
+        <div class="l-inner">
+　        <h2 class="title _lv2">設定の際に必要なもの</h2>
+          <p class="c-txt">NTT西日本より送付させていただいている「お申込内容のご案内」を準備してください。<br>そこに記載しているSSID(ESS-ID)や暗号(WEP)キー、フレッツ・スポット認証ID・パスワードを参照ください。</p>
+          <div class="attention_area _attention-info _border _l">
+            <div class="_header">
+              <p class="c-txt ic_attention"><span>対応エリアについては、SSID「NTT-SPOT」、「NTTWEST-SPOT」 と表示されるアクセスポイントがあります。</span></p>
+            </div>
+            <div class="_body">
+                <p class="c-txt c_yellow fwb">それぞれのアクセスポイントでご利用いただくためには、SSID毎に設定する必要があります。各SSIDに対応するアクセスポイント情報（認証・暗号化方式、暗号化キー）にて設定してください。</p>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec _bg_lightblue">
+        <div class="l-inner">
+            <h2 class="title _lv2">代表的なOSの<br class="_sp">Wi-Fi設定方法の例</h2>
+            <!-- Android -->
+            <div class="ac_area">
+              <a href="javascript:void(0);" class="acTrigger _bg_darkgray" data-target="ac01"><span class="ac_txt">Android&trade; OS</span> <i class="icoAcLinkAfter"></i><span class="txt-open">開く</span></a>
+              <div class="ac01 acHide">
+                <h3 class="title _lv3 ta_c mt10 _sp_mt10">アクセスポイントエリア外でも<br class="_sp">設定できます</h3>
+                <ul class="c-note_list ta_c mt15 _sp_mt15 _sp_ta_l">
+                  <li>スマートフォンの画面イメージは、Galaxy S(Android端末)にて記載しております。</li>
+                </ul>
+                <!--1. 「設定」を選択 -->
+                <div class="number-df mt35 _sp_mt35">
+                  <p class="circle _bg_blue _num"><span>1</span></p>
+                  <div class="fz24">「設定」を選択</div>
+
+                </div>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/android_01.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#android-modal_content01" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="android-modal_content01" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/android_01.png" alt="">
+                  </div>
+                </div>
+                <!-- 2.「無線とネットワーク」を選択 -->
+                <hr class="c-hr mt">
+                <div class="number-df mt75 _sp_mt75">
+                  <p class="circle _bg_blue _num"><span>2</span></p>
+                  <div class="fz24">「無線とネットワーク」を選択</div>
+                </div>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/android_02.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#android-modal_content02" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="android-modal_content02" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/android_02.png" alt="">
+                  </div>
+                </div>
+                <!--3. 「Wi-Fi設定」を選択 -->
+                <hr class="c-hr">
+                <div class="number-df mt75 _sp_mt75">
+                  <p class="circle _bg_blue _num"><span>3</span></p>
+                  <div class="fz24">「Wi-Fi設定」を選択</div>
+                </div>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/android_03.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#android-modal_content03" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="android-modal_content03" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/android_03.png" alt="">
+                  </div>
+                </div>
+                <!--4.「Wi-Fi」を選択し、Wi-FiをONに -->
+                <hr class="c-hr">
+                <div class="number-df mt75 _sp_mt75">
+                  <p class="circle _bg_blue _num"><span>4</span></p>
+                  <div class="fz24">「Wi-Fi」を選択し、Wi-FiをONに</div>
+                </div>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/android_04.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#android-modal_content04" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="android-modal_content04" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/android_04.png" alt="">
+                  </div>
+                </div>
+                <!-- 5.「Wi-Fiネットワークを追加」を選択 -->
+                <hr class="c-hr">
+                <div class="number-df mt75 _sp_mt75">
+                  <p class="circle _bg_blue _num"><span>5</span></p>
+                  <div class="fz24">「Wi-Fiネットワークを追加」を選択</div>
+                </div>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/android_05.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#android-modal_content05" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="android-modal_content05" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/android_05.png" alt="">
+                  </div>
+                </div>
+                <!-- 6.「ネットワークSSID 」を入力 -->
+                <hr class="c-hr">
+                <div class="number-df mt75 _sp_mt75">
+                  <p class="circle _bg_blue _num"><span>6</span></p>
+                  <div class="fz24">「ネットワークSSID 」を入力</div>
+                </div>
+                <p class="c-txt mt20 _sp_mt20">「フレッツ・スポット」の「お申し込み内容のご案内」に記載されているSSIDを入力します。</p>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/android_06.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#android-modal_content06" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="android-modal_content06" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/android_06.png" alt="">
+                  </div>
+                </div>
+                <!-- 7.「セキュリティ設定」を選択 -->
+                <hr class="c-hr">
+                <div class="number-df mt75 _sp_mt75">
+                  <p class="circle _bg_blue _num"><span>7</span></p>
+                  <div class="fz24">「セキュリティ設定」を選択</div>
+                </div>
+                <p class="c-txt mt20 _sp_mt20">設定するSSIDに該当対応する暗号化方式を選択します。</p>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/android_07.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#android-modal_content07" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="android-modal_content07" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/android_07.png" alt="">
+                  </div>
+                </div>
+                <!-- table -->
+                <div class="scrollTableOuter swipeObj spOnly mt40 _sp_mt40">
+                  <table class="c-table c-table_fs14 scrollTable w936 _sp_w760">
+                    <colgroup>
+                      <col class="w467 _sp_w380">
+                      <col class="w468 _sp_w380">
+                    </colgroup>
+                    <thead>
+                      <th class="fz16">ネットワーク名</th>
+                      <th class="fz16">セキュリティの種類</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="fz18 ta_c vaMiddle">NTT－SPOT</td>
+                        <td class="fz18 ta_c vaMiddle">WEP</td>
+                      </tr>
+                      <tr>
+                        <td class="fz18 ta_c vaMiddle">NTTWEST－SPOT</td>
+                        <td class="fz18 ta_c vaMiddle">WPA/WPA2 PSK(AES)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- 8.パスワードを入力し、「保存」を選択 -->
+                <hr class="c-hr">
+                <div class="number-df mt75 _sp_mt75">
+                  <p class="circle _bg_blue _num"><span>8</span></p>
+                  <div class="fz24">パスワードを入力し、「保存」を選択</div>
+                </div>
+                <p class="c-txt mt20 _sp_mt20">「フレッツ・スポット」の「お申し込み内容のご案内」に記載されている<strong class="underline">暗号化キー</strong>を入力します。</p>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/android_08.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#android-modal_content08" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="android-modal_content08" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/android_08.png" alt="">
+                  </div>
+                </div>
+                <h3 class="title _lv3 ta_c mt70 _sp_mt70">アクセスポイントエリアで<br class="_sp">ログインしてください</h3>
+                <div class="number-df mt40 _sp_mt40">
+                  <p class="circle _bg_blue _num"><span>9</span></p>
+                  <div class="fz24">ブラウザーを起動し、ログイン</div>
+                </div>
+                <ul class="list_disc mt20 _sp_mt20">
+                  <li>アクセスポイントエリアにて、ブラウザーを起動するとログイン画面が表示されます。</li>
+                  <li>「フレッツ・スポット」の「お申し込み内容のご案内」に記載されているフレッツ・スポット認証ID・パスワードを入力します。</li>
+                </ul>
+                <ul class="c-note_list">
+                  <li class="c_red">ログイン画面はアクセスポイント毎（SSID毎）に異なります。以下をご確認ください。</li>
+                </ul>
+                <h4 class="title _lv4">SSID NTT-SPOTの場合</h4>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/android_09.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#android-modal_content09" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="android-modal_content09" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/android_09.png" alt="">
+                  </div>
+                </div>
+                <h4 class="title _lv4 mt40 _sp_mt40">SSID NTTWEST-SPOTの場合</h4>
+                <h5 class="title _lv5 mt20 _sp_mt20">パターン1</h5>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/android_10.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#android-modal_content10" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="android-modal_content10" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/android_10.png" alt="">
+                  </div>
+                </div>
+                <h5 class="title _lv5 mt25 _sp_mt25">パターン2</h5>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/android_11.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#android-modal_content11" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="android-modal_content11" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/android_11.png" alt="">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- iOS（iPhone等） -->
+            <div class="ac_area">
+              <a href="javascript:void(0);" class="acTrigger _bg_darkgray" data-target="ac02"><span class="ac_txt">iOS（iPhone等）</span> <i class="icoAcLinkAfter"></i><span class="txt-open">開く</span></a>
+              <div class="ac02 acHide">
+                <h3 class="title _lv3 ta_c mt10 _sp_mt10">アクセスポイントエリア外でも<br class="_sp">設定できます</h3>
+                <ul class="c-note_list ta_c mt15 _sp_mt15 _sp_ta_l">
+                  <li>スマートフォンの画面イメージはiPhone3Gにて記載しております。</li>
+                </ul>
+                <!--1. 「設定」を選択 -->
+                <div class="number-df mt35 _sp_mt35">
+                  <p class="circle _bg_blue _num"><span>1</span></p>
+                  <div class="fz24">「設定」を選択</div>
+
+                </div>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/ios_01.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#ios-modal_content01" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="ios-modal_content01" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/ios_01.png" alt="">
+                  </div>
+                </div>
+                <!-- 2.「Wi-Fi」を選択 -->
+                <hr class="c-hr">
+                <div class="number-df mt75 _sp_mt75">
+                  <p class="circle _bg_blue _num"><span>2</span></p>
+                  <div class="fz24">「Wi-Fi」を選択</div>
+                </div>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/ios_02.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#ios-modal_content02" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="ios-modal_content02" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/ios_02.png" alt="">
+                  </div>
+                </div>
+                <!--3.「Wi-Fi」をONにし、「その他…」を選択 -->
+                <hr class="c-hr">
+                <div class="number-df mt75 _sp_mt75">
+                  <p class="circle _bg_blue _num"><span>3</span></p>
+                  <div class="fz24">「Wi-Fi」をONにし、「その他…」を選択</div>
+                </div>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/ios_03.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#ios-modal_content03" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="ios-modal_content03" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/ios_03.png" alt="">
+                  </div>
+                </div>
+                <!--4.「自動的に取得する」を選択 -->
+                <hr class="c-hr">
+                <div class="number-df mt75 _sp_mt75">
+                  <p class="circle _bg_blue _num"><span>4</span></p>
+                  <div class="fz24">「名前」に「お申し込み内容のご案内」に記載されたSSIDを入力</div>
+                </div>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/ios_04.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#ios-modal_content04" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="ios-modal_content04" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/ios_04.png" alt="">
+                  </div>
+                </div>
+                <!-- 5.セキュリティを選択し、暗号化方式を選択 -->
+                <hr class="c-hr">
+                <div class="number-df mt75 _sp_mt75">
+                  <p class="circle _bg_blue _num"><span>5</span></p>
+                  <div class="fz24">セキュリティを選択し、暗号化方式を選択</div>
+                </div>
+                <p class="c-txt mt20 _sp_mt20">設定するSSIDに該当する暗号化方式（「お申し込み内容のご案内に記載」）を選択します。</p>
+
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/ios_05.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#ios-modal_content05" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="ios-modal_content05" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/ios_05.png" alt="">
+                  </div>
+                </div>
+                <!-- table -->
+                <div class="scrollTableOuter swipeObj spOnly mt40 _sp_mt40">
+                  <table class="c-table c-table_fs14 scrollTable w936 _sp_w760">
+                    <colgroup>
+                      <col class="w467 _sp_w380">
+                      <col class="w468 _sp_w380">
+                    </colgroup>
+                    <thead>
+                      <th class="fz16">ネットワーク名</th>
+                      <th class="fz16">セキュリティの種類</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="fz18 ta_c vaMiddle">NTT－SPOT</td>
+                        <td class="fz18 ta_c vaMiddle">WEP</td>
+                      </tr>
+                      <tr>
+                        <td class="fz18 ta_c vaMiddle">NTTWEST－SPOT</td>
+                        <td class="fz18 ta_c vaMiddle">WPA/WPA2 PSK(AES)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- 6.「パスワード」に「お申し込み内容のご案内」に記載された暗号化キーを入力し、「join」を選択 -->
+                <hr class="c-hr">
+                <div class="number-df mt75 _sp_mt75">
+                  <p class="circle _bg_blue _num"><span>6</span></p>
+                  <div class="fz24">「パスワード」に「お申し込み内容のご案内」に記載された暗号化キーを入力し、「join」を選択</div>
+                </div>
+                <p class="c-txt mt20 _sp_mt20">「フレッツ・スポット」の「お申し込み内容のご案内」に記載されている<strong class="underline">暗号化キー</strong>を入力します。</p>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/ios_06.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#ios-modal_content06" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="ios-modal_content06" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/ios_06.png" alt="">
+                  </div>
+                </div>
+                <!-- 7.「セキュリティ設定」を選択 -->
+                <hr class="c-hr">
+
+                <h3 class="title _lv3 ta_c mt70 _sp_mt70">アクセスポイントエリアで<br class="_sp">ログインしてください</h3>
+                <div class="number-df mt35 _sp_mt35">
+                  <p class="circle _bg_blue _num"><span>7</span></p>
+                  <div class="fz24">ブラウザーを起動し、ログイン</div>
+                </div>
+                <ul class="list_disc mt20 _sp_mt20">
+                  <li>アクセスポイントエリアにて、ブラウザーを起動するとログイン画面が表示されます。</li>
+                  <li>「フレッツ・スポット」の「お申し込み内容のご案内」に記載されているフレッツ・スポット認証ID・パスワードを入力します。</li>
+                </ul>
+                <ul class="c-note_list">
+                  <li class="c_red">ログイン画面はアクセスポイント毎（SSID毎）に異なります。以下をご確認ください。</li>
+                </ul>
+                <h4 class="title _lv4">SSID NTT-SPOTの場合</h4>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/ios_07.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#ios-modal_content07" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="ios-modal_content07" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/ios_07.png" alt="">
+                  </div>
+                </div>
+                <h4 class="title _lv4 mt40 _sp_mt40">SSID NTTWEST-SPOTの場合</h4>
+                <h5 class="title _lv5 mt20 _sp_mt20">パターン1</h5>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/ios_08.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#ios-modal_content08" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="ios-modal_content08" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/ios_08.png" alt="">
+                  </div>
+                </div>
+                <h5 class="title _lv5 mt25 _sp_mt25">パターン2</h5>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/ios_09.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#ios-modal_content09" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="ios-modal_content09" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/ios_09.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Windows® 10 -->
+            <div class="ac_area">
+              <a href="javascript:void(0);" class="acTrigger _bg_darkgray" data-target="ac03"><span class="ac_txt">Windows® 10</span> <i class="icoAcLinkAfter"></i><span class="txt-open">開く</span></a>
+              <div class="ac03 acHide">
+                <h3 class="title _lv3 ta_c mt10 _sp_mt10">アクセスポイントエリア外でも<br class="_sp">設定できます</h3>
+                <!--1. 「ネットワークとインターネット」を開く -->
+                <div class="number-df mt35 _sp_mt35">
+                  <p class="circle _bg_blue _num"><span>1</span></p>
+                  <div class="fz24">「ネットワークとインターネット」を開く</div>
+                </div>
+                <p class="c-txt mt20 _sp_mt20">「スタートメニュー」→ 「設定」をクリックし、「ネットワークとインターネット」をクリックします。</p>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win10_01.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#win10-modal_content01" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="win10-modal_content01" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win10_01.png" alt="">
+                  </div>
+                </div>
+                <!-- 2.「アダプターのオプションを変更する」を開く -->
+                <hr class="c-hr">
+                <div class="number-df mt75 _sp_mt75">
+                  <p class="circle _bg_blue _num"><span>2</span></p>
+                  <div class="fz24">「アダプターのオプションを変更する」を開く</div>
+                </div>
+                <ul class="list_disc mt20 _sp_mt20">
+                  <li>「関連設定」にある「アダプターのオプションを変更する」をクリックします。</li>
+                  <li>「Wi-Fi」を右クリックし、「プロパティ」をクリックします。</li>
+                </ul>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win10_02.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#win10-modal_content02" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="win10-modal_content02" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win10_02.png" alt="">
+                  </div>
+                </div>
+                <!--3.接続の選択 -->
+                <hr class="c-hr">
+                <div class="number-df mt75 _sp_mt75">
+                  <p class="circle _bg_blue _num"><span>3</span></p>
+                  <div class="fz24">接続の選択</div>
+                </div>
+                <p class="c-txt mt20 _sp_mt20">「インターネット プロトコル バージョン 4（TCP/IPv4）」を選択し、「プロパティ」をクリックします。</p>
+
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win10_03.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#win10-modal_content03" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="win10-modal_content03" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win10_03.png" alt="">
+                  </div>
+                </div>
+                <!--4.「自動的に取得する」を選択 -->
+                <hr class="c-hr">
+                <div class="number-df mt75 _sp_mt75">
+                  <p class="circle _bg_blue _num"><span>4</span></p>
+                  <div class="fz24">「自動的に取得する」を選択</div>
+                </div>
+                <p class="c-txt mt20 _sp_mt20">「IPアドレスを自動的に取得する」と「DNSサーバーのアドレスを自動的に取得する」にチェックを入れます。</p>
+
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win10_04.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#win10-modal_content04" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="win10-modal_content04" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win10_04.png" alt="">
+                  </div>
+                </div>
+                <!-- 5.セキュリティを選択し、暗号化方式を選択 -->
+                <hr class="c-hr">
+                <div class="number-df mt75 _sp_mt75">
+                  <p class="circle _bg_blue _num"><span>5</span></p>
+                  <div class="fz24">「自動プライベートIPアドレス」を選択</div>
+                </div>
+                <ul class="list_disc mt20 _sp_mt20">
+                  <li>「代替の構成」タブを選択し、「自動プライベートIPアドレス」にチェックを入れ、「OK」をクリックします。</li>
+                  <li>Wi-Fiのプロパティ画面に戻るので「OK」をクリックします。</li>
+                </ul>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win10_05.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#win10-modal_content05" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="win10-modal_content05" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win10_05.png" alt="">
+                  </div>
+                </div>
+
+                <!-- 6. 「ネットワークと共有センター」を開く -->
+                <hr class="c-hr">
+                <div class="number-df mt75 _sp_mt75">
+                  <p class="circle _bg_blue _num"><span>6</span></p>
+                  <div class="fz24"> 「ネットワークと共有センター」を開く</div>
+                </div>
+                <ul class="list_disc mt20 _sp_mt20">
+                  <li>ネットワーク接続の画面に戻るので「×」をクリックし、画面を閉じます。</li>
+                  <li>「ワイヤレス ネットワークに手動で接続します」を選択し「次へ」をクリックします。</li>
+                </ul>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win10_06.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#win10-modal_content06" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="win10-modal_content06" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win10_06.png" alt="">
+                  </div>
+                </div>
+
+                <!-- 7.「セキュリティ設定」を選択 -->
+                <hr class="c-hr">
+                <div class="number-df mt35 _sp_mt35">
+                  <p class="circle _bg_blue _num"><span>7</span></p>
+                  <div class="fz24">SSID、暗号化方式の設定</div>
+                </div>
+                <ul class="list_disc mt20 _sp_mt20">
+                  <li>「ネットワーク名」に「お申し込み内容のご案内」に記載された<strong class="underline">SSID</strong>を入力します。</li>
+                  <li>「セキュリティの種類」は記載されている「認証・暗号化方式」を選択します。</li>
+                  <li>「セキュリティキー」に<strong class="underline">暗号化キー</strong>を入力します。</li>
+                  <li>「ネットワークがブロードキャストを行っていない場合でも接続する」にチェックを入れます。</li>
+                  <li>「次へ」をクリックします。</li>
+                </ul>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win10_07.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#win10-modal_content07" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="win10-modal_content07" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win10_07.png" alt="">
+                  </div>
+                </div>
+                <hr class="c-hr">
+                <h3 class="title _lv3 ta_c mt70 _sp_mt70">アクセスポイントエリアで<br class="_sp">ログインしてください</h3>
+                <!-- 8.ブラウザーを起動し、ログイン -->
+                <div class="number-df mt40 _sp_mt40">
+                  <p class="circle _bg_blue _num"><span>8</span></p>
+                  <div class="fz24">ブラウザーを起動し、ログイン</div>
+                </div>
+                <ul class="list_disc mt20 _sp_mt20">
+                  <li>アクセスポイントエリアにて、ブラウザーを起動するとログイン画面が表示されます。</li>
+                  <li>「フレッツ・スポット」の「お申し込み内容のご案内」に記載されているフレッツ・スポット認証ID・パスワードを入力します。</li>
+                </ul>
+                <ul class="c-note_list">
+                  <li class="c_red">ログイン画面はアクセスポイント毎（SSID毎）に異なります。以下をご確認ください。</li>
+                </ul>
+                <h4 class="title _lv4">SSID NTT-SPOTの場合</h4>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win10_08.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#win10-modal_content08" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="win10-modal_content08" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win10_08.png" alt="">
+                  </div>
+                </div>
+                <h4 class="title _lv4 mt40 _sp_mt40">SSID NTTWEST-SPOTの場合</h4>
+                <h5 class="title _lv5 mt20 _sp_mt20">パターン1</h5>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win10_09.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#win10-modal_content09" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="win10-modal_content09" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win10_09.png" alt="">
+                  </div>
+                </div>
+                <h5 class="title _lv5 mt25 _sp_mt25">パターン2</h5>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win10_10.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#win10-modal_content10" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="win10-modal_content10" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win10_10.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Windows® 8 -->
+            <div class="ac_area">
+              <a href="javascript:void(0);" class="acTrigger _bg_darkgray" data-target="ac04"><span class="ac_txt">Windows® 8</span> <i class="icoAcLinkAfter"></i><span class="txt-open">開く</span></a>
+              <div class="ac04 acHide">
+                <h3 class="title _lv3 ta_c mt10 _sp_mt10">アクセスポイントエリア外でも<br class="_sp">設定できます</h3>
+                <!--1.  「ネットワークの状態とタスクの表示」を開く -->
+                <div class="number-df mt35 _sp_mt35">
+                  <p class="circle _bg_blue _num"><span>1</span></p>
+                  <div class="fz24"> 「ネットワークの状態とタスクの表示」を開く</div>
+                </div>
+                <p class="c-txt mt20 _sp_mt20">「設定」→ 「コントロールパネル」をクリックし、コントロールパネルを開き、「ネットワークの状態とタスクの表示」をクリックします。</p>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win8_01.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#win8-modal_content01" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="win8-modal_content01" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win8_01.png" alt="">
+                  </div>
+                </div>
+                <!-- 2.「アダプターの設定の変更」を開く -->
+                <hr class="c-hr">
+                <div class="number-df mt75 _sp_mt75">
+                  <p class="circle _bg_blue _num"><span>2</span></p>
+                  <div class="fz24">「アダプターの設定の変更」を開く</div>
+                </div>
+                <p class="c-txt mt20 _sp_mt20">「アダプターの設定の変更」をクリックします。</p>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win8_02.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#win8-modal_content02" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="win8-modal_content02" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win8_02.png" alt="">
+                  </div>
+                </div>
+                <!--3.「Wi-Fi」のプロパティを開く -->
+                <hr class="c-hr">
+                <div class="number-df mt75 _sp_mt75">
+                  <p class="circle _bg_blue _num"><span>3</span></p>
+                  <div class="fz24">「Wi-Fi」のプロパティを開く</div>
+                </div>
+                <p class="c-txt mt20 _sp_mt20">「ネットワーク接続」が表示されますので、「Wi-Fi」を右クリックして「プロパティ」をクリックします。</p>
+
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win8_03.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#win8-modal_content03" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="win8-modal_content03" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win8_03.png" alt="">
+                  </div>
+                </div>
+                <!--4.接続の選択 -->
+                <hr class="c-hr">
+                <div class="number-df mt75 _sp_mt75">
+                  <p class="circle _bg_blue _num"><span>4</span></p>
+                  <div class="fz24">接続の選択</div>
+                </div>
+                <p class="c-txt mt20 _sp_mt20">「インターネットプロトコルバージョン４（TCP/IP）」にチェックを入れ、「プロパティ」を選択する。</p>
+
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win8_04.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#win8-modal_content04" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="win8-modal_content04" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win8_04.png" alt="">
+                  </div>
+                </div>
+                <!-- 5.「自動的に取得する」を選択 -->
+                <hr class="c-hr">
+                <div class="number-df mt75 _sp_mt75">
+                  <p class="circle _bg_blue _num"><span>5</span></p>
+                  <div class="fz24">「自動的に取得する」を選択</div>
+                </div>
+                <p class="c-txt mt20 _sp_mt20">「IPアドレスを自動的に取得する」を選択し、「DNSサーバーのアドレスを自動的に取得する」を選択する。</p>
+
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win8_05.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#win8-modal_content05" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="win8-modal_content05" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win8_05.png" alt="">
+                  </div>
+                </div>
+
+                <!-- 6. 「自動プライベートIPアドレス」を選択 -->
+                <hr class="c-hr">
+                <div class="number-df mt75 _sp_mt75">
+                  <p class="circle _bg_blue _num"><span>6</span></p>
+                  <div class="fz24"> 「自動プライベートIPアドレス」を選択</div>
+                </div>
+                <ul class="list_disc mt20 _sp_mt20">
+                  <li>「代替の構成」タブを選択し、「自動プライベートIPアドレス」を選択して「OK」を選択します。</li>
+                  <li>その後、ワイヤレスネットワーク接続のプロパティ画面に戻るので「OK」を選択します。</li>
+                </ul>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win8_06.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#win8-modal_content06" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="win8-modal_content06" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win8_06.png" alt="">
+                  </div>
+                </div>
+
+                <!-- 7.「新しい接続またはネットワークのセットアップ」を開く -->
+                <hr class="c-hr">
+                <div class="number-df mt35 _sp_mt35">
+                  <p class="circle _bg_blue _num"><span>7</span></p>
+                  <div class="fz24">「新しい接続またはネットワークのセットアップ」を開く</div>
+                </div>
+                <ul class="list_disc mt20 _sp_mt20">
+                  <li>「新しい接続またはネットワークのセットアップ」をクリックします。</li>
+                  <li>「接続またはネットワークのセットアップ」が表示されますので、「ワイヤレス ネットワークに手動で接続します」をクリックします。</li>
+                </ul>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win8_07.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#win8-modal_content07" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="win8-modal_content07" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win8_07.png" alt="">
+                  </div>
+                </div>
+                <!-- 8.SSID、暗号化方式の設定 -->
+                <hr class="c-hr">
+                <div class="number-df mt35 _sp_mt35">
+                  <p class="circle _bg_blue _num"><span>8</span></p>
+                  <div class="fz24">SSID、暗号化方式の設定</div>
+                </div>
+                <ul class="list_disc mt20 _sp_mt20">
+                  <li>「ネットワーク名」に「お申し込み内容のご案内」に記載された<strong class="underline">SSID</strong>を入力します。</li>
+                  <li>「セキュリティの種類」は設定するSSIDに該当する暗号化方式を選択します。</li>
+                  <li>「セキュリティキー」に<strong class="underline">暗号化キー</strong>を入力します。</li>
+                  <li>「ネットワークがブロードキャストを行っていない場合でも接続する」にチェックを入れます。</li>
+                  <li>「次へ」をクリックし、「閉じる」ボタンをクリックします。</li>
+                </ul>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win8_08.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#win8-modal_content08" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="win8-modal_content08" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win8_08.png" alt="">
+                  </div>
+                </div>
+                <h5 class="title _lv5 mt40 _sp_mt40">暗号化方式について</h5>
+                <!-- table -->
+                <div class="scrollTableOuter swipeObj spOnly mt20 _sp_mt20">
+                  <table class="c-table c-table_fs14 scrollTable w936 _sp_w1000">
+                    <colgroup>
+                      <col class="w312 _sp_w500">
+                      <col class="w347 _sp_w500">
+                      <col class="w259 _sp_w500">
+                    </colgroup>
+                    <thead>
+                      <th class="fz16">ネットワーク名</th>
+                      <th class="fz16">セキュリティの種類</th>
+                      <th class="fz16">暗号化の種類</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="fz18 ta_c">NTT－SPOT</td>
+                        <td class="fz18 ta_c">WEP</td>
+                        <td class="fz18 ta_c">WEP</td>
+                      </tr>
+                      <tr>
+                        <td class="fz18 ta_c">NTTWEST－SPOT</td>
+                        <td class="fz18 ta_c">WPA2-パーソナル</td>
+                        <td class="fz18 ta_c">AES</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <hr class="c-hr">
+
+                <h3 class="title _lv3 ta_c mt70 _sp_mt70">アクセスポイントエリアで<br class="_sp">ログインしてください</h3>
+                <!-- 8.ブラウザーを起動し、ログイン -->
+                <div class="number-df mt40 _sp_mt40">
+                  <p class="circle _bg_blue _num"><span>9</span></p>
+                  <div class="fz24">ブラウザーを起動し、ログイン</div>
+                </div>
+                <ul class="list_disc mt20 _sp_mt20">
+                  <li>アクセスポイントエリアにて、ブラウザーを起動するとログイン画面が表示されます。</li>
+                  <li>「フレッツ・スポット」の「お申し込み内容のご案内」に記載されているフレッツ・スポット認証ID・パスワードを入力します。</li>
+                </ul>
+                <ul class="c-note_list">
+                  <li class="c_red">ログイン画面はアクセスポイント毎（SSID毎）に異なります。以下をご確認ください。</li>
+                </ul>
+                <h4 class="title _lv4">SSID NTT-SPOTの場合</h4>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win8_09.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#win8-modal_content09" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="win8-modal_content09" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win8_09.png" alt="">
+                  </div>
+                </div>
+                <h4 class="title _lv4 mt40 _sp_mt40">SSID NTTWEST-SPOTの場合</h4>
+                <h5 class="title _lv5 mt20 _sp_mt20">パターン1</h5>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win8_10.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#win8-modal_content10" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="win8-modal_content10" class="mfp-hide modal-wrap expand_img img-only-modal">
+
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win8_10.png" alt="">
+                  </div>
+                </div>
+                <h5 class="title _lv5 mt25 _sp_mt25">パターン2</h5>
+                <div class="mt16 _sp_mt16">
+                  <p class="frame-image">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win8_11.png" alt="">
+                  </p>
+                </div>
+                <p class="c-txt txt-link ta_c _sp _sp_mt8"><a href="#win8-modal_content11" class="link_icn expand popup-modal">拡大する</a></p>
+                <div id="win8-modal_content11" class="mfp-hide modal-wrap expand_img img-only-modal">
+                  <div class="ta_c">
+                    <img src="/user/support/service/spot/setup_ipoe/img/win8_11.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="c-txt ta_c mt70 _sp_70 _sp_ta_l">上記以外の機器やOSでの設定方法については、<br class="_pc">各機器・OSの取扱説明書や、メーカーにお問い合わせください。</p>
+        </div>
+      </section>
+
+      <section class="sec">
+        <div class="l-inner">
+            <h2 class="title _lv2 mt05em">「フレッツ・スポット」の<br class="_sp">設定方法、<br class="_pc">詳しい使い方を<br class="_sp">電話でご案内いたします</h2>
+            <div class="btn_area w480 mlr">
+                <a href="#modal_content01" class="btn btn--secondary arrow popup-modal"><span>フレッツ・アプリケーション<br>サービスホットライン</span></a>
+            </div>
+            <!-- モーダル本体 -->
+            <div id="modal_content01" class="mfp-hide modal-wrap">
+              <h3 class="title _lv3">フレッツ・アプリケーションサービスホットライン</h3>
+              <div class="tel_area _bg_ultralightgray mt32 _sp_mt32 pt24 _sp_pt16 pb24 _sp_pb24">
+                  <p class="tel_num mt16 _sp_mt14"><a href="tel:0120-508-202">0120-508-202</a></p>
+                  <p class="c-txt fz16 _s mt15 _sp_mt15">受付時間：午前9時〜午後5時</p>
+                  <p class="c-txt mt0 _sp_mt0">休業日：土曜・日曜・祝日・年末年始<br class="_sp">（12/29〜1/3）</p>
+                  <ul class="c-note_list mt5 _sp_mt5">
+                    <li>電話番号をお確かめのうえ、お間違えのないようお願いいたします。</li>
+                  </ul>
+              </div>
+          </div>
+          <!-- モーダル本体 -->
+        </div>
+      </section>
+
+      <section class="sec _bg_lightblue">
+        <div class="l-inner">
+          <!-- 共通要素「よくある質問」 -->
+          <div class="faq_area">
+            <div class="l-inner">
+              <div class="_header">
+                <h2 class="title _lv2">よくあるご質問</h2>
+              </div>
+              <div class="_body">
+                <ul class="faq_list">
+                  <li>
+                    <span class="circle _bg_blue _q"><span>Q</span></span>
+                    <a href="https://qa.flets-w.com/faq/show/5326?category_id=989&site_domain=default&type=new" class="link_icn">「DoSPOT」を契約できる回線を教えてください。</a>
+                  </li>
+                  <li>
+                    <span class="circle _bg_blue _q"><span>Q</span></span>
+                    <a href="https://qa.flets-w.com/faq/show/1473?category_id=989&site_domain=default&type=new" class="link_icn">「フレッツ・スポット」はどのような場所で利用できるのですか。</a>
+                  </li>
+                  <li>
+                    <span class="circle _bg_blue _q"><span>Q</span></span>
+                    <a href="https://qa.flets-w.com/faq/show/2137?category_id=989&site_domain=default&type=new" class="link_icn">「フレッツ・スポット」で利用できる端末はどのようなものがありますか。</a>
+                  </li>
+                  <li>
+                    <span class="circle _bg_blue _q"><span>Q</span></span>
+                    <a href="https://qa.flets-w.com/faq/show/2603?category_id=989&site_domain=default&type=new" class="link_icn">「フレッツ・スポット」の設定方法を教えてください。</a>
+                  </li>
+                </ul>
+                <div class="faq_btn_area">
+                  <ul class="faq_btn_list">
+                    <li><a href="https://qa.flets-w.com/?site_domain=default&type=new" class="btn btn--primary arrow _faq_list"><span>よくあるご質問一覧</span></a></li>
+                    <li><a href="/inquiry" class="btn btn--secondary arrow _contact"><span>お問い合わせ</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec" id="local_nav">
+        <!--#include virtual="/user/support/service/spot/include/local_nav.html" -->
+    　</section>
+
+    </article>
+  </main>
+</div><!-- /l-content -->
+<!-- 審査番号 -->
+<div class="shinsa-block">
+  <div class="shinsa-block--wrap">
+      <!-- ===== 審査番号ここから ===== -->
+      <p id="shinsa-num" class="shinsa-num c-shinsa-num">審査24-1006【241231】</p>
+      <!-- ===== 審査番号ここまで ===== -->
+  </div>
+</div>
+<!--#include virtual="/resources/inc/cmn/footer.html" -->
+<!--#include virtual="/resources/inc/cmn/body_after.html" -->
+</body>
+</html>

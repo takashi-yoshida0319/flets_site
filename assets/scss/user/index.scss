@@ -1,0 +1,58 @@
+@import "../../partials/mixin", "../../partials/variables";
+
+#main {
+
+  //.frame--bg--gray .tle--lv3 .c_blue.txt--large {
+  //  @include font_size(17);
+  //
+  //
+  //  //PC
+  //  @include mq(){
+  //    @include font_size(40);
+  //  }
+  //}
+
+  .col_2.thisPage {
+
+    //SP
+    @include mq(sp){
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+
+  ._pc_col_4.thisPage {
+
+    //PC
+    @include mq(){
+      margin-right: -12px;
+      > .col {
+        width: calc(25% - 12px);
+        margin-right: 12px;
+      }
+    }
+  }
+
+//  mainVisual
+
+  //PC
+  @include mq(){
+    .mainVisual {
+      margin-bottom: 40px;
+      .carousel {
+        width: 1280px;
+        max-width: 100%;
+        margin: auto;
+        background: red;
+        .carousel__stage,
+        .carousel__stage li.carousel__item,
+        .carousel__stage li.carousel__item > a img {
+          width: 1280px;
+          max-width: 100%;
+
+        }
+      }
+    }
+  }
+
+}

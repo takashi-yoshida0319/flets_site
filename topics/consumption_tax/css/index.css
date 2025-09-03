@@ -1,0 +1,41 @@
+@charset "shift_jis";
+/* CSS Document */
+
+
+table.row-data tbody th.left_line {
+	text-align:left;
+}
+.underline {
+	text-decoration:underline;
+}
+strong {
+	font-size:130%;
+}
+.import strong {
+	font-size:110% !important;
+}
+.txt_small {
+	font-size:84%;
+}
+.list_indent {
+	margin-left:1.2em;
+	text-indent:-1.2em;
+}
+#box_shouhizeilink {
+	padding:8px 0 0 35px;
+	width:655px;
+	height:48px;
+	background:url(../img/img_shouhizei_02.jpg) 0 0 no-repeat;
+}
+
+#box_shouhizeilink li {
+	font-size:11px;
+}
+
+#box_shouhizeilink li a {
+	color:#1A65D4;
+}
+
+#box_shouhizeilink li a:hover {
+	color:#07b7d7;
+}

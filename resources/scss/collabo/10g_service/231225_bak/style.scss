@@ -1,0 +1,531 @@
+@charset "UTF-8";
+@import "../../_mixin";
+
+.rn2020 #main {
+  article{
+    .caution-bw{
+      background-color: #fff;
+      font-size: 78.1%;
+      padding: 12px 16px 12px 16px;
+      line-height: 1.5;
+    }
+    .caution-red{
+      border: 1px #e15656 solid;
+      padding: 12px 19px 8px 19px;
+      .c-note_list_num,
+      .c-note_list{
+        >li{
+          font-size: 61%;
+        }
+      }
+    } 
+    .max10gbps-main{
+      .max10gbps-main-wrapper{
+        &+.cv-area{
+          margin-top: 60px;
+        }
+      }
+      &>section{
+        background-color: #c8e2f3;
+        .max10gbps-main-subContnets{
+          z-index: 10;
+          width: 1000px;
+          margin: -62px auto 0;
+          position: relative;
+        }
+      }
+      .max10gbps-main-kv{
+        background: url("/resources/img/collabo/10g_service/img_kv_bg.png")repeat-x left top;
+        width: auto;
+        margin: 0;
+        h1{
+          width: 1200px;
+          margin: 0 auto;
+        }
+      }
+      .max10gbps-main-contents{ 
+        position: relative;
+        &:after{
+          content: "";
+          display: block;
+          width: 1200px;
+          height: 108px;
+          background: url("/resources/img/collabo/10g_service/img_contents_bottom.png") no-repeat left top;
+          position: absolute;
+          bottom: -108px;
+          left: calc(50% - 600px);
+        }
+        &>div{
+          position: relative;
+          overflow: hidden;
+          padding-bottom: 60px;
+          padding-top: 109px;
+          .after,
+          .before,
+          .center{
+            position: absolute;
+            z-index: 1;
+            span{
+              position: relative;
+              display: block;
+              &:before{
+                content: "";
+                background: url("/resources/img/collabo/10g_service/img_sceneList_bg.png") no-repeat left top;
+                width: 800px;
+                height: 432px;
+                display: block;
+              }
+            }
+          }
+          .before{
+            top: 316px;
+            left: calc(50% - 598px);
+          }
+          .after{
+            top: 1472px;
+            right: calc(50% - 647px);
+          }
+          .center{
+            top: 772px;
+            right: calc(50% - 647px);
+          }
+        }
+        .max10gbps-main-heading{
+          position: relative;
+          &:after{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: -143px;
+            width: 100%;
+            background: url("/resources/img/collabo/10g_service/img_title_bg.png") no-repeat center center;
+            height: 390px;
+            display: block;
+            z-index: 0;
+          }
+          &>div{
+            width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            h2{
+              font-size: 178%;
+              text-align: center;
+              font-weight: bold;
+              line-height: 1.5;
+              .num{
+                font-size: 137.5%;
+                font-weight: bold;
+              }
+              .text{
+                font-size: 118.6%;
+                font-weight: bold;
+              }
+              sup{
+                font-weight: bold;
+              }
+            }
+          }
+        }
+        .sceneList{
+          width: 1000px;
+          margin: 100px auto 0px;
+          position: relative;
+          li{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            z-index: 2;
+            &:nth-of-type(2n){
+              flex-direction: row-reverse;
+            }
+            &:nth-of-type(3){
+              margin-top: 39px;
+            }
+            .img{
+              width: 50%;
+            }
+            .text{
+              width: 44%;
+              align-self: center;
+              h3{
+                background: linear-gradient(transparent 76%, #ffee00 0%);
+                padding-bottom: 5px;
+                display: inline-block;
+                font-weight: bold;
+                font-size: 155.5%;
+              }
+              p{
+                font-size: 111%;
+                margin-top: 20px;
+              }
+            }
+          }
+        }
+      }
+      .collaboService{
+        padding-top: 42px;
+        padding-bottom: 40px;
+        background-color: #f2faff !important;
+        position: relative;
+        margin-top: 148px;
+        .before{
+          position: absolute;
+          top: 42px;
+          left: calc(50% - 600px);
+          z-index: 1;
+          span{
+            position: relative;
+            display: block;
+            &:before{
+              content: "";
+              background: url("/resources/img/collabo/10g_service/img_collaboService_bg.png") no-repeat left top;
+              width: 1200px;
+              height: 305px;
+              display: block;
+            }
+          }
+        }
+        &>div{
+          position: relative;
+          z-index: 2;
+          h2{
+            font-size: 133%;
+            font-weight: bold;
+            text-align: center;
+            line-height: 2.2;
+            span{
+              font-size: 184%;
+              font-weight: bold;
+              background: linear-gradient(transparent 76%, #ffee00 0%);
+              padding-bottom: 5px;
+            }
+          }
+          &>.text{
+            width: 800px;
+            margin: 32px auto 0;
+            .caution-red{
+              background-color: #fff;
+              padding: 11px 14px 10px 14px;
+              p{
+                font-size: 78.1%;
+              }
+              &+.c-note_list{
+                margin-top: 17px;
+                &>li{
+                  font-size:77.8%;
+                }
+              }
+            }
+          }
+          .collaboContents{
+            margin-top: 36px;
+            .view{
+              width: 1000px;
+              margin: 0 auto;
+              display: flex;
+              justify-content: space-between;
+              flex-wrap: wrap;
+              .collaboPanel{
+                box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.12);
+                background-color: #fff;
+                width: 32%;
+                border-radius: 10px;
+                padding: 25px 17px 17px 15px;
+                &:nth-of-type(n+4){
+                  margin-top: 40px;
+                }
+                h3{
+                  color:#1a3493;
+                  border-bottom: 1px #e3e5ec solid;
+                  font-size: 111%;
+                  font-weight: bold;
+                  padding-bottom: 13px;
+                }
+                .img{
+                  margin-top: 16px;
+                  text-align: center;
+                  padding: 0 20px;
+                  img{
+                    width: 100%;
+                    height: auto;
+                  }
+                }
+                .name{
+                  font-size: 89%;
+                  font-weight: bold;
+                  margin-top: 11px;
+                }
+                .text{
+                  font-size: 78%;
+                  margin-top: 9px;
+                }
+                .collaboBtn{
+                  margin-top: 31px;
+                  li{
+                    &+li{
+                      margin-top: 13px;
+                    }
+                    .telLink {
+                      pointer-events: none;
+                    }
+                  }
+                }
+                .subText{
+                  font-size: 67%;
+                  margin-top: 13px;
+                  text-align: center;
+                  &+.subText{
+                    margin-top: 3px;
+                  }
+                }
+              }
+            }
+            .moreBtn{
+              width: 220px;
+              margin: 60px auto 0;
+            }
+            .moarArea{
+              display: none;
+              .view{
+                margin-top: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.rn2020 #tax_info p{
+  font-weight: 700;
+  font-size: 50%;
+  line-height: 1.4;
+  padding: 3px 14px;
+}
+
+@media screen and (max-width: 767px){
+  .rn2020 #main {
+    article{
+      .caution-bw{
+        line-height: 1.53;
+        font-size: 83.5%;
+      }
+      .max10gbps-main{
+        &>section {
+          .max10gbps-main-subContnets{
+            width: 100%;
+            margin: -21px auto 0;
+            padding: 0 21px;
+          }
+        }
+        .max10gbps-main-wrapper{
+          &+.cv-area{
+            margin-top: 19px;
+          }
+        }
+        .max10gbps-main-kv{
+          background: none;
+          h1{
+            width: 100%;
+          }
+        }
+        .max10gbps-main-contents{
+          &:after{
+            width: 100vw;
+            height: 120px;
+            background: url("/resources/img/collabo/10g_service/img_contents_bottom_sp.png") no-repeat left top;
+            bottom: -120px;
+            left: 50%;
+            background-size: 100%;
+            /* min-width: 375px; */
+            max-width: 375px;
+            transform: translateX(-50%);
+          }
+          &>div{
+            padding-top: 0px;
+            padding-bottom: 40px;
+            .before,
+            .after,
+            .center{
+              span{
+                &:before{
+                  background: url("/resources/img/collabo/10g_service/img_sceneList_bg_sp.png") no-repeat center center;
+                  width: 272.8vw;
+                  height: 147.2vw;
+                  background-size: 136vw;
+                }
+              }
+            }
+            .before{
+              top: 497px;
+              left: calc(50% - 142vw);
+            }
+            .after{
+              top: 1298px;
+              right: calc(50% - 131vw);
+            }
+            .center{
+              top: 908px;
+              right: calc(50% - 131vw);
+            }
+          }
+          .max10gbps-main-heading{
+            &:after{
+              top: -64px;
+            }
+            &>div{
+              width: 100%;
+              padding-top: 71px;
+              h2{
+                font-size: 133%;
+                line-height: 1.65;
+                .num{
+                  font-size: 150.5%;
+                }
+                .text{
+                  font-size: 125%;
+                }
+              }
+            }
+          }
+          .sceneList{
+            width: 100%;
+            padding: 0 21px;
+            margin: 35px auto 0px;
+            li{
+              flex-wrap: wrap;
+              &+li{
+                margin-top: 29px;
+              }
+              .img{
+                width: 100%;
+              }
+              &::nth-of-type(3){
+                margin-top: initial;
+              }
+              .text{
+                width: 100%;
+                text-align: right;
+                margin-top: 5px;
+                padding-right: 7px;
+                h3{
+                  font-size: 122.5%;
+                }
+                p{
+                  text-align: left;
+                  font-size: 89%;
+                  margin-top: 8px;
+                }
+              }
+            }
+          }
+        }
+        .collaboService{
+          padding: 34px 20px 40px;
+          overflow: hidden;
+          margin-top: 88px;
+          .before{
+            position: absolute;
+            top: 0px;
+            left: 0;
+            z-index: 1;
+            span{
+              &:before{
+                background: url("/resources/img/collabo/10g_service/img_collaboService_bg_sp.png") no-repeat center center;
+                width: 72px;
+                height: 88px;
+                background-size: contain;
+              }
+            }
+          }
+          .after{
+            position: absolute;
+            top: 124px;
+            right: 0;
+            z-index: 1;
+            span{
+              &:before{
+                content: "";
+                display: block;
+                background: url(/resources/img/collabo/10g_service/img_collaboService_bg_sp_02.png) no-repeat center center;
+                width: 140px;
+                height: 100px;
+                background-size: contain;
+              }
+            }
+          }
+
+
+
+          &>div{
+            z-index: 2;
+            position: relative;
+            .text{
+              width: 100%;
+              margin: 23px auto 0;
+            }
+            h2{
+              font-size: 100%;
+              span{
+                font-size: 178%;
+                line-height: 1.28;
+                display: inline-block;
+                background: none;
+              }
+            }
+            &>.text{
+              .caution-red{
+                p{
+                  font-size: 83.5%;
+                  line-height: 1.55;
+                }
+                &+.c-note_list{
+                  &>li{
+                    font-size: 83.5%;
+                  }
+                }
+              } 
+            }
+            .collaboContents{
+              margin-top: 39px;
+              .view{
+                width: 100%;
+                flex-wrap: wrap;
+                .collaboPanel{
+                  width: 100%;
+                  padding: 25px 17px 19px 15px;
+                  &+.collaboPanel{
+                    margin-top: 20px;
+                  }
+                  .img{
+                    width: 100%;
+                    text-align: center;
+                    padding: 0 16px;
+                  }
+                  .collaboBtn{
+                    margin-top: 27px;
+                    li{
+                      &+li{
+                        .telLink{
+                          pointer-events: auto;
+                        }
+                      }
+                    }
+
+                  }
+                }
+              }
+              .moreBtn{
+                width: 205px;
+                margin: 40px auto 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

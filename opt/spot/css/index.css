@@ -1,0 +1,354 @@
+@charset "shift-jis";
+/* 2011.12.16- add CSS
+----------------------------------------*/
+#spot.top{
+	padding: 0;
+	margin: 0;
+}
+#spot.top .detail_nttwest{
+	width: 690px;
+	height: 169px;
+	position: relative;
+	background: url(../img/bg_detail_clubwest.gif) no-repeat top left;
+	margin-bottom: 10px;
+}
+#spot.top .detail_nttwest a{
+	display: block;
+	position: absolute;
+	top: 120px;
+	left: 214px;
+}
+#spot.top .detail_nttwest_short{
+	width: 650px;
+	height: 173px;
+	position: relative;
+	background: url(../img/bg_detail_clubwest_short.gif) no-repeat top left;
+}
+#spot.top .detail_nttwest_short a{
+	display: block;
+	position: absolute;
+	top: 123px;
+	left: 200px;
+}
+#spot.top .btn_access_point_serach {
+	width: 690px;
+	height: 129px;
+	position: relative;
+	background: url(../img/bg_access_point_search.gif) no-repeat top left;
+	margin-bottom: 5px;
+}
+#spot.top .btn_access_point_serach a {
+	display: block;
+	position: absolute;
+	top: 61px;
+	left: 214px;
+}
+/* #spot.top .btn_access_point_serach a.inquiry{
+	display: block;
+	position: absolute;
+	top: 23px;
+	left: 152px;
+}
+#spot.top .btn_access_point_serach a.about_inquiry{
+	display: block;
+	position: absolute;
+	top: 79px;
+	left: 152px;
+}
+#spot.top .btn_access_point_serach a.search{
+	display: block;
+	position: absolute;
+	top: 138px;
+	left: 152px;
+} */
+#spot.top .block02 {
+	margin-bottom: 30px;
+}
+#spot.top .block02 .bg_box .bg_box_contents {
+	padding-top: 0;
+}
+#spot.top .block02 .bg_box .bg_box_contents.point01 {
+	padding-left: 20px;
+}
+#spot.top .block03 {
+	margin-bottom: 10px;
+}
+#spot.top .block02 .content h4 {
+	margin-bottom: 10px;
+}
+#spot.top .block02 .content dl.last-child {
+	margin-bottom: 0;
+}
+#spot.top .block03 .content{
+	margin-bottom: 20px;
+}
+#spot.top .block03 .content.last-child{
+	margin-bottom: 0;
+}
+#spot.top .block03 .content p{
+	float: left;
+}
+#spot.top .block03 .content p.fright{
+	float: right;
+	text-align: right;
+}
+#spot.top .block03 .content .information01{
+	float: left;
+	width: 434px;
+	height: 222px;
+	position: relative;
+	background: url(../img/block03_01_bg01.gif) no-repeat top left;
+}
+#spot.top .block03 .content .information01 p{
+	position: absolute;
+	bottom: 10px;
+	left: 15px;
+}
+#spot.top .block03 .content .information02{
+	float: left;
+	width: 434px;
+	height: 222px;
+	position: relative;
+	background: url(../img/block03_02_bg01.gif) no-repeat top left;
+}
+#spot.top .block03 .content .information02 p{
+	position: absolute;
+	bottom: 10px;
+	left: 15px;
+}
+#spot.top .block03 .content .information03{
+	float: left;
+	width: 434px;
+	height: 222px;
+	position: relative;
+	background: url(../img/block03_03_bg01.gif) no-repeat top left;
+}
+#spot.top .block03 .content .information03 p{
+	position: absolute;
+	bottom: 10px;
+	left: 15px;
+}
+#spot.top .block03 .content .information04{
+	float: left;
+	width: 434px;
+	height: 222px;
+	position: relative;
+	background: url(../img/block03_04_bg01.gif) no-repeat top left;
+}
+#spot.top .block03 .content .information04 p{
+	position: absolute;
+	bottom: 10px;
+	left: 15px;
+}
+#spot.top .btn_inquiry_spot{
+	width: 690px;
+	height: 129px;
+	position: relative;
+	background: url(../img/bg_inquiry_spot.gif) no-repeat top left;
+	margin-bottom: 45px;
+}
+#spot.top .btn_inquiry_spot a{
+	display: block;
+	position: absolute;
+	top: 51px;
+	left: 150px;
+}
+#spot.top .btn_inquiry{
+	width: 690px;
+	height: 113px;
+	position: relative;
+	background: url(../img/bg_btn_inquiry.gif) no-repeat top left;
+	margin-bottom: 30px;
+}
+#spot.top .btn_inquiry a{
+	display: block;
+	position: absolute;
+	top: 35px;
+	left: 150px;
+}
+#spot.top .notes dl {
+	font-size: 90%;
+}
+dd.block02_03_bg01{
+	background: url(../img/block02_03_bg01.gif) 0 0 no-repeat;
+	height: 40px;
+}
+dd.block02_03_bg01 p{
+	text-align:center;
+	padding-top: 5px;
+}
+#spot.top .bg_box .bg_box_contents.block02_03 {
+	padding-left: 19px;
+	padding-right: 22px;
+}
+.bottom_localnavi{
+  background: #e1e8ed;
+  padding: 10px;
+}
+.bottom_localnavi ul{
+  margin-bottom: 8px;
+}
+.bottom_localnavi ul.last-child{
+  margin-bottom: 0;
+}
+.bottom_localnavi ul li{
+  float: left;
+  width: 218px;
+  height: 89px;
+  background: #fff;
+  margin-right: 8px;
+}
+.bottom_localnavi ul li.last-child{
+  margin-right: 0;
+}
+.bottom_localnavi ul li dl{
+  padding: 10px 10px 10px 7px;
+}
+.bottom_localnavi ul li dl dt, .bottom_localnavi ul li dl dd{
+  float: left;
+  line-height: 1.2em;
+}
+.bottom_localnavi ul li dl dt{
+  width: 60px;
+}
+.bottom_localnavi ul li dl dd{
+  width: 134px;
+}
+.bottom_localnavi ul li dl dd ul li{
+  width: 134px;
+  float: none;
+  height: 100%;
+  background: none;
+  margin-right: 0;
+}
+.fleft{
+	float: left;
+}
+.width440{
+	width: 440px;
+}
+a:hover img.linking{
+	opacity:0.5;
+	filter: alpha(opacity=50);
+	-ms-filter: "alpha( opacity=50 )";
+	background: #fff;
+}
+div.bnr_mp {
+	margin:50px 0 0 0;
+}
+/* Config CSS */
+.mt0{margin-top: 0 !important;}
+.mt30{margin-top: 30px;}
+.mb5{margin-bottom: 5px !important;}
+.mb10{margin-bottom: 10px !important;}
+.mb20{margin-bottom: 20px !important;}
+.mr25{margin-right: 25px;}
+/* mobilepack */
+#mpBox {
+	margin:30px 0 0 0;
+}
+.mobilepack2 {
+	margin:0 0 25px 0;
+	position:relative;
+}
+.mobilepack2 p.portbtnDetail{
+	position:absolute;
+	top:113px;
+	left:518px;
+}
+.mobilepack2 p.portbtnDetail02{
+	position:absolute;
+	top:209px;
+	left:520px;
+}
+/* 20160324 Add Start */
+div.sec01 {
+	width:690px;
+	height:402px;
+	margin:0 0 50px;
+	text-align:center;
+	position:relative;
+}
+div.sec01 .btn01 {
+	position:absolute;
+	left:430px;
+	top:385px;
+}
+div.sec01 .btn02 {
+  position: absolute;
+  left: 0;
+  top: 286px;
+  width: 100%;
+}
+div.sec01 .btn02 > .text {
+ margin-top: 7px;
+ font-size: 95%;
+}
+
+div.sec02 {
+	width:690px;
+	height:688px;
+	margin:0 0 33px;
+	text-align:center;
+	position:relative;
+}
+div.sec02 .btn01 {
+	position:absolute;
+	left:116px;
+	top:594px;
+}
+div.discountBox {
+	background:url(../img/discount_bg.png) top left no-repeat;
+	width:690px;
+	height:222px;
+}
+div.discountBox ul {
+	padding:43px 0 0 0;
+}
+div.discountBox ul li {
+	margin:0 0 0 18px;
+}
+.article .frame .section p,
+.article .frame .section ul li {
+    font-size: 84% !important;
+    line-height:1.4;
+}
+.article .frame .section ul li {
+	text-indent:-0.5em;
+	padding:0 0 0 0.5em;
+}
+.frame dt {
+    float: left;
+    width: 22px;
+}
+.frame dd {
+    float: none;
+    margin-left: 2em;
+    width: 620px;
+}
+dl.info dt, #index dl.news dt {
+    float: left;
+    line-height: 160%;
+    padding: 0;
+    width: 6em;
+}
+dl.info dd {
+    line-height: 160%;
+    padding: 0 0 0 6.5em;
+}
+.frame dt.nonNum {
+    width: 10px;
+}
+.frame dd.nonNum {
+    float: none;
+    margin-left: 1em;
+    width: 620px;
+}
+/* 20130318 Add End */
+.tar {
+    text-align: right;
+    padding-right: 5px;
+}
+.small {
+	font-size: 84%;
+}

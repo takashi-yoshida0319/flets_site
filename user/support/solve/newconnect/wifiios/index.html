@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <!--#include virtual="/resources/inc/cmn/viewport.html" -->
+  <title>Wi-FiにiOS端末を接続する設定手順｜フレッツ光｜NTT西日本公式</title>
+  <meta name="description" content="【写真付き解説】Wi-Fi（無線LAN）に、iOS（iPhone/iPad）を接続する設定手順をわかりやすくご案内いたします。【NTT西日本｜フレッツ光公式】">
+  <meta name="apple-mobile-web-app-capable" content="no">
+  <meta name="format-detection" content="telephone=no">
+  <!--#include virtual="/resources/inc/cmn/json-ld.html" -->
+  <!-- OGP -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Wi-FiにiOS端末を接続する設定手順｜フレッツ光｜NTT西日本公式">
+  <meta property="og:description" content="【写真付き解説】Wi-Fi（無線LAN）に、iOS（iPhone/iPad）を接続する設定手順をわかりやすくご案内いたします。【NTT西日本｜フレッツ光公式】">
+  <meta property="og:image" content="https://flets-w.com/resources/img/cmn/og.png">
+  <meta property="og:url" content="https://flets-w.com/user/support/solve/newconnect/wifiios/">
+  <meta property="og:site_name" content="NTT西日本公式｜フレッツ光｜光インターネット接続（光回線）">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="shortcut icon" href="https://flets-w.com/favicon.ico">
+  <link rel="apple-touch-icon" href="https://flets-w.com/apple-touch-icon.png">
+  <link rel="canonical" href="https://flets-w.com/user/support/solve/newconnect/wifiios/">
+  <!-- CSS -->
+  <!--#include virtual="/resources/inc/cmn/css.html" -->
+  <!--#include virtual="/resources/inc/cmn/css_hf.html" -->
+  <!-- JS -->
+  <!--#include virtual="/resources/inc/cmn/js.html" -->
+  <!--#include virtual="/resources/inc/cmn/head.html" -->
+  <!--#include virtual="/resources/inc/cmn/analytics.html" -->
+  <link rel="stylesheet" href="/user/support/solve/css/style.css" media="all and (min-width: 768px)">
+  <link rel="stylesheet" href="/user/support/solve/css/style_sp.css" media="all and (max-width: 767px)">
+<link rel="stylesheet" href="/user/support/solve/newconnect/css/common.css">
+  <script src="/user/support/solve/newconnect/js/script.js"></script>
+  <script src="/user/support/solve/newconnect/js/getLinks.js"></script>
+  <script src="/user/support/solve/js/script.js"></script>
+</head>
+<body class="rn2020">
+<!--#include virtual="/resources/inc/cmn/body_before.html" -->
+<!--#include virtual="/resources/inc/cmn/block_skip.html" -->
+<!--#include virtual="/resources/inc/cmn/header_ntt.html" -->
+<!--#include virtual="/resources/inc/cmn/header.html" -->
+
+<!-- ぱんくず -->
+<ol id="topicpath" class="topicpath">
+  <li><a href="/">フレッツ光 TOP</a></li>
+  <li><a href="/user/">フレッツ光をご利用中のお客さま</a></li>
+  <li><a href="/user/support/">設定・トラブル解決</a></li>
+  <li><a href="/user/support/solve/newconnect/">インターネットに新しい機器を接続する（無線（Wi-Fi）/有線）</a></li>
+  <li>Wi-FiにiOSを接続する設定</li>
+</ol>
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement":
+    [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "item":
+            {
+                "@id": "https://flets-w.com/",
+                "name": "フレッツ光 TOP"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "item":
+            {
+                "@id": "https://flets-w.com/user/",
+                "name": "フレッツ光をご利用中のお客さま"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "item":
+            {
+                "@id": "https://flets-w.com/user/support/",
+                "name": "設定・トラブル解決"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 4,
+            "item":
+            {
+                "@id": "https://flets-w.com/user/support/solve/newconnect/",
+                "name": "インターネットに新しい機器を接続する（無線（Wi-Fi）/有線）"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 5,
+            "item":
+            {
+                "@id": "https://flets-w.com/user/support/solve/newconnect/wifimac/",
+                "name": "Wi-FiにiOSを接続する設定"
+            }
+        }
+    ]
+}
+</script>
+<!-- コンテンツここから -->
+<div id="l-content">
+  <main id="main">
+    <section class="title_area">
+      <div class="l-inner">
+        <h1 class="title _lv1">Wi-FiにiOSを接続する設定</h1>
+      </div>
+    </section>
+    <article>
+      <section class="sec _bg_lightblue">
+        <div class="l-inner">
+          <h2 class="title _lv2">Wi-Fi設定手順</h2>
+          <ol class="num_list">
+            <li><span>SSIDと暗号化キーのメモを用意</span></li>
+            <li><span>iOSのWi-Fiを設定</span></li>
+            <li><span>インターネットにつながっているか確認する</span></li>
+            <li class="none"><a href="/user/support/solve/newconnect/lancard/" class="link_icn arrow">ホームゲートウェイのWi-Fi設定がまだの方はこちら</a></li>
+          </ol>
+          <div class="ac_area full mt2em">
+            <a href="javascript:void(0);" class="acTrigger _bg_darkgray c_white tdn" data-target="ac02">
+              <span class="ac_txt">手順詳細</span>
+              <i class="icoAcLinkAfter"></i>
+              <span class="txt-open">開く</span>
+            </a>
+            <div class="ac02 acHide">
+              <div>
+                <div class="number-df">
+                  <p class="circle _bg_blue _num"><span>1</span></p>
+                  <div class="fwb fz24"><span class="textdecoration ">SSIDと暗号化キーのメモ</span>を用意</div>
+                </div>
+                <div class="number-contents">
+                  <p class="c-txt txt-link ">
+                    <a href="#ssid" class="link_icn popup-modal spfz16">SSIDや暗号化キーがわからない場合はこちら</a>
+                    <div id="ssid" class="mfp-hide modal-wrap"><!--#include virtual="../include/ssid.html" --></div>
+                  </p>
+                </div>
+              </div>
+              <hr class="in-hr wide">
+              <div>
+                <div class="number-df">
+                  <p class="circle _bg_blue _num"><span>2</span></p>
+                  <div class="fwb fz24">iOSのWi-Fiを設定</div>
+                </div>
+                <div class="number-contents ">
+                  <ul class="annotation fz mt00">
+                    <li>
+                      <span>（1）</span>
+                      <span>「設定」をタップします</span>
+                    </li>
+                  </ul>
+                  <div class="in-image"><img class="u-img" src="../img/new/ios/01.png" height="448" width="252" alt="（1）［設定］をタップします"></div>
+
+                  <div class="_sp">
+                    <p class="c-txt txt-link tac mt05em">
+                      <a href="#modal_content01" class="link_icn expand popup-modal">拡大する</a>
+                    </p>
+                    <div id="modal_content01" class="modal-wrap expand_img mfp-hide">
+                        <div class="ta_c">
+                          <img src="../img/new/ios/01.png" alt="（1）［設定］をタップします">
+                        </div>
+                    </div>
+                  </div>
+
+                  <ul class="annotation fz">
+                    <li>
+                      <span>（2）</span>
+                      <span>「Wi-Fi」をタップします</span>
+                    </li>
+                  </ul>
+                  <div class="in-image">
+                    <img class="u-img" src="../img/new/ios/02.png" height="448" width="252" alt="（2）［Wi-Fi］をタップします">
+                  </div>
+
+                  <div class="_sp">
+                    <p class="c-txt txt-link tac mt05em">
+                      <a href="#modal_content02" class="link_icn expand popup-modal">拡大する</a>
+                    </p>
+                    <div id="modal_content02" class="modal-wrap expand_img mfp-hide">
+                        <div class="ta_c">
+                          <img src="../img/new/ios/02.png" alt="（1）［設定］をタップします">
+                        </div>
+                    </div>
+                  </div>
+
+                  <ul class="annotation fz">
+                    <li>
+                      <span>（3）</span>
+                      <span>Wi-Fi 横の<img src="../img/new/ios/btn.png" height="28" width="47" alt="iosスイッチ" class="u-textin-image u-textin-imageios" style="border:none;">をタップし、ご自身の「SSID」を選択します</span>
+                    </li>
+                  </ul>
+                  <ul class="annotation mt00">
+                    <li>
+                      <span>※</span>
+                      <span>①でご用意いただいたSSIDと暗号化キーをご確認ください。</span>
+                    </li>
+                  </ul>
+                  <div class="in-image">
+                    <img class="u-img" src="../img/new/ios/03.png" height="448" width="252" alt="Wi-Fi 横のiosスイッチをタップし、ご自身のSSIDを選択します">
+                  </div>
+
+                  <div class="_sp">
+                    <p class="c-txt txt-link tac mt05em">
+                      <a href="#modal_content03" class="link_icn expand popup-modal">拡大する</a>
+                    </p>
+                    <div id="modal_content03" class="modal-wrap expand_img mfp-hide">
+                        <div class="ta_c">
+                          <img src="../img/new/ios/03.png" alt="（1）［設定］をタップします">
+                        </div>
+                    </div>
+                  </div>
+
+
+                  <ul class="annotation fz">
+                    <li>
+                      <span>（4）</span>
+                      <span>パスワードを入力後、「接続」をタップします</span>
+                    </li>
+                  </ul>
+                  <ul class="annotation mt00">
+                    <li>
+                      <span>※</span>
+                      <span>①でご用意いただいたSSIDと暗号化キーをご確認ください。</span>
+                    </li>
+                  </ul>
+                  <div class="in-image">
+                    <img class="u-img" src="../img/new/ios/04.png" height="448" width="252" alt="（4）パスワードを入力後、［接続］をタップします">
+                  </div>
+
+                  <div class="_sp">
+
+                    <p class="c-txt txt-link tac mt05em">
+                      <a href="#modal_content04" class="link_icn expand popup-modal">拡大する</a>
+                    </p>
+                    <div id="modal_content04" class="modal-wrap expand_img mfp-hide">
+                        <div class="ta_c">
+                          <img src="../img/new/ios/04.png" alt="（4）パスワードを入力後、［接続］をタップします">
+                        </div>
+                    </div>
+                  </div>
+
+                  <ul class="annotation fz">
+                    <li>
+                      <span>（5）</span>
+                      <span>画面上部に「Wi-Fi」マークが表示されれば設定完了です</span>
+                    </li>
+                  </ul>
+                  <div class="in-image">
+                    <img class="u-img" src="../img/new/ios/05.png" height="448" width="252" alt="（5）画面上部に［Wi-Fi］マークが表示されれば設定完了です">
+                  </div>
+
+                  <div class="_sp">
+                    <p class="c-txt txt-link tac mt05em">
+                      <a href="#modal_content05" class="link_icn expand popup-modal">拡大する</a>
+                    </p>
+                    <div id="modal_content05" class="modal-wrap expand_img mfp-hide">
+                        <div class="ta_c">
+                          <img src="../img/new/ios/05.png" alt="（5）画面上部に［Wi-Fi］マークが表示されれば設定完了です">
+                        </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <hr class="in-hr wide">
+              <div>
+                <div class="number-df">
+                  <p class="circle _bg_blue _num"><span>3</span></p>
+                  <div class="fwb fz24">設定できているか確認</div>
+                </div>
+                <div class="number-contents">
+                <ul class="annotation fz mt00">
+                  <li>
+                    <span>（1）</span>
+                    <span>Safariをクリックします。</span>
+                  </li>
+                  <li>
+                    <span>（2）</span>
+                    <span>ホームページが表示されれば、設定は完了です。</span>
+                  </li>
+                </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--#include virtual="/user/support/solve/newconnect/include/remote_support.html" -->
+      <!--#include virtual="/user/support/solve/newconnect/include/useful.html" -->
+      <!--#include virtual="/user/support/solve/newconnect/include/links.html" -->
+      <article>
+        <section class="sec">
+		<!-- インターネットに新しい機器をつなぐ よくあるご質問 -->
+		<!--#include virtual="/user/support/solve/newconnect/include/faq.html" -->
+		<!-- インターネットに新しい機器をつなぐ よくあるご質問 -->
+        </section>
+		<section class="sec _bg_lightblue" id="localnavi">
+		<!-- インターネットに新しい機器をつなぐ メニュー -->
+		<!--#include virtual="/resources/inc/localnavi/user_support_solve_newconnect.html" -->
+		<!-- インターネットに新しい機器をつなぐ メニュー -->
+		</section>	
+      </article>
+    </article>
+  </main>
+</div>
+<!-- 審査番号 -->
+<div class="shinsa-block">
+  <div class="shinsa-block--wrap">
+      <!-- ===== 審査番号ここから ===== -->
+      <p id="shinsa-num" class="shinsa-num c-shinsa-num">審査24-877【261130】</p>
+      <!-- ===== 審査番号ここまで ===== -->
+  </div>
+</div>
+<!--#include virtual="/resources/inc/cmn/footer.html" -->
+<!--#include virtual="/resources/inc/cmn/body_after.html" -->
+</body>
+</html>

@@ -1,0 +1,406 @@
+@charset "shift_jis";
+
+.title01{
+	padding-right : 20px;
+}
+
+dl.notes {
+    overflow: hidden;
+}
+
+dl.notes dt {
+    clear: left;
+    color: #676767;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 0 5px;
+    width: 50px;
+}
+
+dl.notes dd {
+    float: left;
+    font-size: 20px;
+    width: 520px;
+}
+
+dl.notes02 {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+dl.notes02 dt {
+    clear: left;
+    color: #676767;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 0 5px;
+    width: 30px;
+}
+
+dl.notes02 dd {
+    float: left;
+    font-size: 20px;
+    width: 570px;
+}
+
+.frame02 h3 {
+	border-bottom: none;
+}
+
+.frame02.appliBtn {
+	padding:22px 0;
+	text-align:center;
+}
+#content .frame02.appliBtn p {
+	padding:0;
+	margin:0 0 10px;
+}
+.spotService {
+	height:550px;
+	margin:0 0 30px;
+	position:relative;
+}
+.spotService img {
+	vertical-align:top;
+}
+.spotService .btn01 {
+	position:absolute;
+	top:500px;
+	left:336px;
+	margin:0;
+	padding:0;
+}
+.spotService .btn02 {
+	position: absolute;
+	bottom: 35px;
+	left: 17px;
+	margin: 0;
+	padding: 0;
+}
+.spotService .btn02 > .text {
+	font-size: 15px;
+	text-align: center;
+	margin-top: 12px;
+	line-height: 1.4;
+}
+/* -- icon -- */
+
+.icoTop.type16 {
+		background-position: -1050px 0;
+}
+span.icoSP.type18 { background-position: -750px 0;}
+.active span.icoSP.type18 { background-position: -750px -60px;}
+
+.icoTop {
+	background: url("../../img/sprite_top_01.png") no-repeat scroll 0 0 transparent;
+	display: block;
+	height: 70px;
+	left: 10px;
+	margin-top: -35px;
+	position: absolute;
+	top: 50%;
+	width: 70px;
+}
+
+.icoLogo.fletsSpot {
+	background-position: -994px -70px;
+	height: 42px;
+	margin-left: 80px;
+	margin-top: -20px;
+	width: 156px;
+}
+
+.icoSpot {
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	display: block;
+	width: 60px;
+	height: 60px;
+	margin-top: -30px;
+	background: url("../img/sprite_spot_01.png") 0 0 no-repeat;
+}
+
+.icoSpot.type01 { background-position: 0 0;}
+
+.icoDial {
+	background: url("../../cmn/img/icon_freedial.png") no-repeat scroll 0 0 transparent;
+	display: block;
+	height: 42px;
+	left: 20px;
+	margin-top: -22px;
+	position: absolute;
+	top: 50%;
+	width: 70px;
+}
+
+p.btnDial .Dial {
+    font-size: 34px;
+    margin-left: 20px;
+}
+
+/* -- areaSearch -- */
+
+section.inBlock {
+	margin-bottom: 40px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	-moz-box-shadow: 0 0 4px 0 #1db5d8;
+	-webkit-box-shadow: 0 0 4px 0 #1db5d8;
+	box-shadow: 0 0 4px 0 #1db5d8;
+}
+
+section.inBlock h2 {
+	position: relative;
+	top: -10px;
+}
+
+section.inBlock div.innerSec {
+	margin-top: -10px;
+	padding: 20px;
+	border-top: none;
+	-moz-border-radius-bottomleft:6px;
+	-moz-border-radius-bottomright:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	border-bottom-left-radius:6px;
+	border-bottom-right-radius:6px;
+	background-color: #fff;
+}
+
+ul.selectNav {
+	margin-bottom: 18px;
+	overflow: hidden;
+}
+
+ul.selectNav li {
+	float: left;
+	margin-left: 8px;
+}
+
+ul.selectNav li:first-child {
+	float: left;
+	margin: 0;
+}
+
+ul.list01 {
+	margin-bottom: 0 !important;
+}
+
+ul.list01 li {
+	margin-bottom: 20px;
+}
+
+ul.list01 li:last-child {
+	margin-bottom: 0;
+}
+
+table.row-data {
+    font-size: 20px;
+}
+
+table tr th {
+	vertical-align: middle;
+}
+
+/* -- appli -- */
+.appliFrame {
+	padding: 0;
+	margin:0 0 30px;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	background: url("../appli/img/bg_appli_01.png") repeat scroll 0 0 #4bcbff;
+}
+.appliFrame:first-of-type {
+	-moz-border-top-left-radius:0;
+	-moz-border-top-right-radius:0;
+	-webkit-border-top-left-radius:0;
+	-webkit-border-top-right-radius:0;
+	border-top-left-radius:0;
+	border-top-right-radius:0;
+
+}
+.appliFrame h3 {
+	text-align:center;
+	padding:15px 0;
+}
+.appliFrame:first-of-type h3 {
+	height:25px;
+	padding:0;
+	position:relative;
+}
+.appliFrame:first-of-type h3 img {
+	position:absolute;
+	z-index:5;
+	top:-16px;
+	left:6px;
+}
+.appliFrame ul {
+	text-align:center;
+	padding:0 18px 18px;
+}
+.appliFrame ul li { margin-bottom:11px; }
+.appliFrame ul li:last-of-type { margin-bottom:0; }
+
+#functionTab {
+	margin:0 0 30px;
+}
+#functionTab .tabNav {
+	overflow:auto;
+}
+#functionTab .tabNav li {
+	float:left;
+	cursor:pointer;
+}
+#functionTab .tab01 {
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:8px solid #6bd4ff;
+	text-align:center;
+}
+
+.pointProgram {
+	height: 520px;
+	margin:0 0 30px;
+	background:url(../img/pp_bg.png) bottom left no-repeat;
+}
+
+.pointProgram ul{
+	margin:0 0 0 65px;
+	padding:0;
+	width:461px;
+}
+
+.pointProgram ul li {
+	list-style-type:none;
+	margin:0 0 10px 0;
+}
+
+.noDisp {
+	display:none;
+}
+.mb0 { margin-bottom:0; }
+
+.note_tar {
+	padding-left: 15px;
+}
+
+article#content .fs20 {
+	font-size: 20px;
+	margin-bottom: 0;
+}
+
+.mb40 {
+	margin-bottom: 40px;
+}
+
+.circle-list03 li {
+	display: block;
+	text-indent: -20px;
+	padding-left: 20px;
+}
+
+/* add */
+#content .notice_provider p {
+	margin-bottom: 15px;
+}
+#content .notice_provider p + p {
+	margin-bottom: 0;
+}
+
+/* modal
+****************************/
+.modal-checkbox {
+  display: none;
+}
+
+.modal {
+	top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    overflow: auto;
+    z-index: 100;
+    display: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+    text-align: left;
+    margin-top: 0 !important;
+}
+.modal-open-button {
+  text-decoration: underline;
+  color: #333;
+  cursor: pointer;
+}
+
+.close1 {
+  position: absolute;
+  top: -75px;
+  right: 0px;
+  font-size: 50px;
+  font-weight: lighter;
+  cursor: pointer;
+  color: white;
+}
+
+.modal-wrapper {
+  position: relative;
+  width: 80%;
+  max-width: 700px;
+  max-height: 70%;
+  padding: 20px;
+  margin: auto;
+  background-color: white;
+}
+
+.modal-checkbox:checked + .modal {
+  display: flex;
+}
+
+.modal-wrapper dt.bold:before {
+    content: "";
+    display: inline-block;
+    width: 41.95px;
+    height: 24px;
+    background: url(/resources/img/cmn/ic_tel.svg) no-repeat 0 0;
+    background-size: 41.95px 24px;
+	margin-right: 10px;
+}
+
+.modal-wrapper dt a {
+	text-decoration: none;
+	font-size: 28px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+.modal-wrapper .btn {
+	width: 200px;
+	margin: 30px auto 0;
+    cursor: pointer;
+}
+
+/* オーバーレイのスタイル */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+
+}
+
+.modal-checkbox:checked + .modal .modal-overlay {
+  display: block;
+}

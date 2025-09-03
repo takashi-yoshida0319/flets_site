@@ -1,0 +1,22 @@
+.btn_westv{
+  border: 2px solid #fda623;
+  padding: 8px;
+}
+.btn_westv a {
+  display: block;
+  background: url(../img/arrow_r_01.gif) right 15px no-repeat;
+  padding-right: 15px;
+}
+
+.attention_area small{
+    display: inline;
+}
+
+#charge table {
+	width: auto;
+}
+
+#charge table td {
+	padding: 0;
+	border: none;
+}

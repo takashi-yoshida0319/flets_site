@@ -1,0 +1,887 @@
+// *** リンクスタイル ***
+
+  //cmn
+  a {
+    color: $cerulean;
+    &[id].anchor {
+      position: absolute;
+      top: -55px;
+
+      //PC
+      @include mq(){
+        margin-top: -100px;
+      }
+    }
+
+    &.badge--recommend {
+      position: relative;
+      font: inherit;
+      display: inline-flex;
+      align-items: center;
+
+      &::before {
+        content: "おすすめ";
+        display: block;
+        text-indent: -999em;
+        overflow: hidden;
+        width: 46px;
+        height: 46px;
+        left: 0;
+        margin-right: 5px;
+        background: {
+          image:url(/assets/img/common/icn_recommended.png);
+          size: 46px;
+          repeat: no-repeat;
+        }
+
+        //PC
+        @include mq(){
+          width: 80px;
+          height: 80px;
+          margin-right: 15px;
+          background: {
+            image:url(/assets/img/common/icn_recommended--pc.png);
+            size: 80px;
+          }
+        }
+      }
+    }
+
+    &.arrange {
+      text-decoration: none;
+      border-bottom: 2px solid $cerulean;
+    }
+  }
+
+  .link {
+    &_icn {
+      //display: inline-block;
+      color: $cerulean;
+      position: relative;
+      //@include sp_font_size(30);
+      //@include sp_font_size(34);
+      font-size: inherit;
+
+      &.bk {
+        color: $fontBlack;
+      }
+
+      // ＞
+      &.arrow {
+        //margin-left:sp_size(24);
+        margin-left: 1em;
+        //padding-left: 1em;
+        &::before {
+          content: '';
+          position: absolute;
+          //top: sp_size(17);
+          //top: 0.8em;
+          top: 0.58em;
+          //left: -(sp_size(24));
+          left: -0.8em;
+          display: block;
+          //width: 4px;
+          //height: 4px;
+          width: 0.35em;
+          height: 0.35em;
+          border-top: 1px solid $cerulean;
+          border-right: 1px solid $cerulean;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+
+          //PC
+          @include mq(){
+            //width: 6px;
+            //height: 6px;
+            width: 0.3em;
+            height: 0.3em;
+            //top: 9px;
+            //top: 13px;
+            top: 0.55em;
+            //left: -15px;
+            //left: -0.7em;
+            left: -0.7em;
+            border-top: 2px solid #009ad8;
+            border-right: 2px solid #009ad8;
+          }
+        }
+
+        &.bk {
+          color: $fontBlack;
+          text-decoration: none;
+          &::before {
+            border-color: $fontBlack;
+          }
+        }
+      }
+
+      //blank
+      &.blank {
+        $icn_size_w : 36;
+        $icn_size_h : 36;
+        $icn_size_w_pc : 18;
+        $icn_size_h_pc : 18;
+        $icn_margin : 10;
+        $icn_url : url(../img/common/icn_blank.png);
+        display: inline;
+        padding-right: sp_size($icn_size_w + $icn_margin);
+        margin-right: -(sp_size($icn_size_w - $icn_margin));
+        &::after {
+          content: "";
+          display: inline-block;
+          width: sp_size($icn_size_w);
+          height: sp_size($icn_size_h);
+          background: {
+            image: $icn_url;
+            size: sp_size($icn_size_w);
+            repeat: no-repeat;
+            position: 0 0;
+          }
+          position: relative;
+          right: -(sp_size($icn_margin));
+          bottom: -3px;
+        }
+        //PC
+        @include mq(){
+          //font-size: inherit;
+          padding-right: 1em;
+          margin-right: 0;
+          &::after {
+            width: ($icn_size_w_pc / 20) * 1em;
+            height: ($icn_size_h_pc / 20) * 1em;
+            background-size: ($icn_size_w_pc / 20) * 1em;
+            //right: -5px;
+            right: -0.5em;
+            bottom: (3 / 20) * -1em
+          }
+        }
+      }
+
+      //download
+      &.download {
+        $icn_size_w : 36;
+        $icn_size_h : 36;
+        $icn_size_w_pc : 18;
+        $icn_size_h_pc : 18;
+        $icn_margin : 10;
+        $icn_url : url(../img/common/icn_download.png);
+        display: inline;
+        padding-right: sp_size($icn_size_w + $icn_margin);
+        margin-right: -(sp_size($icn_size_w - $icn_margin));
+        &::after {
+          content: "";
+          display: inline-block;
+          width: sp_size($icn_size_w);
+          height: sp_size($icn_size_h);
+          background: {
+            image: $icn_url;
+            size: sp_size($icn_size_w);
+            repeat: no-repeat;
+            position: 0 0;
+          }
+          position: relative;
+          right: -(sp_size($icn_margin));
+          bottom: -3px;
+        }
+        //PC
+        @include mq(){
+          padding-right: 1em;
+          margin-right: 0;
+          &::after {
+            width: ($icn_size_w_pc / 20) * 1em;
+            height: ($icn_size_h_pc / 20) * 1em;
+            background-size: ($icn_size_w_pc / 20) * 1em;
+            //right: -5px;
+            right: -0.5em;
+            bottom: (3 / 20) * -1em
+          }
+        }
+      }
+
+      //pdf
+      &.pdf {
+        $icn_size_w : 40;
+        $icn_size_h : 40;
+        $icn_size_w_pc : 20;
+        $icn_size_h_pc : 20;
+        $icn_margin : 10;
+        $icn_url : url(../img/common/icn_pdf.png);
+        display: inline;
+        padding-right: sp_size($icn_size_w + $icn_margin);
+        margin-right: -(sp_size($icn_size_w - $icn_margin));
+        &::after {
+          content: "";
+          display: inline-block;
+          width: sp_size($icn_size_w);
+          height: sp_size($icn_size_h);
+          background: {
+            image: $icn_url;
+            size: sp_size($icn_size_w);
+            repeat: no-repeat;
+            position: 0 0;
+          }
+          position: relative;
+          right: -(sp_size($icn_margin));
+          bottom: -2px;
+        }
+        //PC
+        @include mq(){
+          //@include font-size(20);
+          padding-right: 1em;
+          margin-right: 0;
+          &::after {
+            width: ($icn_size_w_pc / 20) * 1em;
+            height: ($icn_size_h_pc / 20) * 1em;
+            background-size: ($icn_size_w_pc / 20) * 1em;
+            //right: -5px;
+            right: -0.5em;
+            bottom: (2 / 20) * -1em
+          }
+        }
+      }
+
+      //zoom
+      &.zoom {
+        $icn_size_w : 40;
+        $icn_size_h : 40;
+        $icn_size_w_pc : 20;
+        $icn_size_h_pc : 20;
+        $icn_margin : 10;
+        $icn_url : url(../img/common/icn_zoom.png);
+        display: inline;
+        padding-right: sp_size($icn_size_w + $icn_margin);
+        margin-right: -(sp_size($icn_size_w - $icn_margin));
+        &::after {
+          content: "";
+          display: inline-block;
+          width: sp_size($icn_size_w);
+          height: sp_size($icn_size_h);
+          background: {
+            image: $icn_url;
+            size: sp_size($icn_size_w);
+            repeat: no-repeat;
+            position: 0 0;
+          }
+          position: relative;
+          right: -(sp_size($icn_margin));
+          bottom: -3px;
+        }
+        //PC
+        @include mq(){
+          //@include font-size(20);
+          padding-right: 1em;
+          margin-right: 0;
+          &::after {
+            width: ($icn_size_w_pc / 20) * 1em;
+            height: ($icn_size_h_pc / 20) * 1em;
+            background-size: ($icn_size_w_pc / 20) * 1em;
+            //right: -5px;
+            right: -0.5em;
+            bottom: (3 / 20) * -1em
+          }
+        }
+      }
+
+      //anchor
+
+      &.anchor {
+        $icn_size_w : 23;
+        $icn_size_h : 23;
+        $icn_size_w_pc : 15;
+        $icn_size_h_pc : 15;
+        $icn_margin : 10;
+        $icn_url : url(../img/common/icn_anchor.png);
+        display: inline-block;
+        //padding-right: sp_size($icn_size_w + $icn_margin);
+        padding-right: 9px;
+        margin-right: -(sp_size($icn_size_w - $icn_margin));
+        //color: $fontBlack;
+        &::after {
+          content: "";
+          display: inline-block;
+          //width: sp_size($icn_size_w);
+          //height: sp_size($icn_size_h);
+          width: 0.8em;
+          height: 0.8em;
+          background: {
+            image: $icn_url;
+            size: 0.8em;
+            repeat: no-repeat;
+            position: 0 0;
+          }
+          position: relative;
+          //right: -0.5em;
+          right: -0.3em;
+          top: 0.15em
+        }
+        //PC
+        @include mq(){
+          font-size: inherit;
+          padding-right: 0.4em;
+          margin-right: 0;
+          &::after {
+            width: ($icn_size_w_pc / 20) * 1em;
+            height: ($icn_size_h_pc / 20) * 1em;
+            background-size: ($icn_size_w_pc / 20) * 1em;
+            //right: -5px;
+            right: -0.2em;
+            bottom: (3 / 20) * -1em
+          }
+        }
+      }
+
+      //freeDial
+      &.freeDial {
+        @include sp_font_size(90);
+        padding-left: sp_size(170);
+        display: inline-block;
+        line-height: 1.4;
+        font-weight: 700;
+        background: {
+          image: url(/assets/img/common/icn_freeDial.png);
+          repeat: no-repeat;
+          position: left 0;
+          size: sp_size(140);
+        }
+        &.mobileOk {
+          background: {
+            image:url(/assets/img/common/icn_freeDial--mobileOk.png);
+            position: 0 5px;
+            size: sp_size(123);
+          }
+        }
+
+        //PC
+        @include mq(){
+          @include font_size(60);
+          padding-left: 100px;
+          text-decoration: none;
+          background: {
+            position: left 8px;
+            size: 71px;
+          }
+          &.mobileOk {
+            background: {
+              position: 0 12px;
+              size: 78px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .btn {
+
+    // *** 幅成り行きの小さなボタン ***
+    &--flex {
+      @include sp_font_size(24);
+      font-weight: 700;
+      padding: sp_size(15);
+      display: inline-block;
+      text-decoration: none;
+      &.btn--orange {
+        background: $buttercup;
+        color: white;
+      }
+      &.btn--grey {
+        background: $Boulder;
+        color: white;
+      }
+
+      //PC
+      @include mq(){
+        @include font_size(14);
+        padding: 5px 15px;
+      }
+    }
+
+    // *** 幅100% の千沙なボタン
+    &--wide {
+      text-decoration: none;
+      @include sp_font_size(24);
+      @include border_box;
+      display: block;
+      width: 100%;
+      font-weight: 700;
+      padding: sp_size(20);
+      text-align: center;
+      &.btn--blue {
+        background: $cerulean;
+        color: white;
+      }
+      &.btn--grey {
+        background: $Boulder;
+        color: white;
+      }
+
+      //PC
+      @include mq(){
+        @include font_size(20);
+      }
+    }
+
+    // *** バナーサイズの大きなボタン ***
+    &--panel {
+      + {
+
+        * {
+          margin-top:sp_size(40);
+        }
+
+        .btn--panel {
+          margin-top: sp_size(40);
+        }
+        .annotation {
+          margin-top: 8px;
+        }
+      }
+      border: 1px solid $athensGray;
+      flex: 1;
+      display: inline-flex;
+      align-items: center;
+      width: 100%;
+      a {
+        display: block;
+        padding: sp_size(70) sp_size(80) sp_size(70) sp_size(40);
+        @include sp_font_size(40);
+        font-weight: 400;
+        text-decoration: none;
+        position: relative;
+        text-align: left;
+        flex: 1;
+        align-items: center;
+
+        .txt--small {
+          @include sp_font_size(28);
+        }
+
+        &.super {
+          @include sp_font_size(50);
+          line-height: 1.6;
+          //padding: sp_size(70) sp_size(80) sp_size(70) sp_size(40);
+          span {
+            display: block;
+            &.single {
+              display: inline;
+            }
+            @include sp_font_size(34);
+            font-weight: normal;
+            margin: sp_size(10) 0;
+            &.txt--small {
+              display: inline;
+              @include sp_font_size(24);
+            }
+          }
+
+          //SP
+          @include mq(sp){
+            padding-top: sp_size(30);
+            padding-bottom: sp_size(30);
+          }
+        }
+
+      }
+
+      //小サイズ
+      &.size--small {
+        a {
+          @include sp_font_size(32);
+          padding: sp_size(45) sp_size(80) sp_size(45) sp_size(40);
+
+          &.super {
+            @include sp_font_size(40);
+            padding-top: sp_size(30);
+            padding-bottom: sp_size(30);
+            span {
+              display: block;
+              &.single {
+                display: inline-block;
+              }
+              @include sp_font_size(30);
+              font-weight: normal;
+              margin-bottom: sp_size(10);
+            }
+          }
+
+          &.txt--small {
+            @include sp_font_size(30);
+            font-weight: 400;
+          }
+        }
+      }
+
+      // *** icon variation ***
+
+      // center （中央揃え）
+      &.center {
+        a {
+          padding: sp_size(70) sp_size(40) sp_size(70) sp_size(40);
+          text-align: center;
+        }
+
+        &.size--small {
+          a {
+            padding: sp_size(45) sp_size(40) sp_size(45) sp_size(40);
+          }
+        }
+
+      }
+
+      // arrow
+      &.arrow {
+        a::after {
+          content: "";
+          width: sp_size(25);
+          height: sp_size(25);
+          position: absolute;
+          border-top: 1px solid $cerulean;
+          border-right: 1px solid $cerulean;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+          top: 0;
+          right: sp_size(20);
+          bottom: 0;
+          margin: auto;
+        }
+      }
+
+
+      // arrow--left
+      &.arrow--left {
+        a {
+          padding: sp_size(70) sp_size(40) sp_size(70) sp_size(80);
+          &::after {
+            content: "";
+            width: sp_size(25);
+            height: sp_size(25);
+            position: absolute;
+            border-bottom: 1px solid $cerulean;
+            border-left: 1px solid $cerulean;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            top: 0;
+            left: sp_size(20);
+            bottom: 0;
+            margin: auto;
+          }
+        }
+        &.size--small {
+          a {
+            padding: sp_size(45) sp_size(40) sp_size(45) sp_size(80);
+          }
+        }
+      }
+
+      // blank
+      &.blank {
+        a::after {
+          content: "";
+          display: block;
+          width: sp_size(36);
+          height: sp_size(35);
+          position: absolute;
+          top: 0;
+          right: sp_size(20);;
+          bottom: 0;
+          margin: auto;
+          background: {
+            image: url(/assets/img/common/icn_blank.png);
+            size: sp_size(36);
+            repeat: no-repeat;
+          }
+        }
+      }
+
+      // pdf
+      &.pdf {
+        a::after {
+          content: "";
+          display: block;
+          width: sp_size(40);
+          height: sp_size(40);
+          position: absolute;
+          top: 0;
+          right: sp_size(20);;
+          bottom: 0;
+          margin: auto;
+          background: {
+            image: url(/assets/img/common/icn_pdf.png);
+            size: sp_size(40);
+            repeat: no-repeat;
+          }
+        }
+      }
+
+      // download
+      &.download {
+        a::after {
+          content: "";
+          display: block;
+          width: sp_size(36);
+          height: sp_size(34);
+          position: absolute;
+          top: 0;
+          right: sp_size(20);;
+          bottom: 0;
+          margin: auto;
+          background: {
+            image: url(/assets/img/common/icn_download.png);
+            size: sp_size(36);
+            repeat: no-repeat;
+          }
+        }
+      }
+
+      &.icn {
+        a {
+          display: flex;
+          .panel__icn {
+            padding-right: sp_size(30);
+          }
+          .panel__txt {
+            font: inherit;
+          }
+        }
+      }
+
+      // *** panel variation ***
+      // bg--blue
+      &.bg--blue {
+        background: $cerulean;
+        border: none;
+        a {
+          .panel__txt {
+            font: inherit;
+          }
+        }
+
+        &.dodgerBlue {
+          background: $dodgerBlue;
+          a:hover {
+            background: lighten($dodgerBlue, 5%);
+          }
+        }
+        &.bondiBlue {
+          background: $bondiBlue;
+          a:hover {
+            background: lighten($bondiBlue, 5%);
+          }
+        }
+        &.chambray {
+          background: $chambray;
+          a:hover {
+            background: lighten($chambray, 5%);
+          }
+        }
+        &.mariner {
+          background: $mariner;
+          a:hover {
+            background: lighten($mariner, 5%);
+          }
+        }
+        &.shakespeare {
+          background: $shakespeare;
+          a:hover {
+            background: lighten($shakespeare, 5%);
+          }
+        }
+        &.sanMarino {
+          background: $sanMarino;
+          a:hover {
+            background: lighten($sanMarino, 5%);
+          }
+        }
+
+        a {
+          color: white;
+          font-weight: 700;
+          span {
+            font-weight: normal;
+          }
+        }
+
+        &.arrow a::after {
+          border-color: white;
+        }
+
+        &.blank a::after {
+          background-image: url(/assets/img/common/icn_blank_w.png);
+        }
+
+        &.pdf a::after {
+          background-image: url(/assets/img/common/icn_pdf_w.png);
+        }
+
+        &.download a::after {
+          background-image: url(/assets/img/common/icn_download_w.png);
+        }
+
+        &.disabled {
+          background: $dustyGray !important;
+          a {
+            color: rgba(255,255,255,.5);
+            &:hover {
+              //background: lighten($dustyGray, 0%) !important;
+              @include opacity(1);
+            }
+            &::after {
+              border-color: rgba(255,255,255,.5);
+            }
+          }
+        }
+
+      }
+
+      // line--blue
+      &.line--blue {
+        border-color: $cerulean;
+      }
+
+      &.shadow {
+        @include box_shadow(rgba(0, 0, 0, 0.3) 0 15px 15px -15px);
+      }
+
+
+      //PC
+      @include mq(){
+
+        + {
+          * {
+            margin-top: 60px;
+          }
+          .btn--panel {
+            margin-top: 40px;
+          }
+        }
+        width: 700px;
+
+        &.wide {
+          width: 100%;
+        }
+
+        a {
+          @include font_size(30);
+          padding: 30px 80px 30px 35px;
+          @include transition();
+
+
+          .txt--small {
+            @include font_size(18);
+          }
+          &.super {
+            @include font_size(30);
+            padding: 25px 80px 25px 35px;
+            span {
+              @include font_size(20);
+              .txt--small {
+                @include font_size(14);
+              }
+            }
+            .panel__icn {
+              padding-right: 30px;
+            }
+          }
+          &:hover {
+            @include opacity(.7);
+          }
+        }
+
+        &.icn {
+          a {
+            .panel__icn {
+              padding-right: 30px;
+            }
+          }
+        }
+
+        //小サイズ
+        &.size--small {
+          width: 100%;
+          a {
+            @include font_size(30);
+            padding: 25px 60px 25px 35px;
+            &.super {
+              @include font_size(30);
+              span {
+                @include font_size(20);
+              }
+            }
+            &.txt--small {
+              @include font-size(18);
+            }
+          }
+        }
+
+        // arrow
+        &.arrow {
+          a::after {
+            //todo コンバージョンに合わせる
+            //width: 14px;
+            //height: 14px;
+            //border-width: 2px;
+
+            border-width: 3px;
+            width: 22px;
+            height: 22px;
+            right: 18px;
+          }
+        }
+
+        // arrow--left
+        &.arrow--left {
+          a {
+            padding: 30px 35px 30px 80px;
+            &::after {
+              width: 14px;
+              height: 14px;
+              right: auto;
+              left: 18px;
+            }
+          }
+          &.size--small {
+            a {
+              padding: 25px 35px 25px 50px;
+            }
+          }
+        }
+
+        // blank
+        &.blank {
+          a::after {
+            width:36px;
+            height:35px;
+            background-size: 36px;
+            right: 20px;
+          }
+        }
+
+        // pdf
+        &.pdf {
+          a::after {
+            width:40px;
+            height:40px;
+            background-size: 40px;
+            right: 20px;
+          }
+        }
+
+        // download
+        &.download {
+          a::after {
+            width:36px;
+            height:34px;
+            background-size: 36px;
+            right: 20px;
+          }
+        }
+
+      }
+
+
+    }
+
+  }

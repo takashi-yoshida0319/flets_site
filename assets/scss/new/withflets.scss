@@ -1,0 +1,174 @@
+// *** Settings ***
+@import "../../partials/variables", "../../partials/mixin";
+
+// *** sandbox ***
+#main {
+  table.tbl--cmn_01 tbody tr td {
+    &:nth-child(1) {
+      width: 25%;
+      figure {
+        width: 100%;
+        @include mq(sp){
+          max-width: 120px;
+        }
+        img {
+          max-width: 100%;
+          min-width: sp_size(316);
+        }
+        figcaption {
+          margin-top: sp_size(15);
+        }
+      }
+    }
+    &:nth-child(4){
+      text-align: center;
+    }
+    .annotation {
+      display: block;
+      padding-left: 1em;
+      text-indent: -1em;
+    }
+  }
+
+
+  //PC
+  @include mq(sp){
+    .unit--panel.bg--blue.serif{
+      .panel__arrow {
+        padding: 30px 20px;
+      }
+      .panel__heading {
+        @include font_size(16);
+      }
+    }
+  }
+
+  //.annotation--diamond {
+  //  margin-top: 15px;
+  //  padding-left: 1.5em;
+  //  position: relative;
+  //  @include sp_font_size(30);
+  //  line-height: 1.6;
+  //  &::before {
+  //    content: "◆";
+  //    position: absolute;
+  //    left: 0;
+  //  }
+  //}
+  //
+  //.annotation--star {
+  //  line-height: 1.6;
+  //  padding-left: 1.5em;
+  //  position: relative;
+  //  @include sp_font_size(30);
+  //  margin-top: 0 !important;
+  //  &::before {
+  //    content: "★";
+  //    position: absolute;
+  //    left: 0;
+  //  }
+  //}
+
+
+
+  //sp
+  @include mq(sp){
+    p ._sp_txt--small {
+      @include sp_font_size(20);
+    }
+
+    .ispName {
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+  }
+
+  //PC
+  @include mq(){
+
+    .ispName {
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+    table.tbl--cmn_01 tbody tr td {
+      padding: 40px 25px;
+      &:nth-child(1) figure {
+        img {
+          width: 250px;
+        }
+        figcaption {
+          margin-top: sp_size(15);
+        }
+      }
+      &:nth-child(2) {
+        width: 150px;
+      }
+      &:nth-child(3) {
+        width: 230px;
+      }
+      .annotation {
+        display: block;
+        padding-left: 1em;
+        text-indent: -1em;
+      }
+    }
+
+
+
+    .annotation--diamond {
+      ////margin-top: 15px;
+      //padding-left: 1.5em;
+      //position: relative;
+      //@include font_size(14);
+      //font-weight: 700;
+      //line-height: 1.6;
+      //&::before {
+      //  content: "◆";
+      //  position: absolute;
+      //  left: 0;
+      //}
+    }
+
+    .annotation--star {
+      //line-height: 1.6;
+      //padding-left: 1.5em;
+      //position: relative;
+      //@include font_size(14);
+      //font-weight: 700;
+      //margin-top: 10px !important;
+      //&::before {
+      //  content: "★";
+      //  position: absolute;
+      //  left: 0;
+      //}
+    }
+
+    //.serif a figure figcaption.panel__arrow {
+    //  padding-top: 100px;
+    //  padding-bottom: 80px;
+    //}
+
+
+    .unit--panel.bg--blue.serif{
+      .panel__arrow {
+        padding: 60px 20px 40px;
+      }
+      .panel__heading {
+        @include font_size(40);
+        line-height: 1.4;
+      }
+    }
+
+
+
+    .layeredNav {
+      .layeredNav__header ._pc_txt--large {
+        //font-size: 30px;
+        //font-size: 1.875rem !important;
+        //font-weight: 400 !important;
+      }
+    }
+  }
+
+}

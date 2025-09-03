@@ -1,0 +1,57 @@
+#main {
+  &.pb0 {
+    padding-bottom: 0 !important;
+  }
+
+  section + section {
+    //margin-top: 40px;
+    margin-top:sp_size(80);
+
+    //PC
+    @include mq(){
+      margin-top: 80px;
+    }
+  }
+
+  #contents {
+    margin-top: 0;
+  }
+
+
+  // *** mainVisual ***
+  .mainVisual {
+    margin-top: -10px;
+    + section {
+      margin-top: 27px;
+    }
+    p, p + p {
+      margin-top: 0;
+    }
+
+    //※ 幅1200 のフレキシブルサイズがコンポーネント化したい場合、/assets/scss/new/index.scss 参照
+
+
+    //PC
+    @include mq(){
+      margin-top: 0;
+      text-align: center;
+      + section {
+        margin-top: 80px;
+      }
+
+      .carousel {
+        width: 1280px;
+        max-width: 100%;
+        margin: auto;
+        background: red;
+        .carousel__stage,
+        .carousel__stage li.carousel__item,
+        .carousel__stage li.carousel__item > a img {
+          width: 1280px;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+}

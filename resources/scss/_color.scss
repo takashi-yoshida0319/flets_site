@@ -1,0 +1,74 @@
+.rn2020 {
+
+
+
+//---------------------------
+// カラー
+//---------------------------
+
+//Main
+.c_blue {color: $blue;}
+.c_darkblue {color: $darkblue;}
+.c_orange {color: $orange;}
+.c_black {color: $black;}
+.c_darkgray {color: $darkgray;}
+.c_white {color: $white;}
+
+//Accent
+.c_red {color: $red;}
+.c_yellow {color: $yellow;}
+
+//Background
+.c_lightgray {color: $lightgray;}
+.c_lightblue {color: $lightblue;}
+.c_ultralightgray {color: $ultralightgray;}
+
+//Sub
+.c_subblue {color: $subblue;}
+.c_sublightblue {color: $sublightblue;}
+.c_subultralightblue {color: $subultralightblue;}
+.c_subemeraldgreen {color: $subemeraldgreen;}
+.c_subgray {color: $subgray;}
+
+//コンポーネントにない配色
+.c_panelgray {color: $panelgray;}
+.c_blueshadow {color: $blueshadow;}
+.c_circleblue {color: $circleblue;}
+.c_redshadow {color: $redshadow;}
+
+//---------------------------
+// 背景
+//---------------------------
+//Main
+._bg_blue {background: $blue;}
+._bg_darkblue {background: $darkblue;}
+._bg_orange {background: $orange;}
+._bg_black {background: $black;}
+._bg_darkgray {background: $darkgray;}
+._bg_white {background: $white;}
+
+//Accent
+._bg_red {background: $red;}
+._bg_yellow {background: $yellow;}
+
+//Background
+._bg_lightgray {background: $lightgray;}
+._bg_lightblue {background: $lightblue;}
+._bg_ultralightgray {background: $ultralightgray;}
+
+//Sub
+._bg_subblue {background: $subblue;}
+._bg_sublightblue {background: $sublightblue;}
+._bg_subultralightblue {background: $subultralightblue;}
+._bg_subemeraldgreen {background: $subemeraldgreen;}
+._bg_subgray {background: $subgray;}
+
+//コンポーネントにない配色
+._bg_panelgray {background: $panelgray;}
+._bg_blueshadow {background: $blueshadow;}
+._bg_circleblue {background: $circleblue;}
+._bg_redshadow {background: $redshadow;}
+._bg_floralWhite {background: $floralWhite;}
+
+
+}

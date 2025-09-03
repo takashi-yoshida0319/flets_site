@@ -1,0 +1,311 @@
+@charset "shift-jis";
+
+
+#startup .header_bnr {
+	background-image: url(../img/bg_main.png);
+	background-repeat: no-repeat;
+	height: 237px;
+	position: relative;
+}
+
+#startup .header_bnr .unit {
+	position: absolute;
+}
+
+#startup .header_bnr .unit01 {
+	top: 168px;
+	left: 24px;
+}
+
+#startup .header_bnr .unit02 {
+	top: 168px;
+	left: 268px;
+}
+
+#startup .header_bnr .unit03 {
+	top: 112px;
+	left: 25px;
+}
+#startup .header_bnr .unit03 dl {
+	width:480px ;
+
+}
+#startup .header_bnr .unit03 dt {
+	float: left;
+}
+#startup .header_bnr .unit03 dd {
+	float: left;
+}
+
+
+#startup .functionBtnWrap li {
+	margin-bottom: 10px;
+}
+
+#startup .functionBtnWrap .left {
+	float: left;
+}
+
+#startup .functionBtnWrap .right {
+	float: right;
+}
+
+
+
+#startup .about p {
+	border: 1px solid #cdc8b4;
+	background: #f7f5ee;
+	padding: 10px 20px;
+}
+
+
+
+#startup .function {
+	margin-top: 26px;
+}
+
+#startup .function .conWrap {
+	border: 1px solid #cdc8b4;
+	border-top: none;
+	background: #f7f5ee;
+	border-radius: 0 0 5px 5px;
+	padding: 20px;
+}
+
+
+
+#startup #function_01 .conWrap .firstList li {
+	width: 180px;
+	padding: 17px 14px;
+	float: left;
+	border-radius: 3px;
+	border: 1px solid #b2b9bf;
+	background: #fff;
+	margin-left: 8px;
+}
+
+#startup #function_01 .conWrap .firstList li:first-child {
+	margin-left: 0;
+}
+
+
+#startup #function_01 .conWrap .firstList li h3 {
+	/*padding: 12px 0 0 16px;*/
+}
+
+#startup #function_01 .conWrap .firstList li .con {
+	/*padding-bottom: 20px;*/
+
+}
+
+#startup #function_01 .conWrap .firstList li .img {
+	text-align: center;
+	padding: 10px 0;
+
+
+}
+
+#startup #function_01 .conWrap .firstList li .con .btn,
+#startup #function_01 .conWrap .firstList li .con .txt {
+	/*float: left;*/
+}
+
+#startup #function_01 .conWrap .firstList li .txt {
+	width: 190px;
+
+}
+
+
+#startup #function_01 .conWrap .firstList .btn {
+	text-align: center;
+	padding: 25px 0 0;
+}
+
+
+#startup #function_01 .conWrap .firstList .unit03{
+	padding: 17px 10px;
+	width: 188px;
+}
+#startup #function_01 .conWrap .firstList .unit03 .btn{
+	padding: 10px 0 ;
+}
+
+
+
+
+#startup #function_01 .conWrap .latterList li {
+	width: 180px;
+	float: left;
+	border-radius: 3px;
+	border: 1px solid #b2b9bf;
+	background: #fff;
+	margin-left: 9px;
+	padding: 14px;
+}
+
+#startup #function_01 .conWrap .latterList li:first-child {
+	margin-left: 0;
+}
+
+#startup #function_01 .conWrap .latterList li .img {
+	text-align: center;
+	padding: 10px 0;
+}
+
+#startup #function_01 .conWrap .latterList li .btn {
+	text-align: center;
+}
+
+
+#startup #function_02 .service{
+	background: url("../img/bg_function_02_01.png") left top no-repeat;
+	width: 600px;
+	height: 278px;
+	margin: 0 auto;
+}
+#startup #function_02 .service ul{
+	padding-top: 40px;
+	padding-left: 20px;
+}
+#startup #function_02 .service li{
+	margin-bottom: 20px;
+}
+#startup #function_02 .service li a{
+	background: url("../img/icon_arrow.gif") no-repeat scroll 0 0.4em;
+	display: inline-block;
+	padding-left: 1.5em;
+	margin-left: 5px;
+
+}
+#startup #function_02 .btn{
+	width: 600px;
+	margin: 0 auto;
+}
+#startup #function_02 .btn li{
+	float: right;
+}
+#startup #function_02 .btn li:first-child{
+	float: left;
+}
+
+
+#startup #function_03 .conWrap .left {
+	float: left;
+	margin-left: 40px;
+}
+
+#startup #function_03 .conWrap .right {
+	width: 362px;
+	float: right;
+}
+
+
+
+#startup #function_03 .conWrap ol li {
+	width: 309px;
+	border-radius: 3px;
+	border: 1px solid #b2b9bf;
+	background: #fff;
+	padding: 17px 14px;
+	margin-top: 7px;
+}
+
+#startup #function_03 .conWrap ol li:first-child {
+	margin-top: 0;
+}
+
+#startup #function_03 .conWrap ol li .txt p {
+	font-size: 83%;
+	padding-top: 14px;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+
+
+
+
+
+#startup #function_04 .conWrap {
+	position: relative;
+	height: 300px;
+}
+
+#startup #function_04 .conWrap .img {
+	position: absolute;
+}
+
+#startup #function_04 .conWrap .img01 {
+	top: 57px;
+	left: 74px;
+}
+
+#startup #function_04 .conWrap .img02 {
+	top: 27px;
+	left: 270px;
+}
+
+
+
+
+
+#startup #function_05 .conWrap .left {
+	float: left;
+	margin-left: 40px;
+	margin-top: 20px;
+}
+
+#startup #function_05 .conWrap .right {
+	width: 400px;
+	float: right;
+}
+
+#startup #function_06 .conWrap{
+	position: relative;
+}
+
+#startup #function_06 .conWrap .left {
+	float: left;
+	margin-left: 40px;
+	margin-top: 20px;
+}
+
+#startup #function_06 .conWrap .right {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+}
+#startup #function_06 .acc_box{
+	display: none;
+}
+
+#startup #function_06 .conWrap h3 {
+	margin-top: 30px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,d8e0e4+94 */
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #d8e0e4 94%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#d8e0e4 94%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ffffff 0%,#d8e0e4 94%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d8e0e4',GradientType=0 ); /* IE6-9 */
+	font-size: 18px;
+	line-height: 36px;
+	height: 36px;
+	font-weight: bold;
+	padding-left: 10px;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+#startup #function_06 .conWrap h3 span{
+	background: url("../img/icon_plus.png") 610px 8px no-repeat;
+	display: block;
+}
+#startup #function_06 .conWrap h3.open span {
+	background: url("../img/icon_minus.png") 610px 8px no-repeat;
+}
+#startup #function_03 .function_link li a{
+	background: url("../img/icon_arrow.gif") no-repeat scroll 0 0.4em;
+	display: inline-block;
+	padding-left: 1.5em;
+	margin-left: 40px;
+  margin-top: 1em;
+}

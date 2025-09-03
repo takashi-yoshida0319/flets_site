@@ -1,0 +1,9 @@
+.alignCenter, .ta_c {
+    text-align: center!important;
+}
+
+@media screen and (min-width: 375px) and (max-width: 400px) {
+    .kzStep1Height {
+        height: 540px!important;
+    }
+}

@@ -1,0 +1,30 @@
+@charset "shift_jis";
+/* CSS Document */
+
+
+table.row-data tbody th.left_line {
+	text-align:left;
+}
+.underline {
+	text-decoration:underline;
+}
+strong {
+	font-size:130%;
+}
+.import strong {
+	font-size:110% !important;
+}
+.txt_small {
+	font-size:84%;
+}
+.list_indent {
+	margin-left:1.2em;
+	text-indent:-1.2em;
+}
+
+.mt05{ margin-top:5px !important;}
+.mt10{ margin-top:10px !important;}
+.mt15{ margin-top:15px !important;}
+.mt20{ margin-top:20px !important;}
+.mt30{ margin-top:30px !important;}
+

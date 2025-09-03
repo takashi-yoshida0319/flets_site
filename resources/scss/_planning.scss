@@ -1,0 +1,254 @@
+@import "mixin";
+
+//font-size
+@mixin font_size($size: 10, $base: 18) {
+  font-size:($size / $base) * 1rem !important;
+}
+
+@mixin font_size_sp($size){
+  font-size:($size / 375 * 100) * 1vw !important;
+
+}
+.p-planning {
+
+  &__block {
+    &.-type_a {
+      text-align: center;
+      border-bottom: 2px solid #D0D0D0;
+      padding-bottom: 10px;
+
+      &:only-child {
+        border-bottom: none;
+      }
+
+      p {
+        line-height: 1.6;
+        @include font_size(24);
+        font-weight: bold;
+
+        @include mq(sp){
+          @include font_size_sp(20);
+        }
+      }
+
+      small {
+        @include font_size(14);
+
+        @include mq(sp){
+          @include font_size_sp(15);
+        }
+      }
+
+      .c-price {
+        @include font_size(36);
+        font-weight: bold;
+
+        @include mq(sp){
+          @include font_size_sp(22);
+        }
+      }
+
+      .c-unit {
+        @include font_size(24);
+        font-weight: bold;
+
+        @include mq(sp){
+          @include font_size_sp(16);
+        }
+      }
+
+      .c-option {
+        @include font_size(20);
+        font-weight: bold;
+
+        @include mq(sp){
+          @include font_size_sp(15);
+        }
+      }
+    }
+
+    &.-type_b {
+      + .-type_b {
+        border-top: 2px dashed #D0D0D0;
+      }
+
+      padding: 10px 0;
+
+      p {
+        @include font_size(16);
+        line-height: 1.6;
+
+
+        @include mq(sp){
+          @include font_size_sp(16);
+        }
+
+        small {
+          @include font_size(14);
+
+          @include mq(sp){
+            @include font_size_sp(15);
+          }
+        }
+
+        .c_red {
+          color: #e15656 !important;
+        }
+      }
+    }
+
+    &.-type_c {
+      text-align: center;
+
+      .c-img {
+        + * {
+          margin-top: 10px;
+        }
+      }
+
+      figcaption {
+        font-weight: bold;
+        @include font_size(20);
+        color: #0072BC !important;
+
+        @include mq(sp){
+          @include font_size_sp(20);
+        }
+
+        b {
+          @include font_size(36);
+
+
+          @include mq(sp){
+            @include font_size_sp(28);
+          }
+        }
+
+        .c_red {
+          color: #e15656 !important;
+        }
+
+        sup {
+          color: black !important;
+          font-size: 50% !important;
+        }
+      }
+    }
+
+    &.-type_d {
+      + .-type_d {
+        margin-top: 10px;
+      }
+
+      background: #F2FAFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 20px;
+
+      @include mq(sp){
+        @include font_size_sp(15);
+        width: 100%;
+      }
+
+      b {
+        font-weight: bold;
+      }
+
+      .c_red {
+        color: #e15656 !important;
+        font-weight: bold;
+      }
+
+      .c-num {
+        @include font_size(20);
+        font-weight: bold;
+
+
+        @include mq(sp){
+          @include font_size_sp(18);
+        }
+      }
+
+      .c-icn {
+        margin-right: 10px;
+
+        img {
+          width: 48px;
+        }
+      }
+    }
+
+    &.-type-e {
+      background: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 15px;
+        height: 11px;
+        background: black;
+        right: 0;
+        bottom: calc(100% - 1px);
+        left: 0;
+        margin: auto;
+        position: absolute;
+      }
+
+      &::after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 20px 15px 0 15px;
+        border-color: #000000 transparent transparent transparent;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        justify-content: space-between;
+      }
+
+      @include mq(){
+        margin: 24px -24px -24px;
+        padding: 50px 24px 30px;
+      }
+
+      @include mq(sp){
+        margin: calc(20 / 375 * 100 * 1vw) calc(10 / 375 * 100 * -1vw) calc(20 / 375 * 100 * -1vw) ;
+        padding: calc(20 / 375 * 100 * 1vw) calc(10 / 375 * 100 * 1vw);
+      }
+    }
+
+    .price_area {
+      @include mq(sp){
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.l-frame.-border_round .p-planning {
+  @include mq(){
+    margin: -24px;
+    padding: 24px 0;
+
+    .l-col {
+      padding: 0 24px;
+    }
+  }
+
+  @include mq(sp){
+    margin: calc(20 / 375 * 100 * -1vw) calc(10 / 375 * 100 * -1vw);
+    padding: calc(20 / 375 * 100 * 1vw) calc(10 / 375 * 100 * 1vw);
+  }
+
+  &.-bg_gray {
+    background: #EFEFEF;
+  }
+}

@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+#main table.tbl--cmn_01 tbody tr td {
+  width: 40%;
+  text-align: center;
+  line-height: 1.4em;
+}
+
+#main table.tbl--cmn_01 tbody tr td {
+  text-align: center;
+}
+#main table.tbl--cmn_01 tbody tr td p {
+  margin-bottom: 10px;
+  line-height: 1.2em;
+}
+#main table.tbl--cmn_01 tbody tr td .col p {
+  margin: 0!important;
+}
+#main table.tbl--cmn_01 tbody tr td .col p img {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  margin: 0!important;
+}
+
+#main table.tbl--cmn_01 tbody tr td p .txt--small{
+}
+
+#main .unit--panel {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+#main .unit--panel.bg--blue:hover {
+  background: #009ad8;
+}
+.panel__heading h2{
+  color: #fff000;
+}
+.panel__heading h2 span{
+  color: #fff!important;
+}
+.panel__heading p a{
+  color: #fff!important;
+  text-decoration: underline;
+}
+.panel__heading div{
+  border-top: 1px dotted #ffffff;
+  padding-top: 20px;
+}

@@ -1,0 +1,631 @@
+// *** 画像幅が不確定な左右カラム ***
+.flexColumn {
+  @include clearfix;
+  .flexColumn__img {
+    &.left {
+      float: left;
+      + {
+        .flexColumn__contents {
+          padding-left:sp_size(30);
+
+          //PC
+          @include mq(){
+            padding-left: 30px;
+          }
+        }
+      }
+    }
+    &.right {
+      float: right;
+      + {
+        .flexColumn__contents {
+          padding-right:sp_size(30);
+
+          //PC
+          @include mq(){
+            padding-right: 30px;
+          }
+        }
+      }
+    }
+  }
+  .flexColumn__contents {
+    overflow: hidden;
+    p {
+      @include sp_font_size(28);
+
+      //PC
+      @include mq(){
+        @include font-size(16);
+      }
+    }
+  }
+}
+
+// *** 左右カラム ***
+.grid {
+  + {
+    * {
+      margin-top: sp_size(40);
+    }
+  }
+
+  &.justify--center {
+    justify-content: center;
+  }
+
+  &._pc_justify--center {
+    //PC
+    @include mq(){
+      justify-content: center;
+    }
+  }
+
+  &._sp_justify--center {
+    //SP
+    @include mq(sp){
+      justify-content: center;
+    }
+  }
+
+  li + li {
+    margin-top: 0;
+  }
+
+  //PC
+  @include mq(){
+    + {
+      * {
+        margin-top: 60px; //修正
+      }
+      .grid {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .col {
+    > img {
+      align-self: flex-end;
+    }
+  }
+
+  display: flex;
+  //align-items: flex-start;
+  flex-wrap: wrap;
+
+  //2カラム（SP/PC共通）
+  &.col_2 {
+
+    //SP
+    @include mq(sp){
+      margin-right: -7px;
+    }
+    margin-bottom: -7px;
+
+    > .col {
+      align-self: auto;
+      @include border_box;
+      display: inline-flex;
+      width: calc(50% - 7px);
+      margin-right: 7px;
+      margin-bottom: 7px;
+      //cahier
+      //&:nth-child(n + 3) {
+      //margin-top: sp_size(20);
+      //margin-top: sp_size(30);
+      //todo from コンポーネント確認_171124b.pptx
+      //margin-top: 14px;
+      //todo 会議
+      //cahier
+      //margin-top: 7px;
+      //}
+
+      // 影付き
+      &.shadow {
+        @include box_shadow(rgba(0, 0, 0, 0.3) 0 15px 15px -15px);
+      }
+    }
+
+    //PC
+    @include mq(){
+      //margin-right: -40px;
+      //todo from コンポーネント確認_171124b.pptx
+      //margin-top: 20px;
+      margin-right: -20px;
+      //cahier
+      margin-bottom: -20px;
+      > .col {
+        //width: calc(50% - 40px);
+        //todo from コンポーネント確認_171124b.pptx
+        width: calc(50% - 20px);
+        //cahier
+        margin-bottom: 20px;
+        //margin-right: 40px;
+        //todo from コンポーネント確認_171124b.pptx
+        margin-right: 20px;
+
+        img {
+          //max-width: 480px;
+          //todo from コンポーネント確認_171124b.pptx
+          max-width: 488px;
+        }
+        &:nth-child(n + 3) {
+          //todo from コンポーネント確認_171124b.pptx
+          //margin-top: 40px;
+          //todo 会議
+          //cahier
+          //margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  //2カラム（SP/PC共通）
+  &.col_3 {
+
+    //SP
+    @include mq(sp){
+      margin-right: -7px;
+    }
+    margin-bottom: -7px;
+
+    > .col {
+      align-self: auto;
+      @include border_box;
+      display: inline-flex;
+      width: calc(33.3333% - 7px);
+      margin-right: 7px;
+      margin-bottom: 7px;
+      //cahier22
+      //&:nth-child(n + 3) {
+      //margin-top: sp_size(20);
+      //margin-top: sp_size(30);
+      //todo from コンポーネント確認_171124b.pptx
+      //margin-top: 14px;
+      //todo 会議
+      //cahier
+      //margin-top: 7px;
+      //}
+
+      // 影付き
+      &.shadow {
+        @include box_shadow(rgba(0, 0, 0, 0.3) 0 15px 15px -15px);
+      }
+    }
+
+    //PC
+    @include mq(){
+      //margin-right: -40px;
+      //todo from コンポーネント確認_171124b.pptx
+      //margin-top: 20px;
+      margin-right: -20px;
+      //cahier
+      margin-bottom: -20px;
+      > .col {
+        //width: calc(50% - 40px);
+        //todo from コンポーネント確認_171124b.pptx
+        width: calc(33.3333% - 20px);
+        //cahier
+        margin-bottom: 20px;
+        //margin-right: 40px;
+        //todo from コンポーネント確認_171124b.pptx
+        margin-right: 20px;
+
+        img {
+          //max-width: 480px;
+          //todo from コンポーネント確認_171124b.pptx
+          max-width: 488px;
+        }
+        &:nth-child(n + 3) {
+          //todo from コンポーネント確認_171124b.pptx
+          //margin-top: 40px;
+          //todo 会議
+          //cahier
+          //margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  //4カラム（SP/PC共通）
+  &.col_4 {
+
+    //SP
+    @include mq(sp){
+      margin-right: -7px;
+      margin-bottom: -7px;
+    }
+
+    > .col {
+      align-self: auto;
+      @include border_box;
+      display: inline-flex;
+      width: calc(25% - 7px);
+      margin-right: 7px;
+
+      //cahier
+      margin-bottom: 7px;
+      &:nth-child(n + 5) {
+        //margin-top: sp_size(24);
+        //todo from コンポーネント確認_171124b.pptx
+        //margin-top: 14px;
+      }
+
+      // 影付き
+      &.shadow {
+        @include box_shadow(rgba(0, 0, 0, 0.3) 0 15px 15px -15px);
+      }
+    }
+
+    //PC
+    @include mq(){
+      margin-right: -40px;
+      //cahier
+      margin-bottom: -40px;
+      > .col {
+        width: calc(25% - 40px);
+        margin-right: 40px;
+        margin-bottom: 40px;
+        img {
+          max-width: 480px;
+        }
+        &:nth-child(n + 5) {
+          //margin-top: 45px;
+          //todo from コンポーネント確認_171124b.pptx
+          //cahier
+          //margin-top: 40px;
+        }
+      }
+      &._pc_col_3 {
+        margin-right: -20px;
+        margin-bottom: -20px;
+        > .col {
+          width: calc(33.333% - 20px);
+          margin-right: 20px;
+          margin-bottom: 20px;
+
+          img {
+            max-width: 300px;
+          }
+          //cahier
+          //&:nth-child(n + 3) {
+          //  margin-top: 0;
+          //}
+          //&:nth-child(n + 4) {
+          //  //todo from コンポーネント確認_171124b.pptx
+          //  margin-top: 40px;
+          //}
+        }
+      }
+    }
+  }
+
+
+  //PC
+  @include mq(sp){
+    &._pc_col_2 {
+      > .col {
+        margin-bottom: 20px;
+        + .col {
+          //margin-top: sp_size(35);
+          //todo 会議
+          //margin-top: 30px;
+        }
+        width: 100%;
+      }
+    }
+
+    &._sp_col_2 {
+
+      margin-right: -7px;
+      margin-bottom: -7px;
+
+      > .col {
+        align-self: auto;
+        @include border_box;
+        display: inline-flex;
+        width: calc(50% - 7px);
+        margin-right: 7px;
+        margin-bottom: 7px;
+        &:nth-child(n + 3) {
+          //margin-top: sp_size(30);
+          //todo from コンポーネント確認_171124b.pptx
+          //cahier
+          //margin-top: 14px;
+        }
+
+        // 影付き
+        &.shadow {
+          @include box_shadow(rgba(0, 0, 0, 0.3) 0 15px 15px -15px);
+        }
+      }
+    }
+  }
+
+  //PC
+  @include mq(){
+
+    &._pc_col_4 {
+      margin-right: -15px;
+      flex-direction: row;
+      margin-bottom: -15px;
+      > .col {
+        width: calc(25% - 15px);
+        margin-right: 15px;
+        margin-bottom: 15px;
+        img {
+          //max-width: 480px;
+        }
+        //cahier
+        //&:nth-child(-n + 4) {
+        //  margin-top: 0;
+        //}
+        //&:nth-child(n + 5) {
+        //  //todo from コンポーネント確認_171124b.pptx
+        //  margin-top: 40px;
+        //
+        //}
+      }
+    }
+
+    &._pc_col_3 {
+      margin-right: -20px;
+      //cahier
+      margin-bottom: -20px;
+      > .col {
+        width: calc(33.333% - 20px);
+        margin-right: 20px;
+        //cahier
+        margin-bottom: 20px;
+
+        img {
+          max-width: 300px;
+        }
+
+        //cahier
+        //&:nth-child(n + 3) {
+        //  margin-top: 0;
+        //}
+        //&:nth-child(n + 4) {
+        //  //todo from コンポーネント確認_171124b.pptx
+        //  margin-top: 20px;
+        //}
+      }
+    }
+
+    &._pc_col_2 {
+      margin-right: -40px;
+      flex-direction: row;
+      margin-bottom: -40px;
+      > .col {
+        width: calc(50% - 40px);
+        margin-right: 40px;
+        margin-bottom: 40px;
+        img {
+          max-width: 480px;
+        }
+        //cahier
+        //&:nth-child(n + 3) {
+        //  //todo from コンポーネント確認_171124b.pptx
+        //  margin-top: 40px;
+        //}
+      }
+    }
+  }
+
+  //&.narrow {
+  //  &.col_2 .col {
+  //    &:nth-child(n+3){
+  //      //todo from コンポーネント確認_171124b.pptx
+  //      margin-top: 7px;
+  //
+  //      //PC
+  //      @include mq(){
+  //        //todo from コンポーネント確認_171124b.pptx
+  //        margin-top: 20px;
+  //      }
+  //    }
+  //  }
+  //  &.col_4 .col {
+  //    &:nth-child(n+5){
+  //      //todo from コンポーネント確認_171124b.pptx
+  //      margin-top: 7px;
+  //
+  //      //PC
+  //      @include mq(){
+  //        //todo from コンポーネント確認_171124b.pptx
+  //        margin-top: 20px;
+  //      }
+  //    }
+  //  }
+  //  &._sp_col_2 .col {
+  //
+  //    //sp
+  //    @include mq(sp){
+  //      &:nth-child(n + 3) {
+  //        //margin-top: sp_size(30);
+  //        //todo from コンポーネント確認_171124b.pptx
+  //        margin-top: 14px;
+  //      }
+  //    }
+  //  }
+  //  &._pc_col_2 .col {
+  //
+  //    //PC
+  //    @include mq(){
+  //      &:nth-child(n + 3) {
+  //        //margin-top: sp_size(30);
+  //        //todo from コンポーネント確認_171124b.pptx
+  //        margin-top: 20px;
+  //      }
+  //    }
+  //  }
+  //  &._pc_col_3 .col {}
+  //  &._pc_col_4 .col {}
+  //}
+}
+
+// *** SP/PC コンテナを無視して幅 100%
+.vw100 {
+  //PC
+  @include mq(){
+    width: 100vw !important;
+    margin-left: calc((100vw - 1000px) /2 * -1) !important;
+    margin-right: 0 !important;
+    .vw100__inner {
+      width: 1000px;
+      margin: auto;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 999px){
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  //SP
+  @include mq(sp){
+    width: 100vw !important;
+    margin-left: - sp_size(20) !important;
+
+    .vw100__inner {
+      margin-right: sp_size(20) !important;
+      margin-left: sp_size(20) !important;
+    }
+  }
+
+}
+
+// *** PC でコンテナを無視して幅 100%
+._pc_vw100 {
+  //PC
+  @include mq(){
+    width: 100vw !important;
+    margin-left: calc((100vw - 1000px) /2 * -1) !important;
+    margin-right: 0 !important;
+    ._pc_vw100__inner {
+      width: 1000px;
+      margin: auto;
+    }
+  }
+  @media screen and (max-width: 999px){
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+
+// *** SP でコンテナを無視して幅 100%
+._sp_vw100 {
+
+  //SP
+  @include mq(sp){
+    width: 100vw !important;
+    margin-left: - sp_size(20) !important;
+
+    ._sp_vw100__inner {
+      margin-right: sp_size(20);
+      margin-left: sp_size(20);
+    }
+  }
+}
+
+// *** PC のみ幅700中央寄せ ***
+._pc_center700 {
+  + {
+    * {
+      margin-top: 35px;
+    }
+    [class*="annotation"] {
+      margin-top: 15px;
+    }
+    ._pc_center700,
+    ._pc_center660 {
+      margin-top: sp_size(40);
+    }
+  }
+  //li + li {
+  //  margin-top: sp_size(40);
+  //}
+
+
+  //PC
+  @include mq(){
+    width: 700px !important;
+    margin-right: auto;
+    margin-left: auto;
+    + {
+      * {
+        margin-top: 80px;
+      }
+      ._pc_center660,
+      ._pc_center700 {
+        margin-top: 40px;
+      }
+    }
+  }
+
+}
+
+// *** PC のみ幅660中央寄せ ***
+._pc_center660 {
+  + {
+    ._pc_center660 {
+      margin-top: sp_size(40);
+    }
+
+    [class*="annotation"] {
+      margin-top: 15px;
+    }
+    ._pc_center700,
+    ._pc_center660 {
+      margin-top: sp_size(40);
+    }
+  }
+  li + li {
+    margin-top: sp_size(40);
+  }
+
+
+  //PC
+  @include mq(){
+    width: 660px !important;
+    margin-right: auto;
+    margin-left: auto;
+    + {
+      ._pc_center660,
+      ._pc_center700 {
+        margin-top: 40px;
+      }
+    }
+    li + li {
+      margin-top: 40px;
+    }
+  }
+
+}
+
+// *** PC のみ幅370中央寄せ ***
+._pc_center370 {
+  + ._pc_center370 {
+    margin-top: sp_size(40);
+  }
+  li + li {
+    margin-top: sp_size(40);
+  }
+
+
+  //PC
+  @include mq(){
+    width: 370px !important;
+    margin-right: auto;
+    margin-left: auto;
+    + ._pc_center370 {
+      margin-top: 40px;
+    }
+    li + li {
+      margin-top: 40px;
+    }
+  }
+
+}
+

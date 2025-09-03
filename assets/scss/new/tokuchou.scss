@@ -1,0 +1,266 @@
+// *** Settings ***
+@import "../../partials/variables", "../../partials/mixin";
+
+// *** sandbox ***
+#main {
+  .unit--tokuchou {
+    + {
+      * {
+        margin-top: 25px;
+      }
+
+      //PC
+      @include mq(){
+        * {
+          margin-top: 75px;
+        }
+      }
+    }
+
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-width: 1%;
+
+    .tokuchou__header {
+      margin-right: 20px;
+      strong {
+        display: table-cell;
+        vertical-align: middle;
+        width: 70px;
+        height: 70px;
+        color: white;
+        text-align: center;
+        @include border_radius(100px);
+        background: {
+          color: $cerulean;
+        }
+        span {
+          line-height: 1;
+          vertical-align: baseline;
+        }
+      }
+      .prefix {
+        @include font_size(17)
+      }
+      .num {
+        @include font_size(25)
+      }
+
+      //PC
+      @include mq(){
+        margin-right: 40px;
+        strong {
+          width: 200px;
+          height: 200px;
+          span {
+            display: inline-block;
+            position: relative;
+            margin-top: -10px;
+          }
+        }
+        .prefix {
+          @include font_size(40)
+        }
+        .num {
+          @include font_size(60)
+        }
+      }
+    }
+
+    .tokuchou__body {
+      flex: 1;
+      p {
+        @include font_size(24);
+        line-height: 1.4;
+        font-weight: 700;
+
+        strong {
+          display: inline-block;
+          .ruby {
+            font-size: 110%;
+          }
+        }
+
+
+        .super {
+          display: block;
+
+          &.txt--small {
+            @include font_size(12);
+          }
+        }
+      }
+
+      //PC
+      @include mq(){
+        p {
+          @include font_size(50);
+          strong {
+            .ruby {
+              font-size: 110%;
+            }
+          }
+          .super {
+            &.txt--small {
+              @include font_size(24);
+            }
+          }
+        }
+      }
+    }
+
+    .tokuchou__item--type {
+      width: 100%;
+      display: inline-flex;
+      flex-wrap: wrap;
+      align-items: center;
+      font-weight: 700;
+      dt {
+        background: $doveGray;
+        color: white;
+        text-align: center;
+        width: 45%;
+        @include font_size(12);
+        @include border_radius(100px);
+        margin-top: 4px;
+        padding: 2px 0;
+      }
+      dd {
+        @include font-size(8);
+        color: $cerulean;
+        width: 50%;
+        margin-left: 5%;
+        strong {
+          @include font-size(30);
+        }
+        sup {
+          color: $fontBlack;
+        }
+      }
+
+      //PC
+      @include mq(){
+        dt {
+          @include font_size(30);
+          padding: 5px 0;
+          width: 300px;
+        }
+        dd {
+          @include font_size(24);
+          line-height: 1.5;
+          margin-left: 7%;
+          width: calc(100% - 7% - 300px);
+          strong {
+            @include font_size(70);
+          }
+        }
+      }
+    }
+  }
+
+  .checkList {
+    + {
+      .unit--tokuchou {
+        margin-top: 25px;
+      }
+
+      //PC
+      @include mq(){
+
+        .unit--tokuchou {
+          margin-top: 75px;
+        }
+      }
+    }
+
+    line-height: 1.6;
+    margin-left: 10px;
+
+    //PC
+    @include mq(){
+      margin-left: 20px;
+    }
+
+    .checkList__term,
+    > li {
+      + {
+        .checkList__description {
+          margin-top: 8px;
+        }
+      }
+      font-weight: 700;
+      @include font-size(14);
+      padding-left: 25px;
+      background:{
+        image: url(/assets/img/common/icn_check--blue.png);
+        repeat: no-repeat;
+        size: 19px;
+        position: 0 6px;
+      }
+      ol.annotation {
+
+        margin-top: 10px;
+
+        //PC
+        @include mq(){
+          margin-top: 20px;
+        }
+        li {
+          font-weight: 400;
+          @include sp_font_size(30);
+
+          //PC
+          @include mq(){
+            @include font_size(14);
+          }
+        }
+      }
+      .txt--small {
+        @include font-size(8);
+
+        //PC
+        @include mq(){
+          font-size: 70%;
+        }
+      }
+
+      //PC
+      @include mq(){
+        padding-left: 60px;
+        @include font_size(30);
+        background:{
+          image: url(/assets/img/common/icn_check--blue.png);
+          repeat: no-repeat;
+          size: 38px;
+          position: 0 12px;
+        }
+      }
+    }
+
+    .checkList__description {
+      + {
+        .checkList__term {
+          margin-top: 20px;
+        }
+
+        //PC
+        @include mq(){
+          .checkList__term {
+            margin-top: 55px;
+          }
+        }
+      }
+      padding-left: 25px;
+      font-weight: bold;
+      @include font_size(9);
+
+      //PC
+      @include mq(){
+        padding-left: 60px;
+        @include font-size(18);
+      }
+    }
+  }
+}

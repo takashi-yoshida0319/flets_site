@@ -1,0 +1,30 @@
+// *** Settings ***
+@import "../../partials/variables", "../../partials/mixin";
+
+// *** sandbox ***
+#main {
+
+
+  //SP
+  @include mq(sp){
+
+    .frame--tag .frame__content .annotationBlock {
+      ul.annotation li,
+      p,
+      ol.annotation li {
+        @include sp_font_size(26);
+      }
+    }
+
+  }
+
+
+  //PC
+  @include mq(){
+    ._pc_text--large {
+      @include font_size(30);
+    }
+  }
+
+
+}

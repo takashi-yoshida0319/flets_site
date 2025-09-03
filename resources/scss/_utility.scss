@@ -1,0 +1,635 @@
+//component
+.alignLeft, .ta_l {
+  text-align: left !important;
+}
+
+.alignRight, .ta_r {
+  text-align: right !important;
+}
+
+.alignCenter, .ta_c {
+  text-align: center !important;
+}
+
+.vaTop {
+  vertical-align: top !important;
+}
+
+.vaMiddle {
+  vertical-align: middle !important;
+}
+
+.vaBottom {
+  vertical-align: bottom !important;
+}
+
+.floatNone {
+  float: none !important;
+}
+
+.floatLeft {
+  float: left !important;
+}
+
+.floatNone {
+  float: none !important;
+}
+
+.clearLeft {
+  clear: left !important;
+}
+
+.clearRight {
+  clear: right !important;
+}
+
+.clearBoth {
+  clear: both !important;
+}
+
+.case {
+  overflow: hidden;
+  zoom: 1;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.db, .dB, .d_b {
+  display: block;
+}
+
+.dI, .di, .d_i {
+  display: inline;
+}
+
+.dib, .diB, .dIb, .d_ib {
+  display: inline-block;
+}
+
+@include mq(sp) {
+  ._sp_alignLeft, ._sp_ta_l {
+    text-align: left !important;
+  }
+  ._sp_alignRight, ._sp_ta_r {
+    text-align: right !important;
+  }
+  ._sp_alignCenter, ._sp_ta_c {
+    text-align: center !important;
+  }
+  ._sp_vaTop {
+    vertical-align: top !important;
+  }
+  ._sp_vaMiddle {
+    vertical-align: middle !important;
+  }
+  ._sp_vaBottom {
+    vertical-align: bottom !important;
+  }
+}
+
+// flex
+.ai-c {
+  align-items: center;
+}
+
+.ai-fs {
+  align-items: flex-start;
+}
+
+.ai-fe {
+  align-items: flex-end;
+}
+
+.ai-b {
+  align-items: baseline;
+}
+
+.ai-s {
+  align-items: stretch;
+}
+
+// *** text style ***
+.txt--small {
+  font-size: 0.7em !important;
+}
+
+.txt--x-small {
+  font-size: 0.5em !important;
+}
+
+.txt--large {
+  font-size: 1.6em !important;
+}
+
+.txt--x-large {
+  font-size: 1.8em !important;
+}
+
+.txt--xx-large {
+  font-size: 2.2em !important;
+}
+
+.fs100 {
+  font-size: 100%;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+
+.c_red {
+  color: $red;
+}
+
+.td_N,
+.tdn,
+.td_n {
+  text-decoration: none;
+}
+
+.c_white,
+.c_w,
+.c_fff {
+  color: white;
+}
+
+.c_bk {
+  color: $black;
+}
+
+.c_blue {
+  color: $blue;
+}
+
+.fw_400,
+.fw_normal,
+._normal {
+  font-weight: 400 !important;
+}
+
+.fw_700,
+.fw_bold,
+._bold {
+  font-weight: 700 !important;
+}
+
+.c-indent0 {
+  text-indent: 0;
+}
+
+// line-height
+//sp
+$i: 100;
+@while $i <= 200 {
+  ._lh#{$i} {
+    line-height: ($i / 100) !important;
+  }
+  $i: $i + 10;
+}
+
+
+// *** bg ***
+._bg {
+  &_blue {
+    background: $blue !important;
+  }
+
+  &_yellow {
+    background: $yellow !important;
+  }
+
+  &_orange {
+    background: $orange !important;
+  }
+
+  &_darkblue {
+    background: $darkblue !important;
+  }
+
+  &_ultralightgray {
+    background: $ultralightgray !important;
+  }
+
+  &_bluegray {
+    background: $bluegray !important;
+  }
+
+  &_black {
+    background: $black !important;
+  }
+}
+
+._shadow {
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+._dark {
+  //box-shadow: 0px 4px 8px rgba(40, 40, 40, 0.16);
+  box-shadow: 0px 8px 24px rgba(40, 40, 40, 0.16);
+}
+
+
+.rn2020 {
+  // *** margin ***
+
+  .m_auto,
+  .mAuto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+
+  @include mq(sp) {
+    //top
+    $i: 0;
+    @while $i <= 120 {
+      ._sp_mt#{$i} {
+        margin-top: $i + px !important;
+      }
+      $i: $i + 1;
+    }
+    //$i: 35;
+    //@while $i <= 100 {
+    //  ._sp_mt#{$i} { margin-top: $i + px !important; }
+    //  $i: $i + 5;
+    //}
+
+    //right
+    $i: 0;
+    @while $i <= 120 {
+      ._sp_mr#{$i} {
+        margin-right: $i + px !important;
+      }
+      $i: $i + 1;
+    }
+    //$i: 35;
+    //@while $i <= 100 {
+    //  ._sp_mr#{$i} { margin-right: $i + px !important; }
+    //  $i: $i + 5;
+    //}
+
+    //bottom
+    $i: 0;
+    @while $i <= 120 {
+      ._sp_mb#{$i} {
+        margin-bottom: $i + px !important;
+      }
+      $i: $i + 1;
+    }
+    //$i: 35;
+    //@while $i <= 100 {
+    //  ._sp_mb#{$i} { margin-bottom: $i + px !important; }
+    //  $i: $i + 5;
+    //}
+
+    //left
+    $i: 0;
+    @while $i <= 120 {
+      ._sp_ml#{$i} {
+        margin-left: $i + px !important;
+      }
+      $i: $i + 1;
+    }
+    //$i: 35;
+    //@while $i <= 100 {
+    //  ._sp_ml#{$i} { margin-left: $i + px !important; }
+    //  $i: $i + 5;
+    //}
+
+    // *** padding ***
+    //top
+    $i: 0;
+    @while $i <= 120 {
+      ._sp_pt#{$i} {
+        padding-top: $i + px !important;
+      }
+      $i: $i + 1;
+    }
+    //$i: 35;
+    //@while $i <= 100 {
+    // ._sp_pt#{$i} { padding-top: $i + px !important; }
+    // $i: $i + 5;
+    //}
+
+    //right
+    $i: 0;
+    @while $i <= 120 {
+      ._sp_pr#{$i} {
+        padding-right: $i + px !important;
+      }
+      $i: $i + 1;
+    }
+    //$i: 35;
+    //@while $i <= 100 {
+    //  ._sp_pr#{$i} { padding-right: $i + px !important; }
+    //  $i: $i + 5;
+    //}
+
+    //bottom
+    $i: 0;
+    @while $i <= 120 {
+      ._sp_pb#{$i} {
+        padding-bottom: $i + px !important;
+      }
+      $i: $i + 1;
+    }
+    //$i: 35;
+    //@while $i <= 100 {
+    //  ._sp_pb#{$i} { padding-bottom: $i + px !important; }
+    //  $i: $i + 5;
+    //}
+
+    //left
+    $i: 0;
+    @while $i <= 120 {
+      ._sp_pl#{$i} {
+        padding-left: $i + px !important;
+      }
+      $i: $i + 1;
+    }
+    //$i: 35;
+    //@while $i <= 100 {
+    //  ._sp_pl#{$i} { padding-left: $i + px !important; }
+    //  $i: $i + 5;
+    //}
+
+
+    //width
+    $i: 10;
+    @while $i <= 1400 {
+      ._sp_w#{$i} {
+        width: $i + px !important;
+      }
+      $i: $i + 1;
+    }
+
+  }
+
+
+  @include mq() {
+
+    // *** padding ***
+    //top
+    $i: 0;
+    @while $i <= 120 {
+      .pt#{$i} {
+        padding-top: $i + px !important;
+      }
+      $i: $i + 1;
+    }
+    //$i: 35;
+    //@while $i <= 100 {
+    //  .pt#{$i} { padding-top: $i + px !important; }
+    //  $i: $i + 5;
+    //}
+
+    //right
+    $i: 0;
+    @while $i <= 120 {
+      .pr#{$i} {
+        padding-right: $i + px !important;
+      }
+      $i: $i + 1;
+    }
+    //$i: 35;
+    //@while $i <= 100 {
+    //  .pr#{$i} { padding-right: $i + px !important; }
+    //  $i: $i + 5;
+    //}
+
+    //bottom
+    $i: 0;
+    @while $i <= 120 {
+      .pb#{$i} {
+        padding-bottom: $i + px !important;
+      }
+      $i: $i + 1;
+    }
+    //$i: 35;
+    //@while $i <= 100 {
+    //  .pb#{$i} { padding-bottom: $i + px !important; }
+    //  $i: $i + 5;
+    //}
+
+    //left
+    $i: 0;
+    @while $i <= 120 {
+      .pl#{$i} {
+        padding-left: $i + px !important;
+      }
+      $i: $i + 1;
+    }
+    //$i: 35;
+    //@while $i <= 100 {
+    //  .pl#{$i} { padding-left: $i + px !important; }
+    //  $i: $i + 5;
+    //}
+
+    //PC margin
+    //top
+    $i: 0;
+    @while $i <= 120 {
+      .mt#{$i} {
+        margin-top: $i + px !important;
+      }
+      $i: $i + 1;
+    }
+    //$i: 35;
+    //@while $i <= 100 {
+    //      .mt#{$i} { margin-top: $i + px !important; }
+    //      $i: $i + 5;
+    //  }
+
+    //right
+    $i: 0;
+    @while $i <= 120 {
+      .mr#{$i} {
+        margin-right: $i + px !important;
+      }
+      $i: $i + 1;
+    }
+    //$i: 35;
+    //@while $i <= 100 {
+    //      .mr#{$i} { margin-right: $i + px !important; }
+    //      $i: $i + 5;
+    //  }
+
+    //bottom
+    $i: 0;
+    @while $i <= 120 {
+      .mb#{$i} {
+        margin-bottom: $i + px !important;
+      }
+      $i: $i + 1;
+    }
+    //$i: 35;
+    //@while $i <= 100 {
+    //    .mb#{$i} { margin-bottom: $i + px !important; }
+    //    $i: $i + 5;
+    //}
+
+    //left
+    $i: 0;
+    @while $i <= 120 {
+      .ml#{$i} {
+        margin-left: $i + px !important;
+      }
+      $i: $i + 1;
+    }
+    //$i: 35;
+    //@while $i <= 100 {
+    //    .ml#{$i} { margin-left: $i + px !important; }
+    //    $i: $i + 5;
+    //}
+
+    // *** padding ***
+    //top
+    $i: 0;
+    @while $i <= 120 {
+      .pt#{$i} {
+        padding-top: $i + px !important;
+      }
+      $i: $i + 1;
+    }
+    //$i: 35;
+    //@while $i <= 100 {
+    //.pt#{$i} { padding-top: $i + px !important; }
+    //$i: $i + 5;
+    //}
+
+    //right
+    $i: 0;
+    @while $i <= 120 {
+      .pr#{$i} {
+        padding-right: $i + px !important;
+      }
+      $i: $i + 1;
+    }
+    //$i: 35;
+    //@while $i <= 100 {
+    //.pr#{$i} { padding-right: $i + px !important; }
+    //$i: $i + 5;
+    //}
+
+    //bottom
+    $i: 0;
+    @while $i <= 120 {
+      .pb#{$i} {
+        padding-bottom: $i + px !important;
+      }
+      $i: $i + 1;
+    }
+    //$i: 35;
+    //@while $i <= 100 {
+    //.pb#{$i} { padding-bottom: $i + px !important; }
+    //$i: $i + 5;
+    //}
+
+    //left
+    $i: 0;
+    @while $i <= 120 {
+      .pl#{$i} {
+        padding-left: $i + px !important;
+      }
+      $i: $i + 1;
+    }
+    //$i: 35;
+    //@while $i <= 100 {
+    //.pl#{$i} { padding-left: $i + px !important; }
+    //$i: $i + 5;
+    //}
+
+
+    //width
+    $i: 10;
+    @while $i <= 1400 {
+      .w#{$i} {
+        width: $i + px !important;
+      }
+      $i: $i + 1;
+    }
+
+
+  }
+
+
+  //flexBox
+  .flexBox {
+    display: flex;
+  }
+
+  .flex_wrap {
+    //display: flex;
+    flex-wrap: wrap !important;
+  }
+
+  .flex_align-center {
+    align-items: center !important;
+  }
+
+  .flex_space-between {
+    justify-content: space-between !important;
+  }
+
+  .flex_space-around {
+    justify-content: space-around !important;
+  }
+
+  .flex_center {
+    justify-content: center !important;
+  }
+  .flex_fs {
+    justify-content: flex-start !important;
+  }
+
+  //SP：flex解除
+  ._sp_noflex {
+    @include mq(sp) {
+      display: block !important;
+    }
+  }
+
+  .border_none {
+    border: none !important;
+  }
+
+  .border_top_none {
+    border-top: none !important;
+  }
+
+  .border_right_none {
+    border-right: none !important;
+  }
+
+  .border_bottom_none {
+    border-bottom: none !important;
+  }
+
+  .border_left_none {
+    border-left: none !important;
+  }
+
+  ._vertically_center {
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+@include mq() {
+  ._sp {
+    display: none !important;
+  }
+}
+
+@include mq(sp) {
+  ._pc {
+    display: none !important;
+  }
+}

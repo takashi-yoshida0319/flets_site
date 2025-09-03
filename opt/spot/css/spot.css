@@ -1,0 +1,403 @@
+@charset "shift-jis";
+
+div.box_coution {
+}
+div.box_coution a {
+  display:block;
+  float: right;
+  width: 272px;
+  height: 51px;
+  color: #000;
+  padding-left: 63px;
+  padding-right: 15px;
+  padding-top: 9px;
+
+}
+
+/* tokuchou */
+
+.box_img3col {
+  float: left;
+}
+.box_img3col img {
+  margin-right: 5px;
+}
+
+
+/* ryoukin */
+.box_float {
+  float: left;
+}
+.box_float img{
+  margin: 100px 6px 0 6px;
+}
+.box_float img.mt30{
+  margin: 30px 6px 0 6px;
+}
+.box_float img.mt120{
+  margin: 120px 6px 0 6px;
+}
+table.tbl_350w {
+  width: 350px;
+}
+table.tbl_300w {
+  width: 300px;
+
+}
+table.tbl_420w {
+  width: 420px;
+}
+table.tbl_230w {
+  width: 230px;
+
+}
+table.tbl_w100 {
+  width: 100%;
+}
+table.tbl_bd3_c {
+  border-top-width: 2px;
+  border-left-width: 2px;
+}
+table.tbl_bd3_c tr th,
+table.tbl_bd3_c tr td {
+  border-bottom: 2px solid #AAAAAA;
+  border-right: 2px solid #AAAAAA;
+  text-align: center;
+}
+table.tbl_bd3_c tr th {
+  padding: 6px;
+  background: #D7E8FF;
+}
+table.tbl_bd1_c {
+  border-top-width: 1px;
+  border-left-width: 1px;
+}
+table.tbl_bd1_c tr th,
+table.tbl_bd1_c tr td {
+  border-bottom: 1px solid #AAAAAA;
+  border-right: 1px solid #AAAAAA;
+}
+table.tbl_bd1_c tr th {
+  padding: 6px;
+  background: #D7E8FF;
+}
+table.tbl_bd1_c tr th.blue {
+  color: #0066CC;
+}
+div.box_bdgray {
+  border: 1px solid #AAAAAA;
+  padding: 10px;
+}
+table .fs85{
+  font-size: 85%;
+}
+
+.txt_right {
+  text-align: right;
+}
+
+/* moushikmoi */
+#moushikmoi div.box_section {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  background: url(../../misc/line_dot.gif) bottom repeat-x;
+}
+
+/* common spacer */
+.txt_bold {font-weight:bold;}
+.txt_underline { text-decoration: underline;}
+.font_gray{ color: #666666;}
+.mtp1em {margin-top: 1em;}
+.mbt1em {margin-bottom: 1em;}
+.mtp2em {margin-top: 2em;}
+.mbt2em {margin-bottom: 2em;}
+
+
+/* 2011.12.16- add CSS
+----------------------------------------*/
+.fleft{
+  float: left;
+}
+
+.width440{
+  width: 440px;
+}
+
+/* Config CSS */
+.mb10{margin-bottom: 10px;}
+.mb20{margin-bottom: 20px;}
+.mr25{margin-right: 25px;}
+
+h1 .system_attention{
+  color: #262AAD;
+}
+
+#attention ul, #attention table{
+  margin-bottom: 20px;
+}
+
+#attention ul.last-child, #attention table.last-child{
+  margin-bottom: 0;
+}
+
+/* campaign
+------------------------------------------------------ */
+
+/* bg_box */
+.bg_box_top {
+  margin: 0;
+  background: url(../img/bg_box_top.gif) center top no-repeat;
+  padding-top: 8px;
+}
+.bg_box_bottom {
+  margin: 0;
+  background: url(../img/bg_box_bottom.gif) center bottom no-repeat;
+  padding-bottom: 7px;
+}
+.bg_box {
+  margin: 0;
+  padding-left: 26px;
+  padding-right: 27px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: url(../img/bg_box.gif) repeat-y;
+}
+.bg_box .bg_box_contents_top {
+  margin:0 auto;
+  background: url(../img/bg_box_contents_top.gif) center top no-repeat;
+  padding-top: 3px;
+}
+.bg_box .bg_box_contents_bottom {
+  background: url(../img/bg_box_contents_bottom.gif) center bottom no-repeat;
+  padding-bottom: 3px;
+}
+.bg_box .bg_box_contents {
+  background: url(../img/bg_box_contents.gif) center repeat-y;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 21px;
+  padding-right: 22px;
+}
+.bg_blue_box_bottom {
+  margin: 0;
+  background: url(../img/bg_blue_box_bottom.gif) center bottom no-repeat;
+  padding-bottom: 8px;
+  width: 594px;
+}
+.bg_blue_box {
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: url(../img/bg_blue_box.gif) repeat-y;
+}
+.bg_blue_box.no_item {
+  padding: 0;
+  height: 8px;
+  width: 594px;	
+}
+
+dd.block02_03_bg01{
+  background: url(../img/block02_03_bg01.gif) 0 0 no-repeat;
+  height: 40px;
+}
+
+dd.block02_03_bg01 p{
+  text-align:center;
+  padding-top: 5px;
+}
+
+dl.campaign_banner_box{
+  margin-bottom: 15px;
+  padding: 0 10px 15px 10px;
+  border-bottom: 1px dotted #8998a2;
+}
+dl.campaign_banner_box.last-child{
+  margin: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+dl.campaign_banner_box dt, dl.campaign_banner_box dd{
+  float: left;
+}
+dl.campaign_banner_box dt{
+  margin-right: 10px;
+}
+dl.campaign_banner_box dd{
+  width: 280px;
+}
+
+dl.campaign_banner_box dd p{
+  margin-bottom: 25px;
+  line-height: 1.3em;
+}
+dl.campaign_banner_box dd p.last-child{
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+.bg_box.campaign{
+  padding-top: 0;
+}
+.bg_box.campaign .bg_box_contents {
+  padding-left: 11px;
+  padding-right: 12px;
+}
+
+.bg_box .bg_box_contents.block02_03 {
+  padding-left: 19px;
+  padding-right: 22px;
+  padding-top: 20px;
+}
+
+/* header navit config */
+#contents #main .header {
+  margin:0 0 10px 0;
+}
+#contents #main .header.navit {
+  position:relative;
+  min-height:120px;
+  height: auto !important;
+  height: 120px;
+  margin:-40px 0 0 0;
+  padding:40px 262px 0 0;
+}
+.ie6 #contents #main .navit {
+  height:120px;
+}
+#contents #main .header {
+  margin:0 0 0 0;
+}
+
+
+.title-lv2{
+  margin-bottom: 15px;
+}
+
+p{
+  _font-size: 12px;
+}
+
+.pt0{
+  padding-top: 0;
+}
+
+.pt20{
+  padding-top: 20px !important;
+}
+
+.mt20{
+  margin-top: 20px !important;
+}
+
+.mr20{
+  margin-right: 20px !important;
+}
+
+.ml25{
+  margin-left: 25px !important;
+}
+
+.mb5{
+  margin-bottom: 5px !important;
+}
+
+.mb15{
+  margin-bottom: 15px !important;
+}
+
+.mb20{
+  margin-bottom: 20px !important;
+}
+
+.mb25{
+  margin-bottom: 25px !important;
+}
+
+.mb30{
+  margin-bottom: 30px !important;
+}
+
+.pb40{
+  padding-bottom: 40px !important;
+}
+
+.text_small{
+  font-size: 85%;
+}
+
+.fw_normal{
+  font-weight: normal !important;
+}
+
+.ta_left{
+  text-align: left !important;
+}
+
+.outer_box{
+  position: relative;
+}
+
+.notice_box{
+  position: absolute;
+  top: 118px;
+  left: 250px;
+  background: red;
+  color:#fff;
+  display: block;
+  padding: 2px 5px;
+}
+
+/* 20130418 */
+.cnw_pp {
+	margin:15px 0 0 0;
+	background:url(../img/cnw_pp_bg.jpg) top left no-repeat;
+	width:690px;
+	height:251px;
+	position:relative;
+}
+
+.cnw_pp .detail {
+	width:292px;
+	height:54px;
+	position:absolute;
+	top:186px;
+	left:50px;
+}
+
+.cnw_pp .cnw {
+	width:292px;
+	height:54px;
+	position:absolute;
+	top:186px;
+	left:349px;
+}
+
+/* clearfix
+------------------------------------------------------ */
+
+.clearfix:after{
+  content:".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+}
+
+.clearfix{
+  zoom:1;
+}
+
+* html .clearfix{
+  display: inline-block;
+}
+
+/* no ie mac */
+* html .clearfix{
+  height: 1%;
+}
+.clearfix{
+  display: block;
+}

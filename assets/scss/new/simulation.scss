@@ -1,0 +1,309 @@
+@import "../../partials/mixin", "../../partials/variables";
+
+// *** sandbox ***
+#main {
+
+  //SP
+  @include mq(sp){
+
+    .grid._pc_col_3 {
+      margin-bottom: -14px;
+      .col {
+        margin-top: 0 !important;
+        margin-bottom: 14px;
+      }
+    }
+
+    .simulation__result {
+      background: $athensGray;
+      padding: 10px;
+      @include border_box;
+
+      &.fixed {
+        width: 100%;
+        position: fixed;
+        right: 0;
+        bottom: 27px;
+        left: 0;
+        margin: auto !important;
+        z-index: 1000;
+      }
+    }
+
+    .simulation__result__inner {
+      display: flex;
+      justify-content: space-between;
+    }
+    .simulation__result__amount {
+      display: flex;
+      //background: aliceblue;
+      flex: 1;
+      flex-direction: column;
+      margin-right: 10px;
+      justify-items: center;
+    }
+
+    .amout__item {
+      + .amout__item {
+        margin-top: 10px;
+      }
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      dt {
+        background: $doveGray;
+        color: white;
+        display: block;
+        text-align: center;
+        padding: 2px 5px;
+        width: 70px;
+        white-space: nowrap;
+      }
+      dd {
+        color: $cerulean;
+        text-align: right;
+        white-space: normal;
+        strong {
+          white-space: nowrap;
+        }
+        span {
+          font-weight: 700;
+          line-height: 1;
+          @include font_size(24);
+          &.unit {
+            @include font_size(14);
+          }
+        }
+      }
+    }
+
+
+    .simulation__result__link {
+      width: 40%;
+      a {
+        white-space: nowrap;
+      }
+    }
+
+    // *** 合計料金の内訳 ***
+    .breakdown {
+      .breakdown__item {
+        + .breakdown__item {
+          margin-top: 30px;
+        }
+      }
+
+      .breakdown__header {
+        dl {
+          display: table;
+          width: 100%;
+          border: 1px solid $doveGray;
+          dt,dd {
+            display: table-cell;
+            padding: 5px;
+            vertical-align: middle;
+          }
+          dt {
+            background: $doveGray;
+            color: white;
+            text-align: center;
+            width: 110px;
+            @include font-size(14);
+          }
+          dd {
+            text-align: right;
+            @include font_size(14);
+            span {
+              @include font-size(20);
+            }
+          }
+        }
+      }
+
+      .breakdown__description {
+        margin: 15px;
+        dl {
+          + dl {
+            margin-top: 7px;
+          }
+          display: flex;
+          justify-content: space-between;
+          dt,dd {
+            @include font_size(10);
+          }
+          dt {
+            padding-right: 20px;
+          }
+          dd {
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+
+  }
+
+  //_:-ms-lang(x), .simulation__result__link {
+  //    padding-right: 30px !important;
+  //}
+  //PC
+  @include mq(){
+    .grid._pc_col_3 {
+      margin-bottom: -40px;
+      .col {
+        margin-top: 0 !important;
+        margin-bottom: 40px;
+      }
+    }
+
+    .simulation__result {
+      background: $athensGray;
+      padding: 20px 0 15px;
+      @include border_box;
+      &.fixed {
+        width: 100%;
+        position: fixed;
+        right: 0;
+        bottom: 40px;
+        left: 0;
+        margin: auto !important;
+        z-index: 998;
+      }
+    }
+
+    .simulation__result__inner {
+      width: 1000px;
+      margin: auto;
+      display: flex;
+
+    }
+    .simulation__result__amount {
+      display: flex;
+      //background: aliceblue;
+      flex: 1;
+      margin-right: 10px;
+      justify-items: center;
+    }
+
+    .amout__item {
+      display: flex;
+      //flex-direction: column;
+      align-content: flex-start;
+      width: 350px;
+
+      dt {
+        background: $doveGray;
+        color: white;
+        display: block;
+        text-align: center;
+        padding: 8px;
+        @include font_size(20);
+        width: 120px;
+        align-self: flex-start;
+      }
+      dd {
+        margin-top: -13px;
+        margin-left: 30px;
+        color: $cerulean;
+        @include font-size(30);
+        font-weight: 700;
+        align-self: flex-start;
+        strong {
+          @include font-size(30);
+          span {
+            @include font_size(40);
+          }
+        }
+      }
+    }
+
+
+    .simulation__result__link {
+      width: 280px;
+      padding-right: 25px;
+      .btn--panel.size--small {
+        a {
+          padding: 10px 60px 10px 35px;
+          @include font_size(24);
+        }
+      }
+      p {
+        margin-top: 0;
+      }
+    }
+
+    .breakdown {
+      + {
+        .btn--panel {
+          margin-top: 50px;
+        }
+      }
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .breakdown__item {
+      //width: 430px;
+      width: 460px;
+      //background: aliceblue;
+    }
+
+    .breakdown__header {
+      dl {
+        display: table;
+        width: 100%;
+        border: 1px solid $doveGray;
+        dt,dd {
+          display: table-cell;
+          padding: 5px;
+          vertical-align: middle;
+        }
+        dt {
+          background: $doveGray;
+          color: white;
+          text-align: center;
+          width: 140px;
+          @include font-size(20);
+        }
+        dd {
+          text-align: right;
+          @include font_size(14);
+          strong {
+            span {
+              @include font_size(26);
+            }
+            font-weight: 400;
+            @include font_size(26);
+          }
+          span {
+            @include font-size(20);
+          }
+        }
+      }
+    }
+
+
+
+    .breakdown__description {
+      margin: 15px 0 0;
+      dl {
+        + dl {
+          margin-top: 7px;
+        }
+        display: flex;
+        justify-content: space-between;
+        dt,dd {
+          @include font_size(16);
+        }
+        dt {
+          padding-right: 10px;
+        }
+        dd {
+          white-space: nowrap;
+        }
+      }
+    }
+
+  }
+
+}

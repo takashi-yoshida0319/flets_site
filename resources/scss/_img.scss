@@ -1,0 +1,121 @@
+//---------------------------
+// picture
+//---------------------------
+picture {
+    //@include mq(sp){
+        img {
+            width: 100%;
+            height: auto;
+        }
+    //}
+}
+
+.kv_area {
+    @include mq(){
+        picture img {
+            min-width: 1200px;
+            vertical-align: bottom;
+            //width: auto;
+            //height: 320px;
+        }
+        overflow: hidden;
+    }
+}
+
+//---------------------------
+// img_area
+//---------------------------
+.img_area {
+    //関係性マージン
+    + .c-note_list_num,
+    + .c-note_list,
+    + .annotation {
+        margin-top: 12px;
+    }
+
+    + .c-txt {
+        margin-top: 24px;
+    }
+
+    + .title {
+        margin-top: 40px;
+    }
+}
+
+//---------------------------
+// c-img
+//---------------------------
+.c-img {
+    text-align: center;
+    img {
+        //width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        @include mq(){
+            max-width: 100%;
+            width: auto;
+        }
+    }
+
+    //svg
+    //https://yuyauver98.me/svg-ios-font-bug/
+    //https://tumuguito.com/archives/859.html
+    svg {
+        font-family: "Helvetica Neue", "Noto Sans JP", "Helvetica", sans-serif;
+    }
+}
+
+//---------------------------
+// _logo
+//---------------------------
+._logo {
+    @include mq(){
+        position: relative;
+        top: 2px;
+    }
+}
+
+//---------------------------
+// svg_img
+//---------------------------
+
+//https://sitommy.com/html/1793/
+.svg_img {
+
+    //白
+    &._white {
+        path {
+            color: $white;
+            fill: currentColor;
+        }
+    }
+
+    //青
+    &._blue {
+        path {
+            color: $blue;
+            fill: currentColor;
+        }
+    }
+
+    //黒
+    &._black {
+        path {
+            color: $black;
+            fill: currentColor;
+        }
+    }
+}
+
+//タブ切り替え
+.tabBtn {
+    .active {
+        .svg_img {
+            path {
+                color: $white;
+                fill: currentColor;
+            }
+        }
+    }
+}

@@ -1,0 +1,663 @@
+//---------------------------
+// link_list
+//---------------------------
+.link {
+    &_list {
+        margin-top: 15px;
+
+        + * {
+            margin-top: 40px;
+        }
+
+        li {
+            + li {
+                margin-top: 15px;
+                font-size: variableFontSize(16);
+                @include mq(){
+                font-size: variableFontSize(18);
+                }
+            }
+        }
+    }
+
+    //
+    &_text_list {
+        + * {
+            margin-top: 40px;
+        }
+        + .btn_area {
+            margin-top: 40px !important;
+        }
+
+        li {
+            padding-bottom: 6px;
+            border-bottom: 2px solid $blue;
+            a {
+                line-height: 1.5;
+                &.link_icn.arrow {
+                    //background: url(/resources/img/cmn/ic_arrow.svg) no-repeat left center;
+                    //background-size: 16px 16px;
+                    background: url(/resources/img/cmn/ic_arrow_blue_right.svg) no-repeat left center;
+                    background-size: 12px 12px;
+                    padding-left: 24px !important;
+                    &:before {
+                        //top: 5px !important;
+                        display: none !important;
+                    }
+                }
+
+            }
+            + li {
+                margin-top: 30px;
+            }
+        }
+
+        @include mq(){
+            &.col2 {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                flex-wrap: wrap;
+                li {
+                    width: 480px;
+
+                    &:nth-child(2){
+                        margin-top: 0 !important;
+                    }
+
+
+                }
+            }
+
+            &.col3 {
+                display: flex;
+                //justify-content: space-between;
+                align-items: flex-end;
+                flex-wrap: wrap;
+                overflow: hidden;
+                li {
+                    //width: calc(920px / 3);
+                    width: calc((100% - 81px)/3);
+                    margin-left: 40px;
+                    //padding-right: 40px;
+                    //box-sizing: border-box;
+
+                    &:nth-child(1),
+                    &:nth-child(3n+1){
+                        margin-left: 0;
+                    }
+
+                    &:nth-child(2),
+                    &:nth-child(3){
+                        margin-top: 0 !important;
+                    }
+                }
+            }
+
+            &.col4 {
+                display: flex;
+                //justify-content: space-between;
+                align-items: flex-end;
+                flex-wrap: wrap;
+                overflow: hidden;
+                li {
+                    //width: calc((100%/4)-40px);
+                    width: calc((100% - 120px)/4);
+                    //width: 220px;
+                    margin-left: 40px;
+                    //padding-right: 40px;
+                    //box-sizing: border-box;
+
+                    &:nth-child(1),
+                    &:nth-child(4n+1){
+                        margin-left: 0;
+                    }
+
+                    &:nth-child(2),
+                    &:nth-child(3),
+                    &:nth-child(4){
+                        margin-top: 0 !important;
+                    }
+                }
+            }
+        }
+        @include mq(sp){
+            &.col3,&.col4 {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                flex-wrap: wrap;
+                li {
+                    width: calc((100% - 20px)/2);
+
+                    &:nth-child(2){
+                        margin-top: 0 !important;
+                    }
+
+
+                }
+
+            }
+        }
+
+    }
+}
+
+
+//---------------------------
+// point_list
+//---------------------------
+.point_list { //border: 1px solid #ff0000;
+    margin-top: 20px;
+    //margin-left: 22px;
+    margin-left: 40px;
+    @include mq(){
+        margin-top: 30px;
+        //margin-top: 18px;
+        //margin-left: 30px;
+    }
+    li { //border: 1px solid #ff0000;
+        list-style-type: decimal;
+        line-height: 1.5;
+        @include mq(){
+            line-height: 1.8;
+        }
+        &::marker {
+            font-size: variableFontSize(22);
+            font-weight: 700;
+            @include mq(){
+                font-size: variableFontSize(28);
+            }
+        }
+        span {
+            font-size: variableFontSize(18);
+            /*font-weight: 300;*/
+            @include mq(){
+                font-size: variableFontSize(20);
+            }
+        }
+        + li {
+            margin-top: 10px;
+            @include mq(){
+                //margin-top: 15px;
+            }
+        }
+    }
+}
+
+
+
+//---------------------------
+// note_list
+//---------------------------
+.note_list {
+    //margin-left: 12px;
+    margin-left: 24px;
+    @include mq(){
+        //margin-left: 20px;
+    }
+    li {
+        list-style-type: decimal;
+        font-size: variableFontSize(16);
+        line-height: 1.5;
+        @include mq(){
+            font-size: variableFontSize(18);
+            line-height: 1.8;
+        }
+        + li {
+            margin-top: 5px;
+            @include mq(){
+                //margin-top: 7px;
+            }
+        }
+    }
+}
+
+//---------------------------
+// num_list
+//---------------------------
+.num_list {
+    padding: 40px 0;
+    border-top: 1px solid $subgray;
+    border-bottom: 1px solid $subgray;
+    li {
+
+        + li {
+            margin-top: 16px;
+            @include mq(){
+                margin-top: 15px;
+            }
+        }
+
+        counter-increment: numlist;
+
+        display: flex;
+        //align-items: center;
+        span {
+            flex: 1 1 0%;
+            padding-top: 4px;
+            line-height: 1.5;
+            font-size: variableFontSize(18);
+            @include mq(){
+                font-size: variableFontSize(20);
+            }
+            @include mq(sp){
+                padding-top: 0;
+            }
+
+        }
+        &:before { //border: 1px solid #ff0000;
+            content: counter(numlist);
+            //display: inline-block;
+
+            margin-right: 10px;
+
+            background: $blue;
+            text-align: center;
+            color: $white;
+            line-height: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 32px;
+            height: 32px;
+            border-radius: 16px;
+            font-size: variableFontSize(18);
+            @include mq(){
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                font-size: variableFontSize(20);
+            }
+        }
+
+
+
+    }
+
+    &.noBorder {
+        border: none;
+        padding: 0;
+    }
+}
+
+
+.rn2020 #main {
+    ol {
+        &.annotation, &.type--annotation {
+            > li {
+                //font-size: 77.7777%;
+                font-size: variableFontSize(16);
+                @include mq(sp){
+                    font-size: 107%;
+                    margin-right: 5px;
+                    margin-left: 5px;
+                }
+                line-height: 1.5;
+                &:after {
+                    content: "";
+                    display: block;
+                }
+                display: table-row;
+                counter-increment: table-ol;
+                &:before {
+                    content: "※" counter(table-ol);
+                    display: table-cell;
+                    //padding-right: 0.3em;
+                    padding-right: 4px;
+                    text-align: right;
+                    white-space: nowrap;
+                }
+            }
+        }
+      // (num)
+      &.round {
+        list-style: none;
+        padding-left: 0;
+        display: table;
+
+        > li {
+          font-size: variableFontSize(16);
+          line-height: 1.5;
+          display: table-row;
+          counter-increment: ol_round;
+          margin-bottom: 1em;
+
+          &:before {
+            content: "（" counter(ol_round) "）";
+            display: table-cell;
+            padding-right: 1em;
+            text-align: left;
+            white-space: nowrap;
+          }
+
+          &:after {
+            content: "";
+            display: block;
+            margin-bottom: 0.5em;
+          }
+
+          &:last-child::after {
+            content: none;
+          }
+        }
+      }
+    }
+
+    ul.annotation>li,
+    ul.type--annotation>li {
+        padding-left: 2em;
+        //font-size: 66.666% !important;
+        font-size: variableFontSize(14);
+        line-height: 1.5;
+        &:after {
+            padding-right: 4px;
+        }
+    }
+
+    .annotation {
+        .annotation {
+            li {
+                padding-left: 0.5em;
+                font-size: 77%;
+            }
+        }
+    }
+}
+
+
+//---------------------------
+// c-list
+//---------------------------
+.c-list {
+    > li {
+        line-height: 1.5;
+        //font-size: variableFontSize(16);
+        //@include mq(){
+        //    font-size: variableFontSize(18);
+        //}
+        + li {
+            margin-top: 8px;
+        }
+    }
+}
+
+
+//---------------------------
+// list_disc
+//---------------------------
+
+//・
+.list_disc {
+    > li {
+        position: relative;
+        margin-left: 10px;
+        padding-left: 1em;
+        font-size: variableFontSize(16);
+        line-height: 1.5;
+        @include mq(){
+            font-size: variableFontSize(18);
+        }
+        &:before {
+            content: "・";
+            position: absolute;
+            left: 0;
+        }
+
+        + li {
+            margin-top: 8px;
+        }
+
+        > .c-list {
+            margin-top: 5px;
+        }
+
+    }
+}
+
+//---------------------------
+// note_list
+//---------------------------
+.note-list {
+    font-size: variableFontSize(14);
+
+    li {
+        line-height: 1.5;
+        strong {
+            color: $red;
+        }
+
+        //インデント
+        text-indent: -1em;
+        padding-left: 1em;
+
+        + li {
+            margin-top: 15px;
+        }
+    }
+}
+
+.c-note {
+
+    //※
+    &_list {
+        > li {
+            position: relative;
+            padding-left: 1em;
+            //font-size: variableFontSize(12);
+            font-size: variableFontSize(14);
+            @include mq(sp){
+                font-size: variableFontSize(15);
+            }
+            line-height: 1.5;
+            &:before {
+                content: "※";
+                //position: absolute;
+                //left: 0;
+                display: inline-block;
+                margin-right: 4px;
+                margin-left: -1em;
+            }
+
+            @include mq(sp){
+                margin-right: 5px;
+                margin-left: 5px;
+            }
+
+            + li {
+                margin-top: 8px;
+            }
+        }
+    }
+
+    //※1
+    &_list_num {
+        > li {
+            position: relative;
+            text-indent: -1.8em;
+            padding-left: 1.8em;
+            //font-size: variableFontSize(12);
+            font-size: variableFontSize(14);
+            @include mq(sp){
+                font-size: variableFontSize(15);
+            }
+            line-height: 1.5;
+
+            + li {
+                margin-top: 8px;
+            }
+
+            //入れ子
+            .c-note_list_disc {
+                //float: left;
+                //margin-left: 0.5em;
+                >li {
+                    font-size: 100%;
+                    //font-size: 116.6666%;
+                    text-indent: 0;
+                }
+            }
+
+            //flexBox
+            &.flexBox {
+                .c-note_head {
+                    display: inline-block;
+                    width: 0;
+                    padding-top: 2px;
+                }
+            }
+
+        }
+    }
+
+    //・
+    &_list_disc {
+        > li {
+            position: relative;
+            padding-left: 1em;
+            //font-size: variableFontSize(12);
+            font-size: variableFontSize(14);
+            @include mq(sp){
+                font-size: variableFontSize(15);
+            }
+            line-height: 1.5;
+            &:before {
+                content: "・";
+                position: absolute;
+                left: 0;
+            }
+
+            + li {
+                margin-top: 8px;
+            }
+        }
+    }
+
+    //アイコン位置調整
+    &_list,
+    &_list_num,
+    &_list_disc {
+        .link_icn.arrow:after {
+            bottom: -4px !important;
+        }
+
+        //.link_icn {
+        //    font-size: 116.6666% !important;
+        //}
+
+        //関係性マージン
+        + .txt-link {
+            margin-top: 8px !important;
+        }
+    }
+
+
+}
+
+
+//関係性マージン
+.c-note,
+.c-note_list,
+.c-note_list_num,
+.c-note_list_disc,
+.list_disc,
+.annotation {
+
+    + .c-note,
+    + .c-note_list,
+    + .c-note_list_num,
+    + .c-note_list_disc {
+        margin-top: 8px !important;
+    }
+
+    /*
+    li > .c-note,
+    li > .c-note_list,
+    li > .c-note_list_num,
+    li > .c-note_list_disc,
+    li > .list_disc {
+        margin-top: 10px;
+    }*/
+
+    li > li,
+    .c-note,.c-list > li {
+        font-size: 100% !important;
+    }
+
+    .link_icn {
+        font-size: 116.6666% !important;
+    }
+
+    .c-list {
+        //margin-top: 4px;
+        margin-top: 8px;
+    }
+
+    .list_disc {
+        margin-bottom: 24px;
+    }
+
+    li > .list_disc {
+        margin-top: 10px;
+    }
+
+    + .img_area {
+        margin-top: 40px !important;
+    }
+}
+
+.list_disc {
+    .c-list > li,
+    .link_icn {
+        font-size: 100% !important;
+    }
+    li {
+        margin-left: 0;
+    }
+}
+
+.c-list {
+    > .link_icn {
+        @include mq(sp){
+            font-size: 88.888%;
+        }
+    }
+}
+
+.attention_area {
+    + .c-note,
+    + .c-note_list,
+    + .c-note_list_num,
+    + .c-note_list_disc {
+        margin-top: 24px !important;
+    }
+}
+
+#main {
+    .annotation,
+    .type--annotation,
+    .c-note_list,
+    .c-note_list_num {
+        + .btn_area,
+        + .point_area,
+        + .title._lv3 {
+            margin-top: 40px !important;
+        }
+    }
+}
+
+
+
+//---------------------------
+// label_list
+//---------------------------
+.label_list {
+    margin-top: 8px;
+    li {
+        display: inline-block;
+        + li {
+            margin-left: 6px;
+        }
+    }
+}

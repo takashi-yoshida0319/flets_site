@@ -1,0 +1,147 @@
+/**
+ * jQuery lightBox plugin
+ * This jQuery plugin was inspired and based on Lightbox 2 by Lokesh Dhakar (http://www.huddletogether.com/projects/lightbox2/)
+ * and adapted to me for use like a plugin from jQuery.
+ * @name jquery-lightbox-0.5.css
+ * @author Leandro Vieira Pinho - http://leandrovieira.com
+ * @version 0.5
+ * @date April 11, 2008
+ * @category jQuery plugin
+ * @copyright (c) 2008 Leandro Vieira Pinho (leandrovieira.com)
+ * @license CCAttribution-ShareAlike 2.5 Brazil - http://creativecommons.org/licenses/by-sa/2.5/br/deed.en_US
+ * @example Visit http://leandrovieira.com/projects/jquery/lightbox/ for more informations about this jQuery plugin
+ */
+#jquery-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 520px;
+}
+#jquery-lightbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 101;
+	text-align: center;
+	line-height: 0;
+}
+#jquery-lightbox a img { border: none; }
+/* 2016.04変更 */
+#lightbox-container-image-box {
+	position: relative;
+	background-color: #fff;
+	width: 250px;
+	min-width:650px;
+	height: 250px;
+	margin: 0 auto;
+}
+/* 2016.04変更 */
+#lightbox-container-image { padding: 10px; }
+#lightbox-loading {
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+}
+#lightbox-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+}
+#lightbox-container-image-box > #lightbox-nav { left: 0; }
+#lightbox-nav a { outline: none;}
+#lightbox-nav-btnPrev, #lightbox-nav-btnNext {
+	width: 49%;
+	height: 100%;
+	zoom: 1;
+	display: block;
+}
+#lightbox-nav-btnPrev { 
+	left: 0; 
+	float: left;
+}
+#lightbox-nav-btnNext { 
+	right: 0; 
+	float: right;
+}
+/* 2016.04変更 */
+#lightbox-container-image-data-box {
+	font: 10px Verdana, Helvetica, sans-serif;
+	background-color: #fff;
+	margin: 0 auto;
+	line-height: 1.4em;
+	overflow: auto;
+	width: 100%;
+	min-width:630px;
+	padding: 110px 10px 0;
+}
+/* 2016.04変更 */
+* html #lightbox-container-image-data-box{
+ padding: 0px 10px 0;
+}
+
+/*\*/
+* html #lightbox-container-image-data-box{
+ height:1em;
+ overflow:visible;
+}
+/**/
+/* 2016.04変更 */
+#lightbox-container-image-data {
+	padding: 0 1px 0; 
+	*padding: 0 1px 0; 
+	color: #666; 
+}
+#lightbox-container-image-data #lightbox-image-details { 
+	/* width: 70%;  */
+	/* float: left;  */
+	text-align: right; 
+}	
+#lightbox-image-details-caption-ex span{
+}
+#lightbox-image-details-caption-ex #lightbox-image-details-caption-txt p{
+display:block;
+padding-left:1.5em;
+text-indent:-1.5em;
+margin-bottom:0;
+}
+
+
+#lightbox-image-details-caption { color: #666666; padding: 10px; font-size: 10px; line-height: 1.4em; text-align: left; background: #ffcccc;}
+#lightbox-image-details-caption-ex { padding: 10px 10px 5px 70px; font-size: 12px; font-weight:bold; line-height: 1.4em; text-align: left; background: url(../img/alert.gif) no-repeat 10px 10px #ffcccc;}
+
+/*
+#lightbox-container-image-data-box .areaSerch-details-link{ padding: 10px 0 0 10px; z-index: 999;}
+#lightbox-container-image-box .areaSerch-sec { padding-left: 1.5em; padding-right:5px; overflow: hidden;position: relative;zoom:1;}
+#lightbox-container-image-box .areaSerch-sec p.areaSerch-txt { float:left; line-height:35px;}
+#lightbox-container-image-box .areaSerch-details-link p{width:150px; height:40px; margin: 0 auto 0; padding: 0;  float:right;}
+#lightbox-container-image-box .areaSerch-details-link p span{ display: none;}
+#lightbox-container-image-box .areaSerch-details-link p a{ display:block; width:150px; height:40px; background:url(../img/btn_area.gif) no-repeat;}
+#lightbox-container-image-box .areaSerch-details-link p a:hover{ background:url(../img/btn_area_r.gif) no-repeat;}
+*/
+/* 2016.04変更 */
+#lightbox-image-details-currentNumber {
+	display: block; 
+	clear: left; 
+	padding-bottom: 1.0em;	
+}
+	
+#lightbox-secNav-btnClose {
+	width: 66px; 
+	float: right;
+	padding-bottom: 0.7em;	
+}
+
+/* 2017/12/13 ADD */
+.pattern-c #jquery-overlay {
+min-width: 1200px;
+}

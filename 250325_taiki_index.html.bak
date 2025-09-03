@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <!--#include virtual="/resources/inc/cmn/viewport.html" -->
+    <title>【公式】NTT西日本フレッツ光｜高速・高品質な光回線インターネット</title>
+    <meta name="description" content="【フレッツ光公式サイト】高速・高品質・安定の光回線はフレッツ光！開通時やご利用中のサポートも充実で安心。各種割引サービスもご用意、あなたにあったプランをお選びいただけます！">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="format-detection" content="telephone=no">
+    <!--#include virtual="/resources/inc/cmn/json-ld.html" -->
+    <!-- OGP -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="【公式】NTT西日本フレッツ光｜高速・高品質な光回線インターネット">
+    <meta property="og:description" content="【フレッツ光公式サイト】高速・高品質・安定の光回線はフレッツ光！開通時やご利用中のサポートも充実で安心。各種割引サービスもご用意、あなたにあったプランをお選びいただけます！">
+    <meta property="og:image" content="https://flets-w.com/resources/img/cmn/og.png">
+    <meta property="og:url" content="https://flets-w.com/">
+    <meta property="og:site_name" content="NTT西日本公式｜フレッツ光｜光インターネット接続（光回線）">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="https://flets-w.com/favicon.ico">
+    <link rel="apple-touch-icon" href="https://flets-w.com/apple-touch-icon.png">
+    <link rel="canonical" href="https://flets-w.com/">
+    <!-- CSS -->
+    <!--#include virtual="/resources/inc/cmn/css.html" -->
+    <!--#include virtual="/resources/inc/cmn/css_hf.html" -->
+    <!-- JS -->
+    <!--#include virtual="/resources/inc/cmn/js.html" -->
+    <!--#include virtual="/resources/inc/cmn/head.html" -->
+
+    <!-- ===== ページ独自CSS/JSここから ===== -->
+    <link rel="stylesheet" href="/assets/css/top.css" type="text/css">
+    <script type="text/javascript" src="/resources/js/fixed-banner.js"></script>
+    <script type="text/javascript" src="/resources/js/chatbot_view_count.js"></script>
+    <script type="text/javascript" src="/assets/js/support/topics/news_release.js" id="newsRelease" action="top"></script>
+    <script type="text/javascript" src="/assets/js/top/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="/assets/js/top/top.js"></script>
+    <script src="https://cdn-blocks.karte.io/34aa12e94d43e22b7522a6742b921b0e/builder.js"></script>
+    <!-- ===== ページ独自CSS/JSここまで ===== -->
+
+    <!--#include virtual="/resources/inc/cmn/analytics.html" -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+            "@type": "Question",
+            "name": "マンションタイプとファミリータイプは何が違うのですか。",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "ファミリータイプは主に戸建て住宅にお住まいのお客さま、マンションタイプは主に集合住宅にお住まいのお客さまを対象にご提供するサービスです。<br>ただし、マンションタイプのご利用にあたっては、お住まいの集合住宅敷地内の共用スペースに「フレッツ光」の設備が設置されていることが条件となりますので、集合住宅にお住まいであってもファミリータイプにてご提供させていただく場合があります。<br>なお、マンションタイプの場合、同一敷地内の複数のお客さまでご利用いただきますので、ファミリータイプに比べて安価な料金となっております。"
+        }
+        }, {
+            "@type": "Question",
+            "name": "「フレッツ 光クロス」と「フレッツ 光ネクスト」との違いは何ですか。",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "「フレッツ 光ネクスト」では最大通信速度は上下最大概ね1Gbps（有線接続時）※1でしたが、「フレッツ 光クロス」では、上下最大概ね10Gbps（有線接続時）※2へ向上しております。<br>サービスの違いの詳細については、<a href=https://flets-w.com/new/diffservice/>こちら</a>からご確認ください。<br>その他、概要や料金等については、<a href=https://flets-w.com/service/cross/>「フレッツ 光クロス」サービス詳細</a>をご覧ください。<br>※1　技術規格上の最大値であり、インターネットご利用時の速度は、お客さまのご利用環境やご利用状況等によっては数Mbpsになる場合があります。<br>詳細は<a href=https://flets-w.com/service/next/ryuuijikou/>「フレッツ 光ネクスト」ご利用時の留意事項</a>をご確認ください。<br>※2　技術規格上の最大値であり、実効速度の最大値は、技術規格上の最大値より十数％程度低下します。<br>インターネットご利用時の速度は、お客さまのご利用環境やご利用状況等によっては数Mbpsになる場合があります。<br>詳細は<a href=https://flets-w.com/service/cross/ryuuijikou/>「フレッツ 光クロス」ご利用時の留意事項</a>をご確認ください。"
+        }
+        }, {
+            "@type": "Question",
+             "name": "契約者本人が手続きできない場合の委任状について知りたい。",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                 "text": "ＮＴＴ西日本では、原則契約者ご本人さまからのお申し込みとしておりますが、所定の申込書で代理人による申し込みが可能です。<br><a href=https://www.ntt-west.co.jp/share/inquire.html#inq16>委任状様式のダウンロードや送付先について、詳しくはこちらをご確認ください。</a><br><br>※指定以外の様式で委任を承ることはできかねます。<br><br>【参考】<br><a href=https://qa.flets-w.com/faq/show/12603>Q．ＮＴＴ西日本で使用できる本人性確認書類について知りたい。</a><br><a href=https://qa.flets-w.com/faq/show/7453>Q．契約者が亡くなったため、解約したい。</a>"
+        }
+    }]
+}
+</script>
+</head>
+
+<body class="rn2020" data-configindexpc="0" data-configindexsp="12">
+    <!--#include virtual="/resources/inc/cmn/body_before.html" -->
+    <!--#include virtual="/resources/inc/cmn/block_skip.html" -->
+    <!--#include virtual="/resources/inc/cmn/header_ntt.html" -->
+    <!--#include virtual="/resources/inc/cmn/header.html" -->
+
+    <!-- ぱんくず -->
+    <ol id="topicpath" class="topicpath">
+        <li><a href="/">フレッツ光 TOP</a></li>
+    </ol>
+    <script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement":
+[
+  {
+    "@type": "ListItem",
+    "position": 1,
+    "item":
+    {
+      "@id": "https://flets-w.com/",
+      "name": "フレッツ光 TOP"
+    }
+    }
+]
+}
+</script>
+
+    <!-- コンテンツここから -->
+    <div id="l-content">
+
+        <main id="main">
+
+            <!-- MV -->
+            <section class="kv_area_logo ">
+                <div class="accentBox">
+                    <ul class="slider">
+                        <li><span><a href="https://www.ntt-west.co.jp/news/2502/250226a.html" target="_blank">
+                                    <img class="_pc" src="/assets/img/top/mv/mv2_pc.jpg" alt="香川県、徳島県、高知県、長崎県、大分県のみなさま、お待たせしました フレッツ史上最速スペック「フレッツ 光クロス」 2025年4月より一部エリアで新たに提供開始　同時に関西・東海・中国・四国・九州の一部エリアでも拡大へ" width="1000px" height="360px">
+                                    <img class="_sp" src="/assets/img/top/mv/mv2_sp.jpg" alt="香川県、徳島県、高知県、長崎県、大分県のみなさま、お待たせしました フレッツ史上最速スペック「フレッツ 光クロス」 2025年4月より一部エリアで新たに提供開始　同時に関西・東海・中国・四国・九州の一部エリアでも拡大へ" max-width="100%" height="auto">
+                                </a></span></li>
+                        <li><span><a href="/cp/move/">
+                                    <img class="_pc" src="/assets/img/top/mv/mv_banner_pc_202502.jpg" alt="お引越し先のインターネット環境は高速・高品質の「フレッツ光」 ご利用中の方には割引もご用意" width="1000px" height="360px">
+                                    <img class="_sp" src="/assets/img/top/mv/mv_banner_sp_202502.jpg" alt="お引越し先のインターネット環境は高速・高品質の「フレッツ光」 ご利用中の方には割引もご用意" max-width="100%" height="auto">
+                                </a></span></li>
+                        <li><span><a href="/limited/hajimecross/">
+                                    <img class="_pc" src="/assets/img/top/mv/mv_hajimewaricross_pc.png" alt="通信速度最大概ね10G光の世界へ！「光はじめ割クロス」で通信速度最大概ね1Gプランとお値段変わらずスタートしよう。（1・2年目）2024年11月1日（金）受付開始" width="1000px" height="360px">
+                                    <img class="_sp" src="/assets/img/top/mv/mv_hajimewaricross_sp.png" alt="通信速度最大概ね10G光の世界へ！「光はじめ割クロス」で通信速度最大概ね1Gプランとお値段変わらずスタートしよう。（1・2年目）2024年11月1日（金）受付開始" max-width="100%" height="auto">
+                                </a></span></li>
+                        <li><span><a href="/cp/cross/">
+                                    <img class="_pc" src="/assets/img/top/mv/mv_10gcross_pc.png" alt="今を変える！10G光 関西・東海・中国・四国・九州エリア拡大中　通信速度最大概ね10Gbps" width="1000px" height="360px">
+                                    <img class="_sp" src="/assets/img/top/mv/mv_10gcross_sp.png" alt="今を変える！10G光 関西・東海・中国・四国・九州エリア拡大中　通信速度最大概ね10Gbps" max-width="100%" height="auto">
+                                </a></span></li>
+                        <li><span><a href="/zenko/about/">
+                                    <img class="_pc" src="/assets/img/top/mv/mv_zenko.jpg" alt="マンションオーナーさま・管理会社さま・デベロッパーさま　インターネットはお部屋探しの重要ポイント！「フレッツ光 全戸加入プラン」　各戸まで光回線だから安定性のある高速通信　設備導入に伴うご負担なし　ご相談はこちらから" width="1000px" height="360px">
+                                    <img class="_sp" src="/assets/img/top/mv/mv_zenko_sp.jpg" alt="マンションオーナーさま・管理会社さま・デベロッパーさま　インターネットはお部屋探しの重要ポイント！「フレッツ光 全戸加入プラン」　各戸まで光回線だから安定性のある高速通信　設備導入に伴うご負担なし　ご相談はこちらから" max-width="100%" height="auto">
+                                </a></span></li>
+                        <li><span><a href="/user/point-otoku/otoku/sp_long/2024/12/">
+                                    <img src="/assets/img/top/mv/mv1_pc.jpg" class="_pc" alt="CLUB NTT-West会員さま対象 プレミアム大感謝祭2025 旅行券やギフトカード等が総計1,100名さまに当たる　応募期間：2024年12月4日（水）～2025年3月31日（月） ご応募はこちら" width="1000px" height="360px">
+                                    <img src="/assets/img/top/mv/mv1_sp.jpg" class="_sp" alt="CLUB NTT-West会員さま対象 プレミアム大感謝祭2025 旅行券やギフトカード等が総計1,100名さまに当たる　応募期間：2024年12月4日（水）～2025年3月31日（月） ご応募はこちら" max-width="100%" height="auto">
+                                </a></span></li>
+                    </ul>
+                    <ul class="bxslider_thumbnail">
+                        <li><a data-slide-index="0" href="">1枚目のスライドへ</a></li>
+                        <li><a data-slide-index="1" href="">2枚目のスライドへ</a></li>
+                        <li><a data-slide-index="2" href="">3枚目のスライドへ</a></li>
+                        <li><a data-slide-index="3" href="">4枚目のスライドへ</a></li>
+                        <li><a data-slide-index="4" href="">5枚目のスライドへ</a></li>
+                    </ul>
+                </div>
+                <div class="kv_area_logo_inner">
+                    <div class="kv_btn_area _shadow _dark">
+                        <div class="kv_btn_area_inner">
+                            <h3 class="kv_btn_area_ttl">ご検討中のお客さま</h3>
+                            <ul class="kv_newbtn_list">
+                                <li><a href="/new/simulation/" class="btn btn--base arrow"><img src="/resources/img/cmn/ic_simulation_w.svg" alt=""><span>料金<br class="_sp">シミュレーション</span></a></li>
+                                <li><a href="/cart/" class="btn btn--primary__inquiry blank" target="_blank"><img src="/resources/img/cmn/icon/ic_area_w.svg" alt=""> <span>エリア確認・<br class="_sp">お申し込み</span></a></li>
+                            </ul>
+                            <h3 class="kv_btn_area_ttl">ご利用中のお客さま</h3>
+                            <ul class="kv_userbtn_list">
+                                <li><a href="/user/" class="btn btn--secondary arrow"><span>ご利用中の方<br>TOP</span></a></li>
+                                <li class="cnw"><a href="/login/?type=1" target="_blank" class="btn btn--secondary arrow blank"><span><span class="kv_btn_en">マイページ</span><br>ログイン・新規登録</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /MV -->
+
+
+            <!-- MV -->
+            <!-- <section class="kv_area_logo ">
+                <div class="accentBox">
+                    <ul class="slider">
+                        <li><span><a href="/cp/cross/">
+                                    <img class="_pc" src="/assets/img/top/mv/mv2_pc.jpg" alt="「フレッツ 光クロス」 フレッツ史上最速スペック 2024年2月26日より提供エリア拡大！" width="1000px" height="360px">
+                                    <img class="_sp" src="/assets/img/top/mv/mv2_sp.jpg" alt="「フレッツ 光クロス」 フレッツ史上最速スペック 2024年2月26日より提供エリア拡大！" max-width="100%" height="auto">
+                                </a></span></li>
+                        <li><span><a href="/user/move/">
+                                    <img class="_pc" src="/assets/img/top/mv/mv4_pc.jpg" alt="おトクな割引実施中！「お引越し手続き」は公式サイトがおススメ！おススメの理由　おトク移転工事費割引・24時間お手続き可能・混雑なし待ち時間なし　カンタンWEBお手続きこちらから" width="1000px" height="360px">
+                                    <img class="_sp" src="/assets/img/top/mv/mv4_sp.jpg" alt="おトクな割引実施中！「お引越し手続き」は公式サイトがおススメ！おススメの理由　おトク移転工事費割引・24時間お手続き可能・混雑なし待ち時間なし　カンタンWEBお手続きこちらから" max-width="100%" height="auto">
+                                </a></span></li>
+
+                        <li><span><a href="/scene/">
+                                    <img src="/assets/img/top/mv/mv1_pc.jpg" class="_pc" alt="おうちを!フレッツ光で快適に!!ベンリな活用シーン6選!" width="1000px" height="360px">
+                                    <img src="/assets/img/top/mv/mv1_sp.jpg" class="_sp" alt="おうちを!フレッツ光で快適に!!ベンリな活用シーン6選!" max-width="100%" height="auto">
+                                </a></span></li>
+                    </ul>
+                </div>
+                <div class="kv_area_logo_inner">
+                    <div class="kv_btn_area _shadow _dark">
+                        <div class="kv_btn_area_inner">
+                            <h3 class="kv_btn_area_ttl">ご検討中のお客さま</h3>
+                            <ul class="kv_newbtn_list">
+                                <li><a href="/new/simulation/" class="btn btn--base arrow"><img src="/resources/img/cmn/ic_simulation_w.svg" alt=""><span>料金<br class="_sp">シミュレーション</span></a></li>
+                                <li><a href="/cart/" class="btn btn--primary__inquiry blank" target="_blank"><img src="/resources/img/cmn/icon/ic_area_w.svg" alt=""> <span>エリア確認・<br class="_sp">お申し込み</span></a></li>
+                            </ul>
+                            <h3 class="kv_btn_area_ttl">ご利用中のお客さま</h3>
+                            <ul class="kv_userbtn_list">
+                                <li><a href="/user/" class="btn btn--secondary arrow"><span>ご利用中の方<br>TOP</span></a></li>
+                                <li class="cnw"><a href="/login/?type=1" target="_blank" class="btn btn--secondary arrow blank"><span><span class="kv_btn_en">マイページ</span><br>ログイン・新規登録</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <!-- /MV -->
+
+            <!-- article -->
+            <article>
+
+                <!-- 重要なお知らせ -->
+                <section class="sec imp_notice">
+                    <div class="l-inner">
+                        <div class="attention_area _s _imp_notice">
+                            <div class="_body">
+                                <div class="btn_area">
+                                    <a href="#important_news" class="btn btn--secondary anchor _active rounde red"><span>重要なお知らせ</span></a>
+                                </div>
+                                <!--#include virtual="/_top/flets_mente/mente_important.html" -->
+                            </div>
+                        </div>
+                    </div><!-- /l-inner -->
+                </section>
+                <!--// 重要なお知らせ -->
+
+                <section class="sec" id="purposeNavi">
+                    <div class="l-inner">
+                        <div class="l-grid" data-gap-col="pc:10,sp:0">
+                            <div class="l-col" data-col="pc:4-3,sp:1" data-col-style="separater">
+                                <h2 class="title _lv3"><span><em>ご家庭</em>で<br class="_pc">ご利用のお客さま</span></h2>
+                                <ul class="l-grid pr10 _sp_pr0" data-gap-col="pc:10,sp:0">
+                                    <li class="l-col personal" data-col="pc:3-1,sp:1">
+                                        <a href="#serviceList" class="btn btn--primary anchor consider"><span>フレッツ光を<br class="_pc">ご検討中の方</span></a>
+                                    </li>
+                                    <li class="l-col" data-col="pc:3-1,sp:1">
+                                        <a href="#personal_hikari" class="btn btn--primary anchor bg_white hikari"><span>フレッツ光を<br class="_pc">ご利用中の方</span></a>
+                                    </li>
+                                    <li class="l-col" data-col="pc:3-1,sp:1">
+                                        <a href="#personal_collabo" class="btn btn--primary anchor bg_white collabo"><span>コラボ光を<br class="_pc">ご検討中・ご利用中の方</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="l-col business" data-col="pc:4-1,sp:1">
+                                <h2 class="title _lv3"><span><em>お仕事</em>で<br class="_pc">ご利用のお客さま</span></h2>
+                                <p>
+                                    <a href="#business" class="btn btn--primary anchor business"><span>フレッツ光を<br class="_pc">ご検討中の方</span></a>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="sec _bg_lightblue" id="serviceList">
+                    <div class="l-inner">
+                        <div class="sub_sec new">
+                            <div class="c-panel _shadow _dark new">
+                                <div class="panel_inner">
+                                    <div class="text_area">
+                                        <h1 class="title _lv2">フレッツ光をご検討中の方</h1>
+                                        <p class="c-txt ta_c _sp_ta_l">「フレッツ光」は実績と歴史に裏付けされた高速・安定・高品質を追求した光回線です。<br class="_pc">サービスも充実していますので、あなたに合ったプランをお選びください。</p>
+                                        <div class="character _pc">
+                                            <p class="fukidashi c-txt">インターネットを始めよう！<br>ネット回線を引くならこちら</p>
+                                            <p class="image"><img src="/assets/img/top/navit.png" alt="キャラクターのナビットさん"></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="link_area">
+                                        <div class="btn_area">
+                                            <a href="/cart/" class="btn btn--primary blank area" target="_blank"><span>エリア確認・お申し込み</span></a>
+                                            <div class="c-grid col2 _sp_noflex">
+                                                <a href="/priceplan/" class="btn btn--secondary arrow plan"><span>プラン診断</span></a>
+                                                <a href="/new/simulation/" class="btn btn--primary arrow sim"><span>料金シミュレーション</span></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="link_text_list ">
+                                            <ul class="c-grid col3 _sp_noflex flex_space-between">
+                                                <li class="usage">
+                                                    <a href="/service/cross/">
+                                                        <dl>
+                                                            <dt>フレッツ 光クロス</dt>
+                                                            <dd>高速回線を品質で選ぶなら！<br>どんどん広がる提供エリア！</dd>
+                                                        </dl>
+                                                    </a>
+                                                </li>
+                                                <li class="steps">
+                                                    <a href="/flow/">
+                                                        <dl>
+                                                            <dt>ご利用の流れ</dt>
+                                                            <dd>「フレッツ光」のお申し込みからご利用開始までの流れをご紹介。</dd>
+                                                        </dl>
+                                                    </a>
+                                                </li>
+                                                <li class="opt">
+                                                    <a href="/opt/">
+                                                        <dl>
+                                                            <dt>オプションサービス</dt>
+                                                            <dd>ひかり電話や映像サービスなど、さまざまなオプションサービス。</dd>
+                                                        </dl>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sub_sec user">
+                            <div class="c-panel _shadow _dark hikari" id="personal_hikari">
+                                <div class="panel_inner">
+                                    <div class="lh-1 spHeightLineDestroy">
+                                        <h3 class="title _lv2">フレッツ光をご利用中の方</h3>
+                                        <p class="c-txt ta_c _sp_ta_l">ご契約内容の確認・お手続きや接続に関するトラブルなど、ご利用の方向けの案内ページです。</p>
+                                    </div>
+                                    <div class="btn_area">
+                                        <ul class="l-grid" data-gap-col="pc:20,sp:0">
+                                            <li class="l-col" data-col="pc:4-1,sp:1"><a href="/user/" class="btn btn--primary arrow"><span>ご利用の方トップ</span></a></li>
+                                            <li class="l-col" data-col="pc:4-1,sp:1"><a href="/login/?type=1" target="_blank" class="btn btn--secondary first arrow cnw blank"><span>「マイページ」<br>ログイン・新規登録</span></a></li>
+                                            <li class="l-col" data-col="pc:4-1,sp:1"><a href="/navigation/" class="btn btn--secondary arrow application"><span>お手続き</span></a></li>
+                                            <li class="l-col" data-col="pc:4-1,sp:1"><a href="/user/move/" class="btn btn--secondary arrow application"><span>お引越し</span></a></li>
+                                        </ul>
+                                        <p class="c-txt txt-link"><a href="/user/support/" class="link_icn arrow">設定・サポート</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="c-panel _shadow _dark collabo" id="personal_collabo">
+                                <div class="panel_inner">
+                                    <div class="lh-1 spHeightLineDestroy">
+                                        <h3 class="title _lv2">コラボ光をご検討・<br class="_sp">ご利用中の方</h3>
+                                        <p class="c-txt ta_c _sp_ta_l">光コラボレーションについてのご紹介や申込み、お手続きについてのページです。</p>
+                                    </div>
+                                    <div class="btn_area">
+                                        <ul class="l-grid" data-gap-col="pc:20,sp:0">
+                                            <li class="l-col" data-col="pc:3-1,sp:1"><a href="/collabo/" class="btn btn--primary arrow"><span>コラボ光トップ</span></a></li>
+                                            <li class="l-col" data-col="pc:3-1,sp:1"><a href="/collabo/tenyou/" class="btn btn--secondary arrow collabo1"><span>転用のお手続き</span></a></li>
+                                            <li class="l-col" data-col="pc:3-1,sp:1"><a href="/collabo/change/#anchor03" class="btn btn--secondary arrow collabo2"><span>事業者変更のお手続き</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /l-inner -->
+                </section>
+
+                <section class="sec" id="localnavi">
+                    <div class="l-inner">
+                        <h2 class="title _lv2 ta_c">お得なオプション</h2>
+                        <ul class="c-grid col3 _sp_noflex flex_space-between ">
+                            <li class="c-col _sp_mb30">
+                                <a href="/opt/hgw_rent/" class="lh-2 spHeightLineDestroy c-panel">
+                                    <header class="panel_header pb20 _sp_pb20">
+                                        <p class="shoulder">「フレッツ 光クロス」も対象</p>
+                                        <div class="mb40 _sp_mb40 ta_r">
+                                            <p class="badge _bg_orange">おすすめ</p>
+                                        </div>
+                                        <h3 class="bold ta_l mt30 _sp_mt30">ホームゲートウェイ（レンタル）</h3>
+                                    </header>
+                                    <p class="c-txt mt0 _sp_mt0 lh-3 spHeightLineDestroy">「フレッツ 光クロス」ではルーターのみで、「フレッツ 光ネクスト」「フレッツ 光ライト」では「ホームゲートウェイ 無線LANカード」との組みあわせでWi-Fiが楽しめる多機能ルーターです。</p>
+                                    <p class="link_icn arrow _sp_pr5">詳しくはこちら</p>
+                                </a>
+                            </li>
+                            <li class="c-col _sp_mb30">
+                                <a href="/opt/hikaridenwa/" class="lh-2 spHeightLineDestroy c-panel">
+                                    <header class="panel_header pb20 _sp_pb20">
+                                        <p class="shoulder">「フレッツ 光クロス」も対象</p>
+                                        <div class="mb40 _sp_mb40 ta_r">
+                                            <p class="badge _bg_orange">おすすめ</p>
+                                        </div>
+                                        <h3 class="bold c_txt ta_l"> <img src="resources/img/cmn/logo_hikari-tel_yoko_orange.svg" alt="ひかり電話" class="w103 _sp_w140"> （IP電話サービス）</h3>
+                                    </header>
+                                    <p class="c-txt mt0 _sp_mt0 lh-3 spHeightLineDestroy">加入電話と同じような使い勝手で、「フレッツ光」または一部の「コラボ光」とあわせてご利用いただけるIP電話サービスです。</p>
+                                    <p class="link_icn arrow _sp_pr5">詳しくはこちら</p>
+                                </a>
+                            </li>
+                            <li class="c-col _sp_mb30">
+                                <a href="/opt/ftv/" class="lh-2 spHeightLineDestroy c-panel">
+                                    <header class="panel_header pb20 _sp_pb20">
+                                        <p class="shoulder">「フレッツ 光クロス」も対象</p>
+                                        <h3 class="ta_l mt30 _sp_mt30"><img src="/resources/img/cmn/logo_flets-tv.svg" alt="フレッツ・テレビ" class="w160 _sp_w140"></h3>
+                                    </header>
+                                    <p class="c-txt mt0 _sp_mt0 lh-3 spHeightLineDestroy">「フレッツ光」の光ファイバーをアンテナ代わりにして地デジ放送などが視聴できます。</p>
+                                    <p class="link_icn arrow _sp_pr5">詳しくはこちら</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="ta_c fs24 mt60"><a href="https://flets-w.com/opt/" class="link_icn arrow">オプションサービス一覧を見る</a></p>
+                    </div><!-- /l-inner -->
+                </section>
+
+                <section class="sec _bg_lightblue" id="business">
+                    <div class="l-inner">
+                        <h2 class="title _lv2 ta_c">お仕事でご利用のお客さま</h2>
+
+                        <div class="c-panel _shadow _dark">
+                            <div class="panel_inner">
+                                <h3 class="title _lv3 ta_c"><em class="underline">夜間・早朝の保守対応が標準装備</em><br>オフィス・店舗向けフレッツ光<br class="_sp">（オフィスタイプ）</h3>
+                                <p class="c-txt _ss ta_c _sp_ta_l">保守対応が不要なお客さまは、<a href="#serviceList">ご家庭向けプラン</a>をお申し込みください。</p>
+
+                                <div class="link_area">
+                                    <div class="btn_area">
+                                        <a href="/cart/?tF=4" class="btn btn--primary blank area" target="_blank"><span>エリア確認・お申し込み</span></a>
+                                        <div class="c-grid col2 _sp_noflex">
+                                            <a href="/cp/flets-office/" class="btn btn--secondary arrow plan"><span>プラン紹介</span></a>
+                                            <a href="/cp/flets-office/#simulation" class="btn btn--primary arrow sim"><span>料金シミュレーション</span></a>
+                                        </div>
+                                    </div>
+                                    <p class="c-txt txt-link"><a href="/zenko/" class="link_icn arrow">マンションオーナーさま・管理会社さま・デベロッパーさま</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /l-inner -->
+                </section>
+
+                <section class="sec" id="faq">
+                    <!-- フレッツ 光ライト よくあるご質問 -->
+                    <div class="l-inner">
+                        <div class="faq_area">
+                            <div class="l-inner">
+                                <div class="_header">
+                                    <h2 class="title _lv2">よくあるご質問</h2>
+                                </div>
+                                <div class="_body">
+                                    <ul class="faq_list _more" id="faq_category">
+                                        <li class="faq2295">
+                                            <dl>
+                                                <dt><span class="circle _bg_blue _q"><span>Q</span></span>
+                                                    <p class="c-txt"></p>
+                                                </dt>
+                                                <dd><span class="circle _bg_sublightblue _a"><span>A</span></span>
+                                                    <div class="_a-content">
+                                                        <div class="faq_a _more-read"></div><a href="javascript:void(0);" class="link_icn _more-link anchor">続きを読む</a>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </li>
+                                        <li class="faq6759">
+                                            <dl>
+                                                <dt><span class="circle _bg_blue _q"><span>Q</span></span>
+                                                    <p class="c-txt"></p>
+                                                </dt>
+                                                <dd><span class="circle _bg_sublightblue _a"><span>A</span></span>
+                                                    <div class="_a-content">
+                                                        <div class="faq_a _more-read"></div><a href="javascript:void(0);" class="link_icn _more-link anchor">続きを読む</a>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </li>
+                                        <li class="faq2574">
+                                            <dl>
+                                                <dt><span class="circle _bg_blue _q"><span>Q</span></span>
+                                                    <p class="c-txt"></p>
+                                                </dt>
+                                                <dd><span class="circle _bg_sublightblue _a"><span>A</span></span>
+                                                    <div class="_a-content">
+                                                        <div class="faq_a _more-read"></div><a href="javascript:void(0);" class="link_icn _more-link anchor">続きを読む</a>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                    <script type="text/javascript" src="/faq/api/js/faq_id2.js"></script>
+                                    <div class="faq_btn_area">
+                                        <ul class="faq_btn_list">
+                                            <li><a href="https://qa.flets-w.com/?site_domain=default" class="btn btn--primary arrow _faq_list"><span>よくあるご質問一覧</span></a></li>
+                                            <li><a href="/inquiry/" class="btn btn--secondary arrow _contact"><span>お問い合わせ</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- フレッツ 光ライト よくあるご質問 -->
+                </section>
+
+                <section class="sec _bg_lightblue" id="important_news">
+                    <!-- 重要なお知らせ -->
+                    <div class="l-inner">
+                        <h2 class="title _lv2">重要なお知らせ</h2>
+
+                        <!--#include virtual="/_top/flets_mente/mente_noticeList.html" -->
+
+                    </div>
+                    <!-- 重要なお知らせ -->
+                </section>
+
+
+                <section class="sec" id="news">
+                    <div class="l-inner">
+                        <h2 class="title _lv2">NTT西日本からのお知らせ</h2>
+
+                        <!--絞り込み条件（チェックボックス）-->
+                        <header class="narrowDown__header">
+                            <ul class="c-grid col4 _sp_col2">
+                                <li class="c-col">
+                                    <div class="c-checkbox ">
+                                        <input type="checkbox" name="category" value="flets" id="check01"><label for="check01"><span class="ic_checkbox"></span> フレッツ光など</label>
+                                    </div>
+                                </li>
+                                <li class="c-col">
+                                    <div class="c-checkbox">
+                                        <input type="checkbox" name="category" value="bill" id="check02"><label for="check02"><span class="ic_checkbox"></span> 料金・割引</label>
+                                    </div>
+                                </li>
+                                <li class="c-col">
+                                    <div class="c-checkbox">
+                                        <input type="checkbox" name="category" value="phone" id="check03"><label for="check03"><span class="ic_checkbox"></span> ひかり電話</label>
+                                    </div>
+                                </li>
+                                <li class="c-col">
+                                    <div class="c-checkbox">
+                                        <input type="checkbox" name="category" value="support" id="check04"><label for="check04"><span class="ic_checkbox"></span> サポート情報</label>
+                                    </div>
+                                </li>
+                                <li class="c-col">
+                                    <div class="c-checkbox">
+                                        <input type="checkbox" name="category" value="device" id="check05"><label for="check05"><span class="ic_checkbox"></span> 情報機器</label>
+                                    </div>
+                                </li>
+                                <li class="c-col">
+                                    <div class="c-checkbox">
+                                        <input type="checkbox" name="category" value="option" id="check06"><label for="check06"><span class="ic_checkbox"></span> オプションサービス</label>
+                                    </div>
+                                </li>
+                                <li class="c-col">
+                                    <div class="c-checkbox">
+                                        <input type="checkbox" name="category" value="club" id="check07"><label for="check07" class="nowrap"><span class="ic_checkbox"></span>「CLUB NTT-West」</label>
+                                    </div>
+                                </li>
+                                <li class="c-col">
+                                    <div class="c-checkbox">
+                                        <input type="checkbox" name="category" value="others" id="check08"><label for="check08"><span class="ic_checkbox"></span> その他</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </header>
+                        <!--絞り込み結果-->
+                        <div class="narrowDown__result">
+                            <div class="animation--loading ta_c">
+                                <img src="/assets/img/top/loader.gif" alt="">
+                            </div>
+                            <div class="informationList">
+                            </div>
+                        </div>
+
+                        <div class="narrowDown__footer">
+                            <div class="c-grid col2 _sp_noflex">
+                                <div class="c-col">
+                                    <div class="btn_area">
+                                        <a href="/topics/" class="btn btn--secondary arrow topics"><span>お知らせ一覧</span></a>
+                                    </div>
+                                </div>
+                                <div class="c-col ">
+                                    <div class="btn_area">
+                                        <a href="http://www.ntt-west.co.jp/news/" target="_blank" class="btn btn--secondary blank"><span>NTT西日本のニュースリリース</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- /l-inner -->
+                </section>
+                <section class="sec _bg_lightblue u--unit06">
+                    <div class="l-inner">
+                        <div class="slideListOuter">
+                            <ul class="slideList ta_c" data-slideviewcnt="1">
+                                <li class="hp_w50">
+                                    <div class="btn-panel">
+                                        <a href="/chienetta/" class="btn-panel_link">
+                                            <div class="_body">
+                                                <img src="/user/img/top/icon/che.png" alt="情報サイトチエネッタ">
+                                                <p class="c-txt align-center _s ta_c mt5">毎日が楽しくなる「チエ」と「ネタ」が<br>いっぱいの情報サイト</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+            </article>
+        </main>
+    </div><!-- /l-content -->
+    <!-- 審査番号 -->
+    <div class="shinsa-block">
+        <div class="shinsa-block--wrap">
+            <!-- ===== 審査番号ここから ===== -->
+            <p id="shinsa-num" class="shinsa-num c-shinsa-num">審査24-1058【260131】</p>
+            <!-- ===== 審査番号ここまで ===== -->
+        </div>
+    </div>
+    <!--#include virtual="/resources/inc/cmn/footer.html" -->
+    <!--#include virtual="/resources/inc/cmn/body_after.html" -->
+</body>
+
+</html>

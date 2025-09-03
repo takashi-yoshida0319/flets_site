@@ -1,0 +1,1468 @@
+@charset "shift-jis";
+
+/****************************
+追尾メニュー
+****************************/
+#tax_info {
+	background-color: #333;
+	opacity: 0.8;
+	bottom: 0;
+	color: #FFFFFF;
+	left: 0;
+	position: fixed;
+	text-align: left;
+	width: 100%;
+	z-index: 9999;
+	display: none;
+}
+#tax_info a {
+	color: #ffffff !important;
+}
+#tax_info a:link ,
+#tax_info a:active {
+	color: #ffffff !important;
+	text-decoration:underline;
+}
+#tax_info a:visited {
+	color: #ffffff !important;
+}
+#tax_info a:focus ,
+#tax_info a:hover {
+	color: #ffffff !important;
+}
+#tax_info p {
+	opacity: 1;
+	padding:4px 260px 4px 10px;
+	color: #ffffff !important;
+	/*font-size: 11px !important;*/
+	font-size: 14px !important;
+	line-height:2;
+}
+#tax_info p.right {
+	padding-right:260px;
+}
+.ie6 #tax_info p.right,
+.popup #tax_info p.right,
+#popup_new #tax_info p.right {
+	padding-right:10px;
+	width:auto;
+}
+.popup #tax_info p,
+#popup_new #tax_info p {
+	padding-right:10px;
+}
+.taxModalOpenP
+{
+	/*
+	position: fixed;
+	right: 19px;
+	bottom: 0px;
+	z-index: 10000;
+	padding-bottom: 0px !important;
+	*/
+
+	bottom: 0;
+	position: fixed;
+	right: 14px;
+	text-align: right;
+	z-index: 10000;
+}
+
+/****************************
+ヘッダー
+****************************/
+.headerTaxTop
+{
+	height: 15px;
+	color: #cc0000;
+	width: 864px;
+	font-size:83.33%;
+	line-height:11px !important;
+	letter-spacing:1px;
+	position:absolute;
+	left:76px;
+	top:5px;
+}
+.headerTaxTop p.left
+{
+	background-color: #ffffff;
+	border :1px solid #FF7F7F;
+	width: 302px;
+	height: 11px;
+	float: left;
+	margin-top: 0;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	text-align: center;
+	vertical-align:top;
+	color: #cc0000;
+	letter-spacing:0;
+	font-size:10px;
+	line-height:11px !important;
+}
+.headerTaxTop p.center
+{
+	background-color: #ffffff;
+	border :1px solid #FF7F7F;
+	border-left:none;
+	width: 312px;
+	height: 11px;
+	float: left;
+	margin-top: 0;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	text-align: center;
+	vertical-align:top;
+	color: #cc0000;
+	letter-spacing:0;
+	font-size:10px;
+	line-height:11px !important;
+}
+.headerTaxTop p.right
+{
+	background-color: #ffffff;
+	border :1px solid #FF7F7F;
+	border-left:none;
+	width: 246px;
+	height: 11px;
+	float: right;
+	margin-top: 0;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	text-align: center;
+	vertical-align:top;
+	color: #cc0000;
+	letter-spacing:0;
+	font-size:10px;
+	line-height:11px !important;
+}
+
+.headerTaxTop p.right_tax
+{
+	background-color: #ffffff;
+	border :1px solid #FF7F7F;
+	width: 293px;
+	height: 10px;
+	float: right;
+	margin-top: 0;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+	vertical-align:top;
+	color: #cc0000;
+	letter-spacing:0;
+	font-size:10px;
+	line-height:10px !important;
+}
+
+
+.popup .headerTaxTop,
+#popup_new .headerTaxTop
+{
+	height: 46px;
+	float: right;
+	margin-top: 15px;
+	color: #cc0000;
+	width: 280px;
+	font-size:83.33%;
+	line-height:1.7 !important;
+	letter-spacing:1px;
+	position:static;
+	left:inherit;
+	top:inherit;
+}
+#popup_new .headerTaxTop
+{
+	margin-top: 35px;
+}
+.popup .headerTaxTop p.left,
+#popup_new .headerTaxTop p.left
+{
+	background-color: #FFF;
+	height: 10px;
+	float: none;
+	margin-top: 0;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border :1px solid #FF7F7F;
+	text-align: center;
+	color: #cc0000;
+	width: 278px;
+	letter-spacing:0;
+}
+.popup .headerTaxTop p.right,
+#popup_new .headerTaxTop p.right
+{
+	background-color: #FFF;
+	height: 10px;
+	float: none;
+	margin-top: 0;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border :1px solid #FF7F7F;
+	border-top :none;
+	text-align: center;
+	color: #cc0000;
+	width: 278px;
+	letter-spacing:0;
+}
+
+
+
+/****************************
+TOP用モーダルウインドウ
+****************************/
+html,
+body {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+div#modalTax {
+	display: none;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left: 0;
+	z-index: 9998;
+}
+div#modalTax div.modalBackground {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	opacity: 0.75;
+	filter: alpha(opacity=75);
+	-ms-filter: "alpha(opacity=75)";
+	top:0px;
+	z-index: 9999;
+}
+div#modalTax div.modalContainer {
+	position:relative;
+	position: fixed;
+	width:895px;
+	height:510px;
+	background-color: #ffffff;
+	z-index: 9999;
+	top:50%;
+	left: 50%;
+	margin-left: -447px;
+	margin-top: -255px;
+}
+/****************************
+モーダル内
+****************************/
+#taxModalContentBody
+{
+	width:885px;
+	height:500px;
+	border: 5px #00A5F6 solid;
+	position: relative;
+}
+
+.viewImg
+{
+	position: absolute;
+	top:-9999px;
+	left: -9999px;
+
+}
+
+
+/****************************
+モーダル内
+クローズボタン
+****************************/
+	#taxModalContentBody .modalClose
+	{
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
+
+/****************************
+モーダル内
+headのタイトル部分
+****************************/
+	#taxModalContentBody .topSelect
+	{
+		width: 468px;
+		margin: 28px auto 0 auto;
+	}
+
+		#taxModalContentBody .topSelectImg
+		{
+			position: absolute;
+			top:14px;
+			left:250px;
+			margin: 0 !important;
+		}
+
+	#taxModalContentBody .nextSelect
+	{
+		width: 250px;
+		margin: 67px auto 0 auto;
+	}
+		#taxModalContentBody .otherImg
+		{
+			position: absolute;
+			top:11px;
+			left:320px;
+			margin: 0 !important;
+			display: none;
+		}
+
+/****************************
+モーダル内
+最初の選択画面(ボタン)
+****************************/
+	#taxModalContentBody #selectArea
+	{
+		margin: 166px 0 0 60px;
+		width: 760px;
+		height: 278px;
+		display: none;
+	}
+		#taxModalContentBody #selectArea .newOpen
+		{
+			display: block;
+			float: left;
+			margin-right: 14px;
+			background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+			background-position: 0 0; width: 373px; height: 183px;
+			text-indent: -9999px;
+		}
+			#taxModalContentBody #selectArea .newOpen:HOVER
+			{
+				background-position: 0 -293px; width: 373px; height: 183px;
+			}
+		#taxModalContentBody #selectArea .alreadyOpen
+		{
+			display: block;
+			float: left;
+			background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+			background-position: 0 -586px; width: 373px; height: 183px;
+			text-indent: -9999px;
+		}
+			#taxModalContentBody #selectArea .alreadyOpen:HOVER
+			{
+				background-position: 0 -879px; width: 373px; height: 183px;
+			}
+		#taxModalContentBody #selectArea .sohoOpen
+		{
+			margin:22px 0 0;
+			display: block;
+			background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+			background-position: 0 -1972px; width: 760px; height: 73px;
+			text-indent: -9999px;
+		}
+			#taxModalContentBody #selectArea .sohoOpen:HOVER
+			{
+				background-position: 0 -2105px; width: 760px; height: 73px;
+			}
+
+
+/****************************
+モーダル内
+第二階層以降
+****************************/
+#secondClass
+{
+	background-color: #00A0EA;
+	height: 432px;
+	width: 885px;
+	padding-top: 1px;
+	display: none;
+}
+
+
+/****************************
+モーダル内
+フレッツ光を新規でご検討中の方
+****************************/
+
+#taxModalContentBody #newArea
+{
+	display: none;
+}
+	#taxModalContentBody #newArea h2
+	{
+		text-align:center;
+		margin-top: 30px;
+		display: block;
+	}
+	#taxModalContentBody #newArea .list01
+	{
+		margin: 15px 0 12px 0;
+		text-align:center;
+	}
+		#taxModalContentBody #newArea .list01 a
+		{
+			text-indent: -9999px;
+			display: block;
+			background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+			background-position: 0 -1172px; width: 472px; height: 82px;
+			margin: 0 auto;
+		}
+			#taxModalContentBody #newArea .list01 a:HOVER
+			{
+				background-position: 0 -1304px; width: 472px; height: 82px;
+			}
+	#taxModalContentBody #newArea .list02
+	{
+		width: 812px;
+		margin: 15px auto 12px auto;
+	}
+		#taxModalContentBody #newArea .list02 li
+		{
+			float: left;
+		}
+			#taxModalContentBody #newArea .list02 li.li1
+			{
+				margin-right:8px;
+			}
+				#taxModalContentBody #newArea .list02 li.li1 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: 0 -1436px; width: 402px; height: 82px;
+				}
+					#taxModalContentBody #newArea .list02 li.li1 a:HOVER
+					{
+						background-position: 0 -1568px; width: 402px; height: 82px;
+					}
+
+			#taxModalContentBody #newArea .list02 li.li2 a
+			{
+				text-indent: -9999px;
+				display: block;
+				background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+				background-position: 0 -1700px; width: 402px; height: 82px;
+			}
+				#taxModalContentBody #newArea .list02 li.li2 a:HOVER
+				{
+					background-position: 0 -1832px; width: 402px; height: 82px;
+				}
+
+
+	#taxModalContentBody #newArea .list03
+	{
+		width: 812px;
+		margin: 15px auto 12px auto;
+	}
+		#taxModalContentBody #newArea .list03 li
+		{
+			float: left;
+		}
+			#taxModalContentBody #newArea .list03 li.li1
+			{
+				margin-right: 10px;
+			}
+				#taxModalContentBody #newArea .list03 li.li1 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -522px 0px; width: 264px; height: 82px;
+				}
+					#taxModalContentBody #newArea .list03 li.li1 a:HOVER
+					{
+						background-position: -522px -132px; width: 264px; height: 82px;
+					}
+
+			#taxModalContentBody #newArea .list03 li.li2
+			{
+				margin-right: 10px;
+			}
+				#taxModalContentBody #newArea .list03 li.li2 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -522px -264px; width: 264px; height: 82px;
+				}
+					#taxModalContentBody #newArea .list03 li.li2 a:HOVER
+					{
+						background-position: -522px -396px; width: 264px; height: 82px;
+					}
+
+			#taxModalContentBody #newArea .list03 li.li3 a
+			{
+				text-indent: -9999px;
+				display: block;
+				background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+				background-position: -522px -528px; width: 264px; height: 82px;
+			}
+				#taxModalContentBody #newArea .list03 li.li3 a:HOVER
+				{
+					background-position: -522px -660px; width: 264px; height: 82px;
+				}
+
+/****************************
+モーダル内
+フレッツ光について調べたい
+****************************/
+
+#taxModalContentBody #fletsArea
+{
+	display: none;
+	width: 885px;
+}
+	#taxModalContentBody #fletsArea h2
+	{
+		text-align:center;
+		margin-top: 72px;
+		display: block;
+	}
+	#taxModalContentBody #fletsArea .list01
+	{
+		width: 833px;
+		margin: 42px 0 12px 26px;
+	}
+		#taxModalContentBody #fletsArea .list01 li
+		{
+			float: left;
+		}
+			#taxModalContentBody #fletsArea .list01 li.li1
+			{
+				margin-right: 7px;
+			}
+				#taxModalContentBody #fletsArea .list01 li.li1 a
+				{
+					text-indent: -99999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -522px -792px; width: 203px; height: 183px;
+				}
+					#taxModalContentBody #fletsArea .list01 li.li1 a:HOVER
+					{
+						background-position: -522px -1025px; width: 203px; height: 183px;
+					}
+
+			#taxModalContentBody #fletsArea .list01 li.li2
+			{
+				margin-right: 7px;
+			}
+				#taxModalContentBody #fletsArea .list01 li.li2 a
+				{
+					text-indent: -99999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -522px -1491px; width: 203px; height: 183px;
+				}
+					#taxModalContentBody #fletsArea .list01 li.li2 a:HOVER
+					{
+						background-position: -522px -1724px; width: 203px; height: 183px;
+					}
+
+			#taxModalContentBody #fletsArea .list01 li.li3
+			{
+				margin-right: 7px;
+			}
+				#taxModalContentBody #fletsArea .list01 li.li3 a
+				{
+					text-indent: -99999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -1044px 0; width: 203px; height: 183px;
+				}
+					#taxModalContentBody #fletsArea .list01 li.li3 a:HOVER
+					{
+						background-position: -1044px -233px; width: 203px; height: 183px;
+					}
+
+			#taxModalContentBody #fletsArea .list01 li.li4
+			{
+
+			}
+				#taxModalContentBody #fletsArea .list01 li.li4 a
+				{
+					text-indent: -99999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -1044px -466px; width: 203px; height: 183px;
+				}
+					#taxModalContentBody #fletsArea .list01 li.li4 a:HOVER
+					{
+						background-position: -1044px -699px; width: 203px; height: 183px;
+					}
+
+
+/****************************
+モーダル内
+フレッツ光で使えるオプションサービスを調べたい
+****************************/
+#taxModalContentBody #optionArea
+{
+	display: none;
+}
+	#taxModalContentBody #optionArea h2
+	{
+		text-align:center;
+		margin-top: 72px;
+		display: block;
+	}
+	#taxModalContentBody #optionArea .list01
+	{
+		width: 840px;
+		margin: 42px 0 12px 26px;
+	}
+		#taxModalContentBody #optionArea .list01 li
+		{
+			float: left;
+		}
+			#taxModalContentBody #optionArea .list01 li.li1
+			{
+				margin-right: 7px;
+			}
+				#taxModalContentBody #optionArea .list01 li.li1 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -1044px -932px; width: 203px; height: 183px;
+
+				}
+					#taxModalContentBody #optionArea .list01 li.li1 a:HOVER
+					{
+						background-position: -1044px -1165px; width: 203px; height: 183px;
+					}
+
+			#taxModalContentBody #optionArea .list01 li.li2
+			{
+				margin-right: 7px;
+			}
+				#taxModalContentBody #optionArea .list01 li.li2 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -1044px -1398px; width: 203px; height: 183px;
+				}
+					#taxModalContentBody #optionArea .list01 li.li2 a:HOVER
+					{
+						background-position: -1044px -1631px; width: 203px; height: 183px;
+					}
+
+			#taxModalContentBody #optionArea .list01 li.li3
+			{
+				margin-right: 7px;
+			}
+				#taxModalContentBody #optionArea .list01 li.li3 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -1044px -1864px; width: 203px; height: 183px;
+				}
+					#taxModalContentBody #optionArea .list01 li.li3 a:HOVER
+					{
+						background-position: -1566px 0; width: 203px; height: 183px;
+					}
+
+			#taxModalContentBody #optionArea .list01 li.li4
+			{
+				margin-right: 7px;
+			}
+				#taxModalContentBody #optionArea .list01 li.li4 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -1566px -233px; width: 203px; height: 183px;
+				}
+					#taxModalContentBody #optionArea .list01 li.li4 a:HOVER
+					{
+						background-position: -1566px -466px; width: 203px; height: 183px;
+					}
+
+
+/****************************
+モーダル内
+セキュリティ
+****************************/
+#taxModalContentBody #securityArea
+{
+	display: none;
+}
+	#taxModalContentBody #securityArea h2
+	{
+		text-align:center;
+		margin-top: 72px;
+		display: block;
+	}
+	#taxModalContentBody #securityArea .list01
+	{
+		width: 840px;
+		margin: 42px 0 12px 26px;
+	}
+		#taxModalContentBody #securityArea .list01 li
+		{
+			float: left;
+		}
+			#taxModalContentBody #securityArea .list01 li.li1
+			{
+				margin-right: 7px;
+			}
+				#taxModalContentBody #securityArea .list01 li.li1 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -1566px -699px; width: 203px; height: 183px;
+
+				}
+					#taxModalContentBody #securityArea .list01 li.li1 a:HOVER
+					{
+						background-position: -1566px -932px; width: 203px; height: 183px;
+					}
+
+			#taxModalContentBody #securityArea .list01 li.li2
+			{
+				margin-right: 7px;
+			}
+				#taxModalContentBody #securityArea .list01 li.li2 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -1566px -1165px; width: 203px; height: 183px;
+				}
+					#taxModalContentBody #securityArea .list01 li.li2 a:HOVER
+					{
+						background-position: -1566px -1398px; width: 203px; height: 183px;
+					}
+
+			#taxModalContentBody #securityArea .list01 li.li3
+			{
+				margin-right: 7px;
+			}
+				#taxModalContentBody #securityArea .list01 li.li3 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -1566px -1631px; width: 203px; height: 183px;
+				}
+					#taxModalContentBody #securityArea .list01 li.li3 a:HOVER
+					{
+						background-position: -1566px -1864px; width: 203px; height: 183px;
+					}
+
+			#taxModalContentBody #securityArea .list01 li.li4
+			{
+				margin-right: 7px;
+			}
+				#taxModalContentBody #securityArea .list01 li.li4 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -2088px 0; width: 203px; height: 183px;
+				}
+					#taxModalContentBody #securityArea .list01 li.li4 a:HOVER
+					{
+						background-position: -2088px -233px; width: 203px; height: 183px;
+					}
+
+
+/****************************
+モーダル内
+CLUB NTT-Westについて
+****************************/
+#taxModalContentBody #cnwArea
+{
+	display: none;
+}
+	#taxModalContentBody #cnwArea h2
+	{
+		text-align:center;
+		margin-top: 72px;
+		display: block;
+	}
+	#taxModalContentBody #cnwArea .list01
+	{
+		width: 660px;
+		margin: 42px 0 12px 120px;
+	}
+		#taxModalContentBody #cnwArea .list01 li
+		{
+			float: left;
+		}
+			#taxModalContentBody #cnwArea .list01 li.li1
+			{
+				margin-right: 7px;
+			}
+				#taxModalContentBody #cnwArea .list01 li.li1 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -2610px 0; width: 323px; height: 183px;
+				}
+					#taxModalContentBody #cnwArea .list01 li.li1 a:HOVER
+					{
+						background-position: -2610px -233px; width: 323px; height: 183px;
+					}
+
+			#taxModalContentBody #cnwArea .list01 li.li2
+			{
+				margin-right: 7px;
+			}
+				#taxModalContentBody #cnwArea .list01 li.li2 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -2610px -466px; width: 323px; height: 183px;
+				}
+					#taxModalContentBody #cnwArea .list01 li.li2 a:HOVER
+					{
+						background-position: -2610px -699px; width: 323px; height: 183px;
+					}
+
+
+/****************************
+モーダル内
+フレッツ光を既にご利用中の方
+****************************/
+#taxModalContentBody #alreadyArea
+{
+	display: none;
+}
+	#taxModalContentBody #alreadyArea h2
+	{
+		text-align:center;
+		margin-top: 30px;
+		display: block;
+	}
+	#taxModalContentBody #alreadyArea .list01
+	{
+		width: 812px;
+		margin: 13px 0 12px 26px;
+	}
+		#taxModalContentBody #alreadyArea .list01 li
+		{
+			float: left;
+		}
+			#taxModalContentBody #alreadyArea .list01 li.li1
+			{
+				margin-right: 8px;
+			}
+				#taxModalContentBody #alreadyArea .list01 li.li1 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -2088px -466px; width: 402px; height: 82px;
+				}
+					#taxModalContentBody #alreadyArea .list01 li.li1 a:HOVER
+					{
+						background-position: -2088px -598px; width: 402px; height: 82px;
+					}
+
+			#taxModalContentBody #alreadyArea .list01 li.li2
+			{
+
+			}
+				#taxModalContentBody #alreadyArea .list01 li.li2 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -2088px -730px; width: 402px; height: 82px;
+				}
+					#taxModalContentBody #alreadyArea .list01 li.li2 a:HOVER
+					{
+						background-position: -2088px -862px; width: 402px; height: 82px;
+					}
+	#taxModalContentBody #alreadyArea .list02
+	{
+		margin: 12px 0 12px 0;
+		text-align:center;
+	}
+		#taxModalContentBody #alreadyArea .list02 a
+		{
+			text-indent: -9999px;
+			display: block;
+			margin:0 auto;;
+			background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+			background-position: -2088px -1522px; width: 472px; height: 82px;
+
+		}
+			#taxModalContentBody #alreadyArea .list02 a:HOVER
+			{
+				background-position: -2088px -1654px; width: 472px; height: 82px;
+			}
+
+	#taxModalContentBody #alreadyArea .list03
+	{
+		width: 812px;
+		margin: 13px 0 12px 26px;
+	}
+		#taxModalContentBody #alreadyArea .list03 li
+		{
+			float: left;
+		}
+			#taxModalContentBody #alreadyArea .list03 li.li1
+			{
+				margin-right: 10px;
+			}
+				#taxModalContentBody #alreadyArea .list03 li.li1 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -2088px -994px; width: 264px; height: 82px;
+				}
+					#taxModalContentBody #alreadyArea .list03 li.li1 a:HOVER
+					{
+						background-position: -2088px -1126px; width: 264px; height: 82px;
+					}
+
+			#taxModalContentBody #alreadyArea .list03 li.li2
+			{
+				margin-right: 10px;
+			}
+				#taxModalContentBody #alreadyArea .list03 li.li2 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -2088px -1258px; width: 264px; height: 82px;
+				}
+					#taxModalContentBody #alreadyArea .list03 li.li2 a:HOVER
+					{
+						background-position: -2088px -1390px; width: 264px; height: 82px;
+					}
+			#taxModalContentBody #alreadyArea .list03 li.li3
+			{
+
+			}
+				#taxModalContentBody #alreadyArea .list03 li.li3 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -2088px -1786px; width: 264px; height: 82px;
+				}
+					#taxModalContentBody #alreadyArea .list03 li.li3 a:HOVER
+					{
+						background-position: -2088px -1918px; width: 264px; height: 82px;
+					}
+
+/****************************
+モーダル内
+Wi-Fi・無線LANサービス
+****************************/
+#taxModalContentBody #wifiArea
+{
+	display: none;
+}
+	#taxModalContentBody #wifiArea h2
+	{
+		text-align:center;
+		margin-top: 72px;
+		display: block;
+	}
+	#taxModalContentBody #wifiArea .list01
+	{
+		width: 624px;
+		margin: 42px auto 12px;
+	}
+		#taxModalContentBody #wifiArea .list01 li
+		{
+			float: left;
+		}
+			#taxModalContentBody #wifiArea .list01 li.li1
+			{
+				margin-right: 7px;
+			}
+				#taxModalContentBody #wifiArea .list01 li.li1 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -2610px -932px; width: 203px; height: 183px;
+				}
+					#taxModalContentBody #wifiArea .list01 li.li1 a:HOVER
+					{
+						background-position: -2610px -1165px; width: 203px; height: 183px;
+					}
+
+			#taxModalContentBody #wifiArea .list01 li.li2
+			{
+				margin-right: 7px;
+			}
+				#taxModalContentBody #wifiArea .list01 li.li2 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -2610px -1398px; width: 203px; height: 183px;
+				}
+					#taxModalContentBody #wifiArea .list01 li.li2 a:HOVER
+					{
+						background-position: -2610px -1631px; width: 203px; height: 183px;
+					}
+
+			#taxModalContentBody #wifiArea .list01 li.li3
+			{
+				margin-right: 0;
+			}
+				#taxModalContentBody #wifiArea .list01 li.li3 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -2610px -1864px; width: 203px; height: 183px;
+				}
+					#taxModalContentBody #wifiArea .list01 li.li3 a:HOVER
+					{
+						background-position: -3132px 0; width: 203px; height: 183px;
+					}
+
+			#taxModalContentBody #wifiArea .list01 li.li4
+			{
+				margin-right: 7px;
+			}
+				#taxModalContentBody #wifiArea .list01 li.li4 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -3132px -233px; width: 203px; height: 183px;
+				}
+					#taxModalContentBody #wifiArea .list01 li.li4 a:HOVER
+					{
+						background-position: -3132px -466px; width: 203px; height: 183px;
+					}
+
+
+/****************************
+モーダル内
+映像サービス
+****************************/
+#taxModalContentBody #movieArea
+{
+	display: none;
+}
+	#taxModalContentBody #movieArea h2
+	{
+		text-align:center;
+		margin-top: 72px;
+		display: block;
+	}
+	#taxModalContentBody #movieArea .list01
+	{
+		width: 623px;
+		margin: 42px 0 12px 150px;
+	}
+		#taxModalContentBody #movieArea .list01 li
+		{
+			float: left;
+		}
+			#taxModalContentBody #movieArea .list01 li.li1
+			{
+				margin-right: 7px;
+			}
+				#taxModalContentBody #movieArea .list01 li.li1 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -3132px -699px; width: 203px; height: 183px;
+				}
+					#taxModalContentBody #movieArea .list01 li.li1 a:HOVER
+					{
+						background-position: -3132px -932px; width: 203px; height: 183px;
+					}
+
+			#taxModalContentBody #movieArea .list01 li.li2
+			{
+				margin-right: 7px;
+			}
+				#taxModalContentBody #movieArea .list01 li.li2 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -3132px -1165px; width: 203px; height: 183px;
+				}
+					#taxModalContentBody #movieArea .list01 li.li2 a:HOVER
+					{
+						background-position: -3132px -1398px; width: 203px; height: 183px;
+					}
+
+			#taxModalContentBody #movieArea .list01 li.li3
+			{
+
+			}
+				#taxModalContentBody #movieArea .list01 li.li3 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -3132px -1631px; width: 203px; height: 183px;
+				}
+					#taxModalContentBody #movieArea .list01 li.li3 a:HOVER
+					{
+						background-position: -3132px -1864px; width: 203px; height: 183px;
+					}
+
+/****************************
+モーダル内
+お店・事務所でのご利用をお考えの方
+****************************/
+#taxModalContentBody #sohoArea
+{
+	display: none;
+}
+	#taxModalContentBody #sohoArea h2
+	{
+		text-align:center;
+		margin-top: 50px;
+		display: block;
+	}
+	#taxModalContentBody #sohoArea .list01
+	{
+		width: 760px;
+		margin: 42px 0 12px 65px;
+	}
+		#taxModalContentBody #sohoArea .list01 li
+		{
+			float: left;
+		}
+			#taxModalContentBody #sohoArea .list01 li.li1
+			{
+				margin-right: 14px;
+				margin-bottom: 14px;
+			}
+				#taxModalContentBody #sohoArea .list01 li.li1 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -3535px 0; width: 373px; height: 103px;
+				}
+					#taxModalContentBody #sohoArea .list01 li.li1 a:HOVER
+					{
+						background-position: -3535px -143px; width: 373px; height: 103px;
+					}
+
+			#taxModalContentBody #sohoArea .list01 li.li2
+			{
+				margin-bottom: 14px;
+			}
+				#taxModalContentBody #sohoArea .list01 li.li2 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -3535px -286px; width: 373px; height: 103px;
+				}
+					#taxModalContentBody #sohoArea .list01 li.li2 a:HOVER
+					{
+						background-position: -3535px -429px; width: 373px; height: 103px;
+					}
+
+			#taxModalContentBody #sohoArea .list01 li.li3
+			{
+				margin-right: 14px;
+			}
+				#taxModalContentBody #sohoArea .list01 li.li3 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -4008px -286px; width: 373px; height: 103px;
+				}
+					#taxModalContentBody #sohoArea .list01 li.li3 a:HOVER
+					{
+						background-position: -4008px -429px; width: 373px; height: 103px;
+					}
+
+			#taxModalContentBody #sohoArea .list01 li.li4
+			{
+			}
+				#taxModalContentBody #sohoArea .list01 li.li4 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -4008px 0; width: 373px; height: 103px;
+				}
+					#taxModalContentBody #sohoArea .list01 li.li4 a:HOVER
+					{
+						background-position: -4008px -143px; width: 373px; height: 103px;
+					}
+/****************************
+モーダル内
+課題から商品・サービスを調べたい
+****************************/
+#taxModalContentBody #themeArea
+{
+	display: none;
+}
+	#taxModalContentBody #themeArea h2
+	{
+		text-align:center;
+		margin-top: 40px;
+		display: block;
+	}
+	#taxModalContentBody #themeArea .list01
+	{
+		width: 760px;
+		margin: 29px 0 12px 65px;
+	}
+		#taxModalContentBody #themeArea .list01 li
+		{
+		}
+			#taxModalContentBody #themeArea .list01 li.li1
+			{
+				margin-bottom: 5px;
+			}
+				#taxModalContentBody #themeArea .list01 li.li1 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -3535px -572px; width: 760px; height: 83px;
+				}
+					#taxModalContentBody #themeArea .list01 li.li1 a:HOVER
+					{
+						background-position: -3535px -695px; width: 760px; height: 83px;
+					}
+
+			#taxModalContentBody #themeArea .list01 li.li2
+			{
+				margin-bottom: 5px;
+			}
+				#taxModalContentBody #themeArea .list01 li.li2 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -3535px -818px; width: 760px; height: 83px;
+				}
+					#taxModalContentBody #themeArea .list01 li.li2 a:HOVER
+					{
+						background-position: -3535px -941px; width: 760px; height: 83px;
+					}
+
+			#taxModalContentBody #themeArea .list01 li.li3
+			{
+			}
+				#taxModalContentBody #themeArea .list01 li.li3 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -3535px -1064px; width: 760px; height: 83px;
+				}
+					#taxModalContentBody #themeArea .list01 li.li3 a:HOVER
+					{
+						background-position: -3535px -1187px; width: 760px; height: 83px;
+					}
+/****************************
+モーダル内
+マイナンバー制度対策について調べたい
+****************************/
+#taxModalContentBody #mynumArea
+{
+	display: none;
+}
+	#taxModalContentBody #mynumArea h2
+	{
+		text-align:center;
+		margin-top: 40px;
+		display: block;
+	}
+	#taxModalContentBody #mynumArea .list01
+	{
+		width: 760px;
+		margin: 29px 0 12px 65px;
+	}
+		#taxModalContentBody #mynumArea .list01 li
+		{
+		}
+			#taxModalContentBody #mynumArea .list01 li.li1
+			{
+				margin-bottom: 5px;
+			}
+				#taxModalContentBody #mynumArea .list01 li.li1 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -3535px -1310px; width: 760px; height: 83px;
+				}
+					#taxModalContentBody #mynumArea .list01 li.li1 a:HOVER
+					{
+						background-position: -3535px -1433px; width: 760px; height: 83px;
+					}
+
+			#taxModalContentBody #mynumArea .list01 li.li2
+			{
+				margin-bottom: 5px;
+			}
+				#taxModalContentBody #mynumArea .list01 li.li2 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -3535px -1556px; width: 760px; height: 83px;
+				}
+					#taxModalContentBody #mynumArea .list01 li.li2 a:HOVER
+					{
+						background-position: -3535px -1679px; width: 760px; height: 83px;
+					}
+
+			#taxModalContentBody #mynumArea .list01 li.li3
+			{
+			}
+				#taxModalContentBody #mynumArea .list01 li.li3 a
+				{
+					text-indent: -9999px;
+					display: block;
+					background: url("/cmn/img/newtax/bg_clickSearch.png") no-repeat top left;
+					background-position: -3535px -1802px; width: 760px; height: 83px;
+				}
+					#taxModalContentBody #mynumArea .list01 li.li3 a:HOVER
+					{
+						background-position: -3535px -1925px; width: 760px; height: 83px;
+					}
+
+
+
+/* ナビットさん */
+	#taxModalContentBody .navit-block
+	{
+		display:none;
+	}
+	#taxModalContentBody .topSelect .navit-block
+	{
+		display:block;
+		position: absolute;
+		top:118px;
+		left:664px;
+		margin: 0;
+		padding: 0;
+		font-size:10px;
+		color:#666666;
+	}
+/* 審査番号 */
+	#taxModalContentBody .shinsa-block
+	{
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+		padding: 0;
+	}
+		#taxModalContentBody p.shinsa-num
+		{
+			background-color: #FFF;
+			border: 1px solid #C4CBD0;
+			clear: both;
+			color: #95A2AB !important;
+			float: right;
+			font-family: monospace;
+			font-size: 10px !important;
+			line-height: 12px !important;
+			padding: 1px 3px;
+			text-align: center;
+			margin: 0;
+		}
+
+	#taxModalContentBody .backBtn
+	{
+		position: absolute;
+		right: 394px;
+		bottom: 19px;
+		background-color: #FFF;
+		display: none;
+	}
+
+
+
+
+@media print{
+	/*
+	#tax_info {
+		background-color:#000 ;
+		bottom: 0;
+		left: 0;
+		color: #333;
+		display: block;
+		font-size: 11px;
+		position:relative;
+	}
+		#tax_info p {
+			float: none !important;
+			color:#000;
+		}
+	*/
+	#tax_info {
+		background-color:#333;
+		bottom: 0;
+		color: #FFFFFF;
+		display: block !important;
+		left: 0;
+		opacity: 0.8;
+		position: static !important;
+		text-align: left;
+		width: 100%;
+		z-index: 9999;
+	}
+		#tax_info p {
+			float: none !important;
+			color:#000;
+		}
+
+
+	.taxModalOpenP img
+	{
+		display: none;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

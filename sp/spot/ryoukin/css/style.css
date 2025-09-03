@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+.attention_area._attention-info._border {
+    border: 2px solid #F4AD16;
+    padding: 1em 1em 0 1em;
+    font-size: 20px;
+}
+.attention_area._attention-info._border{
+    margin-bottom: 0;
+}
+.attention_area._attention-info._border small{
+    display: inline;
+}
+
+.attention_area .ic_attention {
+     text-indent: -2em;
+  padding-left: 2em;
+    margin-bottom: 1em !important;
+}
+.attention_area._attention-info .ic_attention:before {
+    content: "";
+    display: inline-block;
+    background: url(/resources/img/cmn/ic_info.svg) no-repeat left center;
+    position: relative;
+    top: 0.3em;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}

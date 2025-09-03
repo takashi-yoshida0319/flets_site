@@ -1,0 +1,191 @@
+@charset "shift-jis";
+
+/* ------------------------------
+ Basic-element
+------------------------------ */
+
+/* 20171212 ADD */
+#header{
+    z-index: 9999;
+    position: relative;
+}
+
+.contentCell {
+	clear:both;
+	margin-bottom:15px;
+}
+
+
+/* 20110613 */
+/* Caution! Ensure accessibility in print and other media types... */
+@media projection, screen { /* Use class for showing/hiding tab content, so that visibility can be better controlled in different media types... */
+    .ui-tabs-hide {
+        display: none;
+    }
+}
+
+/* Hide useless elements in print layouts... */
+@media print {
+    .ui-tabs-nav {
+        display: none;
+    }
+}
+
+
+
+span.map_bot{
+	display:block;
+	padding:5px 0 0;
+}
+.article .section.tabCont {
+	margin:15px 0 0 0 !important;
+}
+#ui-tab{
+	position:relative;
+}
+.ui-tabs-nav{
+ display: block;
+ width:690px;
+ height: 40px;
+ margin: 0;
+ padding: 0;
+ border-bottom:10px solid #00afe2;
+ overflow: hidden;
+}
+.ui-tabs-nav li{
+ float: left;
+ width: 220px;
+ padding: 0;
+ margin: 0 15px 0 0;
+ list-style: none;
+}
+.ui-tabs-nav li a{
+ background: no-repeat left top;
+}
+
+.ui-tabs-nav li#map.present a{
+ display: block;
+ width: 220px;
+ height: 40px !important;
+ background: url(../img/tab_map_on.gif);
+}
+.ui-tabs-nav li#map a{
+ display: block;
+ width: 220px;
+ height: 40px;
+ background:  url(../img/tab_map.gif);
+}
+.ui-tabs-nav li#map a:hover {
+ display: block;
+ width: 220px;
+ height: 40px !important;
+ background:  url(../img/tab_map_on.gif);
+}
+
+.ui-tabs-nav li#area_list.present a{
+ display: block;
+ width: 220px;
+ height: 40px !important;
+ background: url(../img/tab_tel_on.gif);
+}
+.ui-tabs-nav li#area_list a{
+ display: block;
+ width: 220px;
+ height: 40px;
+ background: url(../img/tab_tel.gif);
+}
+.ui-tabs-nav li#area_list a:hover {
+ display: block;
+ width: 220px;
+ height: 40px !important;
+ background: url(../img/tab_tel_on.gif);
+}
+
+.ui-tabs-nav li.present{
+ display: block;
+ width: 220px;
+ height: 40px;
+}
+.ui-tabs-nav li span{
+ display: none;
+}
+
+p#link{
+ position:absolute;
+ top:0;
+ right:0;
+ margin-right:0px !important;
+ font-size:10px;
+ line-height:40px;
+ text-align:right;
+ text-indent:0;
+}
+p#link a{
+	display:inline-block;
+	padding-left:1.8em;
+	background:url(/cmn/img/arrow_01.gif) no-repeat 2px center scroll transparent;
+}
+
+#areaNote{
+ padding: 5px 10px 10px;
+ color: #000000;
+ background: #FFC2BD;
+}
+
+/* 2016.04ïœçX */
+.areaNoteExclamation{
+ padding: 10px 10px 5px 70px;
+ margin:0 0 10px;
+ color: #666666;
+ font-size:12px;
+ font-weight:bold;
+ background: url(../img/alert.gif) no-repeat 10px 10px #ffcccc;
+}
+#fragment-2 .areaNoteExclamation{
+ margin:0 0 15px;
+}
+
+.areaNoteExclamation p{
+/*padding-left:1.5em;
+text-indent:-1.5em;*/
+line-height:20px;
+}
+/* 2016.04ïœçX */
+
+/* 2016.04í«â¡ */
+.areaSerch-sec { padding-left: 0; padding-top:5px; padding-right:5px; margin-top:0px; overflow: hidden;position: relative;zoom:1;}
+.areaSerch-sec p.areaSerch-txt { float:left;line-height:35px !important;}
+/*.areaSerch-details-link{ padding: 10px 0 0 10px; z-index: 999;}*/
+.areaSerch-details-link p{width:195px; height:40px; margin: 0 0 0 10px; padding: 0;  float:left;}
+.areaSerch-details-link p span{ display: none;}
+.areaSerch-details-link p a{ display:block; width:195px; height:40px; background:url(../img/btn_area.gif) no-repeat;}
+.areaSerch-details-link p a:hover{ background:url(../img/btn_area_r.gif) no-repeat;}
+/* 2016.04í«â¡ */
+
+#contents #main .section .update {
+	margin:0;
+	overflow: hidden;
+	position: relative;
+	zoom:1;
+}
+#contents #main .section .update dl {
+	margin:0;
+}
+
+#contents #main .section .update dl dt {
+	float: left ;
+  clear: both ;
+  width: 7em;
+	margin-bottom:3px;
+}
+#contents #main .section .update dl dd {
+  margin: 0 0 0.2em 7.5em;
+	margin-bottom:3px;
+}
+#contents #main .section .update dl dd a{
+	padding-left:15px;
+	background:url(../../../cmn/img/arrow_01.gif) no-repeat left center;	
+}
+
+
+/* EOF*/

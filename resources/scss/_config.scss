@@ -1,0 +1,56 @@
+//common
+._vanish { display: none; }
+._center { text-align: center; }
+._nowrap { white-space: nowrap; }
+
+//._pc { display: none; }
+//._sp { display: block; }
+
+._ie { display: none;}
+._not_ie { display: block;}
+
+
+//flets color
+//Main
+$blue : #0072bc;
+$darkblue : #1D2088;
+$orange : #db3d23;
+$black : #000;
+$darkgray : #787878;
+$white : #fff;
+
+//Accent
+$red : #e15656;
+$yellow : #f4ad16;
+
+//Background
+$lightgray : #e6e8ed;
+$lightblue :#F2FAFF;
+$ultralightgray :#EFEFEF;
+
+//Sub
+$subblue :#4199E0;
+$sublightblue :#56b2e1;
+$subultralightblue :#00b6ec;
+$subemeraldgreen :#47bed0;
+$subgray :#D0D0D0;
+$cerulean : #0099DB;
+
+//コンポーネントにない配色
+$panelgray : #333333;
+$blueshadow :#0c5c8f;
+$circleblue : #0e9ad8;
+$redshadow :#a53724;
+$grayline :#D9D9D9;
+$mapbtngray :#707070;
+$bgNTTnav : #F5F7FA;
+$bluegray : #F2F3F6;
+$placeholder : #AAAAAA;
+$floralWhite : #FFFCF3;
+
+//PC
+@include mq(){
+	//._pc { display: block; }
+	//._sp { display: none; }
+}
+

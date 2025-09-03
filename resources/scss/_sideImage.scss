@@ -1,0 +1,137 @@
+/* sideImage
+-------------------------------------------------- */
+
+section.sideImage{
+}
+
+section.sideImage:after{
+  clear: both;
+  display: block;
+  content: "";
+}
+
+section.sideImage .clear{
+  clear: both;
+}
+
+
+
+section.sideImage figure{
+  float: left;
+  margin: 0;
+}
+
+section.sideImage .explain{
+  float: right;
+  width: 470px;
+  display: table;
+  min-height: 200px;
+}
+section.sideImage .explain > div{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+section.sideImage .explain .title{
+  display: table;
+  width: 100%;
+  margin-bottom: 25px;
+}
+section.sideImage .explain .title > span{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+}
+section.sideImage .explain .title > span.ico{
+  width: 4.6em;
+}
+section.sideImage .explain .title > span.txt{
+  font-weight: 700;
+  line-height: 1.4;
+}
+section.sideImage .explain .title span.badge{
+  font-size: 64.2%;
+}
+
+section.sideImage .explain .c-txt{
+  margin: 0;
+  font-size: 111%;
+}
+section.sideImage .explain .c-note{
+  margin: 8px 0 0 0;
+}
+section.sideImage.even figure{
+  float: right;
+}
+section.sideImage.even .explain{
+  float: left;
+}
+
+@media screen and (max-width: 767px){
+
+  /* sideImage
+  -------------------------------------------------- */
+
+  section.sideImage{
+  }
+
+  section.sideImage figure{
+    float: none;
+    margin: 0;
+  }
+  section.sideImage figure img{
+    width: 100%;
+  }
+
+  section.sideImage .explain{
+    float: none;
+    width: auto;
+    display: block;
+    min-height: inherit;
+  }
+
+  section.sideImage .explain > div{
+    display: block;
+  }
+
+  section.sideImage .explain .title{
+    position: relative;
+    display: block;
+    width: auto;
+    padding-top: 26px;
+    margin-bottom: 25px;
+  }
+  section.sideImage .explain .title > span{
+    display: block;
+    text-align: center;
+  }
+  section.sideImage .explain .title > span.ico{
+    padding-right:0;
+    width: auto;
+  }
+
+  section.sideImage .explain .title span.badge{
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+  }
+
+  section.sideImage .explain .c-txt{
+    text-align: center;
+    font-size: 100%;
+  }
+  section.sideImage .explain .c-note{
+    margin: 8px 0 0 0;
+  }
+
+  section.sideImage.even > figure{
+    float: none;
+  }
+
+  section.sideImage.even > .explain{
+    float: none;
+  }
+
+}

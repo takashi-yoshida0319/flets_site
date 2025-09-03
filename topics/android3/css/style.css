@@ -1,0 +1,42 @@
+@charset "shift_jis";
+/* CSS Document */
+#main .mt10 {
+	margin-top:10px;
+}
+#main .mt20 {
+	margin-top:20px;
+}
+#main dl {
+	width:690px;
+}
+#main dl dt {
+	float:left;
+	width:15em;
+}
+#main dl dd {
+	margin-left:15em;
+}
+#main .section2 {
+	margin-top:30px !important;
+}
+#main .section3 {
+	margin-top:40px !important;
+}
+.clearfix:after {
+	display: block;
+	clear:both;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+	content: ".";
+	font-size: 0.1em;
+}
+.clearfix {
+	display:inline-block;
+}/* Hides from Mac-IE \*/
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}/* End hide from Mac-IE */

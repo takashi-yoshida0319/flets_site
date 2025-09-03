@@ -1,0 +1,97 @@
+/* #anchor1
+-------------------------------------------------- */
+#anchor1 .c-table tbody th, .c-table tbody td{
+    padding: 19px 12px;
+}
+
+.scrollTableOuter , .scrollTableOuter2 {
+	padding-top: 0.9em;
+}
+
+#anchor1 .c-table thead th {
+	position: relative;
+}
+
+#anchor1 th .badge {
+	position: absolute;
+    top: -1em;
+	left: 1em;
+    font-size: 83%;
+	display: block;
+}
+
+#anchor1 th .badge:after {
+	content: "";
+	height: 26px;
+}
+
+#anchor1 .yellow td {
+	background: #FFF7E6;
+}
+
+#anchor1 p.yellow::before {
+	content: '　';
+	padding: 0 0.2em;
+	background-color: #FFF7E6;
+	border: #ccc 1px solid;
+	margin-right: 0.5em;
+}
+
+#anchor1 .price_badge.badge {
+    font-size: 14px;
+}
+
+.provider2 {
+	float: right;
+	margin: -3em 0 1.5em 0;
+}
+/* #localnavi
+-------------------------------------------------- */
+#localnavi .c-grid{
+    margin-bottom: -27px;
+    justify-content: space-between;
+}
+
+#localnavi .c-grid .c-col{
+	width: 313px;
+    margin-bottom: 27px;
+}
+
+/* 
+#localnavi .c-grid .c-col .btn_area a{
+	min-height: 77px;
+}*/
+
+
+@media screen and (max-width: 767px){ 
+    /* #anchor1
+    -------------------------------------------------- */
+    #anchor1 .c-table thead th{
+        font-size: 88.88%;
+    }
+    
+    #anchor1 .c-table tbody th{
+        padding: 19px 4px;
+    }
+    
+    #anchor1 .c-table tbody td .txt-link .link_icn.arrow{
+        font-size: 112.47%!important
+    }
+        
+    /* #localnavi
+    -------------------------------------------------- */
+    #localnavi .c-grid{
+        margin-bottom: 0;
+    }
+
+    #localnavi .c-grid .c-col{
+        width: auto;
+        margin: 0;
+    }
+
+    .rn2020 #l-content #localnavi .c-grid._sp_noflex .c-col + .c-col{
+        margin-top: 24px;
+    }
+	
+
+}

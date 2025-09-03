@@ -1,0 +1,276 @@
+@charset "shift-jis";
+
+/*-----------------------------------------------------------
+=== Åk Font Setting Ål ====================================
+------------------------------------------------------------*/
+html {
+	font-size:12px;
+	line-height:1.65;
+	color:#333333;
+}
+html.ie9 ,
+html.ie8 ,
+html.ie7 ,
+html.ie6 {
+	font-size: 75%;
+}
+body {
+	background:none;
+}
+
+.fs9 {
+	font-size:75%;
+}
+
+.fs10 {
+	font-size:83%;
+}
+
+.fs11 {
+	font-size:91%;
+}
+
+.fs12 {
+	font-size:100%;
+}
+
+.fs13 {
+	font-size:108%;
+}
+
+.fs14 {
+	font-size:116%;
+}
+
+.fs15 {
+	font-size:125%;
+}
+
+.fs16 {
+	font-size:133%;
+}
+
+.fs17 {
+	font-size:141%;
+}
+
+.fs18 {
+	font-size:150%;
+}
+
+.fs19 {
+	font-size:158%;
+}
+
+.fs20 {
+	font-size:166%;
+}
+
+.fs21 {
+	font-size:175%;
+}
+
+.fs22 {
+	font-size:183%;
+}
+
+.fs23 {
+	font-size:191%;
+}
+
+.fs24 {
+	font-size:200%;
+}
+
+.fs25 {
+	font-size:208%;
+}
+
+.fs26 {
+	font-size:216%;
+}
+
+.fs30 {
+	font-size:250%;
+}
+
+
+/*-----------------------------------------------------------
+=== Åk Base Layout Ål ====================================
+ * html
+ * body
+ * div.container
+ * div.container > div#header
+ * div.container > ol.topicpath
+ * div.container > div#contents
+ * div.container > div#footer-utility
+ * div.container > div#footer
+------------------------------------------------------------*/
+
+html {
+}
+
+body {
+	background:url(../img/bg_body.gif) repeat-x 0 64px scroll #ffffff;
+}
+
+.container {
+	overflow:hidden;
+	min-width:940px;
+	background:url(../img/bg_container.gif) no-repeat 50% 64px scroll transparent;
+}
+body.pane1 .container,
+body.pane2 .container,
+body.pane3 .container,
+body.popup .container {
+	border-top:7px solid #272f89;
+}
+
+#header {
+	min-width:940px;
+	background:#ffffff url(../img/line_1px.gif) repeat-x 0 100%;
+	margin:0 auto 15px;
+}
+#header-inner {
+	width:940px;
+	height:auto;
+	margin:0 auto;
+	position:relative;
+}
+
+ol.topicpath {
+	width:930px;
+	margin:0 auto 13px auto;
+	padding:0 5px 0 5px;
+}
+
+#contents {
+	width:940px;
+	margin:13px auto 0 auto;
+}
+
+#pagetop {
+	clear:both;
+	width:940px;
+	margin:18px auto 0 auto;
+}
+
+#footer-utility {
+	clear:both;
+	margin-top:20px;
+	/*
+	background-color:#e3eff6;
+	*/
+	background:url(../img/bg_footersitemap.gif) repeat-x center top scroll #e3eff6;
+}
+#footer-utility .aside {
+	/*
+	background:url(../img/line_1px.gif) repeat-x 0 0;
+	*/
+	background:url(../img/bg_footersitemap_wrap.gif) no-repeat center top scroll transparent;
+}
+#footer-utility .aside .wrap {
+	width:940px;
+	margin:0 auto;
+}
+#footer-utility .aside .global {
+}
+
+#footer {
+	clear:both;
+}
+
+#footer .wrap {
+	width:940px;
+	margin:0 auto;
+	padding:28px 0 44px 0;
+}
+
+/* [Pane1] ==================================================*/
+.pane1 #contents #main {
+	padding:30px 0 0 0;
+}
+/* [Pane2] ==================================================*/
+.pane2 #contents #main {
+	float:right;
+	width:690px;
+	padding:17px 0 0 0;
+}
+.pane2 #contents #aside {
+	float:left;
+	width:220px;
+	padding:17px 0 0 0;
+}
+/* [Pane3] ==================================================*/
+.pane3 #contents .content {
+	float:right;
+	width:690px;
+}
+.pane3 #contents .content #main {
+	float:left;
+	width:480px;
+	padding:17px 0 0 0;
+}
+.pane3 #contents .content #sub {
+	float:right;
+	width:190px;
+	padding:17px 0 0 0;
+}
+.pane3 #contents #aside {
+	float:left;
+	width:220px;
+	padding:17px 0 0 0;
+}
+/* [Pane3] ==================================================*/
+body.popup {
+	background:url(../img/bg_pop_body.gif) repeat-x 0 /*71px*/83px/*ÉhÉâÇ¶Ç‡ÇÒêÍóp*/ scroll transparent;
+}
+.popup .container {
+	min-width:690px;
+	background:url(../img/bg_pop_container.gif) no-repeat 50% /*64px*/76px/*ÉhÉâÇ¶Ç‡ÇÒêÍóp*/ scroll transparent;
+}
+.popup #header {
+	width:auto;
+	min-width:inherit;
+	margin:0 auto;
+	/*height:65px;*/
+	height:77px;/*ÉhÉâÇ¶Ç‡ÇÒêÍóp*/
+	margin-bottom:41px;
+}
+.popup #header-inner {
+	width:690px;
+	margin:0 auto;
+}
+.popup #contents {
+	width:690px;
+}
+.popup #main {
+}
+.popup .shinsa-num {
+	margin-top:13px;
+}
+.popup #contents #main .control.close {
+	margin-top:60px;
+}
+.popup #pagetop {
+	width:690px;
+}
+.popup #footer {
+	background:#ffffff url(../img/line_1px.gif) repeat-x 0 0;
+	margin:14px 0 0 0;
+}
+.popup #footer .wrap {
+	width:690px;
+	padding:14px 0 20px 0;
+}
+
+/* [Pane Pattern commons] ==================================================*/
+.pane-nfs #footer {
+	border-top:1px solid #cee1ec;
+}
+.pane-nfs #footer {
+	margin-top:20px;
+}
+/* [Pop] ==================================================*/
+
+/* EOF*/

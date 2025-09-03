@@ -1,0 +1,58 @@
+// *** Settings ***
+@import "../partials/variables", "../partials/mixin", "../partials/fonts";
+
+// *** Preload ***
+@import "../partials/preload";
+
+// *** Components ***
+@import 'layout', "legacy", "popup";
+
+// *** Sandbox ***
+#main {
+  @import 'container', 'general', 'layerdNav', 'list', 'link', 'unit', "form", "frame", "app";
+
+
+  * {
+    -moz-font-feature-settings: "palt";
+    -webkit-font-feature-settings: "palt";
+    font-feature-settings: "palt";
+  }
+  padding-bottom: 50px;
+  @include mq(){
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 180px;
+  }
+  > article > {
+    .tle--lv1 {
+      margin-left: sp_size(20);
+      margin-right: sp_size(20);
+    }
+  }
+  > section,
+  > article > section {
+    @include mq(sp){
+      margin-right: sp_size(20);
+      margin-left: sp_size(20);
+
+      > {
+        .tab--cmn {
+          .tab__contents {
+            margin-right: - sp_size(20);
+            margin-left: - sp_size(20);
+          }
+        }
+      }
+    }
+  }
+}
+
+#l-contents--wrap {
+  + {
+    .shinsa-block {
+      margin-top: 0;
+    }
+  }
+}
+
+

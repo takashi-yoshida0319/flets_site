@@ -1,0 +1,109 @@
+@charset "shift-jis";
+/* ----- The style of default is reset. ----- */
+body { background-color:#FFFFFF; }
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin:0; padding:0; }
+table { border-collapse:collapse; border-spacing:0; font-size:100%; }
+fieldset, a img, img { border:0; }
+address,caption,cite,code,dfn,em,strong,th,var { font-style:normal; font-weight:normal; }
+ol,ul { list-style:none; }
+caption,th { text-align:left; }
+h1,h2,h3,h4,h5,h6 { font-size:100%; font-weight:normal; }
+q:before,q:after { content:''; }
+abbr,acronym { border:0; }
+a { /*outline:none;*/ cursor:pointer; }
+img { border:0; vertical-align:bottom; }
+.popup.pattern-c #main img {vertical-align: baseline;}
+sup, sub { line-height:-1px; vertical-align:text-top; }
+sub { vertical-align:text-bottom; }
+
+
+/* flash object */
+object { outline:none; }
+
+/* ----- Utility Element ----- */
+/* -- vanish -- */
+.hide { display:none; }
+.vanish { top:0; left:-9999px; overflow:hidden; position:absolute; width:0; height:0; margin:0; padding:0; }
+/* -- strong --*/
+strong, .bold { font-weight:bold; }
+/* -- clear -- */
+.clear { clear:both; }
+/* -- clearfix -- */
+#header:after,
+#contents:after,
+.figure:after,
+.sub-section:after,
+.group:after { content:""; display:block; height:0; clear:both; visibility:hidden; }
+#header,
+#contents,
+.figure,
+.sub-section,
+.group { display:inline-block; }
+.ie6 #header,
+.ie6 #contents,
+.ie6 .figure,
+.ie6 .sub-section,
+.ie6 .group { height:1%; }
+#header,
+#contents,
+.figure,
+.sub-section,
+.group { display:block; }
+
+
+
+/* ----- old css reset ----- */
+html {
+	line-height:1.65 !important;
+}
+html body {
+}
+#header p ,
+#aside p ,
+#footer-utility p ,
+#footer p {
+	line-height:1.65;
+}
+#header .search {
+	border: none;
+	color: #333333;
+	height: auto;
+	padding: 0;
+	width: auto;
+}
+#header {
+	font-size:100%;
+	text-align:left;
+}
+#footer {
+	margin:0;
+	font-size:100%;
+	text-align:left;
+}
+body #main {
+	font-size:100%;
+}
+#header img ,
+#aside img ,
+#footer-utility img ,
+#footer img {
+	vertical-align:bottom;
+}
+#header li ,
+#aside li ,
+#topicpath li ,
+#footer-utility li ,
+#footer li {
+	font-size: 100%;
+}
+
+div.container div#header ,
+div.container ol.topicpath ,
+div.container div#contents #aside ,
+div.container div#footer-utility ,
+div.container div#footer {
+	/*font-family:'ＭＳ Ｐゴシック' !important;*/
+}
+
+/* EOF*/
+

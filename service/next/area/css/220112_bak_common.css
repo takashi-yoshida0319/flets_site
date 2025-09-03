@@ -1,0 +1,232 @@
+img{
+	max-width: 100%;
+}
+
+#main sup{
+	font-size: 70%;
+}
+
+/* title_area
+-------------------------------------------------- */
+
+.title_area h1.title span.service{
+	display: inline-block;
+	margin-right: 20px;
+	vertical-align: middle;
+}
+.title_area h1.title span.service span.pref{
+	display: inline-block;
+	font-size: 77%;
+	color: #fff;
+	background: #000000;
+	line-height: 1;
+	margin: 0 24px 0 0;
+	padding: 10px 29px;
+	vertical-align: top;
+	font-weight: 700;
+}
+
+.title_area h1.title span.service img{
+	vertical-align: top;
+    width: 290px;
+}
+
+.title_area h1.title span.service span.kind{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.title_area h1.title span.service span.kind small{
+	position: absolute;
+	bottom: -1.5em;
+	left: 0;
+	font-size: 33%;
+}
+
+/* .btn_area
+-------------------------------------------------- */
+.sec .btn_area{
+	text-align: center;
+}
+
+.sec .btn_area a{
+	width: 480px;
+	margin: 0 auto;
+}
+
+.sec .btn_area a._area::before {
+    content: "";
+    display: inline-block;
+	vertical-align: middle;
+    background:url("../img/area-icon.svg")center top no-repeat;
+    width: 34px;
+    height: 31px;
+    margin-right: 8px;
+}
+
+.sec .btn_area a._service::before {
+    content: "";
+    display: inline-block;
+	vertical-align: middle;
+    background:url("../img/service-icon.svg")center top no-repeat;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+
+/* tab_area
+-------------------------------------------------- */
+.tab_area {
+	padding: 0;
+}
+.tab_area .tabContents > div {
+    padding: 40px;
+}
+
+.tab_area table{
+	width: 100%;
+}
+
+#main .tab_area ul + .btn_area{
+	margin-top: 33px;
+}
+#main .tab_area .btn_area + .btn_area{
+	margin-top: 25px;
+}
+
+.tab_area .image{
+	margin: 0 0 40px 0;
+}
+
+/* mapArea
+-------------------------------------------------- */
+.tab_area .mapArea .map{
+	text-align: center;
+	margin: 0 0 40px 0;
+}
+.tab_area .mapArea .c-txt{
+	margin-bottom: 10px;
+}
+
+.tab_area .mapArea ul.note-list{
+	margin-top: 12px;
+}
+
+.tab_area .mapArea ul.note-list li + li{
+	margin-top: 8px;
+}
+
+
+/* telArea
+-------------------------------------------------- */
+
+.tab_area .telArea p.c-txt._pc_mt0{
+	margin: 0;
+}
+
+.tab_area .telArea section{
+	margin: 0 0 40px 0;
+}
+.tab_area .telArea section:last-child{
+	margin: 0 0 0px 0;
+}
+
+.tab_area .telArea section h2.title{
+	margin-bottom: 10px;
+    font-weight: 700!important;
+}
+
+.tab_area .telArea table + .c-note{
+	margin: 17px 0 0px 0;
+}
+
+.tab_area .telArea .c-txt._sss{
+	font-size: 66.67%;
+}
+
+.tab_area .telArea .attention{
+	margin-top: 20px;
+}
+
+#main .tab_area .telArea table{
+	margin-top: 30px;
+}
+.tab_area .telArea table th,
+.tab_area .telArea table td{
+	line-height: 1.4;
+	vertical-align: middle;
+}
+.tab_area .telArea table .textcenter{
+	text-align: center;
+}
+.tab_area .telArea table th.areacode{
+	width: 30%;
+}
+
+
+@media screen and (max-width: 767px){
+
+/* title_area
+-------------------------------------------------- */
+
+.title_area h1.title span.service{
+	display: block;
+	margin-right: 0;
+	margin-bottom: 15px;
+}
+
+.title_area h1.title span.service span.pref{
+	margin: 0 15px 0 0;
+	padding: 6px 6px;
+}
+
+
+.title_area h1.title span.service span.kind{
+	width: 60%;
+}
+
+.title_area h1.title span.service img{
+    width: 240px;
+}
+
+
+/* .btn_area
+-------------------------------------------------- */
+.sec .btn_area a{
+	width: auto;
+}
+
+/* tab_area
+-------------------------------------------------- */
+.tab_area .tabContents > div {
+    padding: 0 4% 13%;
+}
+
+/* mapArea
+-------------------------------------------------- */
+.tab_area .mapArea .map{
+	margin: 0 -4% 35px;
+}
+
+/* telArea
+-------------------------------------------------- */
+
+.tab_area .telArea section h2.title{
+	padding-top: 30px;
+}
+	
+.tab_area .telArea section h2.title + p{
+	font-size: 77%;
+}
+	
+.tab_area .telArea table th{
+	font-size: 77%;
+}
+	
+.tab_area .telArea table td{
+	font-size: 77%;
+}
+	
+}

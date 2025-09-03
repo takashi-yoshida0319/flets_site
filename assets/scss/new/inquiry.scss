@@ -1,0 +1,38 @@
+// *** Settings ***
+@import "../../partials/variables", "../../partials/mixin";
+
+// *** sandbox ***
+#main {
+
+
+  //PC
+  @include mq(){
+
+    ._special--lv2 {
+      @include font-size(30);
+      + p {
+        margin-top: 15px;
+      }
+    }
+
+    ul.type--cmn._special--annotation_01 {
+      li {
+        + li {
+          margin-top: 0;
+        }
+        @include font-size(14);
+      }
+    }
+
+    dl.horizontal._special--annotation_01,
+    p._special--annotation_01 {
+      @include font-size(14);
+    }
+
+    ._pc_w700 {
+      width: 700px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}

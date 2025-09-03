@@ -1,0 +1,53 @@
+@mixin font_size_sp($size){
+  font-size:($size / 375 * 100) * 1vw !important;
+}
+
+.p-topics {
+  &.-line {
+    border-top: 2px solid #D0D0D0;
+    border-bottom: 2px solid #D0D0D0;
+
+    @include mq(){
+      padding: 40px;
+    }
+
+    @include mq(sp){
+      padding: calc(40 / 375 * 100 * 1vw) calc(15 / 375 * 100 * 1vw);
+    }
+
+    li {
+      + li {
+        margin-top: 30px;
+
+        @include mq(sp){
+          margin-top: calc(20 / 375 * 100 * 1vw);
+        }
+      }
+
+      display: flex;
+      align-items: baseline;
+
+      @include mq(sp) {
+        flex-direction: column;
+      }
+
+      .c-date {
+        @include mq(){
+          width: 115px;
+        }
+
+        @include mq(sp) {
+          @include font_size_sp(16);
+          line-height: 1.6;
+        }
+      }
+
+      .c-desc {
+        @include mq(sp){
+          @include font_size_sp(16);
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+}
