@@ -1,0 +1,177 @@
+.bg--white {
+    background: #fff !important
+    }
+
+._lv2 {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+    line-height: 1.6;
+    text-align: center
+    }
+
+.c-txt {
+    font-size: 16px;
+    line-height: 1.625
+    }
+
+.sec {
+    padding: 64px 20px 60px
+    }
+
+@media screen and (min-width: 768px) {
+    .sec {
+        padding: 80px 0
+        }
+
+    .sec > .l-inner {
+        width: 1000px;
+        margin: 0 auto
+        }
+    }
+.jirei ._lv2 + .lead-text {
+    margin-top: 26px
+    }
+
+.jirei .lead-text {
+    font-size: 18px;
+    line-height: 2;
+    text-align: center
+    }
+
+.jirei .badge {
+    color: #fff;
+    font-weight: 700;
+    background: #0080D9;
+    border: 2px solid #0080D9;
+    padding: 2px 14px;
+    border-radius: 18px;
+    line-height: 1.07;
+    font-size: 14px
+    }
+
+.jirei .badge._bg_purple {
+    background: #1D2088;
+    border: 2px solid #1D2088;
+    color: #fff
+    }
+
+.jirei .badge._bg_yellow {
+    background: #FFD900;
+    border: 2px solid #FFD900;
+    color: #1A1311
+    }
+
+.jirei .badge._bg_white {
+    background: #fff;
+    color: #0080D9
+    }
+
+.jirei .attention-box {
+    background: #EFEFEF;
+    border-radius: 8px;
+    padding: 24px;
+    width: 920px;
+    margin: 34px auto 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+    }
+
+.jirei .attention-box__title {
+    margin-top: 11px;
+    font-size: 16px;
+    font-weight: 700
+    }
+
+.jirei .attention-box .list-note li {
+    font-size: 13px;
+    line-height: 1.615;
+    margin-top: 8px;
+    padding-left: 1em;
+    text-indent: -1em
+    }
+
+.jirei .attention-box .list-note li .hp_borderBottom {
+    font-weight: normal
+    }
+
+.jirei .jirei_list {
+    margin-top: 54px !important;
+    gap: 52px 32px !important
+    }
+
+.jirei .jirei_list .title {
+    margin-top: 15px
+    }
+
+.jirei .jirei_list .text {
+    margin-top: 24px !important
+    }
+
+.jirei .jirei_list .text .link {
+    margin-top: 18px !important
+    }
+
+.jirei .jirei_list .c-txt {
+    margin-top: 12px
+    }
+
+.jirei .label-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-column-gap: 8px;
+    -moz-column-gap: 8px;
+    column-gap: 8px
+    }
+
+.jirei .label-list li {
+    width: auto !important
+    }
+
+.jirei .btn_main {
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    white-space: nowrap;
+    margin-top: 60px !important;
+    padding-right: 64px;
+    padding-left: 64px
+    }
+
+@media screen and (max-width: 767px) {
+    .jirei ._lv2 {
+        font-size: 24px
+        }
+
+    .jirei ._lv2 + .lead-text {
+        font-size: 16px;
+        line-height: 1.6
+        }
+
+    .jirei .attention-box {
+        width: 100%
+        }
+
+    .jirei .jirei_list .label-list {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        row-gap: 14px
+        }
+
+    .jirei .jirei_list .label-list li + li {
+        margin-top: 0 !important
+        }
+
+    .jirei .btn_main {
+        width: 100% !important;
+        margin-top: 60px !important;
+        padding-right: 0;
+        padding-left: 0
+    }
+
+}
+
